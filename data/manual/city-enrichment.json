@@ -1,0 +1,175 @@
+{
+  "Bari": {
+    "fiabBikeSmile": 1,
+    "policySignals": [
+      "FIAB 1 bike-smile"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Bologna": {
+    "fiabBikeSmile": 5,
+    "policySignals": [
+      "Citta 30",
+      "Bicipolitana",
+      "Copenhagenize Index 2025"
+    ],
+    "externalCyclingScore": 54.4,
+    "externalInfrastructureScore": 49.1,
+    "externalUsageScore": 56.9,
+    "externalPolicyScore": 66.7,
+    "sources": [
+      "fiab-2024",
+      "copenhagenize-bologna-2025"
+    ]
+  },
+  "Bolzano": {
+    "fiabBikeSmile": 5,
+    "bikeModalSharePercent": 25,
+    "policySignals": [
+      "FIAB 5 bike-smile",
+      "alta quota modale ciclabile storica"
+    ],
+    "sources": [
+      "fiab-2023",
+      "legambiente-abc-2015"
+    ]
+  },
+  "Cesena": {
+    "fiabBikeSmile": 5,
+    "policySignals": [
+      "FIAB 5 bike-smile"
+    ],
+    "sources": [
+      "fiab-2023"
+    ]
+  },
+  "Ferrara": {
+    "fiabBikeSmile": 5,
+    "bikeModalSharePercent": 27,
+    "policySignals": [
+      "FIAB 5 bike-smile",
+      "storica citta della bicicletta"
+    ],
+    "sources": [
+      "fiab-2024",
+      "legambiente-abc-2015"
+    ]
+  },
+  "L’Aquila": {
+    "fiabBikeSmile": 2,
+    "policySignals": [
+      "FIAB 2 bike-smile"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Lecce": {
+    "fiabBikeSmile": 2,
+    "policySignals": [
+      "FIAB 2 bike-smile"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Parma": {
+    "fiabBikeSmile": 4,
+    "policySignals": [
+      "FIAB 4 bike-smile"
+    ],
+    "sources": [
+      "comune-parma-fiab-2024"
+    ]
+  },
+  "Pesaro": {
+    "fiabBikeSmile": 5,
+    "bikeModalSharePercent": 25,
+    "policySignals": [
+      "FIAB 5 bike-smile",
+      "Bicipolitana"
+    ],
+    "sources": [
+      "fiab-2024",
+      "comune-pesaro-fiab-2024",
+      "legambiente-abc-2015"
+    ]
+  },
+  "Piacenza": {
+    "fiabBikeSmile": 4,
+    "policySignals": [
+      "FIAB 4 bike-smile"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Pordenone": {
+    "fiabBikeSmile": 4,
+    "policySignals": [
+      "FIAB 4 bike-smile",
+      "ampliamento Zone 30 segnalato da FIAB"
+    ],
+    "sources": [
+      "fiab-2024-pordenone"
+    ]
+  },
+  "Ravenna": {
+    "fiabBikeSmile": 5,
+    "policySignals": [
+      "FIAB 5 bike-smile"
+    ],
+    "sources": [
+      "fiab-2023"
+    ]
+  },
+  "Reggio Emilia": {
+    "fiabBikeSmile": 5,
+    "policySignals": [
+      "FIAB 5 bike-smile",
+      "prima per piste ciclabili equivalenti Ecosistema Urbano 2024"
+    ],
+    "sources": [
+      "fiab-2023",
+      "lab24-ecosistema-urbano-2024"
+    ]
+  },
+  "Rimini": {
+    "fiabBikeSmile": 5,
+    "policySignals": [
+      "FIAB 5 bike-smile"
+    ],
+    "sources": [
+      "fiab-2023"
+    ]
+  },
+  "Torino": {
+    "fiabBikeSmile": 3,
+    "policySignals": [
+      "FIAB 3 bike-smile"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Trento": {
+    "fiabBikeSmile": 4,
+    "policySignals": [
+      "promozione FIAB a 4 bike-smile nel 2024"
+    ],
+    "sources": [
+      "fiab-2024"
+    ]
+  },
+  "Treviso": {
+    "bikeModalSharePercent": 25,
+    "policySignals": [
+      "alta quota modale ciclabile storica"
+    ],
+    "sources": [
+      "legambiente-abc-2015"
+    ]
+  }
+}

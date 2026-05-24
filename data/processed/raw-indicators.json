@@ -1,0 +1,5909 @@
+[
+  {
+    "metricId": "cycleNetworkEquivalent",
+    "metricLabel": "Piste ciclabili equivalenti",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/piste-ciclabili",
+    "rows": [
+      {
+        "city": "Reggio Emilia",
+        "value": 48.1395,
+        "sourceRank": 1
+      },
+      {
+        "city": "Cosenza",
+        "value": 36.9283,
+        "sourceRank": 2
+      },
+      {
+        "city": "Lodi",
+        "value": 36.1093,
+        "sourceRank": 3
+      },
+      {
+        "city": "Cremona",
+        "value": 35.9228,
+        "sourceRank": 4
+      },
+      {
+        "city": "Cesena",
+        "value": 33.4581,
+        "sourceRank": 5
+      },
+      {
+        "city": "Mantova",
+        "value": 33.0896,
+        "sourceRank": 6
+      },
+      {
+        "city": "Cuneo",
+        "value": 31.8979,
+        "sourceRank": 7
+      },
+      {
+        "city": "Sondrio",
+        "value": 27.5787,
+        "sourceRank": 8
+      },
+      {
+        "city": "Treviso",
+        "value": 26.9938,
+        "sourceRank": 9
+      },
+      {
+        "city": "Massa",
+        "value": 26.451,
+        "sourceRank": 10
+      },
+      {
+        "city": "Verbania",
+        "value": 25.4709,
+        "sourceRank": 11
+      },
+      {
+        "city": "Grosseto",
+        "value": 23.5213,
+        "sourceRank": 12
+      },
+      {
+        "city": "Padova",
+        "value": 23.245,
+        "sourceRank": 13
+      },
+      {
+        "city": "Pesaro",
+        "value": 22.733,
+        "sourceRank": 14
+      },
+      {
+        "city": "Ferrara",
+        "value": 22.664,
+        "sourceRank": 15
+      },
+      {
+        "city": "Benevento",
+        "value": 22.6468,
+        "sourceRank": 16
+      },
+      {
+        "city": "Modena",
+        "value": 21.8929,
+        "sourceRank": 17
+      },
+      {
+        "city": "Vercelli",
+        "value": 20.5825,
+        "sourceRank": 18
+      },
+      {
+        "city": "Piacenza",
+        "value": 20.231,
+        "sourceRank": 19
+      },
+      {
+        "city": "Parma",
+        "value": 20.1285,
+        "sourceRank": 20
+      },
+      {
+        "city": "Pordenone",
+        "value": 19.9382,
+        "sourceRank": 21
+      },
+      {
+        "city": "Ravenna",
+        "value": 19.7003,
+        "sourceRank": 22
+      },
+      {
+        "city": "Pisa",
+        "value": 19.2602,
+        "sourceRank": 23
+      },
+      {
+        "city": "Bolzano",
+        "value": 19.1565,
+        "sourceRank": 24
+      },
+      {
+        "city": "Forlì",
+        "value": 18.8957,
+        "sourceRank": 25
+      },
+      {
+        "city": "Bergamo",
+        "value": 18.2793,
+        "sourceRank": 26
+      },
+      {
+        "city": "Brescia",
+        "value": 16.7859,
+        "sourceRank": 27
+      },
+      {
+        "city": "Rimini",
+        "value": 16.7185,
+        "sourceRank": 28
+      },
+      {
+        "city": "Belluno",
+        "value": 16.361,
+        "sourceRank": 29
+      },
+      {
+        "city": "Bologna",
+        "value": 16.2141,
+        "sourceRank": 30
+      },
+      {
+        "city": "Vicenza",
+        "value": 15.5581,
+        "sourceRank": 31
+      },
+      {
+        "city": "Udine",
+        "value": 14.6539,
+        "sourceRank": 32
+      },
+      {
+        "city": "Teramo",
+        "value": 14.4437,
+        "sourceRank": 33
+      },
+      {
+        "city": "Lecco",
+        "value": 13.9648,
+        "sourceRank": 34
+      },
+      {
+        "city": "Lecce",
+        "value": 13.0414,
+        "sourceRank": 35
+      },
+      {
+        "city": "Aosta",
+        "value": 12.5568,
+        "sourceRank": 36
+      },
+      {
+        "city": "Firenze",
+        "value": 11.9552,
+        "sourceRank": 37
+      },
+      {
+        "city": "Pavia",
+        "value": 11.7664,
+        "sourceRank": 38
+      },
+      {
+        "city": "Rovigo",
+        "value": 11.6651,
+        "sourceRank": 39
+      },
+      {
+        "city": "Rieti",
+        "value": 11.57,
+        "sourceRank": 40
+      },
+      {
+        "city": "Verona",
+        "value": 11.5438,
+        "sourceRank": 41
+      },
+      {
+        "city": "Oristano",
+        "value": 11.0523,
+        "sourceRank": 42
+      },
+      {
+        "city": "Venezia",
+        "value": 10.7832,
+        "sourceRank": 43
+      },
+      {
+        "city": "Terni",
+        "value": 10.1276,
+        "sourceRank": 44
+      },
+      {
+        "city": "Siracusa",
+        "value": 9.42844,
+        "sourceRank": 45
+      },
+      {
+        "city": "Arezzo",
+        "value": 9.2779,
+        "sourceRank": 46
+      },
+      {
+        "city": "Trento",
+        "value": 9.24216,
+        "sourceRank": 47
+      },
+      {
+        "city": "Gorizia",
+        "value": 8.94819,
+        "sourceRank": 48
+      },
+      {
+        "city": "Biella",
+        "value": 8.71272,
+        "sourceRank": 49
+      },
+      {
+        "city": "Torino",
+        "value": 8.47984,
+        "sourceRank": 50
+      },
+      {
+        "city": "Asti",
+        "value": 8.44544,
+        "sourceRank": 51
+      },
+      {
+        "city": "Imperia",
+        "value": 8.01885,
+        "sourceRank": 52
+      },
+      {
+        "city": "Foggia",
+        "value": 7.66186,
+        "sourceRank": 53
+      },
+      {
+        "city": "Brindisi",
+        "value": 7.49752,
+        "sourceRank": 54
+      },
+      {
+        "city": "Prato",
+        "value": 7.40246,
+        "sourceRank": 55
+      },
+      {
+        "city": "Pescara",
+        "value": 7.35052,
+        "sourceRank": 56
+      },
+      {
+        "city": "Catanzaro",
+        "value": 7.25168,
+        "sourceRank": 57
+      },
+      {
+        "city": "Pistoia",
+        "value": 7.07452,
+        "sourceRank": 58
+      },
+      {
+        "city": "Lucca",
+        "value": 7.00845,
+        "sourceRank": 59
+      },
+      {
+        "city": "Alessandria",
+        "value": 6.98323,
+        "sourceRank": 60
+      },
+      {
+        "city": "Frosinone",
+        "value": 6.85739,
+        "sourceRank": 61
+      },
+      {
+        "city": "Monza",
+        "value": 6.2674,
+        "sourceRank": 62
+      },
+      {
+        "city": "Cagliari",
+        "value": 6.10697,
+        "sourceRank": 63
+      },
+      {
+        "city": "Milano",
+        "value": 5.71067,
+        "sourceRank": 64
+      },
+      {
+        "city": "Enna",
+        "value": 5.52325,
+        "sourceRank": 65
+      },
+      {
+        "city": "Bari",
+        "value": 5.39819,
+        "sourceRank": 66
+      },
+      {
+        "city": "La Spezia",
+        "value": 5.36194,
+        "sourceRank": 67
+      },
+      {
+        "city": "Crotone",
+        "value": 5.2108,
+        "sourceRank": 68
+      },
+      {
+        "city": "Perugia",
+        "value": 5.01341,
+        "sourceRank": 69
+      },
+      {
+        "city": "Savona",
+        "value": 4.68652,
+        "sourceRank": 70
+      },
+      {
+        "city": "Latina",
+        "value": 4.40064,
+        "sourceRank": 71
+      },
+      {
+        "city": "Varese",
+        "value": 4.39653,
+        "sourceRank": 72
+      },
+      {
+        "city": "Taranto",
+        "value": 3.98728,
+        "sourceRank": 73
+      },
+      {
+        "city": "Trieste",
+        "value": 3.94486,
+        "sourceRank": 74
+      },
+      {
+        "city": "Novara",
+        "value": 3.92215,
+        "sourceRank": 75
+      },
+      {
+        "city": "Isernia",
+        "value": 3.52754,
+        "sourceRank": 76
+      },
+      {
+        "city": "Livorno",
+        "value": 3.11441,
+        "sourceRank": 77
+      },
+      {
+        "city": "Siena",
+        "value": 3.06404,
+        "sourceRank": 78
+      },
+      {
+        "city": "Ragusa",
+        "value": 2.97298,
+        "sourceRank": 79
+      },
+      {
+        "city": "Palermo",
+        "value": 2.89645,
+        "sourceRank": 80
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 2.78038,
+        "sourceRank": 81
+      },
+      {
+        "city": "Campobasso",
+        "value": 2.70362,
+        "sourceRank": 82
+      },
+      {
+        "city": "Catania",
+        "value": 2.39169,
+        "sourceRank": 83
+      },
+      {
+        "city": "Ancona",
+        "value": 2.23585,
+        "sourceRank": 84
+      },
+      {
+        "city": "Como",
+        "value": 1.9523,
+        "sourceRank": 85
+      },
+      {
+        "city": "Viterbo",
+        "value": 1.77686,
+        "sourceRank": 86
+      },
+      {
+        "city": "Nuoro",
+        "value": 1.76581,
+        "sourceRank": 87
+      },
+      {
+        "city": "Matera",
+        "value": 1.75162,
+        "sourceRank": 88
+      },
+      {
+        "city": "Caserta",
+        "value": 1.72066,
+        "sourceRank": 89
+      },
+      {
+        "city": "Fermo",
+        "value": 1.68289,
+        "sourceRank": 90
+      },
+      {
+        "city": "Macerata",
+        "value": 1.45918,
+        "sourceRank": 91
+      },
+      {
+        "city": "Trapani",
+        "value": 1.43173,
+        "sourceRank": 92
+      },
+      {
+        "city": "Genova",
+        "value": 1.22865,
+        "sourceRank": 93
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 1.22709,
+        "sourceRank": 94
+      },
+      {
+        "city": "Messina",
+        "value": 0.954025,
+        "sourceRank": 95
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 0.931891,
+        "sourceRank": 96
+      },
+      {
+        "city": "Agrigento",
+        "value": 0.849939,
+        "sourceRank": 97
+      },
+      {
+        "city": "Roma",
+        "value": 0.827015,
+        "sourceRank": 98
+      },
+      {
+        "city": "Sassari",
+        "value": 0.477002,
+        "sourceRank": 99
+      },
+      {
+        "city": "Avellino",
+        "value": 0.397264,
+        "sourceRank": 100
+      },
+      {
+        "city": "Napoli",
+        "value": 0.389129,
+        "sourceRank": 101
+      },
+      {
+        "city": "Salerno",
+        "value": 0.218435,
+        "sourceRank": 102
+      },
+      {
+        "city": "L’Aquila",
+        "value": 0.196697,
+        "sourceRank": 103
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 0.119879,
+        "sourceRank": 104
+      },
+      {
+        "city": "Chieti",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Potenza",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "pedestrianAreas",
+    "metricLabel": "Isole pedonali",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/isole-pedonali",
+    "rows": [
+      {
+        "city": "Lucca",
+        "value": 682.706,
+        "sourceRank": 1
+      },
+      {
+        "city": "Venezia",
+        "value": 528.241,
+        "sourceRank": 2
+      },
+      {
+        "city": "Rimini",
+        "value": 261.375,
+        "sourceRank": 3
+      },
+      {
+        "city": "Verbania",
+        "value": 217.07,
+        "sourceRank": 4
+      },
+      {
+        "city": "Rovigo",
+        "value": 190.457,
+        "sourceRank": 5
+      },
+      {
+        "city": "Cosenza",
+        "value": 174.875,
+        "sourceRank": 6
+      },
+      {
+        "city": "Firenze",
+        "value": 116.035,
+        "sourceRank": 7
+      },
+      {
+        "city": "Isernia",
+        "value": 93.6121,
+        "sourceRank": 8
+      },
+      {
+        "city": "Varese",
+        "value": 89.9642,
+        "sourceRank": 9
+      },
+      {
+        "city": "Siena",
+        "value": 89.8824,
+        "sourceRank": 10
+      },
+      {
+        "city": "Parma",
+        "value": 80.9386,
+        "sourceRank": 11
+      },
+      {
+        "city": "Chieti",
+        "value": 75.534,
+        "sourceRank": 12
+      },
+      {
+        "city": "Torino",
+        "value": 64.8764,
+        "sourceRank": 13
+      },
+      {
+        "city": "Ravenna",
+        "value": 64.8471,
+        "sourceRank": 14
+      },
+      {
+        "city": "Milano",
+        "value": 63.4673,
+        "sourceRank": 15
+      },
+      {
+        "city": "Palermo",
+        "value": 62.3265,
+        "sourceRank": 16
+      },
+      {
+        "city": "Cremona",
+        "value": 61.4579,
+        "sourceRank": 17
+      },
+      {
+        "city": "Biella",
+        "value": 60.3956,
+        "sourceRank": 18
+      },
+      {
+        "city": "Piacenza",
+        "value": 60.0556,
+        "sourceRank": 19
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 58.173,
+        "sourceRank": 20
+      },
+      {
+        "city": "Grosseto",
+        "value": 56.5795,
+        "sourceRank": 21
+      },
+      {
+        "city": "Bari",
+        "value": 56.3733,
+        "sourceRank": 22
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 56.3667,
+        "sourceRank": 23
+      },
+      {
+        "city": "Pesaro",
+        "value": 55.3598,
+        "sourceRank": 24
+      },
+      {
+        "city": "Ragusa",
+        "value": 52.0619,
+        "sourceRank": 25
+      },
+      {
+        "city": "Trieste",
+        "value": 51.6513,
+        "sourceRank": 26
+      },
+      {
+        "city": "Pisa",
+        "value": 50.3736,
+        "sourceRank": 27
+      },
+      {
+        "city": "Pavia",
+        "value": 44.3383,
+        "sourceRank": 28
+      },
+      {
+        "city": "Cuneo",
+        "value": 42.8943,
+        "sourceRank": 29
+      },
+      {
+        "city": "Ferrara",
+        "value": 40.9513,
+        "sourceRank": 30
+      },
+      {
+        "city": "Sondrio",
+        "value": 40.8241,
+        "sourceRank": 31
+      },
+      {
+        "city": "Benevento",
+        "value": 40.0349,
+        "sourceRank": 32
+      },
+      {
+        "city": "Como",
+        "value": 39.3201,
+        "sourceRank": 33
+      },
+      {
+        "city": "Siracusa",
+        "value": 38.962,
+        "sourceRank": 34
+      },
+      {
+        "city": "Padova",
+        "value": 38.7523,
+        "sourceRank": 35
+      },
+      {
+        "city": "Brindisi",
+        "value": 36.883,
+        "sourceRank": 36
+      },
+      {
+        "city": "Enna",
+        "value": 35.2775,
+        "sourceRank": 37
+      },
+      {
+        "city": "Oristano",
+        "value": 34.9109,
+        "sourceRank": 38
+      },
+      {
+        "city": "Livorno",
+        "value": 33.993,
+        "sourceRank": 39
+      },
+      {
+        "city": "Rieti",
+        "value": 33.0705,
+        "sourceRank": 40
+      },
+      {
+        "city": "Belluno",
+        "value": 32.762,
+        "sourceRank": 41
+      },
+      {
+        "city": "Brescia",
+        "value": 30.0546,
+        "sourceRank": 42
+      },
+      {
+        "city": "Terni",
+        "value": 29.6719,
+        "sourceRank": 43
+      },
+      {
+        "city": "Bologna",
+        "value": 29.3084,
+        "sourceRank": 44
+      },
+      {
+        "city": "Pistoia",
+        "value": 29.1124,
+        "sourceRank": 45
+      },
+      {
+        "city": "Bolzano",
+        "value": 28.2733,
+        "sourceRank": 46
+      },
+      {
+        "city": "Napoli",
+        "value": 27.7561,
+        "sourceRank": 47
+      },
+      {
+        "city": "Gorizia",
+        "value": 27.607,
+        "sourceRank": 48
+      },
+      {
+        "city": "Messina",
+        "value": 27.3587,
+        "sourceRank": 49
+      },
+      {
+        "city": "Mantova",
+        "value": 27.3426,
+        "sourceRank": 50
+      },
+      {
+        "city": "Modena",
+        "value": 26.3802,
+        "sourceRank": 51
+      },
+      {
+        "city": "Lecce",
+        "value": 25.3923,
+        "sourceRank": 52
+      },
+      {
+        "city": "Pescara",
+        "value": 25.283,
+        "sourceRank": 53
+      },
+      {
+        "city": "Bergamo",
+        "value": 24.7411,
+        "sourceRank": 54
+      },
+      {
+        "city": "Perugia",
+        "value": 24.7298,
+        "sourceRank": 55
+      },
+      {
+        "city": "Cagliari",
+        "value": 24.6427,
+        "sourceRank": 56
+      },
+      {
+        "city": "Forlì",
+        "value": 23.0591,
+        "sourceRank": 57
+      },
+      {
+        "city": "Treviso",
+        "value": 22.7688,
+        "sourceRank": 58
+      },
+      {
+        "city": "Ancona",
+        "value": 22.6283,
+        "sourceRank": 59
+      },
+      {
+        "city": "Vicenza",
+        "value": 21.9581,
+        "sourceRank": 60
+      },
+      {
+        "city": "Lodi",
+        "value": 21.6802,
+        "sourceRank": 61
+      },
+      {
+        "city": "Macerata",
+        "value": 21.4836,
+        "sourceRank": 62
+      },
+      {
+        "city": "Arezzo",
+        "value": 20.5163,
+        "sourceRank": 63
+      },
+      {
+        "city": "Viterbo",
+        "value": 19.7122,
+        "sourceRank": 64
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 18.1339,
+        "sourceRank": 65
+      },
+      {
+        "city": "Roma",
+        "value": 18.0467,
+        "sourceRank": 66
+      },
+      {
+        "city": "Catania",
+        "value": 17.9673,
+        "sourceRank": 67
+      },
+      {
+        "city": "Savona",
+        "value": 17.1839,
+        "sourceRank": 68
+      },
+      {
+        "city": "Nuoro",
+        "value": 17.0162,
+        "sourceRank": 69
+      },
+      {
+        "city": "Trento",
+        "value": 16.3301,
+        "sourceRank": 70
+      },
+      {
+        "city": "Pordenone",
+        "value": 16.3248,
+        "sourceRank": 71
+      },
+      {
+        "city": "Verona",
+        "value": 16.2613,
+        "sourceRank": 72
+      },
+      {
+        "city": "Prato",
+        "value": 15.9347,
+        "sourceRank": 73
+      },
+      {
+        "city": "Massa",
+        "value": 15.5683,
+        "sourceRank": 74
+      },
+      {
+        "city": "Crotone",
+        "value": 15.3991,
+        "sourceRank": 75
+      },
+      {
+        "city": "Campobasso",
+        "value": 15.2947,
+        "sourceRank": 76
+      },
+      {
+        "city": "Lecco",
+        "value": 13.8224,
+        "sourceRank": 77
+      },
+      {
+        "city": "Asti",
+        "value": 12.7252,
+        "sourceRank": 78
+      },
+      {
+        "city": "Potenza",
+        "value": 12.4212,
+        "sourceRank": 79
+      },
+      {
+        "city": "Latina",
+        "value": 11.7588,
+        "sourceRank": 80
+      },
+      {
+        "city": "Salerno",
+        "value": 11.2991,
+        "sourceRank": 81
+      },
+      {
+        "city": "Foggia",
+        "value": 11.0081,
+        "sourceRank": 82
+      },
+      {
+        "city": "Novara",
+        "value": 10.4882,
+        "sourceRank": 83
+      },
+      {
+        "city": "Agrigento",
+        "value": 9.58351,
+        "sourceRank": 84
+      },
+      {
+        "city": "Genova",
+        "value": 8.32455,
+        "sourceRank": 85
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 8.2536,
+        "sourceRank": 86
+      },
+      {
+        "city": "Monza",
+        "value": 8.03455,
+        "sourceRank": 87
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 7.71903,
+        "sourceRank": 88
+      },
+      {
+        "city": "L’Aquila",
+        "value": 7.64973,
+        "sourceRank": 89
+      },
+      {
+        "city": "Caserta",
+        "value": 6.86766,
+        "sourceRank": 90
+      },
+      {
+        "city": "Imperia",
+        "value": 6.02119,
+        "sourceRank": 91
+      },
+      {
+        "city": "Aosta",
+        "value": 5.89551,
+        "sourceRank": 92
+      },
+      {
+        "city": "Udine",
+        "value": 5.52102,
+        "sourceRank": 93
+      },
+      {
+        "city": "La Spezia",
+        "value": 5.50375,
+        "sourceRank": 94
+      },
+      {
+        "city": "Cesena",
+        "value": 5.22041,
+        "sourceRank": 95
+      },
+      {
+        "city": "Taranto",
+        "value": 4.78474,
+        "sourceRank": 96
+      },
+      {
+        "city": "Alessandria",
+        "value": 4.56627,
+        "sourceRank": 97
+      },
+      {
+        "city": "Avellino",
+        "value": 2.58822,
+        "sourceRank": 98
+      },
+      {
+        "city": "Fermo",
+        "value": 0,
+        "sourceRank": 99
+      },
+      {
+        "city": "Vercelli",
+        "value": 0,
+        "sourceRank": 100
+      },
+      {
+        "city": "Catanzaro",
+        "value": 0,
+        "sourceRank": 101
+      },
+      {
+        "city": "Frosinone",
+        "value": 0,
+        "sourceRank": 102
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Sassari",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Teramo",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Trapani",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "roadVictims",
+    "metricLabel": "Morti e feriti stradali",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/vittime-della-strada",
+    "rows": [
+      {
+        "city": "Caserta",
+        "value": 2.32127,
+        "sourceRank": 1
+      },
+      {
+        "city": "Catanzaro",
+        "value": 2.50384,
+        "sourceRank": 2
+      },
+      {
+        "city": "Avellino",
+        "value": 2.60546,
+        "sourceRank": 3
+      },
+      {
+        "city": "Nuoro",
+        "value": 2.65879,
+        "sourceRank": 4
+      },
+      {
+        "city": "Campobasso",
+        "value": 2.69782,
+        "sourceRank": 5
+      },
+      {
+        "city": "Teramo",
+        "value": 2.81291,
+        "sourceRank": 6
+      },
+      {
+        "city": "Ragusa",
+        "value": 2.81578,
+        "sourceRank": 7
+      },
+      {
+        "city": "Chieti",
+        "value": 2.82737,
+        "sourceRank": 8
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 2.89464,
+        "sourceRank": 9
+      },
+      {
+        "city": "Benevento",
+        "value": 3.00706,
+        "sourceRank": 10
+      },
+      {
+        "city": "Potenza",
+        "value": 3.04319,
+        "sourceRank": 11
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 3.04766,
+        "sourceRank": 12
+      },
+      {
+        "city": "Belluno",
+        "value": 3.06792,
+        "sourceRank": 13
+      },
+      {
+        "city": "Cosenza",
+        "value": 3.07403,
+        "sourceRank": 14
+      },
+      {
+        "city": "Gorizia",
+        "value": 3.19346,
+        "sourceRank": 15
+      },
+      {
+        "city": "Isernia",
+        "value": 3.20124,
+        "sourceRank": 16
+      },
+      {
+        "city": "Sondrio",
+        "value": 3.22795,
+        "sourceRank": 17
+      },
+      {
+        "city": "Napoli",
+        "value": 3.36522,
+        "sourceRank": 18
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 3.38277,
+        "sourceRank": 19
+      },
+      {
+        "city": "Cagliari",
+        "value": 3.55125,
+        "sourceRank": 20
+      },
+      {
+        "city": "Venezia",
+        "value": 3.61866,
+        "sourceRank": 21
+      },
+      {
+        "city": "Oristano",
+        "value": 3.62283,
+        "sourceRank": 22
+      },
+      {
+        "city": "Palermo",
+        "value": 3.75297,
+        "sourceRank": 23
+      },
+      {
+        "city": "Trapani",
+        "value": 3.76177,
+        "sourceRank": 24
+      },
+      {
+        "city": "L’Aquila",
+        "value": 3.76664,
+        "sourceRank": 25
+      },
+      {
+        "city": "Crotone",
+        "value": 3.78133,
+        "sourceRank": 26
+      },
+      {
+        "city": "Perugia",
+        "value": 3.80221,
+        "sourceRank": 27
+      },
+      {
+        "city": "Trento",
+        "value": 4.00691,
+        "sourceRank": 28
+      },
+      {
+        "city": "Udine",
+        "value": 4.03852,
+        "sourceRank": 29
+      },
+      {
+        "city": "Agrigento",
+        "value": 4.25133,
+        "sourceRank": 30
+      },
+      {
+        "city": "Macerata",
+        "value": 4.27203,
+        "sourceRank": 31
+      },
+      {
+        "city": "Rovigo",
+        "value": 4.38131,
+        "sourceRank": 32
+      },
+      {
+        "city": "Vercelli",
+        "value": 4.42419,
+        "sourceRank": 33
+      },
+      {
+        "city": "Enna",
+        "value": 4.46849,
+        "sourceRank": 34
+      },
+      {
+        "city": "Aosta",
+        "value": 4.47224,
+        "sourceRank": 35
+      },
+      {
+        "city": "Messina",
+        "value": 4.48383,
+        "sourceRank": 36
+      },
+      {
+        "city": "Terni",
+        "value": 4.55956,
+        "sourceRank": 37
+      },
+      {
+        "city": "Pescara",
+        "value": 4.62678,
+        "sourceRank": 38
+      },
+      {
+        "city": "Frosinone",
+        "value": 4.79075,
+        "sourceRank": 39
+      },
+      {
+        "city": "Siracusa",
+        "value": 4.79165,
+        "sourceRank": 40
+      },
+      {
+        "city": "Matera",
+        "value": 4.79182,
+        "sourceRank": 41
+      },
+      {
+        "city": "Pordenone",
+        "value": 4.79459,
+        "sourceRank": 42
+      },
+      {
+        "city": "Lodi",
+        "value": 4.80888,
+        "sourceRank": 43
+      },
+      {
+        "city": "Prato",
+        "value": 4.82282,
+        "sourceRank": 44
+      },
+      {
+        "city": "Varese",
+        "value": 4.87189,
+        "sourceRank": 45
+      },
+      {
+        "city": "Taranto",
+        "value": 4.88043,
+        "sourceRank": 46
+      },
+      {
+        "city": "Arezzo",
+        "value": 4.88261,
+        "sourceRank": 47
+      },
+      {
+        "city": "Asti",
+        "value": 4.90323,
+        "sourceRank": 48
+      },
+      {
+        "city": "Treviso",
+        "value": 4.92867,
+        "sourceRank": 49
+      },
+      {
+        "city": "Cuneo",
+        "value": 4.95121,
+        "sourceRank": 50
+      },
+      {
+        "city": "Vicenza",
+        "value": 4.95342,
+        "sourceRank": 51
+      },
+      {
+        "city": "Torino",
+        "value": 4.98337,
+        "sourceRank": 52
+      },
+      {
+        "city": "Biella",
+        "value": 4.99777,
+        "sourceRank": 53
+      },
+      {
+        "city": "Alessandria",
+        "value": 5.11756,
+        "sourceRank": 54
+      },
+      {
+        "city": "Parma",
+        "value": 5.12797,
+        "sourceRank": 55
+      },
+      {
+        "city": "Foggia",
+        "value": 5.13251,
+        "sourceRank": 56
+      },
+      {
+        "city": "Novara",
+        "value": 5.14532,
+        "sourceRank": 57
+      },
+      {
+        "city": "Brescia",
+        "value": 5.177,
+        "sourceRank": 58
+      },
+      {
+        "city": "Ferrara",
+        "value": 5.19561,
+        "sourceRank": 59
+      },
+      {
+        "city": "Trieste",
+        "value": 5.22637,
+        "sourceRank": 60
+      },
+      {
+        "city": "Siena",
+        "value": 5.41544,
+        "sourceRank": 61
+      },
+      {
+        "city": "Cesena",
+        "value": 5.47098,
+        "sourceRank": 62
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 5.48595,
+        "sourceRank": 63
+      },
+      {
+        "city": "Sassari",
+        "value": 5.53623,
+        "sourceRank": 64
+      },
+      {
+        "city": "Como",
+        "value": 5.55395,
+        "sourceRank": 65
+      },
+      {
+        "city": "Latina",
+        "value": 5.64423,
+        "sourceRank": 66
+      },
+      {
+        "city": "Lecco",
+        "value": 5.69649,
+        "sourceRank": 67
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 5.7094,
+        "sourceRank": 68
+      },
+      {
+        "city": "Pistoia",
+        "value": 5.72171,
+        "sourceRank": 69
+      },
+      {
+        "city": "Monza",
+        "value": 5.73075,
+        "sourceRank": 70
+      },
+      {
+        "city": "Pesaro",
+        "value": 5.78762,
+        "sourceRank": 71
+      },
+      {
+        "city": "Brindisi",
+        "value": 5.79244,
+        "sourceRank": 72
+      },
+      {
+        "city": "Rieti",
+        "value": 5.80882,
+        "sourceRank": 73
+      },
+      {
+        "city": "Lecce",
+        "value": 5.81906,
+        "sourceRank": 74
+      },
+      {
+        "city": "Lucca",
+        "value": 5.86725,
+        "sourceRank": 75
+      },
+      {
+        "city": "Verbania",
+        "value": 5.91084,
+        "sourceRank": 76
+      },
+      {
+        "city": "Forlì",
+        "value": 5.91721,
+        "sourceRank": 77
+      },
+      {
+        "city": "Verona",
+        "value": 5.93925,
+        "sourceRank": 78
+      },
+      {
+        "city": "Ancona",
+        "value": 6.03929,
+        "sourceRank": 79
+      },
+      {
+        "city": "Fermo",
+        "value": 6.0407,
+        "sourceRank": 80
+      },
+      {
+        "city": "La Spezia",
+        "value": 6.04653,
+        "sourceRank": 81
+      },
+      {
+        "city": "Roma",
+        "value": 6.10165,
+        "sourceRank": 82
+      },
+      {
+        "city": "Imperia",
+        "value": 6.15787,
+        "sourceRank": 83
+      },
+      {
+        "city": "Mantova",
+        "value": 6.22778,
+        "sourceRank": 84
+      },
+      {
+        "city": "Piacenza",
+        "value": 6.38267,
+        "sourceRank": 85
+      },
+      {
+        "city": "Catania",
+        "value": 6.43656,
+        "sourceRank": 86
+      },
+      {
+        "city": "Cremona",
+        "value": 6.61127,
+        "sourceRank": 87
+      },
+      {
+        "city": "Grosseto",
+        "value": 6.67724,
+        "sourceRank": 88
+      },
+      {
+        "city": "Padova",
+        "value": 6.6781,
+        "sourceRank": 89
+      },
+      {
+        "city": "Pavia",
+        "value": 6.73877,
+        "sourceRank": 90
+      },
+      {
+        "city": "Bari",
+        "value": 6.74335,
+        "sourceRank": 91
+      },
+      {
+        "city": "Ravenna",
+        "value": 6.74795,
+        "sourceRank": 92
+      },
+      {
+        "city": "Salerno",
+        "value": 6.7932,
+        "sourceRank": 93
+      },
+      {
+        "city": "Viterbo",
+        "value": 6.83862,
+        "sourceRank": 94
+      },
+      {
+        "city": "Modena",
+        "value": 6.89101,
+        "sourceRank": 95
+      },
+      {
+        "city": "Bologna",
+        "value": 7.01857,
+        "sourceRank": 96
+      },
+      {
+        "city": "Rimini",
+        "value": 7.17105,
+        "sourceRank": 97
+      },
+      {
+        "city": "Bolzano",
+        "value": 7.29452,
+        "sourceRank": 98
+      },
+      {
+        "city": "Livorno",
+        "value": 7.30476,
+        "sourceRank": 99
+      },
+      {
+        "city": "Milano",
+        "value": 7.31726,
+        "sourceRank": 100
+      },
+      {
+        "city": "Pisa",
+        "value": 7.87721,
+        "sourceRank": 101
+      },
+      {
+        "city": "Savona",
+        "value": 8.09362,
+        "sourceRank": 102
+      },
+      {
+        "city": "Genova",
+        "value": 8.37233,
+        "sourceRank": 103
+      },
+      {
+        "city": "Firenze",
+        "value": 8.40329,
+        "sourceRank": 104
+      },
+      {
+        "city": "Massa",
+        "value": 9.00846,
+        "sourceRank": 105
+      },
+      {
+        "city": "Bergamo",
+        "value": 9.73781,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "motorizationRate",
+    "metricLabel": "Tasso di motorizzazione",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/tasso-di-motorizzazione",
+    "rows": [
+      {
+        "city": "Venezia",
+        "value": 44.2595,
+        "sourceRank": 1
+      },
+      {
+        "city": "Genova",
+        "value": 47.7232,
+        "sourceRank": 2
+      },
+      {
+        "city": "Milano",
+        "value": 51.7977,
+        "sourceRank": 3
+      },
+      {
+        "city": "La Spezia",
+        "value": 53.4048,
+        "sourceRank": 4
+      },
+      {
+        "city": "Bologna",
+        "value": 53.7795,
+        "sourceRank": 5
+      },
+      {
+        "city": "Trieste",
+        "value": 55.4489,
+        "sourceRank": 6
+      },
+      {
+        "city": "Firenze",
+        "value": 55.5969,
+        "sourceRank": 7
+      },
+      {
+        "city": "Livorno",
+        "value": 58.3943,
+        "sourceRank": 8
+      },
+      {
+        "city": "Bari",
+        "value": 58.4662,
+        "sourceRank": 9
+      },
+      {
+        "city": "Savona",
+        "value": 58.7432,
+        "sourceRank": 10
+      },
+      {
+        "city": "Taranto",
+        "value": 59.5567,
+        "sourceRank": 11
+      },
+      {
+        "city": "Pavia",
+        "value": 60.0798,
+        "sourceRank": 12
+      },
+      {
+        "city": "Lodi",
+        "value": 60.5225,
+        "sourceRank": 13
+      },
+      {
+        "city": "Napoli",
+        "value": 60.5592,
+        "sourceRank": 14
+      },
+      {
+        "city": "Sondrio",
+        "value": 61.7013,
+        "sourceRank": 15
+      },
+      {
+        "city": "Prato",
+        "value": 61.7178,
+        "sourceRank": 16
+      },
+      {
+        "city": "Padova",
+        "value": 62.1334,
+        "sourceRank": 17
+      },
+      {
+        "city": "Lecco",
+        "value": 62.2304,
+        "sourceRank": 18
+      },
+      {
+        "city": "Bergamo",
+        "value": 62.6332,
+        "sourceRank": 19
+      },
+      {
+        "city": "Treviso",
+        "value": 62.7608,
+        "sourceRank": 20
+      },
+      {
+        "city": "Imperia",
+        "value": 62.7651,
+        "sourceRank": 21
+      },
+      {
+        "city": "Palermo",
+        "value": 62.8838,
+        "sourceRank": 22
+      },
+      {
+        "city": "Pescara",
+        "value": 62.8846,
+        "sourceRank": 23
+      },
+      {
+        "city": "Salerno",
+        "value": 62.8851,
+        "sourceRank": 24
+      },
+      {
+        "city": "Pisa",
+        "value": 63.0301,
+        "sourceRank": 25
+      },
+      {
+        "city": "Brescia",
+        "value": 63.226,
+        "sourceRank": 26
+      },
+      {
+        "city": "Foggia",
+        "value": 63.2338,
+        "sourceRank": 27
+      },
+      {
+        "city": "Parma",
+        "value": 63.4217,
+        "sourceRank": 28
+      },
+      {
+        "city": "Novara",
+        "value": 63.6499,
+        "sourceRank": 29
+      },
+      {
+        "city": "Rimini",
+        "value": 63.7902,
+        "sourceRank": 30
+      },
+      {
+        "city": "Caserta",
+        "value": 63.9681,
+        "sourceRank": 31
+      },
+      {
+        "city": "Ancona",
+        "value": 64.054,
+        "sourceRank": 32
+      },
+      {
+        "city": "Piacenza",
+        "value": 64.1165,
+        "sourceRank": 33
+      },
+      {
+        "city": "Como",
+        "value": 64.641,
+        "sourceRank": 34
+      },
+      {
+        "city": "Cremona",
+        "value": 64.8173,
+        "sourceRank": 35
+      },
+      {
+        "city": "Vicenza",
+        "value": 65.1412,
+        "sourceRank": 36
+      },
+      {
+        "city": "Brindisi",
+        "value": 65.1789,
+        "sourceRank": 37
+      },
+      {
+        "city": "Crotone",
+        "value": 65.5488,
+        "sourceRank": 38
+      },
+      {
+        "city": "Avellino",
+        "value": 65.7631,
+        "sourceRank": 39
+      },
+      {
+        "city": "Mantova",
+        "value": 65.7924,
+        "sourceRank": 40
+      },
+      {
+        "city": "Matera",
+        "value": 66.0518,
+        "sourceRank": 41
+      },
+      {
+        "city": "Verona",
+        "value": 66.0716,
+        "sourceRank": 42
+      },
+      {
+        "city": "Roma",
+        "value": 66.3422,
+        "sourceRank": 43
+      },
+      {
+        "city": "Alessandria",
+        "value": 66.3987,
+        "sourceRank": 44
+      },
+      {
+        "city": "Ferrara",
+        "value": 66.5687,
+        "sourceRank": 45
+      },
+      {
+        "city": "Forlì",
+        "value": 66.5974,
+        "sourceRank": 46
+      },
+      {
+        "city": "Messina",
+        "value": 66.8471,
+        "sourceRank": 47
+      },
+      {
+        "city": "Monza",
+        "value": 66.9472,
+        "sourceRank": 48
+      },
+      {
+        "city": "Pesaro",
+        "value": 67.4583,
+        "sourceRank": 49
+      },
+      {
+        "city": "Massa",
+        "value": 67.6058,
+        "sourceRank": 50
+      },
+      {
+        "city": "Aosta",
+        "value": 67.6956,
+        "sourceRank": 51
+      },
+      {
+        "city": "Bolzano",
+        "value": 67.6956,
+        "sourceRank": 52
+      },
+      {
+        "city": "Trento",
+        "value": 67.6956,
+        "sourceRank": 53
+      },
+      {
+        "city": "Modena",
+        "value": 68.0098,
+        "sourceRank": 54
+      },
+      {
+        "city": "Varese",
+        "value": 68.0407,
+        "sourceRank": 55
+      },
+      {
+        "city": "Cesena",
+        "value": 68.2787,
+        "sourceRank": 56
+      },
+      {
+        "city": "Udine",
+        "value": 68.4719,
+        "sourceRank": 57
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 68.6928,
+        "sourceRank": 58
+      },
+      {
+        "city": "Gorizia",
+        "value": 68.7071,
+        "sourceRank": 59
+      },
+      {
+        "city": "Cagliari",
+        "value": 68.8159,
+        "sourceRank": 60
+      },
+      {
+        "city": "Vercelli",
+        "value": 68.8824,
+        "sourceRank": 61
+      },
+      {
+        "city": "Verbania",
+        "value": 68.9531,
+        "sourceRank": 62
+      },
+      {
+        "city": "Grosseto",
+        "value": 68.9625,
+        "sourceRank": 63
+      },
+      {
+        "city": "Siena",
+        "value": 68.9843,
+        "sourceRank": 64
+      },
+      {
+        "city": "Benevento",
+        "value": 69.2105,
+        "sourceRank": 65
+      },
+      {
+        "city": "Pistoia",
+        "value": 69.2315,
+        "sourceRank": 66
+      },
+      {
+        "city": "Torino",
+        "value": 69.3232,
+        "sourceRank": 67
+      },
+      {
+        "city": "Belluno",
+        "value": 69.3434,
+        "sourceRank": 68
+      },
+      {
+        "city": "Chieti",
+        "value": 69.3819,
+        "sourceRank": 69
+      },
+      {
+        "city": "Asti",
+        "value": 69.6899,
+        "sourceRank": 70
+      },
+      {
+        "city": "Terni",
+        "value": 69.7292,
+        "sourceRank": 71
+      },
+      {
+        "city": "Rovigo",
+        "value": 69.7649,
+        "sourceRank": 72
+      },
+      {
+        "city": "Sassari",
+        "value": 70.1101,
+        "sourceRank": 73
+      },
+      {
+        "city": "Lucca",
+        "value": 70.9532,
+        "sourceRank": 74
+      },
+      {
+        "city": "Macerata",
+        "value": 70.9947,
+        "sourceRank": 75
+      },
+      {
+        "city": "Arezzo",
+        "value": 71.1272,
+        "sourceRank": 76
+      },
+      {
+        "city": "Latina",
+        "value": 71.3007,
+        "sourceRank": 77
+      },
+      {
+        "city": "Pordenone",
+        "value": 71.9381,
+        "sourceRank": 78
+      },
+      {
+        "city": "Enna",
+        "value": 72.0484,
+        "sourceRank": 79
+      },
+      {
+        "city": "Catanzaro",
+        "value": 72.1235,
+        "sourceRank": 80
+      },
+      {
+        "city": "Lecce",
+        "value": 72.3785,
+        "sourceRank": 81
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 72.6406,
+        "sourceRank": 82
+      },
+      {
+        "city": "Siracusa",
+        "value": 72.833,
+        "sourceRank": 83
+      },
+      {
+        "city": "Oristano",
+        "value": 72.865,
+        "sourceRank": 84
+      },
+      {
+        "city": "Ravenna",
+        "value": 73.2631,
+        "sourceRank": 85
+      },
+      {
+        "city": "Cosenza",
+        "value": 73.4489,
+        "sourceRank": 86
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 73.8957,
+        "sourceRank": 87
+      },
+      {
+        "city": "Fermo",
+        "value": 73.9638,
+        "sourceRank": 88
+      },
+      {
+        "city": "Trapani",
+        "value": 74.0006,
+        "sourceRank": 89
+      },
+      {
+        "city": "Ragusa",
+        "value": 74.5978,
+        "sourceRank": 90
+      },
+      {
+        "city": "Biella",
+        "value": 74.7624,
+        "sourceRank": 91
+      },
+      {
+        "city": "Campobasso",
+        "value": 75.2586,
+        "sourceRank": 92
+      },
+      {
+        "city": "Teramo",
+        "value": 75.5005,
+        "sourceRank": 93
+      },
+      {
+        "city": "Rieti",
+        "value": 75.6604,
+        "sourceRank": 94
+      },
+      {
+        "city": "Perugia",
+        "value": 77.2214,
+        "sourceRank": 95
+      },
+      {
+        "city": "Viterbo",
+        "value": 77.6024,
+        "sourceRank": 96
+      },
+      {
+        "city": "Cuneo",
+        "value": 77.7411,
+        "sourceRank": 97
+      },
+      {
+        "city": "Agrigento",
+        "value": 78.1831,
+        "sourceRank": 98
+      },
+      {
+        "city": "Nuoro",
+        "value": 78.2334,
+        "sourceRank": 99
+      },
+      {
+        "city": "Catania",
+        "value": 79.0114,
+        "sourceRank": 100
+      },
+      {
+        "city": "Potenza",
+        "value": 79.1867,
+        "sourceRank": 101
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 79.6957,
+        "sourceRank": 102
+      },
+      {
+        "city": "L’Aquila",
+        "value": 79.8039,
+        "sourceRank": 103
+      },
+      {
+        "city": "Isernia",
+        "value": 80.196,
+        "sourceRank": 104
+      },
+      {
+        "city": "Frosinone",
+        "value": 82.1729,
+        "sourceRank": 105
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 88.2727,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "publicTransportPassengers",
+    "metricLabel": "Passeggeri trasporto pubblico",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/passeggeri-trasporto-pubblico",
+    "rows": [
+      {
+        "city": "Venezia",
+        "value": 602.486,
+        "sourceRank": 1
+      },
+      {
+        "city": "Milano",
+        "value": 415.332,
+        "sourceRank": 2
+      },
+      {
+        "city": "Genova",
+        "value": 392.621,
+        "sourceRank": 3
+      },
+      {
+        "city": "Trieste",
+        "value": 307.643,
+        "sourceRank": 4
+      },
+      {
+        "city": "Roma",
+        "value": 258.874,
+        "sourceRank": 5
+      },
+      {
+        "city": "Bologna",
+        "value": 246.446,
+        "sourceRank": 6
+      },
+      {
+        "city": "Torino",
+        "value": 226.933,
+        "sourceRank": 7
+      },
+      {
+        "city": "Firenze",
+        "value": 224.644,
+        "sourceRank": 8
+      },
+      {
+        "city": "Brescia",
+        "value": 206.057,
+        "sourceRank": 9
+      },
+      {
+        "city": "Cagliari",
+        "value": 191.68,
+        "sourceRank": 10
+      },
+      {
+        "city": "Pavia",
+        "value": 174.379,
+        "sourceRank": 11
+      },
+      {
+        "city": "Verona",
+        "value": 155.87,
+        "sourceRank": 12
+      },
+      {
+        "city": "Parma",
+        "value": 155.866,
+        "sourceRank": 13
+      },
+      {
+        "city": "Siena",
+        "value": 144.234,
+        "sourceRank": 14
+      },
+      {
+        "city": "Trento",
+        "value": 143.35,
+        "sourceRank": 15
+      },
+      {
+        "city": "La Spezia",
+        "value": 120.063,
+        "sourceRank": 16
+      },
+      {
+        "city": "Sassari",
+        "value": 117.031,
+        "sourceRank": 17
+      },
+      {
+        "city": "Bergamo",
+        "value": 115.285,
+        "sourceRank": 18
+      },
+      {
+        "city": "Rimini",
+        "value": 112.907,
+        "sourceRank": 19
+      },
+      {
+        "city": "Piacenza",
+        "value": 108.312,
+        "sourceRank": 20
+      },
+      {
+        "city": "Padova",
+        "value": 108.081,
+        "sourceRank": 21
+      },
+      {
+        "city": "Modena",
+        "value": 105.506,
+        "sourceRank": 22
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 101.766,
+        "sourceRank": 23
+      },
+      {
+        "city": "Treviso",
+        "value": 96.6495,
+        "sourceRank": 24
+      },
+      {
+        "city": "Vicenza",
+        "value": 83.4467,
+        "sourceRank": 25
+      },
+      {
+        "city": "Bari",
+        "value": 82.1912,
+        "sourceRank": 26
+      },
+      {
+        "city": "Ferrara",
+        "value": 82.0943,
+        "sourceRank": 27
+      },
+      {
+        "city": "Napoli",
+        "value": 79.0477,
+        "sourceRank": 28
+      },
+      {
+        "city": "Ancona",
+        "value": 76.5103,
+        "sourceRank": 29
+      },
+      {
+        "city": "Novara",
+        "value": 73.0243,
+        "sourceRank": 30
+      },
+      {
+        "city": "Messina",
+        "value": 68.3777,
+        "sourceRank": 31
+      },
+      {
+        "city": "Como",
+        "value": 67.6891,
+        "sourceRank": 32
+      },
+      {
+        "city": "Mantova",
+        "value": 65.461,
+        "sourceRank": 33
+      },
+      {
+        "city": "Belluno",
+        "value": 63.8622,
+        "sourceRank": 34
+      },
+      {
+        "city": "Bolzano",
+        "value": 63.1196,
+        "sourceRank": 35
+      },
+      {
+        "city": "Udine",
+        "value": 60.0381,
+        "sourceRank": 36
+      },
+      {
+        "city": "Varese",
+        "value": 59.2186,
+        "sourceRank": 37
+      },
+      {
+        "city": "Nuoro",
+        "value": 59.0406,
+        "sourceRank": 38
+      },
+      {
+        "city": "Palermo",
+        "value": 58.7146,
+        "sourceRank": 39
+      },
+      {
+        "city": "Cesena",
+        "value": 58.1821,
+        "sourceRank": 40
+      },
+      {
+        "city": "Forlì",
+        "value": 57.7201,
+        "sourceRank": 41
+      },
+      {
+        "city": "Perugia",
+        "value": 55.9008,
+        "sourceRank": 42
+      },
+      {
+        "city": "Savona",
+        "value": 51.0152,
+        "sourceRank": 43
+      },
+      {
+        "city": "Ravenna",
+        "value": 50.1274,
+        "sourceRank": 44
+      },
+      {
+        "city": "Livorno",
+        "value": 46.3593,
+        "sourceRank": 45
+      },
+      {
+        "city": "Verbania",
+        "value": 45.7367,
+        "sourceRank": 46
+      },
+      {
+        "city": "Enna",
+        "value": 43.1384,
+        "sourceRank": 47
+      },
+      {
+        "city": "Prato",
+        "value": 42.3638,
+        "sourceRank": 48
+      },
+      {
+        "city": "Pisa",
+        "value": 40.4806,
+        "sourceRank": 49
+      },
+      {
+        "city": "Arezzo",
+        "value": 39.816,
+        "sourceRank": 50
+      },
+      {
+        "city": "Terni",
+        "value": 39.7608,
+        "sourceRank": 51
+      },
+      {
+        "city": "Cremona",
+        "value": 39.4456,
+        "sourceRank": 52
+      },
+      {
+        "city": "Taranto",
+        "value": 35.7903,
+        "sourceRank": 53
+      },
+      {
+        "city": "Cuneo",
+        "value": 35.5312,
+        "sourceRank": 54
+      },
+      {
+        "city": "Asti",
+        "value": 35.5169,
+        "sourceRank": 55
+      },
+      {
+        "city": "Pescara",
+        "value": 34.4676,
+        "sourceRank": 56
+      },
+      {
+        "city": "L’Aquila",
+        "value": 34.3164,
+        "sourceRank": 57
+      },
+      {
+        "city": "Pistoia",
+        "value": 32.0671,
+        "sourceRank": 58
+      },
+      {
+        "city": "Avellino",
+        "value": 31.5425,
+        "sourceRank": 59
+      },
+      {
+        "city": "Rieti",
+        "value": 30.4426,
+        "sourceRank": 60
+      },
+      {
+        "city": "Salerno",
+        "value": 29.1562,
+        "sourceRank": 61
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 28.6632,
+        "sourceRank": 62
+      },
+      {
+        "city": "Lecco",
+        "value": 27.139,
+        "sourceRank": 63
+      },
+      {
+        "city": "Chieti",
+        "value": 26.8864,
+        "sourceRank": 64
+      },
+      {
+        "city": "Catanzaro",
+        "value": 26.3824,
+        "sourceRank": 65
+      },
+      {
+        "city": "Lucca",
+        "value": 25.671,
+        "sourceRank": 66
+      },
+      {
+        "city": "Catania",
+        "value": 25.1209,
+        "sourceRank": 67
+      },
+      {
+        "city": "Campobasso",
+        "value": 24.4079,
+        "sourceRank": 68
+      },
+      {
+        "city": "Pordenone",
+        "value": 21.7999,
+        "sourceRank": 69
+      },
+      {
+        "city": "Oristano",
+        "value": 21.3276,
+        "sourceRank": 70
+      },
+      {
+        "city": "Macerata",
+        "value": 21.195,
+        "sourceRank": 71
+      },
+      {
+        "city": "Aosta",
+        "value": 21.1231,
+        "sourceRank": 72
+      },
+      {
+        "city": "Monza",
+        "value": 20.9521,
+        "sourceRank": 73
+      },
+      {
+        "city": "Isernia",
+        "value": 19.6461,
+        "sourceRank": 74
+      },
+      {
+        "city": "Fermo",
+        "value": 17.942,
+        "sourceRank": 75
+      },
+      {
+        "city": "Pesaro",
+        "value": 16.283,
+        "sourceRank": 76
+      },
+      {
+        "city": "Massa",
+        "value": 16.2487,
+        "sourceRank": 77
+      },
+      {
+        "city": "Viterbo",
+        "value": 15.1809,
+        "sourceRank": 78
+      },
+      {
+        "city": "Potenza",
+        "value": 14.8329,
+        "sourceRank": 79
+      },
+      {
+        "city": "Lecce",
+        "value": 14.4981,
+        "sourceRank": 80
+      },
+      {
+        "city": "Agrigento",
+        "value": 14.415,
+        "sourceRank": 81
+      },
+      {
+        "city": "Latina",
+        "value": 14.3928,
+        "sourceRank": 82
+      },
+      {
+        "city": "Benevento",
+        "value": 14.2346,
+        "sourceRank": 83
+      },
+      {
+        "city": "Grosseto",
+        "value": 12.8738,
+        "sourceRank": 84
+      },
+      {
+        "city": "Gorizia",
+        "value": 12.5683,
+        "sourceRank": 85
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 12.1203,
+        "sourceRank": 86
+      },
+      {
+        "city": "Cosenza",
+        "value": 11.6861,
+        "sourceRank": 87
+      },
+      {
+        "city": "Alessandria",
+        "value": 11.1877,
+        "sourceRank": 88
+      },
+      {
+        "city": "Rovigo",
+        "value": 11.0819,
+        "sourceRank": 89
+      },
+      {
+        "city": "Imperia",
+        "value": 10.6943,
+        "sourceRank": 90
+      },
+      {
+        "city": "Lodi",
+        "value": 9.57634,
+        "sourceRank": 91
+      },
+      {
+        "city": "Vercelli",
+        "value": 9.5056,
+        "sourceRank": 92
+      },
+      {
+        "city": "Ragusa",
+        "value": 9.49986,
+        "sourceRank": 93
+      },
+      {
+        "city": "Siracusa",
+        "value": 9.46285,
+        "sourceRank": 94
+      },
+      {
+        "city": "Biella",
+        "value": 9.35129,
+        "sourceRank": 95
+      },
+      {
+        "city": "Brindisi",
+        "value": 9.08904,
+        "sourceRank": 96
+      },
+      {
+        "city": "Foggia",
+        "value": 7.79255,
+        "sourceRank": 97
+      },
+      {
+        "city": "Caserta",
+        "value": 6.91393,
+        "sourceRank": 98
+      },
+      {
+        "city": "Sondrio",
+        "value": 3.83269,
+        "sourceRank": 99
+      },
+      {
+        "city": "Frosinone",
+        "value": 3.79602,
+        "sourceRank": 100
+      },
+      {
+        "city": "Crotone",
+        "value": 1.68855,
+        "sourceRank": 101
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 1,
+        "sourceRank": 102
+      },
+      {
+        "city": "Teramo",
+        "value": 0.757949,
+        "sourceRank": 103
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Trapani",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "publicTransportOffer",
+    "metricLabel": "Offerta trasporto pubblico",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/offerta-trasporto-pubblico",
+    "rows": [
+      {
+        "city": "Milano",
+        "value": 111.337,
+        "sourceRank": 1
+      },
+      {
+        "city": "Trieste",
+        "value": 60.7709,
+        "sourceRank": 2
+      },
+      {
+        "city": "Siena",
+        "value": 60.0286,
+        "sourceRank": 3
+      },
+      {
+        "city": "Roma",
+        "value": 58.355,
+        "sourceRank": 4
+      },
+      {
+        "city": "Venezia",
+        "value": 55.7089,
+        "sourceRank": 5
+      },
+      {
+        "city": "Pisa",
+        "value": 52.7908,
+        "sourceRank": 6
+      },
+      {
+        "city": "Cagliari",
+        "value": 49.6847,
+        "sourceRank": 7
+      },
+      {
+        "city": "L’Aquila",
+        "value": 49.0464,
+        "sourceRank": 8
+      },
+      {
+        "city": "Genova",
+        "value": 47.7979,
+        "sourceRank": 9
+      },
+      {
+        "city": "Trento",
+        "value": 43.6356,
+        "sourceRank": 10
+      },
+      {
+        "city": "Torino",
+        "value": 43.2387,
+        "sourceRank": 11
+      },
+      {
+        "city": "Firenze",
+        "value": 42.6982,
+        "sourceRank": 12
+      },
+      {
+        "city": "La Spezia",
+        "value": 41.9876,
+        "sourceRank": 13
+      },
+      {
+        "city": "Parma",
+        "value": 39.9691,
+        "sourceRank": 14
+      },
+      {
+        "city": "Bologna",
+        "value": 39.8271,
+        "sourceRank": 15
+      },
+      {
+        "city": "Rimini",
+        "value": 39.4877,
+        "sourceRank": 16
+      },
+      {
+        "city": "Ancona",
+        "value": 38.1776,
+        "sourceRank": 17
+      },
+      {
+        "city": "Brescia",
+        "value": 36.7184,
+        "sourceRank": 18
+      },
+      {
+        "city": "Savona",
+        "value": 36.5763,
+        "sourceRank": 19
+      },
+      {
+        "city": "Padova",
+        "value": 35.6748,
+        "sourceRank": 20
+      },
+      {
+        "city": "Treviso",
+        "value": 34.1922,
+        "sourceRank": 21
+      },
+      {
+        "city": "Cremona",
+        "value": 33.8249,
+        "sourceRank": 22
+      },
+      {
+        "city": "Aosta",
+        "value": 33.3295,
+        "sourceRank": 23
+      },
+      {
+        "city": "Pavia",
+        "value": 33.2784,
+        "sourceRank": 24
+      },
+      {
+        "city": "Taranto",
+        "value": 32.9628,
+        "sourceRank": 25
+      },
+      {
+        "city": "Pescara",
+        "value": 32.9009,
+        "sourceRank": 26
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 31.8805,
+        "sourceRank": 27
+      },
+      {
+        "city": "Mantova",
+        "value": 30.9803,
+        "sourceRank": 28
+      },
+      {
+        "city": "Bari",
+        "value": 30.8415,
+        "sourceRank": 29
+      },
+      {
+        "city": "Como",
+        "value": 30.7463,
+        "sourceRank": 30
+      },
+      {
+        "city": "Messina",
+        "value": 30.1439,
+        "sourceRank": 31
+      },
+      {
+        "city": "Nuoro",
+        "value": 29.8155,
+        "sourceRank": 32
+      },
+      {
+        "city": "Perugia",
+        "value": 29.1198,
+        "sourceRank": 33
+      },
+      {
+        "city": "Sassari",
+        "value": 28.7952,
+        "sourceRank": 34
+      },
+      {
+        "city": "Udine",
+        "value": 28.7756,
+        "sourceRank": 35
+      },
+      {
+        "city": "Piacenza",
+        "value": 28.0827,
+        "sourceRank": 36
+      },
+      {
+        "city": "Cosenza",
+        "value": 28.0328,
+        "sourceRank": 37
+      },
+      {
+        "city": "Brindisi",
+        "value": 27.4729,
+        "sourceRank": 38
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 27.3401,
+        "sourceRank": 39
+      },
+      {
+        "city": "Varese",
+        "value": 27.2562,
+        "sourceRank": 40
+      },
+      {
+        "city": "Catanzaro",
+        "value": 27.1753,
+        "sourceRank": 41
+      },
+      {
+        "city": "Vicenza",
+        "value": 26.1862,
+        "sourceRank": 42
+      },
+      {
+        "city": "Modena",
+        "value": 26.125,
+        "sourceRank": 43
+      },
+      {
+        "city": "Chieti",
+        "value": 25.5608,
+        "sourceRank": 44
+      },
+      {
+        "city": "Bergamo",
+        "value": 25.3812,
+        "sourceRank": 45
+      },
+      {
+        "city": "Terni",
+        "value": 25.3257,
+        "sourceRank": 46
+      },
+      {
+        "city": "Rieti",
+        "value": 25.0484,
+        "sourceRank": 47
+      },
+      {
+        "city": "Oristano",
+        "value": 24.9368,
+        "sourceRank": 48
+      },
+      {
+        "city": "Bolzano",
+        "value": 24.6394,
+        "sourceRank": 49
+      },
+      {
+        "city": "Verona",
+        "value": 24.3746,
+        "sourceRank": 50
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 23.7436,
+        "sourceRank": 51
+      },
+      {
+        "city": "Catania",
+        "value": 22.841,
+        "sourceRank": 52
+      },
+      {
+        "city": "Livorno",
+        "value": 22.5579,
+        "sourceRank": 53
+      },
+      {
+        "city": "Pordenone",
+        "value": 21.5067,
+        "sourceRank": 54
+      },
+      {
+        "city": "Potenza",
+        "value": 21.0236,
+        "sourceRank": 55
+      },
+      {
+        "city": "Monza",
+        "value": 20.9439,
+        "sourceRank": 56
+      },
+      {
+        "city": "Lecco",
+        "value": 20.8879,
+        "sourceRank": 57
+      },
+      {
+        "city": "Massa",
+        "value": 20.5588,
+        "sourceRank": 58
+      },
+      {
+        "city": "Forlì",
+        "value": 20.4012,
+        "sourceRank": 59
+      },
+      {
+        "city": "Arezzo",
+        "value": 20.2701,
+        "sourceRank": 60
+      },
+      {
+        "city": "Macerata",
+        "value": 20.1181,
+        "sourceRank": 61
+      },
+      {
+        "city": "Campobasso",
+        "value": 20.0744,
+        "sourceRank": 62
+      },
+      {
+        "city": "Cuneo",
+        "value": 19.6362,
+        "sourceRank": 63
+      },
+      {
+        "city": "Palermo",
+        "value": 19.2819,
+        "sourceRank": 64
+      },
+      {
+        "city": "Cesena",
+        "value": 19.1932,
+        "sourceRank": 65
+      },
+      {
+        "city": "Avellino",
+        "value": 19.1781,
+        "sourceRank": 66
+      },
+      {
+        "city": "Ferrara",
+        "value": 19.051,
+        "sourceRank": 67
+      },
+      {
+        "city": "Lucca",
+        "value": 18.8001,
+        "sourceRank": 68
+      },
+      {
+        "city": "Rovigo",
+        "value": 18.6575,
+        "sourceRank": 69
+      },
+      {
+        "city": "Belluno",
+        "value": 18.6507,
+        "sourceRank": 70
+      },
+      {
+        "city": "Ravenna",
+        "value": 17.9364,
+        "sourceRank": 71
+      },
+      {
+        "city": "Novara",
+        "value": 17.5838,
+        "sourceRank": 72
+      },
+      {
+        "city": "Frosinone",
+        "value": 17.3118,
+        "sourceRank": 73
+      },
+      {
+        "city": "Fermo",
+        "value": 17.0656,
+        "sourceRank": 74
+      },
+      {
+        "city": "Teramo",
+        "value": 17.0539,
+        "sourceRank": 75
+      },
+      {
+        "city": "Napoli",
+        "value": 16.9144,
+        "sourceRank": 76
+      },
+      {
+        "city": "Benevento",
+        "value": 16.9036,
+        "sourceRank": 77
+      },
+      {
+        "city": "Enna",
+        "value": 16.8726,
+        "sourceRank": 78
+      },
+      {
+        "city": "Alessandria",
+        "value": 16.6991,
+        "sourceRank": 79
+      },
+      {
+        "city": "Lecce",
+        "value": 16.4662,
+        "sourceRank": 80
+      },
+      {
+        "city": "Gorizia",
+        "value": 15.8739,
+        "sourceRank": 81
+      },
+      {
+        "city": "Salerno",
+        "value": 15.6992,
+        "sourceRank": 82
+      },
+      {
+        "city": "Latina",
+        "value": 15.6784,
+        "sourceRank": 83
+      },
+      {
+        "city": "Imperia",
+        "value": 15.6411,
+        "sourceRank": 84
+      },
+      {
+        "city": "Isernia",
+        "value": 15.6102,
+        "sourceRank": 85
+      },
+      {
+        "city": "Crotone",
+        "value": 15.1645,
+        "sourceRank": 86
+      },
+      {
+        "city": "Agrigento",
+        "value": 15.135,
+        "sourceRank": 87
+      },
+      {
+        "city": "Verbania",
+        "value": 15.1017,
+        "sourceRank": 88
+      },
+      {
+        "city": "Asti",
+        "value": 13.9578,
+        "sourceRank": 89
+      },
+      {
+        "city": "Prato",
+        "value": 12.8612,
+        "sourceRank": 90
+      },
+      {
+        "city": "Lodi",
+        "value": 11.8123,
+        "sourceRank": 91
+      },
+      {
+        "city": "Grosseto",
+        "value": 11.7671,
+        "sourceRank": 92
+      },
+      {
+        "city": "Caserta",
+        "value": 11.5856,
+        "sourceRank": 93
+      },
+      {
+        "city": "Viterbo",
+        "value": 11.3515,
+        "sourceRank": 94
+      },
+      {
+        "city": "Pesaro",
+        "value": 8.74587,
+        "sourceRank": 95
+      },
+      {
+        "city": "Siracusa",
+        "value": 7.78964,
+        "sourceRank": 96
+      },
+      {
+        "city": "Vercelli",
+        "value": 7.61941,
+        "sourceRank": 97
+      },
+      {
+        "city": "Sondrio",
+        "value": 6.61769,
+        "sourceRank": 98
+      },
+      {
+        "city": "Biella",
+        "value": 6.2025,
+        "sourceRank": 99
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 6.06116,
+        "sourceRank": 100
+      },
+      {
+        "city": "Ragusa",
+        "value": 4.89985,
+        "sourceRank": 101
+      },
+      {
+        "city": "Pistoia",
+        "value": 1.81335,
+        "sourceRank": 102
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Trapani",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Foggia",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "ztl",
+    "metricLabel": "Zone a traffico limitato",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/ztl",
+    "rows": [
+      {
+        "city": "Rimini",
+        "value": 1977.07,
+        "sourceRank": 1
+      },
+      {
+        "city": "Mantova",
+        "value": 1729.5,
+        "sourceRank": 2
+      },
+      {
+        "city": "Teramo",
+        "value": 1726.55,
+        "sourceRank": 3
+      },
+      {
+        "city": "Pisa",
+        "value": 1611.5,
+        "sourceRank": 4
+      },
+      {
+        "city": "Firenze",
+        "value": 1430.25,
+        "sourceRank": 5
+      },
+      {
+        "city": "Aosta",
+        "value": 1132.23,
+        "sourceRank": 6
+      },
+      {
+        "city": "Ferrara",
+        "value": 990.413,
+        "sourceRank": 7
+      },
+      {
+        "city": "Caserta",
+        "value": 958.725,
+        "sourceRank": 8
+      },
+      {
+        "city": "Pavia",
+        "value": 920.211,
+        "sourceRank": 9
+      },
+      {
+        "city": "Bologna",
+        "value": 834.863,
+        "sourceRank": 10
+      },
+      {
+        "city": "Padova",
+        "value": 629.552,
+        "sourceRank": 11
+      },
+      {
+        "city": "Lucca",
+        "value": 607.996,
+        "sourceRank": 12
+      },
+      {
+        "city": "Parma",
+        "value": 589.539,
+        "sourceRank": 13
+      },
+      {
+        "city": "Brescia",
+        "value": 578.281,
+        "sourceRank": 14
+      },
+      {
+        "city": "Isernia",
+        "value": 572.343,
+        "sourceRank": 15
+      },
+      {
+        "city": "Pordenone",
+        "value": 571.329,
+        "sourceRank": 16
+      },
+      {
+        "city": "Pesaro",
+        "value": 529.274,
+        "sourceRank": 17
+      },
+      {
+        "city": "Cesena",
+        "value": 522.041,
+        "sourceRank": 18
+      },
+      {
+        "city": "Terni",
+        "value": 493.816,
+        "sourceRank": 19
+      },
+      {
+        "city": "Bergamo",
+        "value": 455.275,
+        "sourceRank": 20
+      },
+      {
+        "city": "Cuneo",
+        "value": 450.296,
+        "sourceRank": 21
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 441.869,
+        "sourceRank": 22
+      },
+      {
+        "city": "Benevento",
+        "value": 437.4,
+        "sourceRank": 23
+      },
+      {
+        "city": "Modena",
+        "value": 417.948,
+        "sourceRank": 24
+      },
+      {
+        "city": "Ravenna",
+        "value": 360.19,
+        "sourceRank": 25
+      },
+      {
+        "city": "Torino",
+        "value": 349.514,
+        "sourceRank": 26
+      },
+      {
+        "city": "Cremona",
+        "value": 347.535,
+        "sourceRank": 27
+      },
+      {
+        "city": "Bolzano",
+        "value": 316.505,
+        "sourceRank": 28
+      },
+      {
+        "city": "Pistoia",
+        "value": 302.881,
+        "sourceRank": 29
+      },
+      {
+        "city": "Gorizia",
+        "value": 294.431,
+        "sourceRank": 30
+      },
+      {
+        "city": "Vercelli",
+        "value": 283.148,
+        "sourceRank": 31
+      },
+      {
+        "city": "Trento",
+        "value": 278.79,
+        "sourceRank": 32
+      },
+      {
+        "city": "Forlì",
+        "value": 272.056,
+        "sourceRank": 33
+      },
+      {
+        "city": "Avellino",
+        "value": 258.822,
+        "sourceRank": 34
+      },
+      {
+        "city": "Livorno",
+        "value": 257.661,
+        "sourceRank": 35
+      },
+      {
+        "city": "Salerno",
+        "value": 250.276,
+        "sourceRank": 36
+      },
+      {
+        "city": "Treviso",
+        "value": 212.748,
+        "sourceRank": 37
+      },
+      {
+        "city": "Roma",
+        "value": 212.51,
+        "sourceRank": 38
+      },
+      {
+        "city": "Venezia",
+        "value": 210.745,
+        "sourceRank": 39
+      },
+      {
+        "city": "Grosseto",
+        "value": 209.751,
+        "sourceRank": 40
+      },
+      {
+        "city": "Rovigo",
+        "value": 201.36,
+        "sourceRank": 41
+      },
+      {
+        "city": "Arezzo",
+        "value": 196.12,
+        "sourceRank": 42
+      },
+      {
+        "city": "Varese",
+        "value": 169.217,
+        "sourceRank": 43
+      },
+      {
+        "city": "Ragusa",
+        "value": 138.794,
+        "sourceRank": 44
+      },
+      {
+        "city": "Napoli",
+        "value": 135.861,
+        "sourceRank": 45
+      },
+      {
+        "city": "Cosenza",
+        "value": 122.334,
+        "sourceRank": 46
+      },
+      {
+        "city": "Milano",
+        "value": 120.357,
+        "sourceRank": 47
+      },
+      {
+        "city": "Imperia",
+        "value": 108.391,
+        "sourceRank": 48
+      },
+      {
+        "city": "Lecce",
+        "value": 97.337,
+        "sourceRank": 49
+      },
+      {
+        "city": "Bari",
+        "value": 94.9322,
+        "sourceRank": 50
+      },
+      {
+        "city": "Genova",
+        "value": 91.8752,
+        "sourceRank": 51
+      },
+      {
+        "city": "Ancona",
+        "value": 68.5652,
+        "sourceRank": 52
+      },
+      {
+        "city": "Udine",
+        "value": 66.4567,
+        "sourceRank": 53
+      },
+      {
+        "city": "Nuoro",
+        "value": 39.8818,
+        "sourceRank": 54
+      },
+      {
+        "city": "Pescara",
+        "value": 39.02,
+        "sourceRank": 55
+      },
+      {
+        "city": "Alessandria",
+        "value": 23.6067,
+        "sourceRank": 56
+      },
+      {
+        "city": "Viterbo",
+        "value": 23.503,
+        "sourceRank": 57
+      },
+      {
+        "city": "Monza",
+        "value": 22.0856,
+        "sourceRank": 58
+      },
+      {
+        "city": "Catania",
+        "value": 17.9673,
+        "sourceRank": 59
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 13.9057,
+        "sourceRank": 60
+      },
+      {
+        "city": "La Spezia",
+        "value": 12.8095,
+        "sourceRank": 61
+      },
+      {
+        "city": "Fermo",
+        "value": 9.74306,
+        "sourceRank": 62
+      },
+      {
+        "city": "Agrigento",
+        "value": 9.58351,
+        "sourceRank": 63
+      },
+      {
+        "city": "Taranto",
+        "value": 5.31638,
+        "sourceRank": 64
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 1.65237,
+        "sourceRank": 65
+      },
+      {
+        "city": "Palermo",
+        "value": 0.493138,
+        "sourceRank": 66
+      },
+      {
+        "city": "Biella",
+        "value": 0,
+        "sourceRank": 67
+      },
+      {
+        "city": "Sondrio",
+        "value": 0,
+        "sourceRank": 68
+      },
+      {
+        "city": "Asti",
+        "value": 0,
+        "sourceRank": 69
+      },
+      {
+        "city": "Belluno",
+        "value": 0,
+        "sourceRank": 70
+      },
+      {
+        "city": "Brindisi",
+        "value": 0,
+        "sourceRank": 71
+      },
+      {
+        "city": "Cagliari",
+        "value": 0,
+        "sourceRank": 72
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 0,
+        "sourceRank": 73
+      },
+      {
+        "city": "Campobasso",
+        "value": 0,
+        "sourceRank": 74
+      },
+      {
+        "city": "Catanzaro",
+        "value": 0,
+        "sourceRank": 75
+      },
+      {
+        "city": "Chieti",
+        "value": 0,
+        "sourceRank": 76
+      },
+      {
+        "city": "Como",
+        "value": 0,
+        "sourceRank": 77
+      },
+      {
+        "city": "Crotone",
+        "value": 0,
+        "sourceRank": 78
+      },
+      {
+        "city": "Enna",
+        "value": 0,
+        "sourceRank": 79
+      },
+      {
+        "city": "Foggia",
+        "value": 0,
+        "sourceRank": 80
+      },
+      {
+        "city": "Frosinone",
+        "value": 0,
+        "sourceRank": 81
+      },
+      {
+        "city": "L’Aquila",
+        "value": 0,
+        "sourceRank": 82
+      },
+      {
+        "city": "Latina",
+        "value": 0,
+        "sourceRank": 83
+      },
+      {
+        "city": "Lecco",
+        "value": 0,
+        "sourceRank": 84
+      },
+      {
+        "city": "Lodi",
+        "value": 0,
+        "sourceRank": 85
+      },
+      {
+        "city": "Macerata",
+        "value": 0,
+        "sourceRank": 86
+      },
+      {
+        "city": "Massa",
+        "value": 0,
+        "sourceRank": 87
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 88
+      },
+      {
+        "city": "Messina",
+        "value": 0,
+        "sourceRank": 89
+      },
+      {
+        "city": "Novara",
+        "value": 0,
+        "sourceRank": 90
+      },
+      {
+        "city": "Oristano",
+        "value": 0,
+        "sourceRank": 91
+      },
+      {
+        "city": "Perugia",
+        "value": 0,
+        "sourceRank": 92
+      },
+      {
+        "city": "Piacenza",
+        "value": 0,
+        "sourceRank": 93
+      },
+      {
+        "city": "Potenza",
+        "value": 0,
+        "sourceRank": 94
+      },
+      {
+        "city": "Prato",
+        "value": 0,
+        "sourceRank": 95
+      },
+      {
+        "city": "Rieti",
+        "value": 0,
+        "sourceRank": 96
+      },
+      {
+        "city": "Sassari",
+        "value": 0,
+        "sourceRank": 97
+      },
+      {
+        "city": "Savona",
+        "value": 0,
+        "sourceRank": 98
+      },
+      {
+        "city": "Siena",
+        "value": 0,
+        "sourceRank": 99
+      },
+      {
+        "city": "Siracusa",
+        "value": 0,
+        "sourceRank": 100
+      },
+      {
+        "city": "Trapani",
+        "value": 0,
+        "sourceRank": 101
+      },
+      {
+        "city": "Trieste",
+        "value": 0,
+        "sourceRank": 102
+      },
+      {
+        "city": "Verbania",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Verona",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Vicenza",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "nitrogenDioxide",
+    "metricLabel": "Biossido di azoto",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/biossido-di-azoto",
+    "rows": [
+      {
+        "city": "Grosseto",
+        "value": 3,
+        "sourceRank": 1
+      },
+      {
+        "city": "Siena",
+        "value": 3,
+        "sourceRank": 2
+      },
+      {
+        "city": "Enna",
+        "value": 4,
+        "sourceRank": 3
+      },
+      {
+        "city": "Isernia",
+        "value": 6.25302,
+        "sourceRank": 4
+      },
+      {
+        "city": "L’Aquila",
+        "value": 6.90332,
+        "sourceRank": 5
+      },
+      {
+        "city": "Potenza",
+        "value": 9,
+        "sourceRank": 6
+      },
+      {
+        "city": "Ragusa",
+        "value": 9,
+        "sourceRank": 7
+      },
+      {
+        "city": "Agrigento",
+        "value": 10,
+        "sourceRank": 8
+      },
+      {
+        "city": "Massa",
+        "value": 12.5,
+        "sourceRank": 9
+      },
+      {
+        "city": "Rieti",
+        "value": 14,
+        "sourceRank": 10
+      },
+      {
+        "city": "Verbania",
+        "value": 14,
+        "sourceRank": 11
+      },
+      {
+        "city": "Brindisi",
+        "value": 15,
+        "sourceRank": 12
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 15,
+        "sourceRank": 13
+      },
+      {
+        "city": "Macerata",
+        "value": 15,
+        "sourceRank": 14
+      },
+      {
+        "city": "Pistoia",
+        "value": 15,
+        "sourceRank": 15
+      },
+      {
+        "city": "Sassari",
+        "value": 15,
+        "sourceRank": 16
+      },
+      {
+        "city": "Chieti",
+        "value": 15.2775,
+        "sourceRank": 17
+      },
+      {
+        "city": "Savona",
+        "value": 15.8473,
+        "sourceRank": 18
+      },
+      {
+        "city": "Gorizia",
+        "value": 16,
+        "sourceRank": 19
+      },
+      {
+        "city": "Pesaro",
+        "value": 16,
+        "sourceRank": 20
+      },
+      {
+        "city": "Taranto",
+        "value": 16,
+        "sourceRank": 21
+      },
+      {
+        "city": "Trapani",
+        "value": 16,
+        "sourceRank": 22
+      },
+      {
+        "city": "Terni",
+        "value": 16.6169,
+        "sourceRank": 23
+      },
+      {
+        "city": "Siracusa",
+        "value": 16.6667,
+        "sourceRank": 24
+      },
+      {
+        "city": "Perugia",
+        "value": 16.7818,
+        "sourceRank": 25
+      },
+      {
+        "city": "Cuneo",
+        "value": 17,
+        "sourceRank": 26
+      },
+      {
+        "city": "Foggia",
+        "value": 17,
+        "sourceRank": 27
+      },
+      {
+        "city": "Avellino",
+        "value": 18,
+        "sourceRank": 28
+      },
+      {
+        "city": "Cagliari",
+        "value": 18,
+        "sourceRank": 29
+      },
+      {
+        "city": "Lecce",
+        "value": 18,
+        "sourceRank": 30
+      },
+      {
+        "city": "Lucca",
+        "value": 18,
+        "sourceRank": 31
+      },
+      {
+        "city": "Cesena",
+        "value": 18.1948,
+        "sourceRank": 32
+      },
+      {
+        "city": "Ancona",
+        "value": 18.5,
+        "sourceRank": 33
+      },
+      {
+        "city": "Arezzo",
+        "value": 18.5,
+        "sourceRank": 34
+      },
+      {
+        "city": "Benevento",
+        "value": 18.5,
+        "sourceRank": 35
+      },
+      {
+        "city": "Pisa",
+        "value": 18.5,
+        "sourceRank": 36
+      },
+      {
+        "city": "Vercelli",
+        "value": 18.5,
+        "sourceRank": 37
+      },
+      {
+        "city": "Sondrio",
+        "value": 18.5272,
+        "sourceRank": 38
+      },
+      {
+        "city": "Ravenna",
+        "value": 18.553,
+        "sourceRank": 39
+      },
+      {
+        "city": "Udine",
+        "value": 18.9901,
+        "sourceRank": 40
+      },
+      {
+        "city": "Belluno",
+        "value": 19.086,
+        "sourceRank": 41
+      },
+      {
+        "city": "Ferrara",
+        "value": 19.588,
+        "sourceRank": 42
+      },
+      {
+        "city": "Teramo",
+        "value": 19.8132,
+        "sourceRank": 43
+      },
+      {
+        "city": "Pescara",
+        "value": 19.8852,
+        "sourceRank": 44
+      },
+      {
+        "city": "Aosta",
+        "value": 19.9713,
+        "sourceRank": 45
+      },
+      {
+        "city": "Livorno",
+        "value": 20,
+        "sourceRank": 46
+      },
+      {
+        "city": "Viterbo",
+        "value": 20,
+        "sourceRank": 47
+      },
+      {
+        "city": "Piacenza",
+        "value": 20.1964,
+        "sourceRank": 48
+      },
+      {
+        "city": "Rovigo",
+        "value": 20.3851,
+        "sourceRank": 49
+      },
+      {
+        "city": "Prato",
+        "value": 20.5,
+        "sourceRank": 50
+      },
+      {
+        "city": "Latina",
+        "value": 20.6667,
+        "sourceRank": 51
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 21,
+        "sourceRank": 52
+      },
+      {
+        "city": "Salerno",
+        "value": 21,
+        "sourceRank": 53
+      },
+      {
+        "city": "Mantova",
+        "value": 21.295,
+        "sourceRank": 54
+      },
+      {
+        "city": "Asti",
+        "value": 21.5,
+        "sourceRank": 55
+      },
+      {
+        "city": "Biella",
+        "value": 21.5,
+        "sourceRank": 56
+      },
+      {
+        "city": "Forlì",
+        "value": 21.508,
+        "sourceRank": 57
+      },
+      {
+        "city": "Vicenza",
+        "value": 21.527,
+        "sourceRank": 58
+      },
+      {
+        "city": "Trieste",
+        "value": 22.2928,
+        "sourceRank": 59
+      },
+      {
+        "city": "Caserta",
+        "value": 22.5,
+        "sourceRank": 60
+      },
+      {
+        "city": "Messina",
+        "value": 22.5,
+        "sourceRank": 61
+      },
+      {
+        "city": "La Spezia",
+        "value": 22.8019,
+        "sourceRank": 62
+      },
+      {
+        "city": "Varese",
+        "value": 23.3758,
+        "sourceRank": 63
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 23.4932,
+        "sourceRank": 64
+      },
+      {
+        "city": "Parma",
+        "value": 23.6473,
+        "sourceRank": 65
+      },
+      {
+        "city": "Campobasso",
+        "value": 23.7118,
+        "sourceRank": 66
+      },
+      {
+        "city": "Lecco",
+        "value": 23.9514,
+        "sourceRank": 67
+      },
+      {
+        "city": "Alessandria",
+        "value": 24,
+        "sourceRank": 68
+      },
+      {
+        "city": "Lodi",
+        "value": 24.2258,
+        "sourceRank": 69
+      },
+      {
+        "city": "Verona",
+        "value": 24.2306,
+        "sourceRank": 70
+      },
+      {
+        "city": "Bari",
+        "value": 24.25,
+        "sourceRank": 71
+      },
+      {
+        "city": "Cremona",
+        "value": 24.5937,
+        "sourceRank": 72
+      },
+      {
+        "city": "Rimini",
+        "value": 24.8549,
+        "sourceRank": 73
+      },
+      {
+        "city": "Bologna",
+        "value": 24.8736,
+        "sourceRank": 74
+      },
+      {
+        "city": "Treviso",
+        "value": 24.9225,
+        "sourceRank": 75
+      },
+      {
+        "city": "Frosinone",
+        "value": 25,
+        "sourceRank": 76
+      },
+      {
+        "city": "Novara",
+        "value": 25.5,
+        "sourceRank": 77
+      },
+      {
+        "city": "Pavia",
+        "value": 25.5452,
+        "sourceRank": 78
+      },
+      {
+        "city": "Brescia",
+        "value": 25.7643,
+        "sourceRank": 79
+      },
+      {
+        "city": "Bolzano",
+        "value": 26.064,
+        "sourceRank": 80
+      },
+      {
+        "city": "Modena",
+        "value": 26.9891,
+        "sourceRank": 81
+      },
+      {
+        "city": "Venezia",
+        "value": 26.9968,
+        "sourceRank": 82
+      },
+      {
+        "city": "Pordenone",
+        "value": 27,
+        "sourceRank": 83
+      },
+      {
+        "city": "Monza",
+        "value": 27.692,
+        "sourceRank": 84
+      },
+      {
+        "city": "Genova",
+        "value": 28.0345,
+        "sourceRank": 85
+      },
+      {
+        "city": "Trento",
+        "value": 29.2237,
+        "sourceRank": 86
+      },
+      {
+        "city": "Firenze",
+        "value": 29.3333,
+        "sourceRank": 87
+      },
+      {
+        "city": "Padova",
+        "value": 29.3514,
+        "sourceRank": 88
+      },
+      {
+        "city": "Como",
+        "value": 30.6797,
+        "sourceRank": 89
+      },
+      {
+        "city": "Roma",
+        "value": 31.8,
+        "sourceRank": 90
+      },
+      {
+        "city": "Bergamo",
+        "value": 32.0433,
+        "sourceRank": 91
+      },
+      {
+        "city": "Catania",
+        "value": 32.6667,
+        "sourceRank": 92
+      },
+      {
+        "city": "Palermo",
+        "value": 33.2,
+        "sourceRank": 93
+      },
+      {
+        "city": "Torino",
+        "value": 34.25,
+        "sourceRank": 94
+      },
+      {
+        "city": "Milano",
+        "value": 34.5449,
+        "sourceRank": 95
+      },
+      {
+        "city": "Napoli",
+        "value": 38.4,
+        "sourceRank": 96
+      },
+      {
+        "city": "Catanzaro",
+        "value": 0,
+        "sourceRank": 97
+      },
+      {
+        "city": "Cosenza",
+        "value": 0,
+        "sourceRank": 98
+      },
+      {
+        "city": "Crotone",
+        "value": 0,
+        "sourceRank": 99
+      },
+      {
+        "city": "Fermo",
+        "value": 0,
+        "sourceRank": 100
+      },
+      {
+        "city": "Imperia",
+        "value": 0,
+        "sourceRank": 101
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 102
+      },
+      {
+        "city": "Nuoro",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Oristano",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "pm10",
+    "metricLabel": "PM10",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/pm-10",
+    "rows": [
+      {
+        "city": "L’Aquila",
+        "value": 15.0087,
+        "sourceRank": 1
+      },
+      {
+        "city": "Verbania",
+        "value": 15.6222,
+        "sourceRank": 2
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 16,
+        "sourceRank": 3
+      },
+      {
+        "city": "Enna",
+        "value": 16,
+        "sourceRank": 4
+      },
+      {
+        "city": "Savona",
+        "value": 16,
+        "sourceRank": 5
+      },
+      {
+        "city": "Potenza",
+        "value": 16.7251,
+        "sourceRank": 6
+      },
+      {
+        "city": "Viterbo",
+        "value": 17,
+        "sourceRank": 7
+      },
+      {
+        "city": "La Spezia",
+        "value": 17.25,
+        "sourceRank": 8
+      },
+      {
+        "city": "Genova",
+        "value": 17.4286,
+        "sourceRank": 9
+      },
+      {
+        "city": "Aosta",
+        "value": 17.4853,
+        "sourceRank": 10
+      },
+      {
+        "city": "Biella",
+        "value": 17.5,
+        "sourceRank": 11
+      },
+      {
+        "city": "Campobasso",
+        "value": 17.906,
+        "sourceRank": 12
+      },
+      {
+        "city": "Macerata",
+        "value": 18,
+        "sourceRank": 13
+      },
+      {
+        "city": "Rieti",
+        "value": 18,
+        "sourceRank": 14
+      },
+      {
+        "city": "Bolzano",
+        "value": 18.2025,
+        "sourceRank": 15
+      },
+      {
+        "city": "Lecco",
+        "value": 18.2217,
+        "sourceRank": 16
+      },
+      {
+        "city": "Siena",
+        "value": 18.2353,
+        "sourceRank": 17
+      },
+      {
+        "city": "Gorizia",
+        "value": 18.3224,
+        "sourceRank": 18
+      },
+      {
+        "city": "Belluno",
+        "value": 18.7797,
+        "sourceRank": 19
+      },
+      {
+        "city": "Trieste",
+        "value": 18.9739,
+        "sourceRank": 20
+      },
+      {
+        "city": "Trapani",
+        "value": 19,
+        "sourceRank": 21
+      },
+      {
+        "city": "Teramo",
+        "value": 19.3739,
+        "sourceRank": 22
+      },
+      {
+        "city": "Livorno",
+        "value": 19.4153,
+        "sourceRank": 23
+      },
+      {
+        "city": "Chieti",
+        "value": 19.4709,
+        "sourceRank": 24
+      },
+      {
+        "city": "Sassari",
+        "value": 19.5,
+        "sourceRank": 25
+      },
+      {
+        "city": "Varese",
+        "value": 19.6592,
+        "sourceRank": 26
+      },
+      {
+        "city": "Perugia",
+        "value": 20,
+        "sourceRank": 27
+      },
+      {
+        "city": "Pistoia",
+        "value": 20.0506,
+        "sourceRank": 28
+      },
+      {
+        "city": "Massa",
+        "value": 20.2545,
+        "sourceRank": 29
+      },
+      {
+        "city": "Sondrio",
+        "value": 20.5332,
+        "sourceRank": 30
+      },
+      {
+        "city": "Udine",
+        "value": 20.7145,
+        "sourceRank": 31
+      },
+      {
+        "city": "Brindisi",
+        "value": 20.7327,
+        "sourceRank": 32
+      },
+      {
+        "city": "Grosseto",
+        "value": 20.7605,
+        "sourceRank": 33
+      },
+      {
+        "city": "Arezzo",
+        "value": 20.9931,
+        "sourceRank": 34
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 21,
+        "sourceRank": 35
+      },
+      {
+        "city": "Trento",
+        "value": 21.0163,
+        "sourceRank": 36
+      },
+      {
+        "city": "Bologna",
+        "value": 21.0372,
+        "sourceRank": 37
+      },
+      {
+        "city": "Taranto",
+        "value": 21.2222,
+        "sourceRank": 38
+      },
+      {
+        "city": "Latina",
+        "value": 21.3333,
+        "sourceRank": 39
+      },
+      {
+        "city": "Ancona",
+        "value": 21.5,
+        "sourceRank": 40
+      },
+      {
+        "city": "Bari",
+        "value": 21.7854,
+        "sourceRank": 41
+      },
+      {
+        "city": "Forlì",
+        "value": 21.9172,
+        "sourceRank": 42
+      },
+      {
+        "city": "Pisa",
+        "value": 21.9192,
+        "sourceRank": 43
+      },
+      {
+        "city": "Pescara",
+        "value": 21.9806,
+        "sourceRank": 44
+      },
+      {
+        "city": "Agrigento",
+        "value": 22,
+        "sourceRank": 45
+      },
+      {
+        "city": "Cuneo",
+        "value": 22,
+        "sourceRank": 46
+      },
+      {
+        "city": "Foggia",
+        "value": 22,
+        "sourceRank": 47
+      },
+      {
+        "city": "Prato",
+        "value": 22.0533,
+        "sourceRank": 48
+      },
+      {
+        "city": "Como",
+        "value": 22.4701,
+        "sourceRank": 49
+      },
+      {
+        "city": "Messina",
+        "value": 22.5,
+        "sourceRank": 50
+      },
+      {
+        "city": "Ragusa",
+        "value": 22.5,
+        "sourceRank": 51
+      },
+      {
+        "city": "Lecce",
+        "value": 22.5836,
+        "sourceRank": 52
+      },
+      {
+        "city": "Cesena",
+        "value": 22.7493,
+        "sourceRank": 53
+      },
+      {
+        "city": "Pordenone",
+        "value": 22.7638,
+        "sourceRank": 54
+      },
+      {
+        "city": "Novara",
+        "value": 23,
+        "sourceRank": 55
+      },
+      {
+        "city": "Lucca",
+        "value": 23.4903,
+        "sourceRank": 56
+      },
+      {
+        "city": "Vercelli",
+        "value": 23.5,
+        "sourceRank": 57
+      },
+      {
+        "city": "Firenze",
+        "value": 23.9488,
+        "sourceRank": 58
+      },
+      {
+        "city": "Salerno",
+        "value": 24,
+        "sourceRank": 59
+      },
+      {
+        "city": "Roma",
+        "value": 24.2,
+        "sourceRank": 60
+      },
+      {
+        "city": "Ravenna",
+        "value": 24.4608,
+        "sourceRank": 61
+      },
+      {
+        "city": "Ferrara",
+        "value": 24.8313,
+        "sourceRank": 62
+      },
+      {
+        "city": "Bergamo",
+        "value": 24.9269,
+        "sourceRank": 63
+      },
+      {
+        "city": "Pesaro",
+        "value": 25,
+        "sourceRank": 64
+      },
+      {
+        "city": "Siracusa",
+        "value": 25.3333,
+        "sourceRank": 65
+      },
+      {
+        "city": "Monza",
+        "value": 25.4076,
+        "sourceRank": 66
+      },
+      {
+        "city": "Rimini",
+        "value": 25.528,
+        "sourceRank": 67
+      },
+      {
+        "city": "Palermo",
+        "value": 25.6,
+        "sourceRank": 68
+      },
+      {
+        "city": "Piacenza",
+        "value": 25.881,
+        "sourceRank": 69
+      },
+      {
+        "city": "Benevento",
+        "value": 26,
+        "sourceRank": 70
+      },
+      {
+        "city": "Caserta",
+        "value": 26.25,
+        "sourceRank": 71
+      },
+      {
+        "city": "Terni",
+        "value": 26.3333,
+        "sourceRank": 72
+      },
+      {
+        "city": "Parma",
+        "value": 26.7162,
+        "sourceRank": 73
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 26.8647,
+        "sourceRank": 74
+      },
+      {
+        "city": "Napoli",
+        "value": 27.6,
+        "sourceRank": 75
+      },
+      {
+        "city": "Pavia",
+        "value": 27.8068,
+        "sourceRank": 76
+      },
+      {
+        "city": "Milano",
+        "value": 27.8751,
+        "sourceRank": 77
+      },
+      {
+        "city": "Catania",
+        "value": 28,
+        "sourceRank": 78
+      },
+      {
+        "city": "Frosinone",
+        "value": 28,
+        "sourceRank": 79
+      },
+      {
+        "city": "Asti",
+        "value": 28.327,
+        "sourceRank": 80
+      },
+      {
+        "city": "Modena",
+        "value": 28.4474,
+        "sourceRank": 81
+      },
+      {
+        "city": "Lodi",
+        "value": 28.7551,
+        "sourceRank": 82
+      },
+      {
+        "city": "Alessandria",
+        "value": 29,
+        "sourceRank": 83
+      },
+      {
+        "city": "Avellino",
+        "value": 29,
+        "sourceRank": 84
+      },
+      {
+        "city": "Mantova",
+        "value": 29.5478,
+        "sourceRank": 85
+      },
+      {
+        "city": "Brescia",
+        "value": 29.6624,
+        "sourceRank": 86
+      },
+      {
+        "city": "Cagliari",
+        "value": 30,
+        "sourceRank": 87
+      },
+      {
+        "city": "Torino",
+        "value": 30.2,
+        "sourceRank": 88
+      },
+      {
+        "city": "Treviso",
+        "value": 30.3215,
+        "sourceRank": 89
+      },
+      {
+        "city": "Rovigo",
+        "value": 30.4932,
+        "sourceRank": 90
+      },
+      {
+        "city": "Venezia",
+        "value": 30.7379,
+        "sourceRank": 91
+      },
+      {
+        "city": "Cremona",
+        "value": 31.1492,
+        "sourceRank": 92
+      },
+      {
+        "city": "Verona",
+        "value": 31.5417,
+        "sourceRank": 93
+      },
+      {
+        "city": "Vicenza",
+        "value": 31.5982,
+        "sourceRank": 94
+      },
+      {
+        "city": "Padova",
+        "value": 31.7528,
+        "sourceRank": 95
+      },
+      {
+        "city": "Catanzaro",
+        "value": 0,
+        "sourceRank": 96
+      },
+      {
+        "city": "Cosenza",
+        "value": 0,
+        "sourceRank": 97
+      },
+      {
+        "city": "Crotone",
+        "value": 0,
+        "sourceRank": 98
+      },
+      {
+        "city": "Fermo",
+        "value": 0,
+        "sourceRank": 99
+      },
+      {
+        "city": "Imperia",
+        "value": 0,
+        "sourceRank": 100
+      },
+      {
+        "city": "Isernia",
+        "value": 0,
+        "sourceRank": 101
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 102
+      },
+      {
+        "city": "Nuoro",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Oristano",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "pm25",
+    "metricLabel": "PM2.5",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/pm-25",
+    "rows": [
+      {
+        "city": "Reggio Emilia",
+        "value": 80.6626,
+        "sourceRank": 1
+      },
+      {
+        "city": "Trento",
+        "value": 78.7017,
+        "sourceRank": 2
+      },
+      {
+        "city": "Parma",
+        "value": 76.6371,
+        "sourceRank": 3
+      },
+      {
+        "city": "Pordenone",
+        "value": 75.5549,
+        "sourceRank": 4
+      },
+      {
+        "city": "Forlì",
+        "value": 72.8419,
+        "sourceRank": 5
+      },
+      {
+        "city": "Treviso",
+        "value": 72.6336,
+        "sourceRank": 6
+      },
+      {
+        "city": "Mantova",
+        "value": 71.8552,
+        "sourceRank": 7
+      },
+      {
+        "city": "Bologna",
+        "value": 71.4227,
+        "sourceRank": 8
+      },
+      {
+        "city": "Bolzano",
+        "value": 71.4017,
+        "sourceRank": 9
+      },
+      {
+        "city": "Cremona",
+        "value": 71.1583,
+        "sourceRank": 10
+      },
+      {
+        "city": "Ferrara",
+        "value": 71.1384,
+        "sourceRank": 11
+      },
+      {
+        "city": "Rimini",
+        "value": 70.7474,
+        "sourceRank": 12
+      },
+      {
+        "city": "Cosenza",
+        "value": 70.7459,
+        "sourceRank": 13
+      },
+      {
+        "city": "Varese",
+        "value": 70.1261,
+        "sourceRank": 14
+      },
+      {
+        "city": "Cesena",
+        "value": 69.823,
+        "sourceRank": 15
+      },
+      {
+        "city": "Bergamo",
+        "value": 68.5319,
+        "sourceRank": 16
+      },
+      {
+        "city": "Cuneo",
+        "value": 67.9574,
+        "sourceRank": 17
+      },
+      {
+        "city": "Ravenna",
+        "value": 67.4238,
+        "sourceRank": 18
+      },
+      {
+        "city": "Belluno",
+        "value": 66.897,
+        "sourceRank": 19
+      },
+      {
+        "city": "Teramo",
+        "value": 66.3953,
+        "sourceRank": 20
+      },
+      {
+        "city": "Verbania",
+        "value": 64.6723,
+        "sourceRank": 21
+      },
+      {
+        "city": "La Spezia",
+        "value": 64.3307,
+        "sourceRank": 22
+      },
+      {
+        "city": "Macerata",
+        "value": 64.2648,
+        "sourceRank": 23
+      },
+      {
+        "city": "Cagliari",
+        "value": 64.1774,
+        "sourceRank": 24
+      },
+      {
+        "city": "Lodi",
+        "value": 64.0869,
+        "sourceRank": 25
+      },
+      {
+        "city": "Siena",
+        "value": 63.1163,
+        "sourceRank": 26
+      },
+      {
+        "city": "Modena",
+        "value": 63.0517,
+        "sourceRank": 27
+      },
+      {
+        "city": "Aosta",
+        "value": 62.8668,
+        "sourceRank": 28
+      },
+      {
+        "city": "Livorno",
+        "value": 62.8029,
+        "sourceRank": 29
+      },
+      {
+        "city": "Brescia",
+        "value": 62.6917,
+        "sourceRank": 30
+      },
+      {
+        "city": "Biella",
+        "value": 62.2784,
+        "sourceRank": 31
+      },
+      {
+        "city": "Trieste",
+        "value": 61.8605,
+        "sourceRank": 32
+      },
+      {
+        "city": "Ancona",
+        "value": 61.7413,
+        "sourceRank": 33
+      },
+      {
+        "city": "Udine",
+        "value": 61.0224,
+        "sourceRank": 34
+      },
+      {
+        "city": "Piacenza",
+        "value": 60.0691,
+        "sourceRank": 35
+      },
+      {
+        "city": "Pavia",
+        "value": 59.9473,
+        "sourceRank": 36
+      },
+      {
+        "city": "Como",
+        "value": 59.926,
+        "sourceRank": 37
+      },
+      {
+        "city": "Gorizia",
+        "value": 59.8337,
+        "sourceRank": 38
+      },
+      {
+        "city": "Venezia",
+        "value": 59.7218,
+        "sourceRank": 39
+      },
+      {
+        "city": "Perugia",
+        "value": 59.6434,
+        "sourceRank": 40
+      },
+      {
+        "city": "Pisa",
+        "value": 59.5063,
+        "sourceRank": 41
+      },
+      {
+        "city": "Padova",
+        "value": 59.4661,
+        "sourceRank": 42
+      },
+      {
+        "city": "Enna",
+        "value": 58.8358,
+        "sourceRank": 43
+      },
+      {
+        "city": "Novara",
+        "value": 58.7947,
+        "sourceRank": 44
+      },
+      {
+        "city": "Terni",
+        "value": 58.7197,
+        "sourceRank": 45
+      },
+      {
+        "city": "Pesaro",
+        "value": 58.4759,
+        "sourceRank": 46
+      },
+      {
+        "city": "Arezzo",
+        "value": 57.6944,
+        "sourceRank": 47
+      },
+      {
+        "city": "Lucca",
+        "value": 57.4619,
+        "sourceRank": 48
+      },
+      {
+        "city": "Asti",
+        "value": 57.403,
+        "sourceRank": 49
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 57.2913,
+        "sourceRank": 50
+      },
+      {
+        "city": "Vicenza",
+        "value": 56.9757,
+        "sourceRank": 51
+      },
+      {
+        "city": "Nuoro",
+        "value": 56.9718,
+        "sourceRank": 52
+      },
+      {
+        "city": "Genova",
+        "value": 56.5024,
+        "sourceRank": 53
+      },
+      {
+        "city": "Monza",
+        "value": 56.3905,
+        "sourceRank": 54
+      },
+      {
+        "city": "Sondrio",
+        "value": 56.2253,
+        "sourceRank": 55
+      },
+      {
+        "city": "Milano",
+        "value": 56.1819,
+        "sourceRank": 56
+      },
+      {
+        "city": "Prato",
+        "value": 55.6819,
+        "sourceRank": 57
+      },
+      {
+        "city": "Lecce",
+        "value": 55.6051,
+        "sourceRank": 58
+      },
+      {
+        "city": "Vercelli",
+        "value": 55.4499,
+        "sourceRank": 59
+      },
+      {
+        "city": "Benevento",
+        "value": 55.4305,
+        "sourceRank": 60
+      },
+      {
+        "city": "Savona",
+        "value": 55.3966,
+        "sourceRank": 61
+      },
+      {
+        "city": "Oristano",
+        "value": 55.3109,
+        "sourceRank": 62
+      },
+      {
+        "city": "Firenze",
+        "value": 55.2594,
+        "sourceRank": 63
+      },
+      {
+        "city": "Lecco",
+        "value": 54.5861,
+        "sourceRank": 64
+      },
+      {
+        "city": "Roma",
+        "value": 53.4845,
+        "sourceRank": 65
+      },
+      {
+        "city": "Avellino",
+        "value": 53.073,
+        "sourceRank": 66
+      },
+      {
+        "city": "Chieti",
+        "value": 52.9056,
+        "sourceRank": 67
+      },
+      {
+        "city": "Messina",
+        "value": 52.8162,
+        "sourceRank": 68
+      },
+      {
+        "city": "Ragusa",
+        "value": 52.0138,
+        "sourceRank": 69
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 51.6896,
+        "sourceRank": 70
+      },
+      {
+        "city": "Brindisi",
+        "value": 51.1374,
+        "sourceRank": 71
+      },
+      {
+        "city": "Pescara",
+        "value": 50.9352,
+        "sourceRank": 72
+      },
+      {
+        "city": "Trapani",
+        "value": 50.833,
+        "sourceRank": 73
+      },
+      {
+        "city": "Sassari",
+        "value": 50.7578,
+        "sourceRank": 74
+      },
+      {
+        "city": "L’Aquila",
+        "value": 50.4061,
+        "sourceRank": 75
+      },
+      {
+        "city": "Rovigo",
+        "value": 49.9929,
+        "sourceRank": 76
+      },
+      {
+        "city": "Grosseto",
+        "value": 49.9383,
+        "sourceRank": 77
+      },
+      {
+        "city": "Verona",
+        "value": 49.0872,
+        "sourceRank": 78
+      },
+      {
+        "city": "Taranto",
+        "value": 48.8102,
+        "sourceRank": 79
+      },
+      {
+        "city": "Potenza",
+        "value": 48.5451,
+        "sourceRank": 80
+      },
+      {
+        "city": "Isernia",
+        "value": 48.5304,
+        "sourceRank": 81
+      },
+      {
+        "city": "Matera",
+        "value": 48.114,
+        "sourceRank": 82
+      },
+      {
+        "city": "Rieti",
+        "value": 48.0268,
+        "sourceRank": 83
+      },
+      {
+        "city": "Foggia",
+        "value": 47.4109,
+        "sourceRank": 84
+      },
+      {
+        "city": "Torino",
+        "value": 47.3396,
+        "sourceRank": 85
+      },
+      {
+        "city": "Agrigento",
+        "value": 46.8985,
+        "sourceRank": 86
+      },
+      {
+        "city": "Viterbo",
+        "value": 46.3,
+        "sourceRank": 87
+      },
+      {
+        "city": "Salerno",
+        "value": 46.2634,
+        "sourceRank": 88
+      },
+      {
+        "city": "Bari",
+        "value": 44.8353,
+        "sourceRank": 89
+      },
+      {
+        "city": "Campobasso",
+        "value": 44.7027,
+        "sourceRank": 90
+      },
+      {
+        "city": "Massa",
+        "value": 44.4483,
+        "sourceRank": 91
+      },
+      {
+        "city": "Siracusa",
+        "value": 44.3901,
+        "sourceRank": 92
+      },
+      {
+        "city": "Frosinone",
+        "value": 41.6871,
+        "sourceRank": 93
+      },
+      {
+        "city": "Pistoia",
+        "value": 41.0883,
+        "sourceRank": 94
+      },
+      {
+        "city": "Alessandria",
+        "value": 40.8269,
+        "sourceRank": 95
+      },
+      {
+        "city": "Latina",
+        "value": 40.4758,
+        "sourceRank": 96
+      },
+      {
+        "city": "Imperia",
+        "value": 40.3814,
+        "sourceRank": 97
+      },
+      {
+        "city": "Caserta",
+        "value": 39.7993,
+        "sourceRank": 98
+      },
+      {
+        "city": "Catanzaro",
+        "value": 39.682,
+        "sourceRank": 99
+      },
+      {
+        "city": "Fermo",
+        "value": 39.6756,
+        "sourceRank": 100
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 36.8385,
+        "sourceRank": 101
+      },
+      {
+        "city": "Palermo",
+        "value": 34.6315,
+        "sourceRank": 102
+      },
+      {
+        "city": "Napoli",
+        "value": 33.2278,
+        "sourceRank": 103
+      },
+      {
+        "city": "Crotone",
+        "value": 30.5992,
+        "sourceRank": 104
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 26.4115,
+        "sourceRank": 105
+      },
+      {
+        "city": "Catania",
+        "value": 15.7921,
+        "sourceRank": 106
+      }
+    ]
+  },
+  {
+    "metricId": "ozone",
+    "metricLabel": "Ozono",
+    "url": "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/ozono",
+    "rows": [
+      {
+        "city": "Caserta",
+        "value": 0,
+        "sourceRank": 1
+      },
+      {
+        "city": "Frosinone",
+        "value": 0,
+        "sourceRank": 2
+      },
+      {
+        "city": "La Spezia",
+        "value": 0,
+        "sourceRank": 3
+      },
+      {
+        "city": "Salerno",
+        "value": 0,
+        "sourceRank": 4
+      },
+      {
+        "city": "Sassari",
+        "value": 0,
+        "sourceRank": 5
+      },
+      {
+        "city": "Terni",
+        "value": 0,
+        "sourceRank": 6
+      },
+      {
+        "city": "Trapani",
+        "value": 0,
+        "sourceRank": 7
+      },
+      {
+        "city": "Arezzo",
+        "value": 1,
+        "sourceRank": 8
+      },
+      {
+        "city": "Pisa",
+        "value": 1,
+        "sourceRank": 9
+      },
+      {
+        "city": "Cagliari",
+        "value": 3,
+        "sourceRank": 10
+      },
+      {
+        "city": "Campobasso",
+        "value": 4,
+        "sourceRank": 11
+      },
+      {
+        "city": "L’Aquila",
+        "value": 4,
+        "sourceRank": 12
+      },
+      {
+        "city": "Perugia",
+        "value": 4,
+        "sourceRank": 13
+      },
+      {
+        "city": "Agrigento",
+        "value": 5,
+        "sourceRank": 14
+      },
+      {
+        "city": "Palermo",
+        "value": 5,
+        "sourceRank": 15
+      },
+      {
+        "city": "Avellino",
+        "value": 6,
+        "sourceRank": 16
+      },
+      {
+        "city": "Latina",
+        "value": 6,
+        "sourceRank": 17
+      },
+      {
+        "city": "Pescara",
+        "value": 8,
+        "sourceRank": 18
+      },
+      {
+        "city": "Sondrio",
+        "value": 8,
+        "sourceRank": 19
+      },
+      {
+        "city": "Belluno",
+        "value": 9,
+        "sourceRank": 20
+      },
+      {
+        "city": "Biella",
+        "value": 9,
+        "sourceRank": 21
+      },
+      {
+        "city": "Bari",
+        "value": 10,
+        "sourceRank": 22
+      },
+      {
+        "city": "Brindisi",
+        "value": 10,
+        "sourceRank": 23
+      },
+      {
+        "city": "Taranto",
+        "value": 10,
+        "sourceRank": 24
+      },
+      {
+        "city": "Catania",
+        "value": 11,
+        "sourceRank": 25
+      },
+      {
+        "city": "Pesaro",
+        "value": 12,
+        "sourceRank": 26
+      },
+      {
+        "city": "Chieti",
+        "value": 14,
+        "sourceRank": 27
+      },
+      {
+        "city": "Potenza",
+        "value": 14,
+        "sourceRank": 28
+      },
+      {
+        "city": "Ragusa",
+        "value": 16,
+        "sourceRank": 29
+      },
+      {
+        "city": "Benevento",
+        "value": 17,
+        "sourceRank": 30
+      },
+      {
+        "city": "Cuneo",
+        "value": 18,
+        "sourceRank": 31
+      },
+      {
+        "city": "Ravenna",
+        "value": 18,
+        "sourceRank": 32
+      },
+      {
+        "city": "Rimini",
+        "value": 18,
+        "sourceRank": 33
+      },
+      {
+        "city": "Ancona",
+        "value": 19,
+        "sourceRank": 34
+      },
+      {
+        "city": "Bolzano",
+        "value": 19,
+        "sourceRank": 35
+      },
+      {
+        "city": "Macerata",
+        "value": 19,
+        "sourceRank": 36
+      },
+      {
+        "city": "Napoli",
+        "value": 19,
+        "sourceRank": 37
+      },
+      {
+        "city": "Trieste",
+        "value": 19,
+        "sourceRank": 38
+      },
+      {
+        "city": "Pordenone",
+        "value": 20,
+        "sourceRank": 39
+      },
+      {
+        "city": "Novara",
+        "value": 22,
+        "sourceRank": 40
+      },
+      {
+        "city": "Ascoli Piceno",
+        "value": 24,
+        "sourceRank": 41
+      },
+      {
+        "city": "Roma",
+        "value": 24,
+        "sourceRank": 42
+      },
+      {
+        "city": "Siracusa",
+        "value": 25,
+        "sourceRank": 43
+      },
+      {
+        "city": "Aosta",
+        "value": 26,
+        "sourceRank": 44
+      },
+      {
+        "city": "Treviso",
+        "value": 29,
+        "sourceRank": 45
+      },
+      {
+        "city": "Gorizia",
+        "value": 31,
+        "sourceRank": 46
+      },
+      {
+        "city": "Ferrara",
+        "value": 34,
+        "sourceRank": 47
+      },
+      {
+        "city": "Trento",
+        "value": 34,
+        "sourceRank": 48
+      },
+      {
+        "city": "Enna",
+        "value": 35,
+        "sourceRank": 49
+      },
+      {
+        "city": "Udine",
+        "value": 35,
+        "sourceRank": 50
+      },
+      {
+        "city": "Alessandria",
+        "value": 37,
+        "sourceRank": 51
+      },
+      {
+        "city": "Cesena",
+        "value": 37,
+        "sourceRank": 52
+      },
+      {
+        "city": "Forlì",
+        "value": 37,
+        "sourceRank": 53
+      },
+      {
+        "city": "Savona",
+        "value": 39,
+        "sourceRank": 54
+      },
+      {
+        "city": "Varese",
+        "value": 39,
+        "sourceRank": 55
+      },
+      {
+        "city": "Asti",
+        "value": 40,
+        "sourceRank": 56
+      },
+      {
+        "city": "Venezia",
+        "value": 42,
+        "sourceRank": 57
+      },
+      {
+        "city": "Verbania",
+        "value": 42,
+        "sourceRank": 58
+      },
+      {
+        "city": "Monza",
+        "value": 44,
+        "sourceRank": 59
+      },
+      {
+        "city": "Bologna",
+        "value": 49,
+        "sourceRank": 60
+      },
+      {
+        "city": "Torino",
+        "value": 49,
+        "sourceRank": 61
+      },
+      {
+        "city": "Cremona",
+        "value": 52,
+        "sourceRank": 62
+      },
+      {
+        "city": "Mantova",
+        "value": 58,
+        "sourceRank": 63
+      },
+      {
+        "city": "Padova",
+        "value": 58,
+        "sourceRank": 64
+      },
+      {
+        "city": "Vicenza",
+        "value": 59,
+        "sourceRank": 65
+      },
+      {
+        "city": "Parma",
+        "value": 61,
+        "sourceRank": 66
+      },
+      {
+        "city": "Brescia",
+        "value": 62,
+        "sourceRank": 67
+      },
+      {
+        "city": "Reggio Emilia",
+        "value": 62,
+        "sourceRank": 68
+      },
+      {
+        "city": "Verona",
+        "value": 64,
+        "sourceRank": 69
+      },
+      {
+        "city": "Lecco",
+        "value": 67,
+        "sourceRank": 70
+      },
+      {
+        "city": "Modena",
+        "value": 68,
+        "sourceRank": 71
+      },
+      {
+        "city": "Vercelli",
+        "value": 69,
+        "sourceRank": 72
+      },
+      {
+        "city": "Rovigo",
+        "value": 72,
+        "sourceRank": 73
+      },
+      {
+        "city": "Como",
+        "value": 73,
+        "sourceRank": 74
+      },
+      {
+        "city": "Pavia",
+        "value": 77,
+        "sourceRank": 75
+      },
+      {
+        "city": "Bergamo",
+        "value": 83,
+        "sourceRank": 76
+      },
+      {
+        "city": "Milano",
+        "value": 83,
+        "sourceRank": 77
+      },
+      {
+        "city": "Lodi",
+        "value": 87,
+        "sourceRank": 78
+      },
+      {
+        "city": "Genova",
+        "value": 88,
+        "sourceRank": 79
+      },
+      {
+        "city": "Piacenza",
+        "value": 90,
+        "sourceRank": 80
+      },
+      {
+        "city": "Caltanissetta",
+        "value": 0,
+        "sourceRank": 81
+      },
+      {
+        "city": "Catanzaro",
+        "value": 0,
+        "sourceRank": 82
+      },
+      {
+        "city": "Cosenza",
+        "value": 0,
+        "sourceRank": 83
+      },
+      {
+        "city": "Crotone",
+        "value": 0,
+        "sourceRank": 84
+      },
+      {
+        "city": "Fermo",
+        "value": 0,
+        "sourceRank": 85
+      },
+      {
+        "city": "Firenze",
+        "value": 0,
+        "sourceRank": 86
+      },
+      {
+        "city": "Foggia",
+        "value": 0,
+        "sourceRank": 87
+      },
+      {
+        "city": "Grosseto",
+        "value": 0,
+        "sourceRank": 88
+      },
+      {
+        "city": "Imperia",
+        "value": 0,
+        "sourceRank": 89
+      },
+      {
+        "city": "Isernia",
+        "value": 0,
+        "sourceRank": 90
+      },
+      {
+        "city": "Lecce",
+        "value": 0,
+        "sourceRank": 91
+      },
+      {
+        "city": "Livorno",
+        "value": 0,
+        "sourceRank": 92
+      },
+      {
+        "city": "Lucca",
+        "value": 0,
+        "sourceRank": 93
+      },
+      {
+        "city": "Massa",
+        "value": 0,
+        "sourceRank": 94
+      },
+      {
+        "city": "Matera",
+        "value": 0,
+        "sourceRank": 95
+      },
+      {
+        "city": "Messina",
+        "value": 0,
+        "sourceRank": 96
+      },
+      {
+        "city": "Nuoro",
+        "value": 0,
+        "sourceRank": 97
+      },
+      {
+        "city": "Oristano",
+        "value": 0,
+        "sourceRank": 98
+      },
+      {
+        "city": "Pistoia",
+        "value": 0,
+        "sourceRank": 99
+      },
+      {
+        "city": "Prato",
+        "value": 0,
+        "sourceRank": 100
+      },
+      {
+        "city": "Reggio Calabria",
+        "value": 0,
+        "sourceRank": 101
+      },
+      {
+        "city": "Rieti",
+        "value": 0,
+        "sourceRank": 102
+      },
+      {
+        "city": "Siena",
+        "value": 0,
+        "sourceRank": 103
+      },
+      {
+        "city": "Teramo",
+        "value": 0,
+        "sourceRank": 104
+      },
+      {
+        "city": "Vibo Valentia",
+        "value": 0,
+        "sourceRank": 105
+      },
+      {
+        "city": "Viterbo",
+        "value": 0,
+        "sourceRank": 106
+      }
+    ]
+  }
+]

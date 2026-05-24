@@ -1,0 +1,3076 @@
+[
+  {
+    "city": "Cosenza",
+    "rank": 1,
+    "score": 61.65,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 76.71,
+      "pedestrianAreas": 25.61,
+      "roadVictims": 89.85,
+      "motorizationRate": 33.68,
+      "publicTransportPassengers": 1.94,
+      "publicTransportOffer": 25.18,
+      "ztl": 6.19,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 15.29,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 66.49,
+      "safety": 70.19,
+      "usage": null,
+      "connectivity": 12.76,
+      "policy": null,
+      "comfort": 78.82
+    }
+  },
+  {
+    "city": "Reggio Emilia",
+    "rank": 2,
+    "score": 58.99,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 100,
+      "pedestrianAreas": 8.26,
+      "roadVictims": 54.32,
+      "motorizationRate": 0,
+      "publicTransportPassengers": 16.89,
+      "publicTransportOffer": 24.56,
+      "ztl": 22.35,
+      "nitrogenDioxide": 38.82,
+      "pm10": 15.39,
+      "pm25": 0,
+      "ozone": 31.11,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 81.65,
+      "safety": 35.31,
+      "usage": null,
+      "connectivity": 21.65,
+      "policy": 86,
+      "comfort": 21.72
+    }
+  },
+  {
+    "city": "Lodi",
+    "rank": 3,
+    "score": 53.39,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 75.01,
+      "pedestrianAreas": 3.18,
+      "roadVictims": 66.46,
+      "motorizationRate": 63.05,
+      "publicTransportPassengers": 1.59,
+      "publicTransportOffer": 10.61,
+      "ztl": 0,
+      "nitrogenDioxide": 36.91,
+      "pm10": 9.44,
+      "pm25": 25.55,
+      "ozone": 3.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 60.64,
+      "safety": 65.27,
+      "usage": null,
+      "connectivity": 4.84,
+      "policy": null,
+      "comfort": 20.49
+    }
+  },
+  {
+    "city": "Venezia",
+    "rank": 4,
+    "score": 53.25,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 22.4,
+      "pedestrianAreas": 77.37,
+      "roadVictims": 82.51,
+      "motorizationRate": 100,
+      "publicTransportPassengers": 100,
+      "publicTransportOffer": 50.04,
+      "ztl": 10.66,
+      "nitrogenDioxide": 29.7,
+      "pm10": 3.2,
+      "pm25": 32.28,
+      "ozone": 53.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 33.39,
+      "safety": 88.63,
+      "usage": null,
+      "connectivity": 53.15,
+      "policy": null,
+      "comfort": 28.45
+    }
+  },
+  {
+    "city": "Mantova",
+    "rank": 5,
+    "score": 52.39,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 68.74,
+      "pedestrianAreas": 4.01,
+      "roadVictims": 47.33,
+      "motorizationRate": 51.08,
+      "publicTransportPassengers": 10.87,
+      "publicTransportOffer": 27.83,
+      "ztl": 87.48,
+      "nitrogenDioxide": 44.54,
+      "pm10": 6.94,
+      "pm25": 13.58,
+      "ozone": 35.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 55.79,
+      "safety": 48.64,
+      "usage": null,
+      "connectivity": 40.39,
+      "policy": null,
+      "comfort": 25.6
+    }
+  },
+  {
+    "city": "Cremona",
+    "rank": 6,
+    "score": 51.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 74.62,
+      "pedestrianAreas": 9,
+      "roadVictims": 42.16,
+      "motorizationRate": 53.29,
+      "publicTransportPassengers": 6.55,
+      "publicTransportOffer": 30.38,
+      "ztl": 17.58,
+      "nitrogenDioxide": 35.95,
+      "pm10": 1.9,
+      "pm25": 14.65,
+      "ozone": 42.22,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 61.5,
+      "safety": 46.06,
+      "usage": null,
+      "connectivity": 19.61,
+      "policy": null,
+      "comfort": 23.37
+    }
+  },
+  {
+    "city": "Sondrio",
+    "rank": 7,
+    "score": 51.05,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 57.29,
+      "pedestrianAreas": 5.98,
+      "roadVictims": 87.77,
+      "motorizationRate": 60.37,
+      "publicTransportPassengers": 0.64,
+      "publicTransportOffer": 5.94,
+      "ztl": 0,
+      "nitrogenDioxide": 51.75,
+      "pm10": 35.33,
+      "pm25": 37.67,
+      "ozone": 91.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 47.03,
+      "safety": 78.18,
+      "usage": null,
+      "connectivity": 2.63,
+      "policy": null,
+      "comfort": 52
+    }
+  },
+  {
+    "city": "Cesena",
+    "rank": 8,
+    "score": 50.8,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 69.5,
+      "pedestrianAreas": 0.76,
+      "roadVictims": 57.53,
+      "motorizationRate": 45.43,
+      "publicTransportPassengers": 9.66,
+      "publicTransportOffer": 17.24,
+      "ztl": 26.4,
+      "nitrogenDioxide": 52.62,
+      "pm10": 28.35,
+      "pm25": 16.71,
+      "ozone": 58.89,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 55.75,
+      "safety": 53.3,
+      "usage": null,
+      "connectivity": 17.7,
+      "policy": 86,
+      "comfort": 38.83
+    }
+  },
+  {
+    "city": "Cuneo",
+    "rank": 9,
+    "score": 49.33,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 66.26,
+      "pedestrianAreas": 6.28,
+      "roadVictims": 64.54,
+      "motorizationRate": 23.93,
+      "publicTransportPassengers": 5.9,
+      "publicTransportOffer": 17.64,
+      "ztl": 22.78,
+      "nitrogenDioxide": 55.73,
+      "pm10": 30.71,
+      "pm25": 19.59,
+      "ozone": 80,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 54.26,
+      "safety": 50.33,
+      "usage": null,
+      "connectivity": 15.7,
+      "policy": null,
+      "comfort": 45.29
+    }
+  },
+  {
+    "city": "Treviso",
+    "rank": 10,
+    "score": 47.86,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 56.07,
+      "pedestrianAreas": 3.34,
+      "roadVictims": 64.84,
+      "motorizationRate": 57.96,
+      "publicTransportPassengers": 16.04,
+      "publicTransportOffer": 30.71,
+      "ztl": 10.76,
+      "nitrogenDioxide": 35.1,
+      "pm10": 4.51,
+      "pm25": 12.38,
+      "ozone": 67.78,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": 83.33,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 45.52,
+      "safety": 62.43,
+      "usage": 83.33,
+      "connectivity": 20.53,
+      "policy": null,
+      "comfort": 28.31
+    }
+  },
+  {
+    "city": "Benevento",
+    "rank": 11,
+    "score": 47.26,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 47.04,
+      "pedestrianAreas": 5.86,
+      "roadVictims": 90.75,
+      "motorizationRate": 43.31,
+      "publicTransportPassengers": 2.36,
+      "publicTransportOffer": 15.18,
+      "ztl": 22.12,
+      "nitrogenDioxide": 51.82,
+      "pm10": 18.12,
+      "pm25": 38.9,
+      "ozone": 81.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 38.8,
+      "safety": 74.15,
+      "usage": null,
+      "connectivity": 13.45,
+      "policy": null,
+      "comfort": 46.02
+    }
+  },
+  {
+    "city": "Verbania",
+    "rank": 12,
+    "score": 45.17,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 52.91,
+      "pedestrianAreas": 31.8,
+      "roadVictims": 51.6,
+      "motorizationRate": 43.9,
+      "publicTransportPassengers": 7.59,
+      "publicTransportOffer": 13.56,
+      "ztl": 0,
+      "nitrogenDioxide": 63.54,
+      "pm10": 50.8,
+      "pm25": 24.65,
+      "ozone": 53.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 48.69,
+      "safety": 48.91,
+      "usage": null,
+      "connectivity": 7.82,
+      "policy": null,
+      "comfort": 48.59
+    }
+  },
+  {
+    "city": "Ferrara",
+    "rank": 13,
+    "score": 44.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 47.08,
+      "pedestrianAreas": 6,
+      "roadVictims": 61.24,
+      "motorizationRate": 49.31,
+      "publicTransportPassengers": 13.63,
+      "publicTransportOffer": 17.11,
+      "ztl": 50.09,
+      "nitrogenDioxide": 48.99,
+      "pm10": 21.8,
+      "pm25": 14.68,
+      "ozone": 62.22,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": 90,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 38.86,
+      "safety": 57.06,
+      "usage": 90,
+      "connectivity": 25.79,
+      "policy": 86,
+      "comfort": 36.26
+    }
+  },
+  {
+    "city": "Parma",
+    "rank": 14,
+    "score": 43.8,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 41.81,
+      "pedestrianAreas": 11.86,
+      "roadVictims": 62.16,
+      "motorizationRate": 56.46,
+      "publicTransportPassengers": 25.87,
+      "publicTransportOffer": 35.9,
+      "ztl": 29.82,
+      "nitrogenDioxide": 38.42,
+      "pm10": 15.86,
+      "pm25": 6.21,
+      "ozone": 32.22,
+      "fiabBikeSmile": 75,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 35.82,
+      "safety": 60.16,
+      "usage": null,
+      "connectivity": 31.16,
+      "policy": 64.5,
+      "comfort": 23.49
+    }
+  },
+  {
+    "city": "Rimini",
+    "rank": 15,
+    "score": 42.41,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 34.73,
+      "pedestrianAreas": 38.29,
+      "roadVictims": 34.61,
+      "motorizationRate": 55.63,
+      "publicTransportPassengers": 18.74,
+      "publicTransportOffer": 35.47,
+      "ztl": 100,
+      "nitrogenDioxide": 35.27,
+      "pm10": 19.6,
+      "pm25": 15.28,
+      "ozone": 80,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 35.44,
+      "safety": 41.97,
+      "usage": null,
+      "connectivity": 49.53,
+      "policy": 86,
+      "comfort": 35.3
+    }
+  },
+  {
+    "city": "Padova",
+    "rank": 16,
+    "score": 42.08,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 48.29,
+      "pedestrianAreas": 5.68,
+      "roadVictims": 41.26,
+      "motorizationRate": 59.39,
+      "publicTransportPassengers": 17.94,
+      "publicTransportOffer": 32.04,
+      "ztl": 31.84,
+      "nitrogenDioxide": 23.56,
+      "pm10": 0,
+      "pm25": 32.68,
+      "ozone": 35.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 39.77,
+      "safety": 47.61,
+      "usage": null,
+      "connectivity": 27.83,
+      "policy": null,
+      "comfort": 22.35
+    }
+  },
+  {
+    "city": "Teramo",
+    "rank": 17,
+    "score": 42.01,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 30,
+      "pedestrianAreas": 0,
+      "roadVictims": 93.37,
+      "motorizationRate": 29.02,
+      "publicTransportPassengers": 0.13,
+      "publicTransportOffer": 15.32,
+      "ztl": 87.33,
+      "nitrogenDioxide": 48.4,
+      "pm10": 38.99,
+      "pm25": 21.99,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 24,
+      "safety": 70.85,
+      "usage": null,
+      "connectivity": 32.03,
+      "policy": null,
+      "comfort": 49.77
+    }
+  },
+  {
+    "city": "Pesaro",
+    "rank": 18,
+    "score": 41.71,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 47.22,
+      "pedestrianAreas": 8.11,
+      "roadVictims": 53.26,
+      "motorizationRate": 47.29,
+      "publicTransportPassengers": 2.7,
+      "publicTransportOffer": 7.86,
+      "ztl": 26.77,
+      "nitrogenDioxide": 58.33,
+      "pm10": 21.27,
+      "pm25": 34.2,
+      "ozone": 86.67,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": 83.33,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 39.4,
+      "safety": 51.17,
+      "usage": 83.33,
+      "connectivity": 11.9,
+      "policy": 86,
+      "comfort": 48.7
+    }
+  },
+  {
+    "city": "Belluno",
+    "rank": 19,
+    "score": 41.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 33.99,
+      "pedestrianAreas": 4.8,
+      "roadVictims": 89.93,
+      "motorizationRate": 43.01,
+      "publicTransportPassengers": 10.6,
+      "publicTransportOffer": 16.75,
+      "ztl": 0,
+      "nitrogenDioxide": 50.3,
+      "pm10": 40.86,
+      "pm25": 21.22,
+      "ozone": 90,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 28.15,
+      "safety": 73.51,
+      "usage": null,
+      "connectivity": 10.01,
+      "policy": null,
+      "comfort": 48.61
+    }
+  },
+  {
+    "city": "Vercelli",
+    "rank": 20,
+    "score": 40.55,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 42.76,
+      "pedestrianAreas": 0,
+      "roadVictims": 71.65,
+      "motorizationRate": 44.06,
+      "publicTransportPassengers": 1.58,
+      "publicTransportOffer": 6.84,
+      "ztl": 14.32,
+      "nitrogenDioxide": 51.82,
+      "pm10": 25.99,
+      "pm25": 38.87,
+      "ozone": 23.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 34.21,
+      "safety": 61.99,
+      "usage": null,
+      "connectivity": 7.49,
+      "policy": null,
+      "comfort": 36.43
+    }
+  },
+  {
+    "city": "Grosseto",
+    "rank": 21,
+    "score": 40.54,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 48.86,
+      "pedestrianAreas": 8.29,
+      "roadVictims": 41.27,
+      "motorizationRate": 43.87,
+      "publicTransportPassengers": 2.14,
+      "publicTransportOffer": 10.57,
+      "ztl": 10.61,
+      "nitrogenDioxide": 92.19,
+      "pm10": 34.62,
+      "pm25": 47.36,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 40.75,
+      "safety": 42.18,
+      "usage": null,
+      "connectivity": 8.1,
+      "policy": null,
+      "comfort": 68.15
+    }
+  },
+  {
+    "city": "Brescia",
+    "rank": 22,
+    "score": 40.43,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 34.87,
+      "pedestrianAreas": 4.4,
+      "roadVictims": 61.5,
+      "motorizationRate": 56.91,
+      "publicTransportPassengers": 34.2,
+      "publicTransportOffer": 32.98,
+      "ztl": 29.25,
+      "nitrogenDioxide": 32.91,
+      "pm10": 6.58,
+      "pm25": 27.7,
+      "ozone": 31.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 28.78,
+      "safety": 59.89,
+      "usage": null,
+      "connectivity": 32.24,
+      "policy": null,
+      "comfort": 24.66
+    }
+  },
+  {
+    "city": "Pisa",
+    "rank": 23,
+    "score": 40.22,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 40.01,
+      "pedestrianAreas": 7.38,
+      "roadVictims": 25.09,
+      "motorizationRate": 57.35,
+      "publicTransportPassengers": 6.72,
+      "publicTransportOffer": 47.42,
+      "ztl": 81.51,
+      "nitrogenDioxide": 51.82,
+      "pm10": 30.97,
+      "pm25": 32.61,
+      "ozone": 98.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 33.48,
+      "safety": 36.38,
+      "usage": null,
+      "connectivity": 45.48,
+      "policy": null,
+      "comfort": 51.22
+    }
+  },
+  {
+    "city": "Pordenone",
+    "rank": 24,
+    "score": 40.19,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 41.42,
+      "pedestrianAreas": 2.39,
+      "roadVictims": 66.65,
+      "motorizationRate": 37.11,
+      "publicTransportPassengers": 3.62,
+      "publicTransportOffer": 19.32,
+      "ztl": 28.9,
+      "nitrogenDioxide": 29.69,
+      "pm10": 28.31,
+      "pm25": 7.87,
+      "ozone": 77.78,
+      "fiabBikeSmile": 75,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 33.61,
+      "safety": 56.31,
+      "usage": null,
+      "connectivity": 17.52,
+      "policy": 64.5,
+      "comfort": 33.51
+    }
+  },
+  {
+    "city": "Bologna",
+    "rank": 25,
+    "score": 39.18,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 33.68,
+      "pedestrianAreas": 4.29,
+      "roadVictims": 36.66,
+      "motorizationRate": 78.37,
+      "publicTransportPassengers": 40.9,
+      "publicTransportOffer": 35.77,
+      "ztl": 42.23,
+      "nitrogenDioxide": 35.22,
+      "pm10": 33.75,
+      "pm25": 14.24,
+      "ozone": 45.56,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": 66.7
+    },
+    "categoryScores": {
+      "infrastructure": 27.8,
+      "safety": 51.26,
+      "usage": null,
+      "connectivity": 39.18,
+      "policy": 88.34,
+      "comfort": 31.68
+    }
+  },
+  {
+    "city": "Piacenza",
+    "rank": 26,
+    "score": 38.53,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 42.03,
+      "pedestrianAreas": 8.8,
+      "roadVictims": 45.24,
+      "motorizationRate": 54.88,
+      "publicTransportPassengers": 17.98,
+      "publicTransportOffer": 25.22,
+      "ztl": 0,
+      "nitrogenDioxide": 47.41,
+      "pm10": 18.49,
+      "pm25": 31.75,
+      "ozone": 0,
+      "fiabBikeSmile": 75,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 35.38,
+      "safety": 48.61,
+      "usage": null,
+      "connectivity": 15.67,
+      "policy": 64.5,
+      "comfort": 26.78
+    }
+  },
+  {
+    "city": "Modena",
+    "rank": 27,
+    "score": 38.16,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 45.48,
+      "pedestrianAreas": 3.86,
+      "roadVictims": 38.38,
+      "motorizationRate": 46.04,
+      "publicTransportPassengers": 17.51,
+      "publicTransportOffer": 23.46,
+      "ztl": 21.14,
+      "nitrogenDioxide": 29.72,
+      "pm10": 10.41,
+      "pm25": 27.15,
+      "ozone": 24.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 37.16,
+      "safety": 41.06,
+      "usage": null,
+      "connectivity": 21.03,
+      "policy": null,
+      "comfort": 23.19
+    }
+  },
+  {
+    "city": "Udine",
+    "rank": 28,
+    "score": 38.05,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 30.44,
+      "pedestrianAreas": 0.81,
+      "roadVictims": 76.85,
+      "motorizationRate": 44.99,
+      "publicTransportPassengers": 9.97,
+      "publicTransportOffer": 25.85,
+      "ztl": 3.36,
+      "nitrogenDioxide": 50.55,
+      "pm10": 34.76,
+      "pm25": 30.28,
+      "ozone": 61.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 24.51,
+      "safety": 65.7,
+      "usage": null,
+      "connectivity": 14.56,
+      "policy": null,
+      "comfort": 43.65
+    }
+  },
+  {
+    "city": "Aosta",
+    "rank": 29,
+    "score": 38.01,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 26.08,
+      "pedestrianAreas": 0.86,
+      "roadVictims": 71,
+      "motorizationRate": 46.75,
+      "publicTransportPassengers": 3.51,
+      "publicTransportOffer": 29.94,
+      "ztl": 57.27,
+      "nitrogenDioxide": 47.99,
+      "pm10": 44.93,
+      "pm25": 27.43,
+      "ozone": 71.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 21.04,
+      "safety": 62.51,
+      "usage": null,
+      "connectivity": 30.2,
+      "policy": null,
+      "comfort": 46.71
+    }
+  },
+  {
+    "city": "Lucca",
+    "rank": 30,
+    "score": 37.91,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 14.56,
+      "pedestrianAreas": 100,
+      "roadVictims": 52.19,
+      "motorizationRate": 39.35,
+      "publicTransportPassengers": 4.26,
+      "publicTransportOffer": 16.89,
+      "ztl": 30.75,
+      "nitrogenDioxide": 53.13,
+      "pm10": 26.02,
+      "pm25": 35.76,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 31.65,
+      "safety": 47.7,
+      "usage": null,
+      "connectivity": 17.25,
+      "policy": null,
+      "comfort": 51.38
+    }
+  },
+  {
+    "city": "Forlì",
+    "rank": 31,
+    "score": 37.67,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 39.25,
+      "pedestrianAreas": 3.38,
+      "roadVictims": 51.51,
+      "motorizationRate": 49.25,
+      "publicTransportPassengers": 9.58,
+      "publicTransportOffer": 18.32,
+      "ztl": 13.76,
+      "nitrogenDioxide": 43.99,
+      "pm10": 30.98,
+      "pm25": 12.06,
+      "ozone": 58.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 32.08,
+      "safety": 50.72,
+      "usage": null,
+      "connectivity": 14.41,
+      "policy": null,
+      "comfort": 35.73
+    }
+  },
+  {
+    "city": "Massa",
+    "rank": 32,
+    "score": 37.34,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 54.95,
+      "pedestrianAreas": 2.28,
+      "roadVictims": 9.83,
+      "motorizationRate": 46.96,
+      "publicTransportPassengers": 2.7,
+      "publicTransportOffer": 18.47,
+      "ztl": 0,
+      "nitrogenDioxide": 67.45,
+      "pm10": 36.21,
+      "pm25": 55.83,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 44.42,
+      "safety": 22.83,
+      "usage": null,
+      "connectivity": 8.4,
+      "policy": null,
+      "comfort": 63.25
+    }
+  },
+  {
+    "city": "Oristano",
+    "rank": 33,
+    "score": 36.94,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 22.96,
+      "pedestrianAreas": 5.11,
+      "roadVictims": 82.45,
+      "motorizationRate": 35.01,
+      "publicTransportPassengers": 3.54,
+      "publicTransportOffer": 22.4,
+      "ztl": 0,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 39.08,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 19.39,
+      "safety": 65.85,
+      "usage": null,
+      "connectivity": 10.26,
+      "policy": null,
+      "comfort": 84.77
+    }
+  },
+  {
+    "city": "Vicenza",
+    "rank": 34,
+    "score": 36.86,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 32.32,
+      "pedestrianAreas": 3.22,
+      "roadVictims": 64.51,
+      "motorizationRate": 52.56,
+      "publicTransportPassengers": 13.85,
+      "publicTransportOffer": 23.52,
+      "ztl": 0,
+      "nitrogenDioxide": 43.94,
+      "pm10": 0.49,
+      "pm25": 36.51,
+      "ozone": 34.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 26.5,
+      "safety": 60.33,
+      "usage": null,
+      "connectivity": 13.76,
+      "policy": null,
+      "comfort": 29.32
+    }
+  },
+  {
+    "city": "Catanzaro",
+    "rank": 35,
+    "score": 36.33,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 15.06,
+      "pedestrianAreas": 0,
+      "roadVictims": 97.54,
+      "motorizationRate": 36.69,
+      "publicTransportPassengers": 4.38,
+      "publicTransportOffer": 24.41,
+      "ztl": 0,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 63.17,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 12.05,
+      "safety": 76.24,
+      "usage": null,
+      "connectivity": 11.34,
+      "policy": null,
+      "comfort": 90.79
+    }
+  },
+  {
+    "city": "Ravenna",
+    "rank": 36,
+    "score": 36.14,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 40.92,
+      "pedestrianAreas": 9.5,
+      "roadVictims": 40.31,
+      "motorizationRate": 34.1,
+      "publicTransportPassengers": 8.32,
+      "publicTransportOffer": 16.11,
+      "ztl": 18.22,
+      "nitrogenDioxide": 51.68,
+      "pm10": 22.96,
+      "pm25": 20.41,
+      "ozone": 80,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 34.64,
+      "safety": 38.14,
+      "usage": null,
+      "connectivity": 14.44,
+      "policy": 86,
+      "comfort": 42.35
+    }
+  },
+  {
+    "city": "Rovigo",
+    "rank": 37,
+    "score": 36.01,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 24.23,
+      "pedestrianAreas": 27.9,
+      "roadVictims": 72.22,
+      "motorizationRate": 42.05,
+      "publicTransportPassengers": 1.84,
+      "publicTransportOffer": 16.76,
+      "ztl": 10.18,
+      "nitrogenDioxide": 46.91,
+      "pm10": 3.97,
+      "pm25": 47.28,
+      "ozone": 20,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 24.96,
+      "safety": 61.66,
+      "usage": null,
+      "connectivity": 10.44,
+      "policy": null,
+      "comfort": 30.89
+    }
+  },
+  {
+    "city": "Firenze",
+    "rank": 38,
+    "score": 35.41,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 24.83,
+      "pedestrianAreas": 17,
+      "roadVictims": 17.99,
+      "motorizationRate": 74.24,
+      "publicTransportPassengers": 37.29,
+      "publicTransportOffer": 38.35,
+      "ztl": 72.34,
+      "nitrogenDioxide": 23.61,
+      "pm10": 24.58,
+      "pm25": 39.16,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 23.26,
+      "safety": 37.68,
+      "usage": null,
+      "connectivity": 48.04,
+      "policy": null,
+      "comfort": 43.02
+    }
+  },
+  {
+    "city": "Bolzano",
+    "rank": 39,
+    "score": 35.29,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 39.79,
+      "pedestrianAreas": 4.14,
+      "roadVictims": 32.94,
+      "motorizationRate": 46.75,
+      "publicTransportPassengers": 10.48,
+      "publicTransportOffer": 22.13,
+      "ztl": 16.01,
+      "nitrogenDioxide": 32.12,
+      "pm10": 42.67,
+      "pm25": 14.28,
+      "ozone": 78.89,
+      "fiabBikeSmile": 100,
+      "bikeModalSharePercent": 83.33,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 32.66,
+      "safety": 37.77,
+      "usage": 83.33,
+      "connectivity": 16.9,
+      "policy": 86,
+      "comfort": 39.65
+    }
+  },
+  {
+    "city": "Gorizia",
+    "rank": 40,
+    "score": 35.16,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 18.59,
+      "pedestrianAreas": 4.04,
+      "roadVictims": 88.24,
+      "motorizationRate": 44.45,
+      "publicTransportPassengers": 2.09,
+      "publicTransportOffer": 14.26,
+      "ztl": 14.89,
+      "nitrogenDioxide": 58.33,
+      "pm10": 42.3,
+      "pm25": 32.11,
+      "ozone": 65.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 15.68,
+      "safety": 72.91,
+      "usage": null,
+      "connectivity": 10.87,
+      "policy": null,
+      "comfort": 49.21
+    }
+  },
+  {
+    "city": "Trento",
+    "rank": 41,
+    "score": 35.1,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 19.2,
+      "pedestrianAreas": 2.39,
+      "roadVictims": 77.27,
+      "motorizationRate": 46.75,
+      "publicTransportPassengers": 23.79,
+      "publicTransportOffer": 39.19,
+      "ztl": 14.1,
+      "nitrogenDioxide": 23.9,
+      "pm10": 33.81,
+      "pm25": 3.02,
+      "ozone": 62.22,
+      "fiabBikeSmile": 75,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 15.84,
+      "safety": 66.59,
+      "usage": null,
+      "connectivity": 27.28,
+      "policy": 64.5,
+      "comfort": 28.82
+    }
+  },
+  {
+    "city": "Cagliari",
+    "rank": 42,
+    "score": 34.17,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 12.69,
+      "pedestrianAreas": 3.61,
+      "roadVictims": 83.42,
+      "motorizationRate": 44.21,
+      "publicTransportPassengers": 31.81,
+      "publicTransportOffer": 44.63,
+      "ztl": 0,
+      "nitrogenDioxide": 53.13,
+      "pm10": 5.52,
+      "pm25": 25.41,
+      "ozone": 96.67,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 10.87,
+      "safety": 69.7,
+      "usage": null,
+      "connectivity": 27.73,
+      "policy": null,
+      "comfort": 43.01
+    }
+  },
+  {
+    "city": "Terni",
+    "rank": 43,
+    "score": 34.17,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 21.04,
+      "pedestrianAreas": 4.35,
+      "roadVictims": 69.82,
+      "motorizationRate": 42.13,
+      "publicTransportPassengers": 6.6,
+      "publicTransportOffer": 22.75,
+      "ztl": 24.98,
+      "nitrogenDioxide": 56.73,
+      "pm10": 17.07,
+      "pm25": 33.83,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 17.7,
+      "safety": 60.13,
+      "usage": null,
+      "connectivity": 18.66,
+      "policy": null,
+      "comfort": 49.74
+    }
+  },
+  {
+    "city": "Lecco",
+    "rank": 44,
+    "score": 34.05,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 29.01,
+      "pedestrianAreas": 2.02,
+      "roadVictims": 54.49,
+      "motorizationRate": 59.17,
+      "publicTransportPassengers": 4.5,
+      "publicTransportOffer": 18.76,
+      "ztl": 0,
+      "nitrogenDioxide": 37.63,
+      "pm10": 42.61,
+      "pm25": 40.2,
+      "ozone": 25.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 23.61,
+      "safety": 56.13,
+      "usage": null,
+      "connectivity": 9.05,
+      "policy": null,
+      "comfort": 37.1
+    }
+  },
+  {
+    "city": "Pavia",
+    "rank": 45,
+    "score": 33.98,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 24.44,
+      "pedestrianAreas": 6.49,
+      "roadVictims": 40.44,
+      "motorizationRate": 64.06,
+      "publicTransportPassengers": 28.94,
+      "publicTransportOffer": 29.89,
+      "ztl": 46.54,
+      "nitrogenDioxide": 33.48,
+      "pm10": 12.43,
+      "pm25": 31.93,
+      "ozone": 14.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 20.85,
+      "safety": 48.71,
+      "usage": null,
+      "connectivity": 34.51,
+      "policy": null,
+      "comfort": 24.02
+    }
+  },
+  {
+    "city": "Milano",
+    "rank": 46,
+    "score": 33.57,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 11.86,
+      "pedestrianAreas": 9.3,
+      "roadVictims": 32.64,
+      "motorizationRate": 82.87,
+      "publicTransportPassengers": 68.94,
+      "publicTransportOffer": 100,
+      "ztl": 6.09,
+      "nitrogenDioxide": 10.04,
+      "pm10": 12.21,
+      "pm25": 37.74,
+      "ozone": 7.78,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 11.35,
+      "safety": 50.22,
+      "usage": null,
+      "connectivity": 63.24,
+      "policy": null,
+      "comfort": 17.06
+    }
+  },
+  {
+    "city": "Torino",
+    "rank": 47,
+    "score": 33.35,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 17.62,
+      "pedestrianAreas": 9.5,
+      "roadVictims": 64.11,
+      "motorizationRate": 43.05,
+      "publicTransportPassengers": 37.67,
+      "publicTransportOffer": 38.84,
+      "ztl": 17.68,
+      "nitrogenDioxide": 10.81,
+      "pm10": 4.89,
+      "pm25": 51.37,
+      "ozone": 45.56,
+      "fiabBikeSmile": 50,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 16,
+      "safety": 56.74,
+      "usage": null,
+      "connectivity": 32.27,
+      "policy": 43,
+      "comfort": 26.42
+    }
+  },
+  {
+    "city": "Trieste",
+    "rank": 48,
+    "score": 33.35,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 8.19,
+      "pedestrianAreas": 7.57,
+      "roadVictims": 60.83,
+      "motorizationRate": 74.58,
+      "publicTransportPassengers": 51.06,
+      "publicTransportOffer": 54.58,
+      "ztl": 0,
+      "nitrogenDioxide": 41.95,
+      "pm10": 40.24,
+      "pm25": 28.98,
+      "ozone": 78.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 8.07,
+      "safety": 65.64,
+      "usage": null,
+      "connectivity": 37.49,
+      "policy": null,
+      "comfort": 45.67
+    }
+  },
+  {
+    "city": "Caserta",
+    "rank": 49,
+    "score": 33.07,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.57,
+      "pedestrianAreas": 1.01,
+      "roadVictims": 100,
+      "motorizationRate": 55.22,
+      "publicTransportPassengers": 1.15,
+      "publicTransportOffer": 10.41,
+      "ztl": 48.49,
+      "nitrogenDioxide": 41.41,
+      "pm10": 17.33,
+      "pm25": 62.99,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 3.06,
+      "safety": 84.33,
+      "usage": null,
+      "connectivity": 18.89,
+      "policy": null,
+      "comfort": 52.5
+    }
+  },
+  {
+    "city": "Crotone",
+    "rank": 50,
+    "score": 32.69,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 10.82,
+      "pedestrianAreas": 2.26,
+      "roadVictims": 80.31,
+      "motorizationRate": 51.63,
+      "publicTransportPassengers": 0.28,
+      "publicTransportOffer": 13.62,
+      "ztl": 0,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 77.17,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 9.11,
+      "safety": 70.27,
+      "usage": null,
+      "connectivity": 5.69,
+      "policy": null,
+      "comfort": 94.29
+    }
+  },
+  {
+    "city": "Pescara",
+    "rank": 51,
+    "score": 32.48,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 15.27,
+      "pedestrianAreas": 3.7,
+      "roadVictims": 68.91,
+      "motorizationRate": 57.68,
+      "publicTransportPassengers": 5.72,
+      "publicTransportOffer": 29.55,
+      "ztl": 1.97,
+      "nitrogenDioxide": 48.22,
+      "pm10": 30.78,
+      "pm25": 45.83,
+      "ozone": 91.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 12.96,
+      "safety": 64.98,
+      "usage": null,
+      "connectivity": 14.43,
+      "policy": null,
+      "comfort": 51.84
+    }
+  },
+  {
+    "city": "Lecce",
+    "rank": 52,
+    "score": 31.83,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 27.09,
+      "pedestrianAreas": 3.72,
+      "roadVictims": 52.84,
+      "motorizationRate": 36.11,
+      "publicTransportPassengers": 2.41,
+      "publicTransportOffer": 14.79,
+      "ztl": 4.92,
+      "nitrogenDioxide": 53.13,
+      "pm10": 28.88,
+      "pm25": 38.63,
+      "ozone": 100,
+      "fiabBikeSmile": 25,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 22.42,
+      "safety": 46.98,
+      "usage": null,
+      "connectivity": 8.25,
+      "policy": 21.5,
+      "comfort": 52.82
+    }
+  },
+  {
+    "city": "Isernia",
+    "rank": 53,
+    "score": 31.64,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 7.33,
+      "pedestrianAreas": 13.71,
+      "roadVictims": 88.14,
+      "motorizationRate": 18.35,
+      "publicTransportPassengers": 3.26,
+      "publicTransportOffer": 14.02,
+      "ztl": 28.95,
+      "nitrogenDioxide": 83.72,
+      "pm10": 100,
+      "pm25": 49.53,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 8.61,
+      "safety": 63.71,
+      "usage": null,
+      "connectivity": 15.25,
+      "policy": null,
+      "comfort": 82.5
+    }
+  },
+  {
+    "city": "Reggio Calabria",
+    "rank": 54,
+    "score": 31.64,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 2.55,
+      "pedestrianAreas": 2.66,
+      "roadVictims": 90.21,
+      "motorizationRate": 44.49,
+      "publicTransportPassengers": 4.76,
+      "publicTransportOffer": 28.63,
+      "ztl": 0.7,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 83.63,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.57,
+      "safety": 74.21,
+      "usage": null,
+      "connectivity": 13.39,
+      "policy": null,
+      "comfort": 95.91
+    }
+  },
+  {
+    "city": "Arezzo",
+    "rank": 55,
+    "score": 31.54,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 19.27,
+      "pedestrianAreas": 3.01,
+      "roadVictims": 65.46,
+      "motorizationRate": 38.96,
+      "publicTransportPassengers": 6.61,
+      "publicTransportOffer": 18.21,
+      "ztl": 9.92,
+      "nitrogenDioxide": 51.82,
+      "pm10": 33.89,
+      "pm25": 35.41,
+      "ozone": 98.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 16.02,
+      "safety": 56.19,
+      "usage": null,
+      "connectivity": 12.36,
+      "policy": null,
+      "comfort": 52.65
+    }
+  },
+  {
+    "city": "Verona",
+    "rank": 56,
+    "score": 31.52,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 23.98,
+      "pedestrianAreas": 2.38,
+      "roadVictims": 51.22,
+      "motorizationRate": 50.44,
+      "publicTransportPassengers": 25.87,
+      "publicTransportOffer": 21.89,
+      "ztl": 0,
+      "nitrogenDioxide": 36.9,
+      "pm10": 0.66,
+      "pm25": 48.67,
+      "ozone": 28.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 19.66,
+      "safety": 50.95,
+      "usage": null,
+      "connectivity": 16.62,
+      "policy": null,
+      "comfort": 29.18
+    }
+  },
+  {
+    "city": "Prato",
+    "rank": 57,
+    "score": 31.02,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 15.38,
+      "pedestrianAreas": 2.33,
+      "roadVictims": 66.27,
+      "motorizationRate": 60.33,
+      "publicTransportPassengers": 7.03,
+      "publicTransportOffer": 11.55,
+      "ztl": 0,
+      "nitrogenDioxide": 46.61,
+      "pm10": 30.55,
+      "pm25": 38.51,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 12.77,
+      "safety": 64.19,
+      "usage": null,
+      "connectivity": 6.82,
+      "policy": null,
+      "comfort": 51.25
+    }
+  },
+  {
+    "city": "Rieti",
+    "rank": 58,
+    "score": 30.95,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 24.03,
+      "pedestrianAreas": 4.84,
+      "roadVictims": 52.98,
+      "motorizationRate": 28.66,
+      "publicTransportPassengers": 5.05,
+      "publicTransportOffer": 22.5,
+      "ztl": 0,
+      "nitrogenDioxide": 63.54,
+      "pm10": 43.31,
+      "pm25": 50.31,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 20.19,
+      "safety": 44.47,
+      "usage": null,
+      "connectivity": 10.75,
+      "policy": null,
+      "comfort": 62.47
+    }
+  },
+  {
+    "city": "Nuoro",
+    "rank": 59,
+    "score": 30.6,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.67,
+      "pedestrianAreas": 2.49,
+      "roadVictims": 95.45,
+      "motorizationRate": 22.81,
+      "publicTransportPassengers": 9.8,
+      "publicTransportOffer": 26.78,
+      "ztl": 2.02,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 36.52,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 3.43,
+      "safety": 70.03,
+      "usage": null,
+      "connectivity": 14.5,
+      "policy": null,
+      "comfort": 84.13
+    }
+  },
+  {
+    "city": "Imperia",
+    "rank": 60,
+    "score": 30.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 16.66,
+      "pedestrianAreas": 0.88,
+      "roadVictims": 48.27,
+      "motorizationRate": 57.95,
+      "publicTransportPassengers": 1.78,
+      "publicTransportOffer": 14.05,
+      "ztl": 5.48,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 62.09,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 13.5,
+      "safety": 51.66,
+      "usage": null,
+      "connectivity": 7.92,
+      "policy": null,
+      "comfort": 90.52
+    }
+  },
+  {
+    "city": "Siracusa",
+    "rank": 61,
+    "score": 30.34,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 19.59,
+      "pedestrianAreas": 5.71,
+      "roadVictims": 66.69,
+      "motorizationRate": 35.08,
+      "publicTransportPassengers": 1.57,
+      "publicTransportOffer": 7,
+      "ztl": 0,
+      "nitrogenDioxide": 56.6,
+      "pm10": 20.22,
+      "pm25": 55.92,
+      "ozone": 72.22,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 16.81,
+      "safety": 55.63,
+      "usage": null,
+      "connectivity": 3.34,
+      "policy": null,
+      "comfort": 50.46
+    }
+  },
+  {
+    "city": "La Spezia",
+    "rank": 62,
+    "score": 30.29,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 11.14,
+      "pedestrianAreas": 0.81,
+      "roadVictims": 49.77,
+      "motorizationRate": 79.22,
+      "publicTransportPassengers": 19.93,
+      "publicTransportOffer": 37.71,
+      "ztl": 0.65,
+      "nitrogenDioxide": 40.62,
+      "pm10": 45.67,
+      "pm25": 25.18,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 9.07,
+      "safety": 60.08,
+      "usage": null,
+      "connectivity": 21.58,
+      "policy": null,
+      "comfort": 49.9
+    }
+  },
+  {
+    "city": "Palermo",
+    "rank": 63,
+    "score": 30.26,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 6.02,
+      "pedestrianAreas": 9.13,
+      "roadVictims": 80.7,
+      "motorizationRate": 57.68,
+      "publicTransportPassengers": 9.75,
+      "publicTransportOffer": 17.32,
+      "ztl": 0.02,
+      "nitrogenDioxide": 13.54,
+      "pm10": 19.38,
+      "pm25": 70.96,
+      "ozone": 94.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.64,
+      "safety": 72.64,
+      "usage": null,
+      "connectivity": 10.01,
+      "policy": null,
+      "comfort": 45.53
+    }
+  },
+  {
+    "city": "Siena",
+    "rank": 64,
+    "score": 29.8,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 6.36,
+      "pedestrianAreas": 13.17,
+      "roadVictims": 58.28,
+      "motorizationRate": 43.82,
+      "publicTransportPassengers": 23.94,
+      "publicTransportOffer": 53.92,
+      "ztl": 0,
+      "nitrogenDioxide": 92.19,
+      "pm10": 42.57,
+      "pm25": 27.05,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 7.72,
+      "safety": 53.22,
+      "usage": null,
+      "connectivity": 29.24,
+      "policy": null,
+      "comfort": 65.06
+    }
+  },
+  {
+    "city": "Bergamo",
+    "rank": 65,
+    "score": 29.74,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 37.97,
+      "pedestrianAreas": 3.62,
+      "roadVictims": 0,
+      "motorizationRate": 58.25,
+      "publicTransportPassengers": 19.13,
+      "publicTransportOffer": 22.8,
+      "ztl": 23.03,
+      "nitrogenDioxide": 16.55,
+      "pm10": 21.5,
+      "pm25": 18.7,
+      "ozone": 7.78,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 31.1,
+      "safety": 20.39,
+      "usage": null,
+      "connectivity": 21.79,
+      "policy": null,
+      "comfort": 16.57
+    }
+  },
+  {
+    "city": "Avellino",
+    "rank": 66,
+    "score": 29.72,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.83,
+      "pedestrianAreas": 0.38,
+      "roadVictims": 96.17,
+      "motorizationRate": 51.14,
+      "publicTransportPassengers": 5.24,
+      "publicTransportOffer": 17.23,
+      "ztl": 13.09,
+      "nitrogenDioxide": 53.13,
+      "pm10": 8.67,
+      "pm25": 42.53,
+      "ozone": 93.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.74,
+      "safety": 80.41,
+      "usage": null,
+      "connectivity": 12.49,
+      "policy": null,
+      "comfort": 47.41
+    }
+  },
+  {
+    "city": "Ragusa",
+    "rank": 67,
+    "score": 29.66,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 6.18,
+      "pedestrianAreas": 7.63,
+      "roadVictims": 93.33,
+      "motorizationRate": 31.07,
+      "publicTransportPassengers": 1.58,
+      "publicTransportOffer": 4.4,
+      "ztl": 7.02,
+      "nitrogenDioxide": 76.56,
+      "pm10": 29.14,
+      "pm25": 44.16,
+      "ozone": 82.22,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.47,
+      "safety": 71.54,
+      "usage": null,
+      "connectivity": 4.34,
+      "policy": null,
+      "comfort": 57.74
+    }
+  },
+  {
+    "city": "Taranto",
+    "rank": 68,
+    "score": 29.63,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 8.28,
+      "pedestrianAreas": 0.7,
+      "roadVictims": 65.49,
+      "motorizationRate": 65.24,
+      "publicTransportPassengers": 5.94,
+      "publicTransportOffer": 29.61,
+      "ztl": 0.27,
+      "nitrogenDioxide": 58.33,
+      "pm10": 33.16,
+      "pm25": 49.1,
+      "ozone": 88.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.76,
+      "safety": 65.4,
+      "usage": null,
+      "connectivity": 14.02,
+      "policy": null,
+      "comfort": 55.84
+    }
+  },
+  {
+    "city": "Campobasso",
+    "rank": 69,
+    "score": 29.54,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 5.62,
+      "pedestrianAreas": 2.24,
+      "roadVictims": 94.92,
+      "motorizationRate": 29.57,
+      "publicTransportPassengers": 4.05,
+      "publicTransportOffer": 18.03,
+      "ztl": 0,
+      "nitrogenDioxide": 38.25,
+      "pm10": 43.61,
+      "pm25": 55.43,
+      "ozone": 95.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 4.94,
+      "safety": 72.05,
+      "usage": null,
+      "connectivity": 8.62,
+      "policy": null,
+      "comfort": 55.35
+    }
+  },
+  {
+    "city": "Foggia",
+    "rank": 70,
+    "score": 29.52,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 15.92,
+      "pedestrianAreas": 1.61,
+      "roadVictims": 62.09,
+      "motorizationRate": 56.89,
+      "publicTransportPassengers": 1.29,
+      "publicTransportOffer": 0,
+      "ztl": 0,
+      "nitrogenDioxide": 55.73,
+      "pm10": 30.71,
+      "pm25": 51.26,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 13.06,
+      "safety": 60.27,
+      "usage": null,
+      "connectivity": 0.38,
+      "policy": null,
+      "comfort": 57.21
+    }
+  },
+  {
+    "city": "Perugia",
+    "rank": 71,
+    "score": 29.42,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 10.41,
+      "pedestrianAreas": 3.62,
+      "roadVictims": 80.03,
+      "motorizationRate": 25.11,
+      "publicTransportPassengers": 9.28,
+      "publicTransportOffer": 26.15,
+      "ztl": 0,
+      "nitrogenDioxide": 56.3,
+      "pm10": 37.01,
+      "pm25": 32.4,
+      "ozone": 95.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 9.05,
+      "safety": 60.81,
+      "usage": null,
+      "connectivity": 13.5,
+      "policy": null,
+      "comfort": 53.35
+    }
+  },
+  {
+    "city": "Brindisi",
+    "rank": 72,
+    "score": 29.4,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 15.57,
+      "pedestrianAreas": 5.4,
+      "roadVictims": 53.2,
+      "motorizationRate": 52.47,
+      "publicTransportPassengers": 1.51,
+      "publicTransportOffer": 24.68,
+      "ztl": 0,
+      "nitrogenDioxide": 60.94,
+      "pm10": 34.71,
+      "pm25": 45.51,
+      "ozone": 88.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 13.54,
+      "safety": 52.94,
+      "usage": null,
+      "connectivity": 10.61,
+      "policy": null,
+      "comfort": 56.11
+    }
+  },
+  {
+    "city": "Chieti",
+    "rank": 73,
+    "score": 29.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0,
+      "pedestrianAreas": 11.06,
+      "roadVictims": 93.18,
+      "motorizationRate": 42.92,
+      "publicTransportPassengers": 4.46,
+      "publicTransportOffer": 22.96,
+      "ztl": 0,
+      "nitrogenDioxide": 60.21,
+      "pm10": 38.68,
+      "pm25": 42.79,
+      "ozone": 84.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.21,
+      "safety": 75.59,
+      "usage": null,
+      "connectivity": 10.77,
+      "policy": null,
+      "comfort": 55.32
+    }
+  },
+  {
+    "city": "Asti",
+    "rank": 74,
+    "score": 29.32,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 17.54,
+      "pedestrianAreas": 1.86,
+      "roadVictims": 65.19,
+      "motorizationRate": 42.22,
+      "publicTransportPassengers": 5.9,
+      "publicTransportOffer": 12.54,
+      "ztl": 0,
+      "nitrogenDioxide": 44.01,
+      "pm10": 10.79,
+      "pm25": 35.86,
+      "ozone": 55.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 14.4,
+      "safety": 57.15,
+      "usage": null,
+      "connectivity": 6.9,
+      "policy": null,
+      "comfort": 35.98
+    }
+  },
+  {
+    "city": "Enna",
+    "rank": 75,
+    "score": 29.12,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 11.47,
+      "pedestrianAreas": 5.17,
+      "roadVictims": 71.05,
+      "motorizationRate": 36.86,
+      "publicTransportPassengers": 7.16,
+      "publicTransportOffer": 15.15,
+      "ztl": 0,
+      "nitrogenDioxide": 89.58,
+      "pm10": 49.61,
+      "pm25": 33.65,
+      "ozone": 61.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 10.21,
+      "safety": 59.08,
+      "usage": null,
+      "connectivity": 8.34,
+      "policy": null,
+      "comfort": 59.91
+    }
+  },
+  {
+    "city": "Biella",
+    "rank": 76,
+    "score": 29.09,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 18.1,
+      "pedestrianAreas": 8.85,
+      "roadVictims": 63.91,
+      "motorizationRate": 30.7,
+      "publicTransportPassengers": 1.55,
+      "publicTransportOffer": 5.57,
+      "ztl": 0,
+      "nitrogenDioxide": 44.01,
+      "pm10": 44.89,
+      "pm25": 28.34,
+      "ozone": 90,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 16.25,
+      "safety": 52.29,
+      "usage": null,
+      "connectivity": 2.75,
+      "policy": null,
+      "comfort": 49.51
+    }
+  },
+  {
+    "city": "Napoli",
+    "rank": 77,
+    "score": 28.89,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.81,
+      "pedestrianAreas": 4.07,
+      "roadVictims": 85.92,
+      "motorizationRate": 62.97,
+      "publicTransportPassengers": 13.12,
+      "publicTransportOffer": 15.19,
+      "ztl": 6.87,
+      "nitrogenDioxide": 0,
+      "pm10": 13.08,
+      "pm25": 73.12,
+      "ozone": 78.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 1.46,
+      "safety": 77.89,
+      "usage": null,
+      "connectivity": 12.13,
+      "policy": null,
+      "comfort": 37.33
+    }
+  },
+  {
+    "city": "Varese",
+    "rank": 78,
+    "score": 28.81,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 9.13,
+      "pedestrianAreas": 13.18,
+      "roadVictims": 65.61,
+      "motorizationRate": 45.97,
+      "publicTransportPassengers": 9.83,
+      "publicTransportOffer": 24.48,
+      "ztl": 8.56,
+      "nitrogenDioxide": 39.13,
+      "pm10": 38.09,
+      "pm25": 16.24,
+      "ozone": 56.67,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 9.94,
+      "safety": 58.74,
+      "usage": null,
+      "connectivity": 15.49,
+      "policy": null,
+      "comfort": 36.66
+    }
+  },
+  {
+    "city": "Alessandria",
+    "rank": 79,
+    "score": 28.43,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 14.51,
+      "pedestrianAreas": 0.67,
+      "roadVictims": 62.3,
+      "motorizationRate": 49.7,
+      "publicTransportPassengers": 1.86,
+      "publicTransportOffer": 15,
+      "ztl": 1.19,
+      "nitrogenDioxide": 37.5,
+      "pm10": 8.67,
+      "pm25": 61.41,
+      "ozone": 58.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 11.74,
+      "safety": 57.89,
+      "usage": null,
+      "connectivity": 7.07,
+      "policy": null,
+      "comfort": 40.55
+    }
+  },
+  {
+    "city": "Pistoia",
+    "rank": 80,
+    "score": 28.04,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 14.7,
+      "pedestrianAreas": 4.26,
+      "roadVictims": 54.15,
+      "motorizationRate": 43.26,
+      "publicTransportPassengers": 5.32,
+      "publicTransportOffer": 1.63,
+      "ztl": 15.32,
+      "nitrogenDioxide": 60.94,
+      "pm10": 36.85,
+      "pm25": 61.01,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 12.61,
+      "safety": 50.34,
+      "usage": null,
+      "connectivity": 6.74,
+      "policy": null,
+      "comfort": 62.75
+    }
+  },
+  {
+    "city": "Bari",
+    "rank": 81,
+    "score": 27.85,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 11.21,
+      "pedestrianAreas": 8.26,
+      "roadVictims": 40.38,
+      "motorizationRate": 67.72,
+      "publicTransportPassengers": 13.64,
+      "publicTransportOffer": 27.7,
+      "ztl": 4.8,
+      "nitrogenDioxide": 36.85,
+      "pm10": 31.39,
+      "pm25": 55.23,
+      "ozone": 88.89,
+      "fiabBikeSmile": 0,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 10.62,
+      "safety": 49.95,
+      "usage": null,
+      "connectivity": 16.83,
+      "policy": 0,
+      "comfort": 50.49
+    }
+  },
+  {
+    "city": "Novara",
+    "rank": 82,
+    "score": 26.91,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 8.15,
+      "pedestrianAreas": 1.54,
+      "roadVictims": 61.92,
+      "motorizationRate": 55.94,
+      "publicTransportPassengers": 12.12,
+      "publicTransportOffer": 15.79,
+      "ztl": 0,
+      "nitrogenDioxide": 33.59,
+      "pm10": 27.57,
+      "pm25": 33.71,
+      "ozone": 75.56,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.83,
+      "safety": 59.83,
+      "usage": null,
+      "connectivity": 10.07,
+      "policy": null,
+      "comfort": 40.51
+    }
+  },
+  {
+    "city": "Vibo Valentia",
+    "rank": 83,
+    "score": 26.85,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.25,
+      "pedestrianAreas": 1.13,
+      "roadVictims": 92.27,
+      "motorizationRate": 19.49,
+      "publicTransportPassengers": 0.17,
+      "publicTransportOffer": 5.44,
+      "ztl": 0,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 67.56,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.43,
+      "safety": 66.8,
+      "usage": null,
+      "connectivity": 2.29,
+      "policy": null,
+      "comfort": 91.89
+    }
+  },
+  {
+    "city": "Messina",
+    "rank": 84,
+    "score": 26.66,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 1.98,
+      "pedestrianAreas": 4.01,
+      "roadVictims": 70.84,
+      "motorizationRate": 48.68,
+      "publicTransportPassengers": 11.35,
+      "publicTransportOffer": 27.07,
+      "ztl": 0,
+      "nitrogenDioxide": 41.41,
+      "pm10": 29.14,
+      "pm25": 42.93,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.39,
+      "safety": 63.08,
+      "usage": null,
+      "connectivity": 14.48,
+      "policy": null,
+      "comfort": 50.44
+    }
+  },
+  {
+    "city": "L’Aquila",
+    "rank": 85,
+    "score": 26.44,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.41,
+      "pedestrianAreas": 1.12,
+      "roadVictims": 80.51,
+      "motorizationRate": 19.24,
+      "publicTransportPassengers": 5.7,
+      "publicTransportOffer": 44.05,
+      "ztl": 0,
+      "nitrogenDioxide": 82.02,
+      "pm10": 52.73,
+      "pm25": 46.64,
+      "ozone": 95.56,
+      "fiabBikeSmile": 25,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.55,
+      "safety": 59.07,
+      "usage": null,
+      "connectivity": 19.81,
+      "policy": 21.5,
+      "comfort": 68.56
+    }
+  },
+  {
+    "city": "Monza",
+    "rank": 86,
+    "score": 26.36,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 13.02,
+      "pedestrianAreas": 1.18,
+      "roadVictims": 54.03,
+      "motorizationRate": 48.45,
+      "publicTransportPassengers": 3.48,
+      "publicTransportOffer": 18.81,
+      "ztl": 1.12,
+      "nitrogenDioxide": 27.89,
+      "pm10": 19.98,
+      "pm25": 37.42,
+      "ozone": 51.11,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 10.65,
+      "safety": 52.08,
+      "usage": null,
+      "connectivity": 9.1,
+      "policy": null,
+      "comfort": 32.94
+    }
+  },
+  {
+    "city": "Frosinone",
+    "rank": 87,
+    "score": 26.16,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 14.24,
+      "pedestrianAreas": 0,
+      "roadVictims": 66.7,
+      "motorizationRate": 13.86,
+      "publicTransportPassengers": 0.63,
+      "publicTransportOffer": 15.55,
+      "ztl": 0,
+      "nitrogenDioxide": 34.9,
+      "pm10": 11.82,
+      "pm25": 60.08,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 11.39,
+      "safety": 48.21,
+      "usage": null,
+      "connectivity": 6.59,
+      "policy": null,
+      "comfort": 48.45
+    }
+  },
+  {
+    "city": "Potenza",
+    "rank": 88,
+    "score": 26.13,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0,
+      "pedestrianAreas": 1.82,
+      "roadVictims": 90.27,
+      "motorizationRate": 20.64,
+      "publicTransportPassengers": 2.46,
+      "publicTransportOffer": 18.88,
+      "ztl": 0,
+      "nitrogenDioxide": 76.56,
+      "pm10": 47.33,
+      "pm25": 49.51,
+      "ozone": 84.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.36,
+      "safety": 65.9,
+      "usage": null,
+      "connectivity": 8.5,
+      "policy": null,
+      "comfort": 64.07
+    }
+  },
+  {
+    "city": "Matera",
+    "rank": 89,
+    "score": 26.09,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.64,
+      "pedestrianAreas": 0,
+      "roadVictims": 66.69,
+      "motorizationRate": 50.49,
+      "publicTransportPassengers": 0,
+      "publicTransportOffer": 0,
+      "ztl": 0,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 50.17,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.91,
+      "safety": 61.02,
+      "usage": null,
+      "connectivity": 0,
+      "policy": null,
+      "comfort": 87.54
+    }
+  },
+  {
+    "city": "Caltanissetta",
+    "rank": 90,
+    "score": 25.82,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 1.94,
+      "pedestrianAreas": 1.21,
+      "roadVictims": 85.69,
+      "motorizationRate": 35.52,
+      "publicTransportPassengers": 0,
+      "publicTransportOffer": 0,
+      "ztl": 0,
+      "nitrogenDioxide": 60.94,
+      "pm10": 33.86,
+      "pm25": 44.66,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 1.79,
+      "safety": 68.13,
+      "usage": null,
+      "connectivity": 0,
+      "policy": null,
+      "comfort": 57.91
+    }
+  },
+  {
+    "city": "Macerata",
+    "rank": 91,
+    "score": 25.77,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.03,
+      "pedestrianAreas": 3.15,
+      "roadVictims": 73.7,
+      "motorizationRate": 39.26,
+      "publicTransportPassengers": 3.52,
+      "publicTransportOffer": 18.07,
+      "ztl": 0,
+      "nitrogenDioxide": 60.94,
+      "pm10": 43.31,
+      "pm25": 25.28,
+      "ozone": 78.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 3.05,
+      "safety": 61.65,
+      "usage": null,
+      "connectivity": 8.48,
+      "policy": null,
+      "comfort": 51.21
+    }
+  },
+  {
+    "city": "Roma",
+    "rank": 92,
+    "score": 25.7,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 1.72,
+      "pedestrianAreas": 2.64,
+      "roadVictims": 49.03,
+      "motorizationRate": 49.83,
+      "publicTransportPassengers": 42.97,
+      "publicTransportOffer": 52.41,
+      "ztl": 10.75,
+      "nitrogenDioxide": 17.19,
+      "pm10": 23.79,
+      "pm25": 41.9,
+      "ozone": 73.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 1.9,
+      "safety": 49.31,
+      "usage": null,
+      "connectivity": 37.38,
+      "policy": null,
+      "comfort": 36.25
+    }
+  },
+  {
+    "city": "Ancona",
+    "rank": 93,
+    "score": 25.27,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 4.64,
+      "pedestrianAreas": 3.31,
+      "roadVictims": 49.87,
+      "motorizationRate": 55.03,
+      "publicTransportPassengers": 12.7,
+      "publicTransportOffer": 34.29,
+      "ztl": 3.47,
+      "nitrogenDioxide": 51.82,
+      "pm10": 32.29,
+      "pm25": 29.17,
+      "ozone": 78.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 4.37,
+      "safety": 51.68,
+      "usage": null,
+      "connectivity": 18.88,
+      "policy": null,
+      "comfort": 46.69
+    }
+  },
+  {
+    "city": "Trapani",
+    "rank": 94,
+    "score": 25.07,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 2.97,
+      "pedestrianAreas": 0,
+      "roadVictims": 80.58,
+      "motorizationRate": 32.43,
+      "publicTransportPassengers": 0,
+      "publicTransportOffer": 0,
+      "ztl": 0,
+      "nitrogenDioxide": 58.33,
+      "pm10": 40.16,
+      "pm25": 45.98,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.38,
+      "safety": 63.73,
+      "usage": null,
+      "connectivity": 0,
+      "policy": null,
+      "comfort": 59.03
+    }
+  },
+  {
+    "city": "Latina",
+    "rank": 95,
+    "score": 24.96,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 9.14,
+      "pedestrianAreas": 1.72,
+      "roadVictims": 55.2,
+      "motorizationRate": 38.56,
+      "publicTransportPassengers": 2.39,
+      "publicTransportOffer": 14.08,
+      "ztl": 0,
+      "nitrogenDioxide": 46.18,
+      "pm10": 32.81,
+      "pm25": 61.95,
+      "ozone": 93.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 7.66,
+      "safety": 49.38,
+      "usage": null,
+      "connectivity": 6.5,
+      "policy": null,
+      "comfort": 56.21
+    }
+  },
+  {
+    "city": "Como",
+    "rank": 96,
+    "score": 24.52,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 4.06,
+      "pedestrianAreas": 5.76,
+      "roadVictims": 56.41,
+      "motorizationRate": 53.69,
+      "publicTransportPassengers": 11.23,
+      "publicTransportOffer": 27.62,
+      "ztl": 0,
+      "nitrogenDioxide": 20.1,
+      "pm10": 29.23,
+      "pm25": 31.97,
+      "ozone": 18.89,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 4.4,
+      "safety": 55.46,
+      "usage": null,
+      "connectivity": 14.68,
+      "policy": null,
+      "comfort": 25.11
+    }
+  },
+  {
+    "city": "Genova",
+    "rank": 97,
+    "score": 24.38,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 2.55,
+      "pedestrianAreas": 1.22,
+      "roadVictims": 18.41,
+      "motorizationRate": 92.13,
+      "publicTransportPassengers": 65.17,
+      "publicTransportOffer": 42.93,
+      "ztl": 4.65,
+      "nitrogenDioxide": 26.99,
+      "pm10": 45.11,
+      "pm25": 37.24,
+      "ozone": 2.22,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.28,
+      "safety": 44.21,
+      "usage": null,
+      "connectivity": 38.21,
+      "policy": null,
+      "comfort": 29.13
+    }
+  },
+  {
+    "city": "Ascoli Piceno",
+    "rank": 98,
+    "score": 24.23,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 5.78,
+      "pedestrianAreas": 8.52,
+      "roadVictims": 57.33,
+      "motorizationRate": 32.67,
+      "publicTransportPassengers": 2.01,
+      "publicTransportOffer": 21.33,
+      "ztl": 0.08,
+      "nitrogenDioxide": 45.31,
+      "pm10": 49.61,
+      "pm25": 36.03,
+      "ozone": 73.33,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.33,
+      "safety": 48.7,
+      "usage": null,
+      "connectivity": 9.4,
+      "policy": null,
+      "comfort": 49.67
+    }
+  },
+  {
+    "city": "Livorno",
+    "rank": 99,
+    "score": 24.07,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 6.47,
+      "pedestrianAreas": 4.98,
+      "roadVictims": 32.81,
+      "motorizationRate": 67.89,
+      "publicTransportPassengers": 7.69,
+      "publicTransportOffer": 20.26,
+      "ztl": 13.03,
+      "nitrogenDioxide": 47.92,
+      "pm10": 38.85,
+      "pm25": 27.53,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 6.17,
+      "safety": 45.09,
+      "usage": null,
+      "connectivity": 14.44,
+      "policy": null,
+      "comfort": 50.97
+    }
+  },
+  {
+    "city": "Agrigento",
+    "rank": 100,
+    "score": 23.93,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 1.77,
+      "pedestrianAreas": 1.4,
+      "roadVictims": 73.98,
+      "motorizationRate": 22.92,
+      "publicTransportPassengers": 2.39,
+      "publicTransportOffer": 13.59,
+      "ztl": 0.48,
+      "nitrogenDioxide": 73.96,
+      "pm10": 30.71,
+      "pm25": 52.05,
+      "ozone": 94.44,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 1.7,
+      "safety": 56.11,
+      "usage": null,
+      "connectivity": 6.44,
+      "policy": null,
+      "comfort": 61.77
+    }
+  },
+  {
+    "city": "Sassari",
+    "rank": 101,
+    "score": 23.64,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.99,
+      "pedestrianAreas": 0,
+      "roadVictims": 56.65,
+      "motorizationRate": 41.27,
+      "publicTransportPassengers": 19.42,
+      "publicTransportOffer": 25.86,
+      "ztl": 0,
+      "nitrogenDioxide": 60.94,
+      "pm10": 38.59,
+      "pm25": 46.1,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.79,
+      "safety": 51.27,
+      "usage": null,
+      "connectivity": 16.36,
+      "policy": null,
+      "comfort": 59.45
+    }
+  },
+  {
+    "city": "Savona",
+    "rank": 102,
+    "score": 23.58,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 9.74,
+      "pedestrianAreas": 2.52,
+      "roadVictims": 22.17,
+      "motorizationRate": 67.09,
+      "publicTransportPassengers": 8.47,
+      "publicTransportOffer": 32.85,
+      "ztl": 0,
+      "nitrogenDioxide": 58.73,
+      "pm10": 49.61,
+      "pm25": 38.95,
+      "ozone": 56.67,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 8.3,
+      "safety": 37.89,
+      "usage": null,
+      "connectivity": 16.02,
+      "policy": null,
+      "comfort": 51.09
+    }
+  },
+  {
+    "city": "Fermo",
+    "rank": 103,
+    "score": 22.98,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.5,
+      "pedestrianAreas": 0,
+      "roadVictims": 49.85,
+      "motorizationRate": 32.51,
+      "publicTransportPassengers": 2.98,
+      "publicTransportOffer": 15.33,
+      "ztl": 0.49,
+      "nitrogenDioxide": 100,
+      "pm10": 100,
+      "pm25": 63.18,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 2.8,
+      "safety": 43.78,
+      "usage": null,
+      "connectivity": 7.33,
+      "policy": null,
+      "comfort": 90.8
+    }
+  },
+  {
+    "city": "Salerno",
+    "rank": 104,
+    "score": 21.13,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 0.45,
+      "pedestrianAreas": 1.66,
+      "roadVictims": 39.7,
+      "motorizationRate": 57.68,
+      "publicTransportPassengers": 4.84,
+      "publicTransportOffer": 14.1,
+      "ztl": 12.66,
+      "nitrogenDioxide": 45.31,
+      "pm10": 24.42,
+      "pm25": 53.03,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 0.69,
+      "safety": 45.99,
+      "usage": null,
+      "connectivity": 10.95,
+      "policy": null,
+      "comfort": 52.96
+    }
+  },
+  {
+    "city": "Catania",
+    "rank": 105,
+    "score": 20.32,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 4.97,
+      "pedestrianAreas": 2.63,
+      "roadVictims": 44.51,
+      "motorizationRate": 21.04,
+      "publicTransportPassengers": 4.17,
+      "publicTransportOffer": 20.52,
+      "ztl": 0.91,
+      "nitrogenDioxide": 14.93,
+      "pm10": 11.82,
+      "pm25": 100,
+      "ozone": 87.78,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 4.5,
+      "safety": 36.3,
+      "usage": null,
+      "connectivity": 9.94,
+      "policy": null,
+      "comfort": 49.99
+    }
+  },
+  {
+    "city": "Viterbo",
+    "rank": 106,
+    "score": 18.99,
+    "normalizedMetrics": {
+      "cycleNetworkEquivalent": 3.69,
+      "pedestrianAreas": 2.89,
+      "roadVictims": 39.09,
+      "motorizationRate": 24.24,
+      "publicTransportPassengers": 2.52,
+      "publicTransportOffer": 10.2,
+      "ztl": 1.19,
+      "nitrogenDioxide": 47.92,
+      "pm10": 46.46,
+      "pm25": 52.97,
+      "ozone": 100,
+      "fiabBikeSmile": null,
+      "bikeModalSharePercent": null,
+      "externalPolicyScore": null
+    },
+    "categoryScores": {
+      "infrastructure": 3.53,
+      "safety": 33.89,
+      "usage": null,
+      "connectivity": 5.29,
+      "policy": null,
+      "comfort": 59.23
+    }
+  }
+]

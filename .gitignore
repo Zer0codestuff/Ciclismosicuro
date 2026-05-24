@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/raw/
+.DS_Store
+.vite/
+coverage/
+tmp/
+*.tsbuildinfo
+node_modules/.tmp/
