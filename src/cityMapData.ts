@@ -94,7 +94,7 @@ export const CITY_MAP_LAYER_META: CityMapLayerMeta[] = [
   {
     id: "cycleLanes",
     label: "Piste ciclabili",
-    description: "highway=cycleway e tratti con tag cycleway",
+    description: "piste/corsie ciclabili esplicite e percorsi ciclopedonali designati",
     color: "#0f766e",
     geometryType: "line",
     defaultVisible: true
@@ -160,6 +160,15 @@ const LAYER_LABELS: Record<CityMapLayerId, string> = {
   drinkingWater: "Acqua potabile"
 };
 
+const DEDICATED_CYCLEWAY_VALUES = new Set([
+  "lane",
+  "opposite_lane",
+  "opposite_track",
+  "track"
+]);
+const CYCLEWAY_VALUE_KEYS = ["cycleway", "cycleway:left", "cycleway:right", "cycleway:both"] as const;
+const DESIGNATED_BIKE_PATH_HIGHWAYS = new Set(["footway", "path"]);
+
 const cache = new Map<string, CityMapData>();
 
 function addApostropheVariants(variants: Set<string>, name: string): void {
@@ -223,8 +232,11 @@ ${boundaryStatements}
 .cityBoundary map_to_area->.cityArea;
 (
   way["highway"="cycleway"](area.cityArea);
-  way["cycleway"](area.cityArea);
-  way["bicycle"="designated"]["highway"~"^(path|footway|track|service|unclassified|tertiary|secondary|primary|residential)$"](area.cityArea);
+  way["cycleway"~"^(lane|opposite_lane|opposite_track|track)$"](area.cityArea);
+  way["cycleway:left"~"^(lane|opposite_lane|opposite_track|track)$"](area.cityArea);
+  way["cycleway:right"~"^(lane|opposite_lane|opposite_track|track)$"](area.cityArea);
+  way["cycleway:both"~"^(lane|opposite_lane|opposite_track|track)$"](area.cityArea);
+  way["bicycle"="designated"]["highway"~"^(footway|path)$"](area.cityArea);
 )->.cycleLanes;
 (
   relation["route"="bicycle"](area.cityArea);
@@ -301,6 +313,21 @@ function geometryFromElement(element: OverpassElement): LatLng[] | LatLng[][] | 
   return null;
 }
 
+function isCycleLaneElement(tags: Record<string, string>): boolean {
+  if (tags.highway === "cycleway") return true;
+
+  for (const key of CYCLEWAY_VALUE_KEYS) {
+    const value = tags[key];
+    if (value && DEDICATED_CYCLEWAY_VALUES.has(value)) return true;
+  }
+
+  return (
+    tags.bicycle === "designated" &&
+    typeof tags.highway === "string" &&
+    DESIGNATED_BIKE_PATH_HIGHWAYS.has(tags.highway)
+  );
+}
+
 function classifyElement(element: OverpassElement): CityMapLayerId | null {
   const tags = element.tags ?? {};
 
@@ -308,11 +335,7 @@ function classifyElement(element: OverpassElement): CityMapLayerId | null {
     return "boundary";
   }
 
-  if (
-    tags.highway === "cycleway" ||
-    tags.cycleway ||
-    (tags.bicycle === "designated" && tags.highway)
-  ) {
+  if (isCycleLaneElement(tags)) {
     return "cycleLanes";
   }
 

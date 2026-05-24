@@ -47,10 +47,20 @@ describe("buildCityMapOverpassQuery", () => {
     expect(query).toContain('relation["boundary"="administrative"]["admin_level"="8"]["name"="Milano"]');
     expect(query).toContain('relation["boundary"="administrative"]["admin_level"="8"]["name:it"="Milano"]');
     expect(query).toContain('way["highway"="cycleway"](area.cityArea);');
+    expect(query).toContain('way["cycleway:right"~"^(lane|opposite_lane|opposite_track|track)$"](area.cityArea);');
+    expect(query).toContain('way["bicycle"="designated"]["highway"~"^(footway|path)$"](area.cityArea);');
     expect(query).toContain('relation["route"="bicycle"](area.cityArea);');
     expect(query).toContain('node["amenity"="bicycle_parking"](area.cityArea);');
     expect(query).toContain('node["amenity"="drinking_water"](area.cityArea);');
     expect(query).toContain("out body geom;");
+  });
+
+  it("does not query broad cycleway or bicycle-designated road tags as cycle lanes", () => {
+    const query = buildCityMapOverpassQuery("Milano");
+    expect(query).not.toContain('way["cycleway"](area.cityArea);');
+    expect(query).not.toContain("shared_lane");
+    expect(query).not.toContain('way["bicycle"="designated"]["highway"~"^(path|footway|track|service');
+    expect(query).not.toContain("residential");
   });
 
   it("uses separate relation statements for OR matching instead of AND tag chains", () => {
@@ -197,6 +207,78 @@ describe("parseCityMapOverpassResponse", () => {
     const parsed = parseCityMapOverpassResponse("Milano", response);
     expect(parsed.layers.ztl.count).toBe(1);
     expect(parsed.layers.ztl.features[0]?.label).toBe("ZTL centro");
+  });
+
+  it("keeps only explicit cycle infrastructure in the cycle lanes layer", () => {
+    const response: OverpassResponse = {
+      elements: [
+        {
+          type: "relation",
+          id: 1,
+          tags: {
+            boundary: "administrative",
+            admin_level: "8",
+            name: "Milano"
+          },
+          geometry: [
+            { lat: 45.4, lon: 9.1 },
+            { lat: 45.5, lon: 9.2 },
+            { lat: 45.45, lon: 9.15 }
+          ]
+        },
+        {
+          type: "way",
+          id: 2,
+          tags: { highway: "residential", cycleway: "no", name: "No ciclabile" },
+          geometry: [
+            { lat: 45.41, lon: 9.11 },
+            { lat: 45.42, lon: 9.12 }
+          ]
+        },
+        {
+          type: "way",
+          id: 3,
+          tags: { highway: "residential", cycleway: "shared_lane", name: "Corsia condivisa" },
+          geometry: [
+            { lat: 45.42, lon: 9.12 },
+            { lat: 45.43, lon: 9.13 }
+          ]
+        },
+        {
+          type: "way",
+          id: 4,
+          tags: { highway: "residential", bicycle: "designated", name: "Strada consentita alle bici" },
+          geometry: [
+            { lat: 45.43, lon: 9.13 },
+            { lat: 45.44, lon: 9.14 }
+          ]
+        },
+        {
+          type: "way",
+          id: 5,
+          tags: { highway: "secondary", "cycleway:right": "lane", name: "Corsia ciclabile" },
+          geometry: [
+            { lat: 45.44, lon: 9.14 },
+            { lat: 45.45, lon: 9.15 }
+          ]
+        },
+        {
+          type: "way",
+          id: 6,
+          tags: { highway: "path", bicycle: "designated", name: "Ciclopedonale" },
+          geometry: [
+            { lat: 45.45, lon: 9.15 },
+            { lat: 45.46, lon: 9.16 }
+          ]
+        }
+      ]
+    };
+
+    const parsed = parseCityMapOverpassResponse("Milano", response);
+    expect(parsed.layers.cycleLanes.features.map((feature) => feature.label)).toEqual([
+      "Corsia ciclabile",
+      "Ciclopedonale"
+    ]);
   });
 
   it("throws when no geometry is available", () => {
