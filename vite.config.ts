@@ -30,9 +30,10 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api/overpass": {
-        target: "https://overpass.private.coffee",
+        target: "https://maps.mail.ru",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/overpass/, "/api/interpreter")
+        rewrite: (path) =>
+          path.replace(/^\/api\/overpass/, "/osm/tools/overpass/api/interpreter")
       }
     }
   },

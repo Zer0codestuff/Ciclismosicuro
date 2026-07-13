@@ -6,51 +6,66 @@ import {
   validateManualEnrichmentKeys
 } from "./city-keys.mjs";
 import { buildRankingCsvRows, toCsv } from "./csv-export.mjs";
+import {
+  assertLab24Indicator,
+  publishedMetricValue,
+  publishedSourceRank
+} from "./lab24-values.mjs";
+import { normalizeValues } from "./normalization.mjs";
 
 const ROOT = process.cwd();
 const ACCESS_DATE = new Date().toISOString().slice(0, 10);
 const LAB24_BASE = "https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024";
 const MISSING_CATEGORY_FALLBACK = 20;
 const HIGH_COVERAGE_THRESHOLD_PERCENT = 95;
-const SPARSE_COVERAGE_THRESHOLD_PERCENT = 20;
+const SPARSE_COVERAGE_THRESHOLD_PERCENT = 95;
 
 const defaultWeights = {
-  infrastructure: 50,
-  safety: 25,
+  infrastructure: 30,
+  safety: 30,
   usage: 0,
-  connectivity: 15,
+  connectivity: 30,
   policy: 0,
-  comfort: 5,
-  dataConfidence: 5
+  comfort: 0,
+  dataConfidence: 0
 };
 
 const metrics = [
   {
     id: "cycleNetworkEquivalent",
+    sourceIndicatorId: "98",
     slug: "piste-ciclabili",
     label: "Piste ciclabili equivalenti",
     shortLabel: "Ciclabili",
     unit: "m eq / 100 abitanti",
     direction: "higher",
     category: "infrastructure",
-    categoryWeight: 0.8,
+    categoryWeight: 1,
+    period: "2023",
+    lowerPercentile: 0.1,
+    upperPercentile: 0.9,
     sourceId: "lab24-piste-ciclabili-2024",
-    transform: "Valore pubblicato da Ecosistema Urbano 2024; normalizzato min-max 0-100."
+    transform: "Valore 2023; scala robusta 0-100 tra 10° e 90° percentile. È il solo indicatore infrastrutturale nel punteggio default."
   },
   {
     id: "pedestrianAreas",
+    sourceIndicatorId: "97",
     slug: "isole-pedonali",
     label: "Isole pedonali",
     shortLabel: "Pedonalita",
     unit: "mq / abitante",
     direction: "higher",
     category: "infrastructure",
-    categoryWeight: 0.2,
+    categoryWeight: 0,
+    period: "2023",
+    lowerPercentile: 0.1,
+    upperPercentile: 0.9,
     sourceId: "lab24-isole-pedonali-2024",
-    transform: "Valore pubblicato; proxy di spazio urbano calmo e accessibile anche in bici dove consentito."
+    transform: "Proxy contestuale 2023, escluso dal punteggio default: la fonte avverte che i metodi di calcolo comunali non sono omogenei."
   },
   {
     id: "roadVictims",
+    sourceIndicatorId: "367",
     slug: "vittime-della-strada",
     label: "Morti e feriti stradali",
     shortLabel: "Sicurezza",
@@ -58,11 +73,15 @@ const metrics = [
     direction: "lower",
     category: "safety",
     categoryWeight: 0.65,
+    period: "2022",
+    lowerPercentile: 0,
+    upperPercentile: 0.95,
     sourceId: "lab24-vittime-strada-2024",
-    transform: "Valore pubblicato; invertito e normalizzato per premiare minori tassi di incidentalita."
+    transform: "Dati ISTAT 2022 su tutti gli utenti stradali; scala robusta invertita. Proxy generale, non incidentalità ciclistica."
   },
   {
     id: "motorizationRate",
+    sourceIndicatorId: "213",
     slug: "tasso-di-motorizzazione",
     label: "Tasso di motorizzazione",
     shortLabel: "Auto",
@@ -70,47 +89,65 @@ const metrics = [
     direction: "lower",
     category: "safety",
     categoryWeight: 0.35,
+    period: "2023",
+    lowerPercentile: 0,
+    upperPercentile: 0.95,
     sourceId: "lab24-motorizzazione-2024",
-    transform: "Valore pubblicato; invertito come proxy di pressione auto su spazio stradale."
+    transform: "Valore 2023; scala robusta invertita come proxy della pressione automobilistica, non del rischio ciclistico osservato."
   },
   {
     id: "publicTransportPassengers",
+    sourceIndicatorId: "91",
     slug: "passeggeri-trasporto-pubblico",
     label: "Passeggeri trasporto pubblico",
     shortLabel: "TPL uso",
     unit: "viaggi / abitante / anno",
     direction: "higher",
     category: "connectivity",
-    categoryWeight: 0.25,
+    categoryWeight: 0.42,
+    period: "2023",
+    normalizeBySizeClass: true,
+    lowerPercentile: 0.1,
+    upperPercentile: 0.9,
     sourceId: "lab24-tpl-passeggeri-2024",
-    transform: "Valore pubblicato; proxy di alternative all'auto e domanda di mobilita sostenibile."
+    transform: "Valore 2023; normalizzato separatamente per città piccole, medie e grandi tra 10° e 90° percentile. Proxy di alternative all'auto."
   },
   {
     id: "publicTransportOffer",
+    sourceIndicatorId: "93",
     slug: "offerta-trasporto-pubblico",
     label: "Offerta trasporto pubblico",
     shortLabel: "TPL offerta",
     unit: "km vettura / abitante",
     direction: "higher",
     category: "connectivity",
-    categoryWeight: 0.35,
+    categoryWeight: 0.58,
+    period: "2023",
+    normalizeBySizeClass: true,
+    lowerPercentile: 0.1,
+    upperPercentile: 0.9,
     sourceId: "lab24-tpl-offerta-2024",
-    transform: "Valore pubblicato; proxy di rete multimodale utile anche a intermodalita bici+TPL."
+    transform: "Valore 2023; normalizzato separatamente per classe dimensionale tra 10° e 90° percentile. Proxy di offerta multimodale."
   },
   {
     id: "ztl",
+    sourceIndicatorId: "508",
     slug: "ztl",
     label: "Zone a traffico limitato",
     shortLabel: "ZTL",
     unit: "mq / 100 abitanti",
     direction: "higher",
     category: "connectivity",
-    categoryWeight: 0.25,
+    categoryWeight: 0,
+    period: "2023",
+    lowerPercentile: 0.1,
+    upperPercentile: 0.9,
     sourceId: "lab24-ztl-2024",
-    transform: "Valore pubblicato; proxy di moderazione/accesso limitato al traffico motorizzato."
+    transform: "Proxy contestuale 2023, escluso dal punteggio default per copertura insufficiente (circa 62%)."
   },
   {
     id: "nitrogenDioxide",
+    sourceIndicatorId: "83",
     slug: "biossido-di-azoto",
     label: "Biossido di azoto",
     shortLabel: "NO2",
@@ -118,11 +155,13 @@ const metrics = [
     direction: "lower",
     category: "comfort",
     categoryWeight: 0.3,
+    period: "2023",
     sourceId: "lab24-no2-2024",
-    transform: "Valore pubblicato; invertito per premiare aria piu respirabile."
+    transform: "Valore ARPA 2023; scala robusta invertita. Categoria comfort contestuale, esclusa dal punteggio default."
   },
   {
     id: "pm10",
+    sourceIndicatorId: "363",
     slug: "pm-10",
     label: "PM10",
     shortLabel: "PM10",
@@ -130,23 +169,27 @@ const metrics = [
     direction: "lower",
     category: "comfort",
     categoryWeight: 0.25,
+    period: "2023",
     sourceId: "lab24-pm10-2024",
-    transform: "Valore pubblicato; invertito per premiare minore esposizione a particolato."
+    transform: "Valore ARPA 2023; scala robusta invertita. Categoria comfort contestuale, esclusa dal punteggio default."
   },
   {
     id: "pm25",
-    slug: "pm-25",
+    sourceIndicatorId: "100",
+    slug: "pm-2-5",
     label: "PM2.5",
     shortLabel: "PM2.5",
     unit: "ug/mc",
     direction: "lower",
     category: "comfort",
     categoryWeight: 0.25,
+    period: "2023",
     sourceId: "lab24-pm25-2024",
-    transform: "Valore pubblicato; invertito per premiare minore esposizione a particolato fine."
+    transform: "Valore ARPA 2023; scala robusta invertita. Categoria comfort contestuale, esclusa dal punteggio default."
   },
   {
     id: "ozone",
+    sourceIndicatorId: "84",
     slug: "ozono",
     label: "Ozono",
     shortLabel: "O3",
@@ -154,8 +197,9 @@ const metrics = [
     direction: "lower",
     category: "comfort",
     categoryWeight: 0.2,
+    period: "2023",
     sourceId: "lab24-ozono-2024",
-    transform: "Valore pubblicato; invertito per premiare minori superamenti."
+    transform: "Valore ARPA 2023; scala robusta invertita. Categoria comfort contestuale, esclusa dal punteggio default."
   }
 ];
 
@@ -170,6 +214,7 @@ const manualMetrics = [
     domainMax: 5,
     category: "policy",
     categoryWeight: 0.65,
+    period: "2023-2024",
     sourceId: "fiab-comuni-ciclabili",
     transform: "Valutazioni FIAB inserite solo dove rintracciate; normalizzate su scala 1-5 e penalizzate con confidenza inferiore rispetto a serie complete."
   },
@@ -183,6 +228,7 @@ const manualMetrics = [
     domainMax: 30,
     category: "usage",
     categoryWeight: 1,
+    period: "dato storico pubblicato nel 2015",
     sourceId: "legambiente-abc-2015",
     transform: "Dato storico puntuale usato come segnale di uso effettivo dove disponibile; non interpolato sulle citta mancanti."
   },
@@ -196,6 +242,7 @@ const manualMetrics = [
     domainMax: 100,
     category: "policy",
     categoryWeight: 0.35,
+    period: "2025",
     sourceId: "copenhagenize-bologna-2025",
     transform: "Usato solo per Bologna, dove Copenhagenize pubblica lo score di Policy and Support."
   }
@@ -747,7 +794,7 @@ const sourceByMetric = {
   "lab24-ztl-2024": `${LAB24_BASE}/ztl`,
   "lab24-no2-2024": `${LAB24_BASE}/biossido-di-azoto`,
   "lab24-pm10-2024": `${LAB24_BASE}/pm-10`,
-  "lab24-pm25-2024": `${LAB24_BASE}/pm-25`,
+  "lab24-pm25-2024": `${LAB24_BASE}/pm-2-5`,
   "lab24-ozono-2024": `${LAB24_BASE}/ozono`
 };
 
@@ -845,33 +892,53 @@ function parseArrayAssignment(html, variableName) {
 
 async function fetchIndicator(metric) {
   const url = `${LAB24_BASE}/${metric.slug}`;
-  const response = await fetch(url, {
-    headers: {
-      "user-agent": "CiclismoSicuro data pipeline (local research; contact: local)"
+  const cachedPath = path.join(ROOT, "data/raw", `${metric.id}.html`);
+  let html;
+  let retrieval = "network";
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "user-agent": "CiclismoSicuro data pipeline (local research; contact: local)"
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    html = await response.text();
+  } catch (error) {
+    retrieval = "cached snapshot";
+    try {
+      html = await readFile(cachedPath, "utf8");
+    } catch {
+      throw new Error(
+        `Fetch failed for ${url} and no cached snapshot is available: ${error instanceof Error ? error.message : String(error)}`
+      );
     }
-  });
-  if (!response.ok) {
-    throw new Error(`Fetch failed ${response.status} for ${url}`);
   }
-  const html = await response.text();
   const table = parseAssignment(html, "datiTabella");
-  return { url, html, table };
+  assertLab24Indicator(table, metric.sourceIndicatorId, metric.label);
+  return { url, html, table, retrieval };
 }
 
-function normalize(values, direction, domainMin = null, domainMax = null) {
-  const numeric = values.filter((value) => Number.isFinite(value));
-  const min = domainMin ?? Math.min(...numeric);
-  const max = domainMax ?? Math.max(...numeric);
-  if (max === min) {
-    return new Map(values.map((value, index) => [index, Number.isFinite(value) ? 50 : null]));
+function normalizeMetricForCities(cities, metric) {
+  const normalized = new Map();
+  const indexedCities = cities.map((city, index) => ({ city, index }));
+  const groups = metric.normalizeBySizeClass
+    ? [...new Set(cities.map((city) => city.sizeClass ?? "unknown"))].map((sizeClass) =>
+        indexedCities.filter(({ city }) => (city.sizeClass ?? "unknown") === sizeClass)
+      )
+    : [indexedCities];
+
+  for (const group of groups) {
+    const values = group.map(({ city }) => city.rawMetrics[metric.id]);
+    const result = normalizeValues(values, {
+      direction: metric.direction,
+      domainMin: metric.domainMin,
+      domainMax: metric.domainMax,
+      lowerPercentile: metric.lowerPercentile ?? 0.05,
+      upperPercentile: metric.upperPercentile ?? 0.95
+    });
+    group.forEach(({ index }, groupIndex) => normalized.set(index, result[groupIndex]));
   }
-  return new Map(
-    values.map((value, index) => {
-      if (!Number.isFinite(value)) return [index, null];
-      const scaled = Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100));
-      return [index, direction === "lower" ? 100 - scaled : scaled];
-    })
-  );
+  return normalized;
 }
 
 function weightedAverage(items) {
@@ -893,15 +960,18 @@ function categoryScores(city, metricDefinitions) {
   const coverage = {};
   for (const category of categories) {
     const defs = metricDefinitions.filter((metric) => metric.category === category);
-    const items = defs.map((metric) => ({
+    const scoringDefs = defs.filter((metric) => (metric.categoryWeight ?? 1) > 0);
+    const items = scoringDefs.map((metric) => ({
       value: city.normalizedMetrics[metric.id],
       weight: metric.categoryWeight ?? 1
     }));
     const available = items.filter((item) => Number.isFinite(item.value)).length;
     const average = weightedAverage(items);
-    const coveragePenalty = defs.length === 0 ? 1 : 0.72 + 0.28 * (available / defs.length);
+    const coveragePenalty =
+      scoringDefs.length === 0 ? 1 : 0.72 + 0.28 * (available / scoringDefs.length);
     scores[category] = average === null ? null : round(average * coveragePenalty, 2);
-    coverage[category] = defs.length === 0 ? 0 : round((available / defs.length) * 100, 1);
+    coverage[category] =
+      scoringDefs.length === 0 ? 0 : round((available / scoringDefs.length) * 100, 1);
   }
   return { scores, coverage };
 }
@@ -995,10 +1065,10 @@ function buildCoverageAudit(cities, metricDefinitions) {
     defaultScoreCategories,
     contextualCategories,
     notes: [
-      "Default ranking weights include only categories with broad Lab24 coverage across capoluoghi.",
-      "Default data confidence is calculated only from default-score metrics, so sparse manual signals cannot boost the default score indirectly.",
-      "Manual usage and policy signals remain in the dataset for city detail and optional weighting, not for the default score.",
-      "Categories with zero default weight can still be enabled in the UI; missing evidence then uses the prudent fallback score."
+      "Il punteggio default usa solo metriche con almeno il 95% di copertura: piste equivalenti, incidentalità generale, motorizzazione e due indicatori TPL.",
+      "La confidenza descrive la completezza ma ha peso default 0: un dato più completo non rende automaticamente una città migliore.",
+      "Aree pedonali, ZTL, qualità dell'aria, uso bici e policy restano contestuali e non modificano il punteggio default.",
+      "I pesi sono una scelta editoriale esplorativa, non coefficienti stimati o validati contro esiti di sicurezza ciclistica."
     ]
   };
 }
@@ -1014,7 +1084,7 @@ function topEntries(record, count, direction = "desc") {
 function describeCity(city) {
   const labels = {
     infrastructure: "infrastruttura ciclabile/spazio calmo",
-    safety: "sicurezza e pressione auto",
+    safety: "incidentalita stradale generale e pressione auto",
     usage: "uso e alternative all'auto",
     connectivity: "intermodalita e restrizioni al traffico",
     policy: "segnali di policy ciclabile",
@@ -1057,6 +1127,9 @@ async function main() {
   for (const metric of metrics) {
     const result = await fetchIndicator(metric);
     fetched.push({ metric, ...result });
+    if (result.retrieval !== "network") {
+      console.warn(`Using cached Lab24 snapshot for ${metric.id}.`);
+    }
     await writeText(path.join(ROOT, "data/raw", `${metric.id}.html`), result.html);
   }
 
@@ -1081,8 +1154,9 @@ async function main() {
     for (const row of table.righe) {
       const city = cityByName.get(row.nome);
       if (!city) continue;
-      city.rawMetrics[metric.id] = Number(row.punti);
-      city.metricSources[metric.id] = metric.sourceId;
+      const value = publishedMetricValue(row);
+      city.rawMetrics[metric.id] = value;
+      if (value !== null) city.metricSources[metric.id] = metric.sourceId;
     }
   }
 
@@ -1112,8 +1186,7 @@ async function main() {
   const allMetricDefinitions = [...metrics, ...manualMetrics];
   for (const metric of allMetricDefinitions) {
     const cities = [...cityByName.values()];
-    const values = cities.map((city) => city.rawMetrics[metric.id]);
-    const normalized = normalize(values, metric.direction, metric.domainMin, metric.domainMax);
+    const normalized = normalizeMetricForCities(cities, metric);
     cities.forEach((city, index) => {
       city.normalizedMetrics[metric.id] = round(normalized.get(index), 2);
     });
@@ -1121,7 +1194,7 @@ async function main() {
 
   const allMetricIds = allMetricDefinitions.map((metric) => metric.id);
   const defaultScoringMetricIds = allMetricDefinitions
-    .filter((metric) => defaultWeights[metric.category] > 0)
+    .filter((metric) => defaultWeights[metric.category] > 0 && (metric.categoryWeight ?? 1) > 0)
     .map((metric) => metric.id);
   for (const city of cityByName.values()) {
     for (const id of allMetricIds) {
@@ -1148,17 +1221,23 @@ async function main() {
     url,
     rows: table.righe.map((row) => ({
       city: row.nome,
-      value: Number(row.punti),
-      sourceRank: Number(row.posiz)
+      value: publishedMetricValue(row),
+      sourceRank: publishedSourceRank(row)
     }))
   }));
 
   const payload = {
     generatedAt: new Date().toISOString(),
     accessDate: ACCESS_DATE,
-    title: "Ranking citta italiane per ciclisti",
+    title: "Indice di contesto urbano per la ciclabilita",
     summary:
-      "Score 0-100 costruito da metriche Lab24 comparabili su infrastruttura ciclabile equivalente, sicurezza stradale, pressione auto, TPL, ZTL, pedonalita e qualita dell'aria. I segnali FIAB, Copenhagenize e quote modali storiche restano contestuali: sono esposti nel dataset ma hanno peso 0 nel ranking default per evitare confronti parziali.",
+      "Indice esplorativo 0-100 costruito da cinque proxy Lab24 ad alta copertura: piste ciclabili equivalenti, incidentalita stradale generale, motorizzazione e due indicatori TPL. Non misura direttamente il rischio di pedalare, la qualita delle corsie o l'uso effettivo della bici.",
+    methodologyCaveats: [
+      "Non sono disponibili nello score incidenti specifici dei ciclisti rapportati all'esposizione (viaggi o chilometri pedalati).",
+      "I pesi sono editoriali e il ranking non e stato validato contro esiti indipendenti di sicurezza o quota modale ciclistica.",
+      "Piste equivalenti misurano quantita dichiarata, non continuita, protezione, manutenzione o qualita della rete.",
+      "Il confronto e relativo ai 106 capoluoghi e alla distribuzione dei dati: non e una soglia assoluta di citta sicura."
+    ],
     defaultWeights,
     coverageAudit,
     nationalContext: buildNationalContext(),

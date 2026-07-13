@@ -18,15 +18,15 @@ const SYNC_FILES = [
 ];
 const HIGH_COVERAGE_THRESHOLD_PERCENT = 95;
 const EXPECTED_DEFAULT_WEIGHTS = {
-  infrastructure: 50,
-  safety: 25,
+  infrastructure: 30,
+  safety: 30,
   usage: 0,
-  connectivity: 15,
+  connectivity: 30,
   policy: 0,
-  comfort: 5,
-  dataConfidence: 5
+  comfort: 0,
+  dataConfidence: 0
 };
-const CONTEXTUAL_CATEGORIES = new Set(["usage", "policy"]);
+const CONTEXTUAL_CATEGORIES = new Set(["usage", "policy", "comfort"]);
 
 const ranking = JSON.parse(await readFile(path.join(PROCESSED_DIR, "ranking.json"), "utf8"));
 const publicRanking = JSON.parse(await readFile(path.join(PUBLIC_DIR, "ranking.json"), "utf8"));
@@ -77,9 +77,12 @@ if (!ranking.coverageAudit) {
     failures.push("coverageAudit.sparseSignals must list sparse manual/contextual metrics");
   }
   for (const entry of audit.categories ?? []) {
-    if (entry.includedInDefaultScore && entry.coveragePercent < HIGH_COVERAGE_THRESHOLD_PERCENT) {
+    if (
+      entry.includedInDefaultScore &&
+      entry.averageMetricCoveragePercent < HIGH_COVERAGE_THRESHOLD_PERCENT
+    ) {
       failures.push(
-        `Default-weight category ${entry.category} has low coverage (${entry.coveragePercent}% < ${HIGH_COVERAGE_THRESHOLD_PERCENT}%)`
+        `Default-weight category ${entry.category} has low average metric coverage (${entry.averageMetricCoveragePercent}% < ${HIGH_COVERAGE_THRESHOLD_PERCENT}%)`
       );
     }
     if (!entry.includedInDefaultScore && (ranking.defaultWeights?.[entry.category] ?? 0) > 0) {
@@ -88,6 +91,31 @@ if (!ranking.coverageAudit) {
   }
   failures.push(...validateMetricCoverageEntries(ranking));
   failures.push(...validateCategoryCoverageEntries(ranking));
+}
+
+if (!Array.isArray(ranking.methodologyCaveats) || ranking.methodologyCaveats.length < 3) {
+  failures.push("methodologyCaveats must disclose the principal limits of the index");
+}
+
+for (const metric of ranking.metricDefinitions ?? []) {
+  if (!metric.period) {
+    failures.push(`${metric.id}: missing observation period`);
+  }
+  const isDefaultMetric =
+    (ranking.defaultWeights?.[metric.category] ?? 0) > 0 && metric.categoryWeight > 0;
+  if (isDefaultMetric) {
+    const coverage = ranking.coverageAudit?.metrics?.find((entry) => entry.id === metric.id);
+    if (!coverage || coverage.coveragePercent < HIGH_COVERAGE_THRESHOLD_PERCENT) {
+      failures.push(
+        `${metric.id}: default metric coverage must be at least ${HIGH_COVERAGE_THRESHOLD_PERCENT}%`
+      );
+    }
+  }
+}
+
+const pm25Definition = ranking.metricDefinitions?.find((metric) => metric.id === "pm25");
+if (pm25Definition?.sourceIndicatorId !== "100") {
+  failures.push(`pm25: expected Lab24 indicator id 100, found ${pm25Definition?.sourceIndicatorId}`);
 }
 
 for (const city of ranking.cities) {

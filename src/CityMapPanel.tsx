@@ -107,6 +107,7 @@ function lockAppShellWhileModalOpen(): () => void {
   if (shell) {
     for (const child of Array.from(shell.children)) {
       if (!(child instanceof HTMLElement)) continue;
+      if (child.hasAttribute("inert")) continue;
       child.setAttribute("inert", "");
       inerted.push(child);
     }

@@ -2633,3 +2633,22 @@ body.city-map-modal-open {
     flex-basis: 100%;
   }
 }
+.chart-loading {
+  display: grid;
+  place-items: center;
+  color: #475569;
+}
+
+.weight-error {
+  margin: 0.65rem 0 0;
+  color: #991b1b;
+  font-weight: 700;
+}
+
+.city-map-module-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 12rem;
+}

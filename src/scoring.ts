@@ -8,18 +8,18 @@ export const MISSING_CATEGORY_FALLBACK = 20;
  * Sparse manual usage/policy signals stay at 0 and are exposed as contextual data.
  */
 export const DEFAULT_WEIGHTS: Weights = {
-  infrastructure: 50,
-  safety: 25,
+  infrastructure: 30,
+  safety: 30,
   usage: 0,
-  connectivity: 15,
+  connectivity: 30,
   policy: 0,
-  comfort: 5,
-  dataConfidence: 5
+  comfort: 0,
+  dataConfidence: 0
 };
 
 export const categoryLabels: Record<CategoryKey, string> = {
   infrastructure: "Infrastruttura",
-  safety: "Sicurezza",
+  safety: "Sicurezza stradale (proxy)",
   usage: "Uso bici",
   connectivity: "Connessioni",
   policy: "Policy",
@@ -29,12 +29,12 @@ export const categoryLabels: Record<CategoryKey, string> = {
 
 export const categoryDescriptions: Record<CategoryKey, string> = {
   infrastructure: "Piste ciclabili equivalenti e spazio pedonale.",
-  safety: "Incidentalita e pressione del traffico privato.",
+  safety: "Incidentalità generale e motorizzazione: non misura il rischio specifico in bici.",
   usage: "Quota modale bici dove disponibile.",
   connectivity: "TPL, ZTL e accessibilita multimodale.",
   policy: "Segnali FIAB/Copenhagenize verificati.",
   comfort: "Aria e condizioni ambientali urbane.",
-  dataConfidence: "Copertura e tracciabilita dei dati."
+  dataConfidence: "Copertura dei dati, mostrata separatamente dal punteggio default."
 };
 
 export const categoryOrder: CategoryKey[] = [

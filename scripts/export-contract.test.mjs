@@ -70,7 +70,10 @@ describe("ranking.csv export contract", () => {
     expect(headers).toContain("externalPolicyScoreNormalized");
 
     const bologna = buildRankingCsvRows(ranking).find((row) => row.city === "Bologna");
-    expect(bologna?.pedestrianAreasNormalized).toBe(4.29);
+    const bolognaPayload = ranking.cities.find((city) => city.city === "Bologna");
+    expect(bologna?.pedestrianAreasNormalized).toBe(
+      bolognaPayload?.normalizedMetrics.pedestrianAreas
+    );
     expect(bologna?.externalPolicyScoreNormalized).toBe(66.7);
   });
 });

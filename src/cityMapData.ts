@@ -1,9 +1,10 @@
-export const OVERPASS_API_URL = "https://overpass.private.coffee/api/interpreter";
-const OVERPASS_API_FALLBACK_URL = "https://overpass-api.de/api/interpreter";
+export const OVERPASS_API_URL = "https://maps.mail.ru/osm/tools/overpass/api/interpreter";
+const OVERPASS_API_FALLBACK_URL = "https://overpass.private.coffee/api/interpreter";
 const OVERPASS_REQUEST_URLS = import.meta.env.DEV
   ? ["/api/overpass", OVERPASS_API_URL, OVERPASS_API_FALLBACK_URL]
   : [OVERPASS_API_URL, OVERPASS_API_FALLBACK_URL];
 export const OVERPASS_FETCH_TIMEOUT_MS = 45_000;
+export const OVERPASS_ENDPOINT_TIMEOUT_MS = 12_000;
 
 export type CityMapLayerId =
   | "boundary"
@@ -81,7 +82,6 @@ export interface OverpassResponse {
 }
 
 const TYPOGRAPHIC_APOSTROPHE = "\u2019";
-let jsonpRequestId = 0;
 
 /** Known OSM admin names that differ from dataset labels (exact keys only). */
 const CITY_NAME_ALIASES: Record<string, readonly string[]> = {
@@ -499,44 +499,43 @@ export function clearCityMapCache(cityName?: string): void {
   cache.clear();
 }
 
-function fetchOverpassJsonp(
+async function fetchOverpassResponse(
   endpoint: string,
   query: string,
-  signal: AbortSignal
+  parentSignal: AbortSignal
 ): Promise<OverpassResponse> {
-  return new Promise((resolve, reject) => {
-    const callbackName = `__ciclismoOverpass${Date.now()}_${jsonpRequestId}`;
-    jsonpRequestId += 1;
+  const controller = new AbortController();
+  let timedOut = false;
+  const onParentAbort = () => controller.abort();
+  const timeoutId = window.setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, OVERPASS_ENDPOINT_TIMEOUT_MS);
+  parentSignal.addEventListener("abort", onParentAbort, { once: true });
 
-    const callbacks = window as unknown as Window &
-      Record<string, ((payload: OverpassResponse) => void) | undefined>;
-    const script = document.createElement("script");
+  try {
+    const response = await fetch(`${endpoint}?data=${encodeURIComponent(query)}`, {
+      method: "GET",
+      signal: controller.signal,
+      headers: { Accept: "application/json" }
+    });
 
-    function cleanup() {
-      delete callbacks[callbackName];
-      script.remove();
-      signal.removeEventListener("abort", onAbort);
+    if (!response.ok) throw new Error(`Overpass API HTTP ${response.status}`);
+
+    const payload = (await response.json()) as Partial<OverpassResponse>;
+    if (!Array.isArray(payload.elements) || payload.elements.length === 0) {
+      throw new Error("Overpass non ha restituito elementi utilizzabili.");
     }
-
-    function onAbort() {
-      cleanup();
-      reject(new DOMException("Aborted", "AbortError"));
+    return payload as OverpassResponse;
+  } catch (error) {
+    if (timedOut && !parentSignal.aborted) {
+      throw new Error("Endpoint Overpass scaduto.");
     }
-
-    callbacks[callbackName] = (payload: OverpassResponse) => {
-      cleanup();
-      resolve(payload);
-    };
-
-    script.onerror = () => {
-      cleanup();
-      reject(new Error("Overpass JSONP non disponibile."));
-    };
-
-    signal.addEventListener("abort", onAbort, { once: true });
-    script.src = `${endpoint}?data=${encodeURIComponent(query)}&jsonp=${encodeURIComponent(callbackName)}`;
-    document.head.appendChild(script);
-  });
+    throw error;
+  } finally {
+    window.clearTimeout(timeoutId);
+    parentSignal.removeEventListener("abort", onParentAbort);
+  }
 }
 
 export async function fetchCityMapData(
@@ -566,35 +565,12 @@ export async function fetchCityMapData(
 
     for (const endpoint of OVERPASS_REQUEST_URLS) {
       try {
-        let payload: OverpassResponse;
-
-        try {
-          const response = await fetch(`${endpoint}?data=${encodeURIComponent(query)}`, {
-            method: "GET",
-            signal: controller.signal
-          });
-
-          if (!response.ok) {
-            throw new Error(`Overpass API HTTP ${response.status}`);
-          }
-
-          payload = (await response.json()) as OverpassResponse;
-        } catch (fetchError) {
-          if (fetchError instanceof DOMException && fetchError.name === "AbortError") {
-            throw fetchError;
-          }
-          payload = await fetchOverpassJsonp(endpoint, query, controller.signal);
-        }
-
-        if (!payload.elements?.length) {
-          throw new Error(`Nessun dato Overpass restituito per ${key}.`);
-        }
-
+        const payload = await fetchOverpassResponse(endpoint, query, controller.signal);
         const parsed = parseCityMapOverpassResponse(key, payload);
         cache.set(key, parsed);
         return parsed;
       } catch (endpointError) {
-        if (endpointError instanceof DOMException && endpointError.name === "AbortError") {
+        if (controller.signal.aborted) {
           throw endpointError;
         }
         lastError = endpointError instanceof Error ? endpointError : new Error(String(endpointError));

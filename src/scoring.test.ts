@@ -61,7 +61,7 @@ describe("scoring", () => {
     expect(DEFAULT_WEIGHTS.infrastructure).toBeGreaterThan(0);
     expect(DEFAULT_WEIGHTS.safety).toBeGreaterThan(0);
     expect(DEFAULT_WEIGHTS.connectivity).toBeGreaterThan(0);
-    expect(Object.values(DEFAULT_WEIGHTS).reduce((sum, value) => sum + value, 0)).toBe(100);
+    expect(Object.values(DEFAULT_WEIGHTS).reduce((sum, value) => sum + value, 0)).toBe(90);
   });
 
   it("keeps scores bounded from 0 to 100", () => {
@@ -122,8 +122,8 @@ describe("scoring", () => {
   });
 
   it("sums active category weights", () => {
-    expect(totalWeight(DEFAULT_WEIGHTS)).toBe(100);
-    expect(totalWeight({ ...DEFAULT_WEIGHTS, infrastructure: 40 })).toBe(90);
+    expect(totalWeight(DEFAULT_WEIGHTS)).toBe(90);
+    expect(totalWeight({ ...DEFAULT_WEIGHTS, infrastructure: 20 })).toBe(80);
   });
 
   it("compares weights by category value", () => {

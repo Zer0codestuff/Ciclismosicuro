@@ -7,6 +7,8 @@ describe("pageTitle", () => {
   });
 
   it("keeps the default title aligned with index.html", () => {
-    expect(DEFAULT_DOCUMENT_TITLE).toBe("Ciclismo Sicuro | Città italiane per ciclisti");
+    expect(DEFAULT_DOCUMENT_TITLE).toBe(
+      "Ciclismo Sicuro | Indice esplorativo di contesto ciclabile"
+    );
   });
 });

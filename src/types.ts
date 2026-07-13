@@ -18,6 +18,7 @@ export interface MetricDefinition {
   direction: "higher" | "lower";
   category: Exclude<CategoryKey, "dataConfidence">;
   categoryWeight: number;
+  period: string;
   sourceId: string;
   transform: string;
   domainMin?: number;
@@ -143,6 +144,7 @@ export interface RankingPayload {
   accessDate: string;
   title: string;
   summary: string;
+  methodologyCaveats: string[];
   defaultWeights: Weights;
   coverageAudit: CoverageAudit;
   nationalContext: NationalContext;

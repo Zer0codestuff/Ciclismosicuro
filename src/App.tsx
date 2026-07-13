@@ -21,6 +21,8 @@ import {
   TrendingUp
 } from "lucide-react";
 import {
+  lazy,
+  Suspense,
   useCallback,
   useEffect,
   useId,
@@ -37,7 +39,7 @@ import {
   formatRankDelta,
   formatScoreDelta
 } from "./cityComparison";
-import { CityMapPanel } from "./CityMapPanel";
+import { parseRankingPayload } from "./rankingPayload";
 import { scrollIntoViewOptions } from "./motion";
 import { scrollSelectedRankingIntoView } from "./scrollSelectedRanking";
 import {
@@ -53,16 +55,6 @@ import { cityDocumentTitle, DEFAULT_DOCUMENT_TITLE } from "./pageTitle";
 import { useRankingWeightAnnouncement } from "./rankingWeightAnnouncement";
 import { topNavLinksForPage } from "./sectionNav";
 import { useSectionNavSpy } from "./useSectionNavSpy";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Cell,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis
-} from "recharts";
 import {
   categoryDescriptions,
   categoryLabels,
@@ -90,6 +82,36 @@ import type {
   SourceEntry,
   Weights
 } from "./types";
+
+const PrimeCitiesChart = lazy(() =>
+  import("./PrimeCitiesChart").then((module) => ({ default: module.PrimeCitiesChart }))
+);
+const CityProfileChart = lazy(() =>
+  import("./CityProfileChart").then((module) => ({ default: module.CityProfileChart }))
+);
+const CityMapPanel = lazy(() =>
+  import("./CityMapPanel").then((module) => ({ default: module.CityMapPanel }))
+);
+
+function ChartFallback({ height }: { height: number }) {
+  return (
+    <div className="chart-loading" style={{ minHeight: height }} role="status">
+      Caricamento grafico…
+    </div>
+  );
+}
+
+function MapLoadingDialog({ cityName }: { cityName: string }) {
+  return (
+    <div className="city-map-modal-root" id="city-map">
+      <div className="city-map-backdrop" aria-hidden="true" />
+      <section className="city-map-section city-map-module-loading" role="status" aria-live="polite">
+        <BarChart3 aria-hidden="true" />
+        <p>Caricamento mappa di {cityName}…</p>
+      </section>
+    </div>
+  );
+}
 
 /** Resolve a public asset or data path against the Vite base URL (subpath-safe). */
 function withBase(path: string): string {
@@ -160,7 +182,7 @@ const contextSectionIcons: Record<string, ReactNode> = {
 const sortLabels: Record<SortKey, string> = {
   rank: "rank",
   city: "città",
-  score: "punteggio",
+  score: "indice",
   confidence: "confidenza",
   infrastructure: "infrastruttura",
   safety: "sicurezza",
@@ -176,20 +198,20 @@ type ScoredCategoryKey = Exclude<CategoryKey, "dataConfidence">;
 const mobileRankingCategories = [
   "infrastructure",
   "safety",
-  "connectivity",
-  "comfort"
+  "connectivity"
 ] as const satisfies readonly ScoredCategoryKey[];
 
 const contextualCategoryTableLabels: Partial<Record<ScoredCategoryKey, string>> = {
   usage: "Uso",
-  policy: "Policy"
+  policy: "Policy",
+  comfort: "Comfort"
 };
 
 const CONTEXTUAL_CATEGORY_SR_HINT =
-  "categoria contestuale: peso default 0, esclusa dal ranking comparabile per copertura bassa";
+  "categoria contestuale: peso default 0, esclusa dall'indice default per copertura o validità comparativa insufficiente";
 
 const mobileSortOptions: { key: SortKey; label: string }[] = [
-  { key: "score", label: "Punteggio" },
+  { key: "score", label: "Indice" },
   { key: "rank", label: "Posizione" },
   { key: "city", label: "Città" },
   { key: "cycleNetworkEquivalent", label: "Ciclabili (km)" },
@@ -231,12 +253,14 @@ function App() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const loadAttemptRef = useRef(0);
+  const loadControllerRef = useRef<AbortController | null>(null);
   const [query, setQuery] = useState("");
   const [sizeFilter, setSizeFilter] = useState("all");
   const [minConfidence, setMinConfidence] = useState(0);
   const [sortKey, setSortKey] = useState<SortKey>("score");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
   const [weights, setWeights] = useState<Weights>(DEFAULT_WEIGHTS);
+  const [weightError, setWeightError] = useState<string | null>(null);
   const [selectedCityName, setSelectedCityName] = useState<string | null>(null);
   const [deepLinkWarning, setDeepLinkWarning] = useState<string | null>(null);
   const [mapPanelOpen, setMapPanelOpen] = useState(false);
@@ -256,13 +280,16 @@ function App() {
 
   const loadRankingData = useCallback(async () => {
     const attempt = ++loadAttemptRef.current;
+    loadControllerRef.current?.abort();
+    const controller = new AbortController();
+    loadControllerRef.current = controller;
     setLoadError(null);
     setIsLoading(true);
 
     try {
-      const response = await fetch(withBase("data/ranking.json"));
+      const response = await fetch(withBase("data/ranking.json"), { signal: controller.signal });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = (await response.json()) as RankingPayload;
+      const data = parseRankingPayload(await response.json());
       if (attempt !== loadAttemptRef.current) return;
 
       setPayload(data);
@@ -289,11 +316,14 @@ function App() {
       }
     } catch (error) {
       if (attempt !== loadAttemptRef.current) return;
+      if (controller.signal.aborted || (error instanceof Error && error.name === "AbortError")) {
+        return;
+      }
       const message = error instanceof Error ? error.message : String(error);
       setLoadError(message);
       setPayload(null);
     } finally {
-      if (attempt === loadAttemptRef.current) {
+      if (attempt === loadAttemptRef.current && !controller.signal.aborted) {
         setIsLoading(false);
       }
     }
@@ -301,6 +331,7 @@ function App() {
 
   useEffect(() => {
     void loadRankingData();
+    return () => loadControllerRef.current?.abort();
   }, [loadRankingData]);
 
   useEffect(() => {
@@ -382,10 +413,19 @@ function App() {
   const manualPolicyCount = rankedCities.filter((city) => city.rawMetrics.fiabBikeSmile !== null).length;
 
   function updateWeight(category: CategoryKey, value: number) {
-    setWeights((current) => normalizeWeights({ ...current, [category]: value }));
+    setWeights((current) => {
+      const next = normalizeWeights({ ...current, [category]: value });
+      if (totalWeight(next) <= 0) {
+        setWeightError("Almeno un peso deve restare maggiore di zero.");
+        return current;
+      }
+      setWeightError(null);
+      return next;
+    });
   }
 
   function resetWeights() {
+    setWeightError(null);
     setWeights(defaultWeights);
   }
 
@@ -409,17 +449,6 @@ function App() {
     setSelectedCityName(cityName);
     setScrollToDetail(true);
   }, []);
-
-  const handlePrime12BarClick = useCallback(
-    (bar: unknown) => {
-      if (!bar || typeof bar !== "object") return;
-      const cityName = (bar as { payload?: { city?: unknown } }).payload?.city;
-      if (typeof cityName === "string") {
-        selectCity(cityName);
-      }
-    },
-    [selectCity]
-  );
 
   const updateSearchQuery = useCallback(
     (nextQuery: string) => {
@@ -551,7 +580,7 @@ function App() {
           <img src={withBase("assets/ciclismo-sicuro-logo.png")} alt="" />
           <span>
             <strong>Ciclismo Sicuro</strong>
-            <small>ranking metriche comparabili</small>
+            <small>indice esplorativo di contesto ciclabile</small>
           </span>
         </a>
         <nav className="top-nav" aria-label="Navigazione principale">
@@ -576,22 +605,22 @@ function App() {
         <div className="hero-main">
           <div className="hero-copy">
             <p className="eyebrow">
-              Analisi comparabile · {rankedCities.length} capoluoghi · aggiornamento {payload.accessDate}
+              Dati osservati 2022-2023 · {rankedCities.length} capoluoghi · accesso fonti {payload.accessDate}
             </p>
             <h1>{payload.title}</h1>
             <p className="hero-lead">{payload.summary}</p>
             <div className="hero-highlights" aria-label="Punti chiave del metodo">
               <span>
                 <ShieldCheck aria-hidden="true" />
-                Punteggio 0-100 da metriche Lab24 su tutti i capoluoghi
+                Indice relativo da cinque proxy ad alta copertura
               </span>
               <span>
                 <SlidersHorizontal aria-hidden="true" />
-                Pesi regolabili; uso bici e policy restano contestuali
+                Non misura incidenti ciclistici per viaggio o chilometro pedalato
               </span>
               <span>
                 <Info aria-hidden="true" />
-                {payload.nationalContext.sections.length} blocchi di contesto nazionale separati dal ranking
+                Pesi editoriali regolabili; categorie escluse chiaramente segnalate
               </span>
             </div>
           </div>
@@ -606,7 +635,7 @@ function App() {
             </div>
             <div className="hero-stats" aria-label="Indicatori sintetici">
               <MetricTile label="Città analizzate" value={rankedCities.length.toString()} icon={<Database />} />
-              <MetricTile label="Punteggio medio" value={formatMetric(averageScore, 1)} icon={<BarChart3 />} />
+              <MetricTile label="Indice medio" value={formatMetric(averageScore, 1)} icon={<BarChart3 />} />
               <MetricTile label="Confidenza >= 90" value={`${highConfidenceCount}/${rankedCities.length}`} icon={<ShieldCheck />} />
               <MetricTile label="Fonti tracciate" value={payload.sources.length.toString()} icon={<Info />} />
               <MetricTile label="Segnali FIAB/policy" value={`${manualPolicyCount}/${rankedCities.length}`} icon={<Bike />} />
@@ -619,7 +648,7 @@ function App() {
       <section className="leader-band" aria-labelledby="top-cities-title">
         <div className="section-heading">
           <p className="eyebrow">Dashboard</p>
-          <h2 id="top-cities-title">Top ranking comparabile</h2>
+          <h2 id="top-cities-title">Valori più alti dell’indice</h2>
         </div>
         <div className="city-card-grid">
           {topCities.map((city) => (
@@ -648,42 +677,28 @@ function App() {
         <div className="panel">
           <div className="panel-title">
             <BarChart3 aria-hidden="true" />
-            <h2>Prime 12 per punteggio</h2>
+            <h2>Prime 12 per indice</h2>
           </div>
           <div className="chart-frame prime-12-chart" data-testid="prime-12-chart" aria-hidden="true">
-            <ResponsiveContainer width="100%" height={320}>
-              <BarChart data={topTwelveCities} layout="vertical" margin={{ left: 24 }}>
-                <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                <XAxis type="number" domain={[0, 100]} />
-                <YAxis type="category" dataKey="city" width={96} />
-                <Tooltip formatter={(value) => formatMetric(Number(value), 1)} />
-                <Bar
-                  data-testid="prime-12-bars"
-                  dataKey="adjustedScore"
-                  name="Punteggio"
-                  radius={[0, 6, 6, 0]}
-                  isAnimationActive={false}
-                  cursor="pointer"
-                  onClick={handlePrime12BarClick}
-                >
-                  {topTwelveCities.map((city) => (
-                    <Cell key={city.city} fill={city.city === selectedCity.city ? "#d97706" : "#0f766e"} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
+            <Suspense fallback={<ChartFallback height={320} />}>
+              <PrimeCitiesChart
+                cities={topTwelveCities}
+                selectedCityName={selectedCity.city}
+                onSelectCity={selectCity}
+              />
+            </Suspense>
           </div>
-          <ul className="sr-only prime-12-city-list" aria-label="Prime 12 per punteggio, seleziona città">
+          <ul className="sr-only prime-12-city-list" aria-label="Prime 12 per indice, seleziona città">
             {topTwelveCities.map((city) => (
               <li key={city.city}>
                 <button
                   type="button"
                   className="prime-12-city-pick"
                   aria-pressed={city.city === selectedCity.city}
-                  aria-label={`Seleziona ${city.city} dal grafico Prime 12, posizione ${city.adjustedRank}, punteggio ${formatMetric(city.adjustedScore, 1)}`}
+                  aria-label={`Seleziona ${city.city} dal grafico Prime 12, posizione ${city.adjustedRank}, indice ${formatMetric(city.adjustedScore, 1)}`}
                   onClick={() => selectCity(city.city)}
                 >
-                  {city.adjustedRank}. {city.city}, punteggio {formatMetric(city.adjustedScore, 1)}
+                  {city.adjustedRank}. {city.city}, indice {formatMetric(city.adjustedScore, 1)}
                 </button>
               </li>
             ))}
@@ -730,6 +745,11 @@ function App() {
               Contano solo i rapporti tra i pesi, non la somma a 100: il ranking si ricalcola comunque.{" "}
               <a href="#methodology">Vedi formula</a>
             </p>
+            {weightError ? (
+              <p className="weight-error" role="alert">
+                {weightError}
+              </p>
+            ) : null}
           </div>
           <div className="weight-grid">
             {categoryOrder.map((category) => (
@@ -908,12 +928,19 @@ function App() {
                 <tr>
                   <SortableHeader label="#" sortKey="rank" current={sortKey} direction={sortDirection} onSort={chooseSort} />
                   <SortableHeader label="Città" sortKey="city" current={sortKey} direction={sortDirection} onSort={chooseSort} />
-                  <SortableHeader label="Punteggio" sortKey="score" current={sortKey} direction={sortDirection} onSort={chooseSort} />
+                  <SortableHeader label="Indice" sortKey="score" current={sortKey} direction={sortDirection} onSort={chooseSort} />
                   <SortableHeader label="Ciclabili (km)" sortKey="cycleNetworkEquivalent" current={sortKey} direction={sortDirection} onSort={chooseSort} />
                   <SortableHeader label="Infrastruttura" sortKey="infrastructure" current={sortKey} direction={sortDirection} onSort={chooseSort} />
                   <SortableHeader label="Sicurezza" sortKey="safety" current={sortKey} direction={sortDirection} onSort={chooseSort} />
                   <SortableHeader label="Connessioni" sortKey="connectivity" current={sortKey} direction={sortDirection} onSort={chooseSort} />
-                  <SortableHeader label="Comfort" sortKey="comfort" current={sortKey} direction={sortDirection} onSort={chooseSort} />
+                  <SortableHeader
+                    label="Comfort"
+                    sortKey="comfort"
+                    current={sortKey}
+                    direction={sortDirection}
+                    onSort={chooseSort}
+                    contextual={payload.coverageAudit.contextualCategories.includes("comfort")}
+                  />
                   <SortableHeader
                     label="Uso"
                     sortKey="usage"
@@ -970,11 +997,13 @@ function App() {
       />
 
       {mapPanelOpen ? (
-        <CityMapPanel
-          cityName={selectedCity.city}
-          onClose={closeMapPanel}
-          returnFocusRef={mapTriggerRef}
-        />
+        <Suspense fallback={<MapLoadingDialog cityName={selectedCity.city} />}>
+          <CityMapPanel
+            cityName={selectedCity.city}
+            onClose={closeMapPanel}
+            returnFocusRef={mapTriggerRef}
+          />
+        </Suspense>
       ) : null}
 
       <NationalContextSection context={payload.nationalContext} sources={payload.sources} />
@@ -1269,8 +1298,8 @@ function ScoreReadingLegend() {
       >
         <ul className="score-reading-legend-list">
           <li>
-            <strong>Punteggio (0–100):</strong> media ponderata delle categorie con peso maggiore di
-            zero; si aggiorna se modifichi i pesi.
+            <strong>Indice relativo (0–100):</strong> media ponderata dei proxy con peso maggiore di
+            zero; non è una probabilità di incidente e si aggiorna se modifichi i pesi.
           </li>
           <li>
             <strong>
@@ -1365,12 +1394,23 @@ function CategoryCell({
 function CityShareLink({ cityName }: { cityName: string }) {
   const statusId = useId();
   const [copyStatus, setCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
+  const resetTimerRef = useRef<number | null>(null);
   const shareUrl = buildCityShareUrl(cityName);
+
+  useEffect(() => {
+    return () => {
+      if (resetTimerRef.current !== null) window.clearTimeout(resetTimerRef.current);
+    };
+  }, []);
 
   const handleCopy = async () => {
     const result = await copyTextToClipboard(shareUrl);
     setCopyStatus(result === "failed" ? "failed" : "copied");
-    window.setTimeout(() => setCopyStatus("idle"), 4000);
+    if (resetTimerRef.current !== null) window.clearTimeout(resetTimerRef.current);
+    resetTimerRef.current = window.setTimeout(() => {
+      setCopyStatus("idle");
+      resetTimerRef.current = null;
+    }, 4000);
   };
 
   return (
@@ -1571,7 +1611,7 @@ function CityDetail({
                   <dd>{formatRankDelta(comparison.rankDelta)}</dd>
                 </div>
                 <div>
-                  <dt>Punteggio</dt>
+                  <dt>Indice</dt>
                   <dd>{formatScoreDelta(comparison.scoreDelta)}</dd>
                 </div>
               </dl>
@@ -1622,19 +1662,9 @@ function CityDetail({
             <h3>Profilo categorie</h3>
           </div>
           <div aria-hidden="true">
-            <ResponsiveContainer width="100%" height={280}>
-              <BarChart data={profileData}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                <XAxis dataKey="category" />
-                <YAxis domain={[0, 100]} />
-                <Tooltip formatter={(value) => formatMetric(Number(value), 1)} />
-                <Bar dataKey="score" name="Punteggio" radius={[6, 6, 0, 0]} isAnimationActive={false}>
-                  {profileData.map((entry) => (
-                    <Cell key={entry.category} fill={entry.fill} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
+            <Suspense fallback={<ChartFallback height={280} />}>
+              <CityProfileChart data={profileData} />
+            </Suspense>
           </div>
           <ul className="sr-only">
             {profileData.map((entry) => (
@@ -1702,7 +1732,7 @@ function CityDetail({
                 <tr key={metric.id}>
                   <th scope="row" className="metric-matrix-metric">
                     <strong>{metric.label}</strong>
-                    <span className="metric-matrix-unit">{metric.unit}</span>
+                    <span className="metric-matrix-unit">{metric.unit} · periodo {metric.period}</span>
                   </th>
                   <td data-label="Valore originale">
                     {formatMetric(city.rawMetrics[metric.id], rawDigits)}
@@ -1967,18 +1997,17 @@ function Methodology({ payload, weights }: { payload: RankingPayload; weights: W
         <div className="panel">
           <h3>Formula</h3>
           <p>
-            Ogni metrica comparabile viene normalizzata su scala 0-100. Le metriche dove valori
-            bassi sono migliori, come vittime stradali, motorizzazione e inquinanti, sono
-            invertite. Il ranking default è la media pesata delle categorie con copertura ampia;
-            se una categoria attiva manca per una città viene assegnato un valore prudente pari a
-            20 invece di rimuoverne il peso.
+            Le metriche del default vengono portate su scala 0-100 limitando gli estremi ai
+            percentili dichiarati. Per il TPL il confronto avviene separatamente tra città grandi,
+            medie e piccole. I valori dove “basso è meglio” vengono invertiti.
           </p>
           <p>
-            Dentro ogni categoria si applica anche una penalità di copertura: se sono disponibili
-            solo alcune metriche della categoria, il valore medio viene ridotto in proporzione.
+            L’indice default combina piste equivalenti, incidentalità stradale generale,
+            motorizzazione, passeggeri e offerta TPL. Confidenza, aria, ZTL, aree pedonali, uso bici
+            e policy hanno peso zero e restano consultabili separatamente.
           </p>
           <div className="formula">
-            score = somma(categoria normalizzata * peso) / somma(pesi)
+            indice = somma(proxy normalizzato * peso editoriale) / somma(pesi)
           </div>
         </div>
         <div className="panel">
@@ -1994,19 +2023,27 @@ function Methodology({ payload, weights }: { payload: RankingPayload; weights: W
         <div className="panel">
           <h3>Missing data policy</h3>
           <p>
-            Le lacune non vengono riempite con stime arbitrarie. Uso bici e policy hanno peso 0
-            nel ranking default perché i segnali FIAB, quota modale e Copenhagenize coprono solo
-            poche città: restano in scheda città e nei pesi opzionali. Protected lanes, sharing,
-            parcheggi bici, PNRR e pendenze sono elencati come gap finché non esiste una raccolta
-            comparabile e auditabile per tutti i capoluoghi.
+            Le righe Lab24 marcate n.d. restano nulle: non sono convertite in zero. Le metriche sotto
+            la soglia di copertura o con problemi di omogeneità non entrano nel default. Se l’utente
+            le attiva, una categoria interamente mancante riceve il valore prudente 20.
           </p>
         </div>
+      </div>
+      <div className="method-caveats panel" role="note" aria-labelledby="method-caveats-title">
+        <h3 id="method-caveats-title">Cosa questo indice non dimostra</h3>
+        <ul>
+          {payload.methodologyCaveats.map((caveat) => (
+            <li key={caveat}>{caveat}</li>
+          ))}
+        </ul>
       </div>
       <div className="metric-definitions">
         {payload.metricDefinitions.map((metric) => (
           <article key={metric.id}>
             <strong>{metric.label}</strong>
-            <span>{categoryLabels[metric.category]} | {metric.direction === "higher" ? "alto e meglio" : "basso e meglio"}</span>
+            <span>
+              {categoryLabels[metric.category]} | periodo {metric.period} | {metric.direction === "higher" ? "alto e meglio" : "basso e meglio"}
+            </span>
             <p>{metric.transform}</p>
           </article>
         ))}
@@ -2222,7 +2259,7 @@ function CoverageAuditSection({ audit }: { audit: CoverageAudit }) {
     <section className="coverage-audit-section scroll-anchor" id="coverage" aria-labelledby="coverage-title">
       <div className="section-heading">
         <p className="eyebrow">Audit copertura</p>
-        <h2 id="coverage-title">Perché uso e policy non entrano nel ranking default</h2>
+        <h2 id="coverage-title">Cosa entra davvero nell’indice default</h2>
       </div>
       <p className="data-note">
         Qui trovi la copertura per categoria e per singola metrica su tutti i capoluoghi confrontabili.
@@ -2234,7 +2271,7 @@ function CoverageAuditSection({ audit }: { audit: CoverageAudit }) {
         <div className="panel">
           <h3>Categorie nel ranking default</h3>
           <p>
-            Solo metriche Lab24 con copertura ampia su {audit.cityCount} capoluoghi (soglia{" "}
+            Solo categorie costruite con proxy Lab24 ad alta copertura su {audit.cityCount} capoluoghi (soglia{" "}
             {formatMetric(audit.highCoverageThresholdPercent, 0)}%).
           </p>
           <ul className="coverage-category-list">
@@ -2274,7 +2311,7 @@ function CoverageAuditSection({ audit }: { audit: CoverageAudit }) {
         </div>
         <div className="panel">
           <h3>Segnali sparsi</h3>
-          <p>Metriche manuali o storiche con copertura troppo bassa per il ranking comparabile.</p>
+          <p>Metriche sotto la soglia del 95%, manuali oppure non omogenee per il confronto default.</p>
           <ul className="sparse-signal-list">
             {audit.sparseSignals.map((signal) => (
               <li key={signal}>{signal}</li>

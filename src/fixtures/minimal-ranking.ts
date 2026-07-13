@@ -55,6 +55,7 @@ export const minimalRankingPayload: RankingPayload = {
   accessDate: "2026-05-23",
   title: "Ranking test",
   summary: "Payload minimo per test UI.",
+  methodologyCaveats: ["Indice esplorativo di test, non misura rischio ciclistico diretto."],
   defaultWeights: DEFAULT_WEIGHTS,
   coverageAudit: {
     cityCount: 2,
@@ -121,6 +122,7 @@ export const minimalRankingPayload: RankingPayload = {
       direction: "higher",
       category: "infrastructure",
       categoryWeight: 50,
+      period: "2023",
       sourceId: "lab24-piste-ciclabili-2024",
       transform: "normalize"
     }
@@ -143,7 +145,7 @@ export const minimalRankingPayload: RankingPayload = {
         infrastructure: 90,
         safety: 40,
         usage: null,
-        connectivity: 55,
+        connectivity: 70,
         policy: null,
         comfort: 50
       }

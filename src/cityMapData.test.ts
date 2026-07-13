@@ -1,12 +1,20 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   buildCityMapOverpassQuery,
   cityNameVariants,
   CITY_MAP_LAYER_META,
+  clearCityMapCache,
   escapeOverpassString,
+  fetchCityMapData,
   parseCityMapOverpassResponse,
   type OverpassResponse
 } from "./cityMapData";
+
+afterEach(() => {
+  clearCityMapCache();
+  vi.unstubAllGlobals();
+  vi.restoreAllMocks();
+});
 
 describe("cityNameVariants", () => {
   it("includes straight and typographic apostrophe forms", () => {
@@ -285,5 +293,39 @@ describe("parseCityMapOverpassResponse", () => {
     expect(() => parseCityMapOverpassResponse("Unknown", { elements: [] })).toThrow(
       /Nessun confine comunale/
     );
+  });
+});
+
+describe("fetchCityMapData endpoint failover", () => {
+  it("uses the next endpoint after a network failure without injecting remote scripts", async () => {
+    const response: OverpassResponse = {
+      elements: [
+        {
+          type: "relation",
+          id: 1,
+          tags: { boundary: "administrative", admin_level: "8", name: "Milano" },
+          geometry: [
+            { lat: 45.4, lon: 9.1 },
+            { lat: 45.5, lon: 9.2 },
+            { lat: 45.45, lon: 9.15 }
+          ]
+        }
+      ]
+    };
+    const fetchMock = vi
+      .fn()
+      .mockRejectedValueOnce(new TypeError("network unavailable"))
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => response
+      } as Response);
+    vi.stubGlobal("fetch", fetchMock);
+    const appendSpy = vi.spyOn(document.head, "appendChild");
+
+    const result = await fetchCityMapData("Milano");
+
+    expect(result.matchedName).toBe("Milano");
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(appendSpy).not.toHaveBeenCalled();
   });
 });

@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
 import { formatRankingRestoredAnnouncement, formatRankingUpdatedAnnouncement } from "./rankingWeightAnnouncement";
@@ -50,6 +50,7 @@ vi.mock("recharts", () => ({
 }));
 
 function resetCityUrlParam() {
+  cleanup();
   window.history.replaceState({}, "", window.location.pathname);
 }
 
@@ -969,7 +970,7 @@ describe("App ranking compact cards", () => {
     expect(within(mobileList).getByRole("button", { name: "Beta" })).toBeInTheDocument();
     const alphaCard = within(mobileList).getByRole("button", { name: "Alpha" }).closest("li")!;
     expect(within(alphaCard).getByText("Infrastruttura")).toBeInTheDocument();
-    expect(within(alphaCard).getByText("Sicurezza")).toBeInTheDocument();
+    expect(within(alphaCard).getByText("Sicurezza stradale (proxy)")).toBeInTheDocument();
     expect(within(alphaCard).getByText("Uso")).toBeInTheDocument();
     expect(within(alphaCard).getByText("Policy")).toBeInTheDocument();
     expect(within(alphaCard).getAllByText("contestuale")).toHaveLength(2);
@@ -1016,7 +1017,7 @@ describe("App ranking compact cards", () => {
     expect(within(betaCard()).getByRole("region", { name: /imputazione prudente/i })).toBeVisible();
   });
 
-  it("labels mobile sort score option as Punteggio", async () => {
+  it("labels mobile sort score option as Indice", async () => {
     render(<App />);
 
     await waitFor(() => {
@@ -1025,7 +1026,7 @@ describe("App ranking compact cards", () => {
 
     const rankingSection = document.getElementById("ranking")!;
     const sortSelect = within(rankingSection).getByRole("combobox", { name: /ordina per/i });
-    expect(within(sortSelect).getByRole("option", { name: "Punteggio" })).toBeInTheDocument();
+    expect(within(sortSelect).getByRole("option", { name: "Indice" })).toBeInTheDocument();
     expect(within(sortSelect).queryByRole("option", { name: "Score" })).not.toBeInTheDocument();
   });
 
@@ -1076,7 +1077,7 @@ describe("App ranking table categories", () => {
       within(rankingSection).getByRole("columnheader", { name: /^Città ordina per città$/i })
     ).toBeInTheDocument();
     expect(
-      within(rankingSection).getByRole("columnheader", { name: /^Punteggio ordina per punteggio/i })
+      within(rankingSection).getByRole("columnheader", { name: /^Indice ordina per indice/i })
     ).toBeInTheDocument();
     expect(screen.getByRole("combobox", { name: "Cerca città" })).toBeInTheDocument();
     expect(
@@ -1098,7 +1099,7 @@ describe("App ranking table categories", () => {
       ...screen.getAllByTestId("prime-12-bars")
     ].map((node) => node.getAttribute("data-series-name"));
     expect(seriesNames.every((name) => name !== "Score")).toBe(true);
-    expect(seriesNames.filter((name) => name === "Punteggio").length).toBeGreaterThanOrEqual(2);
+    expect(seriesNames.filter((name) => name === "Indice").length).toBeGreaterThanOrEqual(2);
   });
 
   it("shows default-weight category columns, n.d. for zero-weight nulls, and ciclabili km label", async () => {
@@ -1250,7 +1251,7 @@ describe("App custom weights", () => {
 
     expect(screen.queryByText(bannerText)).not.toBeInTheDocument();
     expect(resetButton).toBeDisabled();
-    expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 100");
+    expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 90");
     expect(screen.getByText(/Contano solo i rapporti tra i pesi/i)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Vedi formula" })).toHaveAttribute("href", "#methodology");
 
@@ -1258,11 +1259,11 @@ describe("App custom weights", () => {
     expect(within(rankingSection).getAllByRole("button", { name: "Alpha" })[0]).toBeInTheDocument();
 
     const infraSlider = screen.getByLabelText("Infrastruttura");
-    const safetySlider = screen.getByLabelText("Sicurezza");
+    const safetySlider = screen.getByLabelText("Sicurezza stradale (proxy)");
     fireEvent.change(infraSlider, { target: { value: "0" } });
 
     await waitFor(() => {
-      expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 50");
+      expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 60");
     });
     expect(screen.getByText(/Contano solo i rapporti tra i pesi/i)).toBeVisible();
 
@@ -1287,14 +1288,35 @@ describe("App custom weights", () => {
       expect(screen.queryByText(bannerText)).not.toBeInTheDocument();
     });
     expect(resetButton).toBeDisabled();
-    expect(infraSlider).toHaveValue("50");
-    expect(safetySlider).toHaveValue("25");
-    expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 100");
+    expect(infraSlider).toHaveValue("30");
+    expect(safetySlider).toHaveValue("30");
+    expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 90");
     await waitFor(() => {
       const firstDataRow = within(rankingSection).getAllByRole("row")[1];
       expect(within(firstDataRow).getByRole("button", { name: "Alpha" })).toBeInTheDocument();
     });
     expect(detailSection.querySelector(".rank-pill.large")).toHaveTextContent("#1");
+  });
+
+  it("prevents an all-zero configuration that would create a meaningless ranking", async () => {
+    render(<App />);
+
+    await waitFor(() => {
+      expect(screen.getByRole("heading", { level: 2, name: "Alpha" })).toBeInTheDocument();
+    });
+
+    for (const label of ["Infrastruttura", "Sicurezza stradale (proxy)", "Connessioni"]) {
+      fireEvent.change(screen.getByRole("slider", { name: label }), { target: { value: "0" } });
+    }
+    fireEvent.change(screen.getByRole("slider", { name: "Confidenza" }), {
+      target: { value: "0" }
+    });
+
+    expect(screen.getByRole("alert")).toHaveTextContent(
+      "Almeno un peso deve restare maggiore di zero."
+    );
+    expect(screen.getByRole("slider", { name: "Connessioni" })).toHaveValue("30");
+    expect(screen.getByText("Somma pesi:").closest("p")).toHaveTextContent("Somma pesi: 30");
   });
 
   it("announces debounced ranking updates for screen readers when custom weights change", async () => {
@@ -1332,7 +1354,7 @@ describe("App custom weights", () => {
     );
 
     const infraSlider = screen.getByLabelText("Infrastruttura");
-    const safetySlider = screen.getByLabelText("Sicurezza");
+    const safetySlider = screen.getByLabelText("Sicurezza stradale (proxy)");
     fireEvent.change(infraSlider, { target: { value: "0" } });
     fireEvent.change(safetySlider, { target: { value: "75" } });
 
@@ -1577,7 +1599,9 @@ describe("App city deep link", () => {
     });
 
     const detail = document.getElementById("detail")!;
-    expect(detail.scrollIntoView).toHaveBeenCalledWith({ behavior: "auto", block: "start" });
+    await waitFor(() => {
+      expect(detail.scrollIntoView).toHaveBeenCalledWith({ behavior: "auto", block: "start" });
+    });
     expect(screen.getByRole("heading", { level: 2, name: "Beta" })).toHaveFocus();
   });
 
@@ -1703,7 +1727,7 @@ describe("Copertura per metrica", () => {
     render(<App />);
 
     await waitFor(() => {
-      expect(screen.getByRole("heading", { level: 2, name: /Perché uso e policy/i })).toBeInTheDocument();
+      expect(screen.getByRole("heading", { level: 2, name: /Cosa entra davvero/i })).toBeInTheDocument();
     });
 
     expect(screen.queryByText(/coverageAudit/i)).not.toBeInTheDocument();
@@ -1798,7 +1822,7 @@ describe("City detail comparison", () => {
     expect(within(panel).getByRole("heading", { name: "Confronto con Beta" })).toBeInTheDocument();
     expect(within(panel).getByText(formatRankDelta(expected.rankDelta))).toBeInTheDocument();
     expect(within(panel).getByText(formatScoreDelta(expected.scoreDelta))).toBeInTheDocument();
-    expect(within(panel).getByText(/Sicurezza:/i)).toBeInTheDocument();
+    expect(within(panel).getByText(/Sicurezza stradale \(proxy\):/i)).toBeInTheDocument();
     expect(within(panel).getByText(/Infrastruttura:/i)).toBeInTheDocument();
   });
 
