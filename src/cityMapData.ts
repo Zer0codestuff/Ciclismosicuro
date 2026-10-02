@@ -219,10 +219,11 @@ function boundaryRelationStatements(variants: string[]): string {
   return statements.join("\n");
 }
 
-/** Build the Overpass QL query for a named Italian comune (admin_level=8). */
-export function buildCityMapOverpassQuery(cityName: string): string {
-  const variants = cityNameVariants(cityName);
-  const boundaryStatements = boundaryRelationStatements(variants);
+/** Build the Overpass QL query for an Italian comune (admin_level=8), by ISTAT code when known. */
+export function buildCityMapOverpassQuery(cityName: string, istatCode?: string): string {
+  const boundaryStatements = istatCode
+    ? `  relation["boundary"="administrative"]["admin_level"="8"]["ref:ISTAT"="${escapeOverpassString(istatCode)}"](area.italy);`
+    : boundaryRelationStatements(cityNameVariants(cityName));
 
   return `[out:json][timeout:45];
 area["ISO3166-1"="IT"]["admin_level"="2"]->.italy;
@@ -372,8 +373,14 @@ function classifyElement(element: OverpassElement): CityMapLayerId | null {
 }
 
 function geometryTypeForLayer(layerId: CityMapLayerId, coordinates: LatLng[] | LatLng[][]): CityMapFeature["geometryType"] {
-  if (layerId === "boundary" || layerId === "ztl" || layerId === "pedestrian") {
-    return "polygon";
+  if (layerId === "boundary") return "line";
+  if (layerId === "ztl" || layerId === "pedestrian") {
+    // Relation members may be open fragments; only a closed way is a polygon here.
+    if (Array.isArray(coordinates[0])) return "line";
+    const points = coordinates as LatLng[];
+    const first = points[0];
+    const last = points.at(-1);
+    return points.length >= 4 && first.lat === last?.lat && first.lng === last.lng ? "polygon" : "line";
   }
   if (Array.isArray(coordinates[0])) {
     const firstRing = coordinates[0] as LatLng[];
@@ -487,13 +494,19 @@ export function parseCityMapOverpassResponse(cityName: string, response: Overpas
   };
 }
 
-export function getCachedCityMapData(cityName: string): CityMapData | undefined {
-  return cache.get(cityName.trim());
+function cityMapCacheKey(cityName: string, istatCode?: string): string {
+  return JSON.stringify([cityName.trim(), istatCode ?? null]);
+}
+
+export function getCachedCityMapData(cityName: string, istatCode?: string): CityMapData | undefined {
+  return cache.get(cityMapCacheKey(cityName, istatCode));
 }
 
 export function clearCityMapCache(cityName?: string): void {
   if (cityName) {
-    cache.delete(cityName.trim());
+    for (const [key, data] of cache) {
+      if (data.cityName === cityName.trim()) cache.delete(key);
+    }
     return;
   }
   cache.clear();
@@ -504,6 +517,7 @@ async function fetchOverpassResponse(
   query: string,
   parentSignal: AbortSignal
 ): Promise<OverpassResponse> {
+  if (parentSignal.aborted) throw new DOMException("Request aborted", "AbortError");
   const controller = new AbortController();
   let timedOut = false;
   const onParentAbort = () => controller.abort();
@@ -540,12 +554,14 @@ async function fetchOverpassResponse(
 
 export async function fetchCityMapData(
   cityName: string,
-  options?: { signal?: AbortSignal; force?: boolean }
+  options?: { signal?: AbortSignal; force?: boolean; istatCode?: string }
 ): Promise<CityMapData> {
-  const key = cityName.trim();
-  if (!key) {
+  const name = cityName.trim();
+  if (!name) {
     throw new Error("Nome città mancante.");
   }
+  if (options?.signal?.aborted) throw new Error("Richiesta mappa annullata o scaduta. Riprova.");
+  const key = cityMapCacheKey(name, options?.istatCode);
 
   if (options?.force) {
     cache.delete(key);
@@ -560,13 +576,13 @@ export async function fetchCityMapData(
   options?.signal?.addEventListener("abort", onAbort, { once: true });
 
   try {
-    const query = buildCityMapOverpassQuery(key);
+    const query = buildCityMapOverpassQuery(name, options?.istatCode);
     let lastError: Error | null = null;
 
     for (const endpoint of OVERPASS_REQUEST_URLS) {
       try {
         const payload = await fetchOverpassResponse(endpoint, query, controller.signal);
-        const parsed = parseCityMapOverpassResponse(key, payload);
+        const parsed = parseCityMapOverpassResponse(name, payload);
         cache.set(key, parsed);
         return parsed;
       } catch (endpointError) {

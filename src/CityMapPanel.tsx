@@ -144,6 +144,13 @@ function addFeatureToMap(
 
   if (feature.geometryType === "polygon") {
     const rings = latLngsFromFeature(feature) as L.LatLngExpression[][];
+    if (feature.layerId === "boundary") {
+      // OSM relation members are open boundary segments, not ordered polygon rings.
+      const boundary = L.polyline(rings, { ...style, fill: false });
+      if (popup) boundary.bindPopup(popup);
+      boundary.addTo(group);
+      return boundary;
+    }
     const polygon = L.polygon(rings.length === 1 ? rings[0] : rings, style);
     if (popup) polygon.bindPopup(popup);
     polygon.addTo(group);
@@ -159,10 +166,12 @@ function addFeatureToMap(
 
 export function CityMapPanel({
   cityName,
+  istatCode,
   onClose,
   returnFocusRef
 }: {
   cityName: string;
+  istatCode?: string;
   onClose: () => void;
   returnFocusRef?: RefObject<HTMLElement | null>;
 }) {
@@ -238,7 +247,7 @@ export function CityMapPanel({
       setLoading(true);
       setError(null);
       try {
-        const result = await fetchCityMapData(cityName, { signal, force });
+        const result = await fetchCityMapData(cityName, { signal, force, istatCode });
         if (signal.aborted) return;
         setData(result);
       } catch (loadError) {
@@ -249,7 +258,7 @@ export function CityMapPanel({
         if (!signal.aborted) setLoading(false);
       }
     },
-    [cityName]
+    [cityName, istatCode]
   );
 
   useEffect(() => {
@@ -315,20 +324,12 @@ export function CityMapPanel({
       }
     }
 
-    for (const meta of CITY_MAP_LAYER_META) {
-      const group = layerGroupsRef.current[meta.id];
-      if (!group) continue;
-      if (layerVisibility[meta.id]) {
-        group.addTo(map);
-      }
-    }
-
     const { south, west, north, east } = data.bounds;
     map.fitBounds(
       L.latLngBounds([south, west], [north, east]),
       { padding: [24, 24], maxZoom: 14 }
     );
-  }, [data, layerVisibility, metaById]);
+  }, [data, metaById]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -343,7 +344,7 @@ export function CityMapPanel({
         map.removeLayer(group);
       }
     }
-  }, [layerVisibility]);
+  }, [data, layerVisibility]);
 
   function toggleLayer(layerId: Exclude<CityMapLayerId, "boundary">) {
     setLayerVisibility((current) => ({ ...current, [layerId]: !current[layerId] }));

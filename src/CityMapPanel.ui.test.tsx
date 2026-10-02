@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { createRef, useState } from "react";
+import L from "leaflet";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { CityMapPanel } from "./CityMapPanel";
 import { fetchCityMapData, type CityMapData } from "./cityMapData";
@@ -123,6 +124,22 @@ describe("CityMapPanel accessibility", () => {
     await waitFor(() => {
       expect(screen.getByRole("button", { name: "Chiudi mappa di Beta" })).toHaveFocus();
     });
+  });
+
+  it("preserves the user's map viewport when a layer is toggled", async () => {
+    const data = emptyMapData("Beta");
+    data.layers.cycleLanes.available = true;
+    data.layers.cycleLanes.count = 1;
+    vi.mocked(fetchCityMapData).mockResolvedValue(data);
+    render(<CityMapPanel cityName="Beta" istatCode="001001" onClose={vi.fn()} />);
+    await waitFor(() => expect(fetchCityMapData).toHaveBeenCalled());
+    const map = vi.mocked(L.map).mock.results.at(-1)!.value;
+    await waitFor(() => expect(map.fitBounds).toHaveBeenCalledTimes(1));
+    const checkbox = screen.getByRole("checkbox", { name: /Piste ciclabili/ });
+    fireEvent.click(checkbox);
+    fireEvent.click(checkbox);
+    expect(map.fitBounds).toHaveBeenCalledTimes(1);
+    expect(fetchCityMapData).toHaveBeenCalledWith("Beta", expect.objectContaining({ istatCode: "001001" }));
   });
 
   it("closes on Escape and returns focus to the trigger ref", async () => {

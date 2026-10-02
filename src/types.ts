@@ -1,28 +1,29 @@
-export type CategoryKey =
-  | "infrastructure"
-  | "safety"
-  | "usage"
-  | "connectivity"
-  | "policy"
-  | "comfort"
-  | "dataConfidence";
+export type PillarId = "safety" | "infrastructure" | "traffic" | "usage" | "transit" | "environment";
 
-export type Weights = Record<CategoryKey, number>;
+export type Weights = Record<PillarId, number>;
+
+export interface Pillar {
+  id: PillarId;
+  label: string;
+  shortLabel: string;
+  description: string;
+  defaultWeight: number;
+}
 
 export interface MetricDefinition {
   id: string;
-  slug?: string;
+  pillar: PillarId;
+  weight: number;
   label: string;
   shortLabel: string;
   unit: string;
   direction: "higher" | "lower";
-  category: Exclude<CategoryKey, "dataConfidence">;
-  categoryWeight: number;
+  normalization: "riskRatio" | "robust" | "binary";
+  transform?: "log" | "log1p";
+  digits: number;
   period: string;
-  sourceId: string;
-  transform: string;
-  domainMin?: number;
-  domainMax?: number;
+  sourceIds: string[];
+  description: string;
 }
 
 export interface SourceEntry {
@@ -30,131 +31,215 @@ export interface SourceEntry {
   title: string;
   publisher: string;
   url: string;
-  accessDate: string;
-  reliability: "high" | "medium" | "medium-low" | "low" | "interim";
+  license: string;
+  period: string;
   notes: string;
 }
 
-export interface CityRanking {
-  id: string;
-  city: string;
-  rank: number;
+export interface CitySafety {
+  period: string;
+  casualties: number;
+  casualtiesPerYear: number;
+  expected: number;
+  ratio: number;
+  ratioLow: number;
+  ratioHigh: number;
+  rawRatio: number;
+  lethalityIndex: number;
+  perResident100k: number;
+  perBikeCommuter1000: number;
+  deaths: number;
+  deathsPeriod: string;
+  expectedDeaths: number;
+  fatalityRatio: number;
+  fatalityRatioLow: number;
+  fatalityRatioHigh: number;
+  exposureScenarios?: ExposureScenario[];
+}
+
+export interface ExposureScenario {
+  multiplier: number;
+  ratio: number;
+  fatalityRatio: number;
   score: number;
-  dataConfidence: number;
-  regionId: string;
-  sizeClass: number | null;
-  rawMetrics: Record<string, number | null>;
-  normalizedMetrics: Record<string, number | null>;
-  metricSources: Record<string, string>;
-  manualSources: string[];
-  categoryScores: Record<Exclude<CategoryKey, "dataConfidence">, number | null>;
-  categoryCoverage: Record<Exclude<CategoryKey, "dataConfidence">, number>;
-  strengths: string[];
-  weaknesses: string[];
-  uncertainty: string;
-  missingMetrics: string[];
-  policySignals?: string[];
-  externalCyclingScore?: number | null;
-  externalInfrastructureScore?: number | null;
-  externalUsageScore?: number | null;
+  rank: number;
 }
 
-export interface MetricCoverageEntry {
-  id: string;
-  label: string;
-  category: Exclude<CategoryKey, "dataConfidence">;
-  sourceId: string;
-  citiesWithValue: number;
-  coveragePercent: number;
-  sparse: boolean;
-  manual: boolean;
+export interface DataCoverage {
+  metricsAvailable: number;
+  metricsTotal: number;
+  pillarCoverage: Record<PillarId, number | null>;
+  missingMetricIds: string[];
+  defaultWeightedCoverage: number | null;
 }
 
-export interface CategoryCoverageEntry {
-  category: Exclude<CategoryKey, "dataConfidence">;
-  defaultWeight: number;
-  citiesWithCategoryScore: number;
-  coveragePercent: number;
-  averageMetricCoveragePercent: number;
-  includedInDefaultScore: boolean;
-  sparse: boolean;
+export interface CrashYear {
+  year: number;
+  killed: number;
+  injured: number;
+  ebike: number;
+  escooter: number;
 }
 
-export interface CoverageAudit {
-  cityCount: number;
-  defaultWeightTotal: number;
-  highCoverageThresholdPercent: number;
-  categories: CategoryCoverageEntry[];
-  metrics: MetricCoverageEntry[];
-  sparseSignals: string[];
-  defaultScoreCategories: Exclude<CategoryKey, "dataConfidence">[];
-  contextualCategories: Exclude<CategoryKey, "dataConfidence">[];
-  notes: string[];
-}
-
-export type NationalContextReliability =
-  | "high"
-  | "medium"
-  | "medium-low"
-  | "low"
-  | "interim";
-
-export interface NationalContextItem {
-  id: string;
-  label: string;
-  value: number | string;
-  unit: string;
+export interface CrashProfile {
   period: string;
-  sourceId: string;
-  reliability: NationalContextReliability;
-  interpretation: string;
-  caveat: string;
-  changeVsPrevious?: number | null;
-  changeLabel?: string;
+  casualties: number;
+  killed: number;
+  intersectionShare: number | null;
+  carShare: number | null;
+  heavyShare: number | null;
+  aloneShare: number | null;
+  hitAndRunShare: number | null;
+  over64Share: number | null;
+  nightShare: number | null;
+  ebikeShare: number | null;
 }
 
-export interface NationalContextTimelinePoint {
+export interface CityContext {
+  bikeCommuters2011: number;
+  commuters2011: number;
+  carCommuteShare2011: number;
+  cars: number;
+  carsPer100Raw: number;
+  ztl: boolean;
+  pedestrianArea: boolean;
+  zone30Expanding: boolean;
+  cycleLaneDensity: number | null;
+  osm: {
+    separatedKm: number;
+    paintedLaneKm: number;
+    roadKm: number;
+    maxspeedTagCoverage: number;
+    bikeParking: number;
+    timestamp: string | null;
+  } | null;
+}
+
+export interface City {
   id: string;
-  label: string;
+  name: string;
+  officialName: string;
+  istatCode: string;
+  region: string;
+  area: string;
+  macroArea: "Nord" | "Centro" | "Mezzogiorno";
+  metropolitanCapital: boolean;
+  sizeClass: "grande" | "media" | "piccola";
+  population: number;
+  populationYear: number;
+  lat: number;
+  lon: number;
+  score: number;
+  rank: number;
+  rankRange: [number, number];
+  exposureRankRange?: [number, number];
+  dataCoverage?: DataCoverage;
+  pillarScores: Record<PillarId, number | null>;
+  metrics: Record<string, number | boolean | null>;
+  metricScores: Record<string, number | null>;
+  safety: CitySafety;
+  crashSeries: CrashYear[];
+  crashProfile: CrashProfile;
+  cycleLaneSeries: { year: number; km: number | null }[];
+  context: CityContext;
+  flags: string[];
+}
+
+export interface NationalYear {
+  year: number;
+  cyclistKilled: number;
+  cyclistInjured: number;
+  ebikeCasualties: number;
+  escooterCasualties: number;
+  allKilled: number;
+  allInjured: number;
+  capitalsCyclistCasualties: number;
+}
+
+export interface MacroAreaFinding {
+  area: string;
+  cities: number;
+  medianBikeShare: number;
+  medianRiskRatio: number;
+  medianScore: number;
+  medianLethalityIndex: number;
+}
+
+export interface Findings {
+  lastYear: number;
+  cyclistKilledLastYear: number;
+  cyclistInjuredLastYear: number;
+  cyclistKilledPreAverage: number;
+  cyclistKilledRecentAverage: number;
+  cyclistInjuredPreAverage: number;
+  cyclistInjuredRecentAverage: number;
+  ebikeShareFirst: number;
+  ebikeShareLast: number;
+  capitalsShareOfCyclistCasualties: number;
+  safetyInNumbersExponent: number;
+  safetyInNumbersCi: [number, number];
+  casualtiesPerProxyWhenDoubling: number;
+  casualtiesWhenDoubling: number;
+  perResidentVsBikeShareCorrelation: number;
+  lanesVsRiskCorrelation: number;
+  lanesVsBikeShareCorrelation: number;
+  roadCasualtiesVsRiskCorrelation: number;
+  carsVsRiskCorrelation: number;
+  profile: {
+    period: string;
+    casualties: number;
+    killed: number;
+    carShare: number;
+    heavyShare: number;
+    aloneShare: number;
+    hitAndRunShare: number;
+    intersectionShare: number;
+    over64ShareOfCasualties: number;
+    over64ShareOfDeaths: number;
+    nightShare: number;
+    hours: number[];
+    weekdays: number[];
+    opponents: Record<string, number>;
+  };
+  macroAreas: MacroAreaFinding[];
+}
+
+export interface RiskModelSummary {
   period: string;
-  value: number;
-  unit: string;
-  sourceId: string;
-  reliability: NationalContextReliability;
-  interpretation: string;
-  caveat: string;
-}
-
-export interface NationalContextSection {
-  id: string;
-  title: string;
-  description: string;
-  cards: NationalContextItem[];
-  timeline?: NationalContextTimelinePoint[];
-}
-
-export interface NationalContext {
-  disclaimer: string;
-  notUsedInRanking: true;
-  sections: NationalContextSection[];
+  intercept: number;
+  exponent: number;
+  exponentSe: number;
+  dispersion: number;
+  priorAlpha: number;
 }
 
 export interface RankingPayload {
+  schemaVersion: 2;
   generatedAt: string;
-  accessDate: string;
   title: string;
   summary: string;
-  methodologyCaveats: string[];
+  cityCount: number;
   defaultWeights: Weights;
-  coverageAudit: CoverageAudit;
-  nationalContext: NationalContext;
-  metricDefinitions: MetricDefinition[];
+  pillars: Pillar[];
+  metrics: MetricDefinition[];
+  model: {
+    description: string;
+    injury: RiskModelSummary;
+    fatality: RiskModelSummary;
+    sensitivity: { draws: number; concentration: number; interval: [number, number]; description?: string };
+    standardErrorMethod?: string;
+    interval?: { level: number; description: string };
+    exposureSensitivity?: { multipliers: [number, number]; description: string };
+  };
+  findings: Findings;
+  national: NationalYear[];
+  limitations: string[];
   sources: SourceEntry[];
-  sourceGaps: string[];
-  cities: CityRanking[];
+  cities: City[];
 }
 
-export interface RankedCity extends CityRanking {
-  adjustedScore: number;
-  adjustedRank: number;
+/** A city with the score/rank recomputed for the user's current weights. */
+export interface RankedCity extends City {
+  liveScore: number | null;
+  liveRank: number | null;
 }

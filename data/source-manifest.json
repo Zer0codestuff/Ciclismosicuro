@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "hashAlgorithm": "SHA-256",
+  "notes": "Fingerprints of the original official inputs. A URL can change: compare hashes when rebuilding. File dates are intentionally not interpreted as publication or retrieval dates. OSM query hashes are stored in per-city raw caches; query version and snapshot/retrieval timestamps are recorded in osm-infrastructure.json and per-city caches.",
+  "files": [
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2015.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2015%2F01%2F01.zip&filename=INCSTRAD_2015_IT.zip",
+      "bytes": 9960629,
+      "sha256": "688cba15d2ce8b40bc524bbe02cf734f591413375f8e15d564095ac81ba7c4b5"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2016.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2016%2F01%2F01.zip&filename=INCSTRAD_2016_IT.zip",
+      "bytes": 10177643,
+      "sha256": "591f421d4940af39d38707c63df8cfb2a8f04e531ecc9cfb65ace106c4d77b86"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2017.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2017%2F01%2F01.zip&filename=INCSTRAD_2017_IT.zip",
+      "bytes": 7839949,
+      "sha256": "6ecc6ced8c50abb6dfebebea90e33be34d67df93cef0114ca994b40585a48502"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2018.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2018%2F01%2F01.zip&filename=INCSTRAD_2018_IT.zip",
+      "bytes": 8161308,
+      "sha256": "6f6a54ddc52a756b39dfbf47477ab4e282613dd33b0a40324801dab9153b2a33"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2019.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2019%2F01%2F01.zip&filename=INCSTRAD_2019_IT.zip",
+      "bytes": 8316383,
+      "sha256": "c2e0325303c29c603c80cb67c8b048d966bdd6bfca5410382a1f4f6499f3a9ab"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2020.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2020%2F01%2F01.zip&filename=INCSTRAD_2020_IT.zip",
+      "bytes": 6400753,
+      "sha256": "92dd137662913c5640d5c6466875ca29448191dbc45e8d75e9316ca1866d78ae"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2021.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2021%2F01%2F01.zip&filename=INCSTRAD_2021_IT.zip",
+      "bytes": 7704606,
+      "sha256": "3b4d98753ad9f7f1c5416ed977d4dcdce04b70ed31eff6cfd8bdc7aa417e17d4"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2022.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2022%2F01%2F01.zip&filename=INCSTRAD_2022_IT.zip",
+      "bytes": 8215958,
+      "sha256": "c81b50d1212acd101e24a0f53459112d17643f9ffb5071d5eb64cd04d5057e69"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2023.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2023%2F01%2F01.zip&filename=INCSTRAD_2023_IT.zip",
+      "bytes": 7726293,
+      "sha256": "21ff507fb3d9ca4f755dd08d86eaf9e7a1c05098becacc945fe83129129ae937"
+    },
+    {
+      "file": "data/raw/istat-incidenti/INCSTRAD_2024.zip",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/microdata/download.php?file=%2F3%2F2024%2F01%2F01.zip&filename=INCSTRAD_2024_IT.zip",
+      "bytes": 7737318,
+      "sha256": "a98fdee0a127bdf305ee31d253090a8281b62f483ec68ebdd66d43c7667ea5ab"
+    },
+    {
+      "file": "data/raw/istat/Elenco-comuni-italiani.csv",
+      "url": "https://www.istat.it/storage/codici-unita-amministrative/Elenco-comuni-italiani.csv",
+      "bytes": 1126843,
+      "sha256": "57eaf945182fc64fa05f80f1a5fb2a84cff55ebde2af6e3947a731776e7809e0"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2019_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2019_it_Comuni.zip",
+      "bytes": 8533757,
+      "sha256": "26596594e189c5f9ac77d18f8fb0eba44f86adff667ad87e18ec030ed4e8b5d8"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2020_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2020_it_Comuni.zip",
+      "bytes": 8508839,
+      "sha256": "12fbcbff9caadc8435f7554421639a79bb853da0bfa77f7ad3c8c847c90330e5"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2021_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2021_it_Comuni.zip",
+      "bytes": 8484828,
+      "sha256": "c0f9fe4c8cf25bb0b3bfee6e31947f0238f2256642a3dab262250c4a9f9111cf"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2022_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2022_it_Comuni.zip",
+      "bytes": 8494380,
+      "sha256": "f170818902a1e653b920f4b8874e81f6ff72b0eebd80dae6e6ec9dd9c8805207"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2023_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2023_it_Comuni.zip",
+      "bytes": 8508089,
+      "sha256": "b688e6e3147b1d0912e08aae6be10ad9a25efc05cd49377c7885096b117a4f69"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2024_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2024_it_Comuni.zip",
+      "bytes": 8517397,
+      "sha256": "67ee1f4c9b8ad8db57f671e75d0e78c5fccd7e447c97e22835c4f03ada28a6b0"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2025_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2025_it_Comuni.zip",
+      "bytes": 8522158,
+      "sha256": "5f549156a3057ca7d4be6dc49cf0e861807ec66e15fda1f9a41fc5aa7271b700"
+    },
+    {
+      "file": "data/raw/istat-popolazione/POSAS_2026_it_Comuni.zip",
+      "url": "https://demo.istat.it/data/posas/POSAS_2026_it_Comuni.zip",
+      "bytes": 4579670,
+      "sha256": "910639e5f7b1bb8256637eee824655ba76fb8459670c9559fea1ac0922667eac"
+    },
+    {
+      "file": "data/raw/istat-popolazione/PopolazioneEta-Territorio-Comuni.zip",
+      "url": "https://demo.istat.it/data/ricostruzione/PopolazioneEta-Territorio-Comuni.zip",
+      "bytes": 99786671,
+      "sha256": "b49291a9743db131dce267034e7323bf9fdc8b278670e04dd8fb667b6a8f4da1"
+    },
+    {
+      "file": "data/raw/istat/matrici_pendolarismo_2011.zip",
+      "url": "https://www.istat.it/storage/cartografia/matrici_pendolarismo/matrici_pendolarismo_2011.zip",
+      "bytes": 36016150,
+      "sha256": "36ab2a95a23c75f48019274d06506887e996c2833c9ac5e994f6ced175ad3586"
+    },
+    {
+      "file": "data/raw/istat/TAVOLE_AMBURB_2024.zip",
+      "url": "https://www.istat.it/wp-content/uploads/2026/09/TAVOLE_AMBURB_2024.zip",
+      "bytes": 2632250,
+      "sha256": "e03707b4d5f34a7a91190533a4716a8bccccc8061204b14380d4ff5881c1cea9"
+    },
+    {
+      "file": "data/raw/aci/Autoritratto2025_Parco_veicolare.zip",
+      "url": "https://aci.gov.it//app/uploads/2026/06/Autoritratto2025_Parco_veicolare.zip",
+      "bytes": 8256052,
+      "sha256": "8f81c97efa892fe4b02f31c56875ebcd1693da023533897387e0cf66d298e6e3"
+    }
+  ]
+}

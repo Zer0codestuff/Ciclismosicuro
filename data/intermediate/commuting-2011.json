@@ -1,0 +1,2437 @@
+{
+  "source": "ISTAT, 15° Censimento della popolazione 2011, matrice del pendolarismo",
+  "national": {
+    "total": 28852721,
+    "bike": 960219,
+    "car": 17541812,
+    "transit": 4685820,
+    "walk": 4548999,
+    "motorbike": 1011403,
+    "other": 104469
+  },
+  "populationScope": "Residents in households; institutional residents are excluded from mode-specific L records",
+  "sampling": "Weighted estimates; mode was sampled in municipalities with at least 20,000 residents at 31 December 2010",
+  "referenceNationalTotal": 28852721,
+  "cities": {
+    "torino": {
+      "residents": {
+        "total": 423856,
+        "bike": 11501,
+        "car": 194459,
+        "transit": 123248,
+        "walk": 84844,
+        "motorbike": 8854,
+        "other": 950
+      },
+      "internal": {
+        "total": 354911,
+        "bike": 11054,
+        "car": 141848,
+        "transit": 109170,
+        "walk": 84297,
+        "motorbike": 7756,
+        "other": 786
+      },
+      "inboundBike": 834,
+      "inboundTotal": 179715
+    },
+    "vercelli": {
+      "residents": {
+        "total": 22052,
+        "bike": 1924,
+        "car": 13281,
+        "transit": 2184,
+        "walk": 4185,
+        "motorbike": 383,
+        "other": 95
+      },
+      "internal": {
+        "total": 16296,
+        "bike": 1866,
+        "car": 9261,
+        "transit": 587,
+        "walk": 4169,
+        "motorbike": 343,
+        "other": 70
+      },
+      "inboundBike": 68,
+      "inboundTotal": 10470
+    },
+    "novara": {
+      "residents": {
+        "total": 52508,
+        "bike": 5108,
+        "car": 29330,
+        "transit": 8458,
+        "walk": 8214,
+        "motorbike": 1223,
+        "other": 174
+      },
+      "internal": {
+        "total": 38709,
+        "bike": 4997,
+        "car": 20002,
+        "transit": 4311,
+        "walk": 8194,
+        "motorbike": 1066,
+        "other": 139
+      },
+      "inboundBike": 211,
+      "inboundTotal": 25074
+    },
+    "biella": {
+      "residents": {
+        "total": 20846,
+        "bike": 435,
+        "car": 14290,
+        "transit": 1441,
+        "walk": 4292,
+        "motorbike": 326,
+        "other": 62
+      },
+      "internal": {
+        "total": 14702,
+        "bike": 398,
+        "car": 8994,
+        "transit": 742,
+        "walk": 4267,
+        "motorbike": 249,
+        "other": 51
+      },
+      "inboundBike": 108,
+      "inboundTotal": 18340
+    },
+    "cuneo": {
+      "residents": {
+        "total": 28528,
+        "bike": 1654,
+        "car": 16289,
+        "transit": 3339,
+        "walk": 6737,
+        "motorbike": 424,
+        "other": 85
+      },
+      "internal": {
+        "total": 23135,
+        "bike": 1618,
+        "car": 11866,
+        "transit": 2476,
+        "walk": 6720,
+        "motorbike": 385,
+        "other": 70
+      },
+      "inboundBike": 146,
+      "inboundTotal": 22486
+    },
+    "verbania": {
+      "residents": {
+        "total": 14953,
+        "bike": 466,
+        "car": 9537,
+        "transit": 1295,
+        "walk": 2930,
+        "motorbike": 662,
+        "other": 63
+      },
+      "internal": {
+        "total": 10816,
+        "bike": 446,
+        "car": 6080,
+        "transit": 740,
+        "walk": 2930,
+        "motorbike": 596,
+        "other": 24
+      },
+      "inboundBike": 30,
+      "inboundTotal": 8673
+    },
+    "asti": {
+      "residents": {
+        "total": 37194,
+        "bike": 476,
+        "car": 23723,
+        "transit": 4875,
+        "walk": 7366,
+        "motorbike": 640,
+        "other": 114
+      },
+      "internal": {
+        "total": 29455,
+        "bike": 465,
+        "car": 18302,
+        "transit": 2627,
+        "walk": 7363,
+        "motorbike": 607,
+        "other": 91
+      },
+      "inboundBike": 13,
+      "inboundTotal": 12781
+    },
+    "alessandria": {
+      "residents": {
+        "total": 43237,
+        "bike": 2649,
+        "car": 26691,
+        "transit": 5558,
+        "walk": 7739,
+        "motorbike": 481,
+        "other": 119
+      },
+      "internal": {
+        "total": 34726,
+        "bike": 2624,
+        "car": 20189,
+        "transit": 3668,
+        "walk": 7736,
+        "motorbike": 435,
+        "other": 74
+      },
+      "inboundBike": 46,
+      "inboundTotal": 16286
+    },
+    "aosta": {
+      "residents": {
+        "total": 17370,
+        "bike": 718,
+        "car": 9735,
+        "transit": 947,
+        "walk": 5356,
+        "motorbike": 577,
+        "other": 37
+      },
+      "internal": {
+        "total": 13770,
+        "bike": 688,
+        "car": 6695,
+        "transit": 545,
+        "walk": 5356,
+        "motorbike": 464,
+        "other": 22
+      },
+      "inboundBike": 50,
+      "inboundTotal": 11635
+    },
+    "imperia": {
+      "residents": {
+        "total": 20112,
+        "bike": 121,
+        "car": 10371,
+        "transit": 1958,
+        "walk": 4324,
+        "motorbike": 3288,
+        "other": 50
+      },
+      "internal": {
+        "total": 16835,
+        "bike": 110,
+        "car": 8009,
+        "transit": 1402,
+        "walk": 4321,
+        "motorbike": 2953,
+        "other": 40
+      },
+      "inboundBike": 23,
+      "inboundTotal": 7280
+    },
+    "savona": {
+      "residents": {
+        "total": 28172,
+        "bike": 480,
+        "car": 11782,
+        "transit": 4230,
+        "walk": 7857,
+        "motorbike": 3790,
+        "other": 33
+      },
+      "internal": {
+        "total": 21042,
+        "bike": 429,
+        "car": 7748,
+        "transit": 1951,
+        "walk": 7843,
+        "motorbike": 3053,
+        "other": 18
+      },
+      "inboundBike": 78,
+      "inboundTotal": 13728
+    },
+    "genova": {
+      "residents": {
+        "total": 286086,
+        "bike": 749,
+        "car": 79303,
+        "transit": 91733,
+        "walk": 60774,
+        "motorbike": 52623,
+        "other": 903
+      },
+      "internal": {
+        "total": 274958,
+        "bike": 749,
+        "car": 73091,
+        "transit": 87622,
+        "walk": 60765,
+        "motorbike": 51879,
+        "other": 852
+      },
+      "inboundBike": 48,
+      "inboundTotal": 44324
+    },
+    "la-spezia": {
+      "residents": {
+        "total": 43893,
+        "bike": 1106,
+        "car": 20078,
+        "transit": 9166,
+        "walk": 9556,
+        "motorbike": 3872,
+        "other": 116
+      },
+      "internal": {
+        "total": 37233,
+        "bike": 1073,
+        "car": 15918,
+        "transit": 7068,
+        "walk": 9533,
+        "motorbike": 3549,
+        "other": 92
+      },
+      "inboundBike": 35,
+      "inboundTotal": 20481
+    },
+    "varese": {
+      "residents": {
+        "total": 40769,
+        "bike": 517,
+        "car": 24884,
+        "transit": 7453,
+        "walk": 6486,
+        "motorbike": 1372,
+        "other": 57
+      },
+      "internal": {
+        "total": 27016,
+        "bike": 496,
+        "car": 14317,
+        "transit": 4681,
+        "walk": 6473,
+        "motorbike": 1016,
+        "other": 33
+      },
+      "inboundBike": 117,
+      "inboundTotal": 35793
+    },
+    "como": {
+      "residents": {
+        "total": 42539,
+        "bike": 1713,
+        "car": 22838,
+        "transit": 8088,
+        "walk": 7896,
+        "motorbike": 1824,
+        "other": 181
+      },
+      "internal": {
+        "total": 27138,
+        "bike": 1639,
+        "car": 11645,
+        "transit": 4708,
+        "walk": 7861,
+        "motorbike": 1189,
+        "other": 95
+      },
+      "inboundBike": 140,
+      "inboundTotal": 33767
+    },
+    "lecco": {
+      "residents": {
+        "total": 24380,
+        "bike": 380,
+        "car": 13454,
+        "transit": 3332,
+        "walk": 5981,
+        "motorbike": 1195,
+        "other": 37
+      },
+      "internal": {
+        "total": 16789,
+        "bike": 337,
+        "car": 8056,
+        "transit": 1475,
+        "walk": 5981,
+        "motorbike": 920,
+        "other": 21
+      },
+      "inboundBike": 121,
+      "inboundTotal": 24311
+    },
+    "sondrio": {
+      "residents": {
+        "total": 10635,
+        "bike": 1300,
+        "car": 4263,
+        "transit": 453,
+        "walk": 4346,
+        "motorbike": 261,
+        "other": 13
+      },
+      "internal": {
+        "total": 8512,
+        "bike": 1276,
+        "car": 2468,
+        "transit": 194,
+        "walk": 4346,
+        "motorbike": 224,
+        "other": 4
+      },
+      "inboundBike": 49,
+      "inboundTotal": 9831
+    },
+    "milano": {
+      "residents": {
+        "total": 649327,
+        "bike": 33819,
+        "car": 197719,
+        "transit": 242172,
+        "walk": 132313,
+        "motorbike": 42302,
+        "other": 1002
+      },
+      "internal": {
+        "total": 559374,
+        "bike": 32773,
+        "car": 136291,
+        "transit": 219621,
+        "walk": 131716,
+        "motorbike": 38213,
+        "other": 761
+      },
+      "inboundBike": 5248,
+      "inboundTotal": 474680
+    },
+    "monza": {
+      "residents": {
+        "total": 64241,
+        "bike": 3956,
+        "car": 34654,
+        "transit": 10715,
+        "walk": 11366,
+        "motorbike": 3457,
+        "other": 93
+      },
+      "internal": {
+        "total": 34022,
+        "bike": 3242,
+        "car": 14549,
+        "transit": 3800,
+        "walk": 10958,
+        "motorbike": 1414,
+        "other": 59
+      },
+      "inboundBike": 902,
+      "inboundTotal": 39599
+    },
+    "bergamo": {
+      "residents": {
+        "total": 60508,
+        "bike": 3144,
+        "car": 28976,
+        "transit": 9926,
+        "walk": 13314,
+        "motorbike": 4983,
+        "other": 166
+      },
+      "internal": {
+        "total": 41088,
+        "bike": 2820,
+        "car": 14868,
+        "transit": 6352,
+        "walk": 13184,
+        "motorbike": 3741,
+        "other": 122
+      },
+      "inboundBike": 962,
+      "inboundTotal": 68743
+    },
+    "brescia": {
+      "residents": {
+        "total": 97585,
+        "bike": 6073,
+        "car": 56695,
+        "transit": 16095,
+        "walk": 15793,
+        "motorbike": 2725,
+        "other": 205
+      },
+      "internal": {
+        "total": 76967,
+        "bike": 5768,
+        "car": 40295,
+        "transit": 12901,
+        "walk": 15759,
+        "motorbike": 2091,
+        "other": 152
+      },
+      "inboundBike": 717,
+      "inboundTotal": 85566
+    },
+    "pavia": {
+      "residents": {
+        "total": 35146,
+        "bike": 3096,
+        "car": 18386,
+        "transit": 6777,
+        "walk": 5745,
+        "motorbike": 1060,
+        "other": 83
+      },
+      "internal": {
+        "total": 25402,
+        "bike": 3062,
+        "car": 11751,
+        "transit": 3861,
+        "walk": 5735,
+        "motorbike": 927,
+        "other": 66
+      },
+      "inboundBike": 273,
+      "inboundTotal": 36615
+    },
+    "lodi": {
+      "residents": {
+        "total": 22723,
+        "bike": 3184,
+        "car": 11038,
+        "transit": 4148,
+        "walk": 3805,
+        "motorbike": 494,
+        "other": 55
+      },
+      "internal": {
+        "total": 13872,
+        "bike": 3100,
+        "car": 5508,
+        "transit": 1107,
+        "walk": 3800,
+        "motorbike": 337,
+        "other": 20
+      },
+      "inboundBike": 172,
+      "inboundTotal": 18760
+    },
+    "cremona": {
+      "residents": {
+        "total": 35134,
+        "bike": 6054,
+        "car": 19570,
+        "transit": 2879,
+        "walk": 5604,
+        "motorbike": 956,
+        "other": 71
+      },
+      "internal": {
+        "total": 27758,
+        "bike": 5996,
+        "car": 13739,
+        "transit": 1500,
+        "walk": 5594,
+        "motorbike": 863,
+        "other": 66
+      },
+      "inboundBike": 231,
+      "inboundTotal": 20432
+    },
+    "mantova": {
+      "residents": {
+        "total": 22833,
+        "bike": 4277,
+        "car": 11846,
+        "transit": 1830,
+        "walk": 3862,
+        "motorbike": 965,
+        "other": 53
+      },
+      "internal": {
+        "total": 17396,
+        "bike": 4135,
+        "car": 7341,
+        "transit": 1220,
+        "walk": 3847,
+        "motorbike": 808,
+        "other": 45
+      },
+      "inboundBike": 413,
+      "inboundTotal": 26066
+    },
+    "bolzano": {
+      "residents": {
+        "total": 55969,
+        "bike": 16644,
+        "car": 14258,
+        "transit": 8946,
+        "walk": 11633,
+        "motorbike": 4319,
+        "other": 169
+      },
+      "internal": {
+        "total": 50613,
+        "bike": 16553,
+        "car": 11225,
+        "transit": 6947,
+        "walk": 11624,
+        "motorbike": 4148,
+        "other": 116
+      },
+      "inboundBike": 311,
+      "inboundTotal": 27524
+    },
+    "trento": {
+      "residents": {
+        "total": 65125,
+        "bike": 4141,
+        "car": 32313,
+        "transit": 14516,
+        "walk": 12262,
+        "motorbike": 1680,
+        "other": 212
+      },
+      "internal": {
+        "total": 58236,
+        "bike": 4103,
+        "car": 27348,
+        "transit": 12812,
+        "walk": 12253,
+        "motorbike": 1548,
+        "other": 172
+      },
+      "inboundBike": 155,
+      "inboundTotal": 34185
+    },
+    "verona": {
+      "residents": {
+        "total": 130061,
+        "bike": 8944,
+        "car": 70209,
+        "transit": 19496,
+        "walk": 20408,
+        "motorbike": 10684,
+        "other": 320
+      },
+      "internal": {
+        "total": 109475,
+        "bike": 8688,
+        "car": 53320,
+        "transit": 17092,
+        "walk": 20371,
+        "motorbike": 9763,
+        "other": 241
+      },
+      "inboundBike": 350,
+      "inboundTotal": 65103
+    },
+    "vicenza": {
+      "residents": {
+        "total": 58584,
+        "bike": 6936,
+        "car": 33411,
+        "transit": 7085,
+        "walk": 9431,
+        "motorbike": 1609,
+        "other": 111
+      },
+      "internal": {
+        "total": 44024,
+        "bike": 6653,
+        "car": 22137,
+        "transit": 4465,
+        "walk": 9416,
+        "motorbike": 1269,
+        "other": 84
+      },
+      "inboundBike": 582,
+      "inboundTotal": 42802
+    },
+    "belluno": {
+      "residents": {
+        "total": 18180,
+        "bike": 621,
+        "car": 12014,
+        "transit": 2478,
+        "walk": 2684,
+        "motorbike": 348,
+        "other": 34
+      },
+      "internal": {
+        "total": 13502,
+        "bike": 611,
+        "car": 7960,
+        "transit": 1897,
+        "walk": 2677,
+        "motorbike": 332,
+        "other": 26
+      },
+      "inboundBike": 26,
+      "inboundTotal": 9003
+    },
+    "treviso": {
+      "residents": {
+        "total": 39771,
+        "bike": 6579,
+        "car": 22386,
+        "transit": 4787,
+        "walk": 4894,
+        "motorbike": 1062,
+        "other": 63
+      },
+      "internal": {
+        "total": 24979,
+        "bike": 6144,
+        "car": 11128,
+        "transit": 2116,
+        "walk": 4894,
+        "motorbike": 676,
+        "other": 20
+      },
+      "inboundBike": 920,
+      "inboundTotal": 38684
+    },
+    "venezia": {
+      "residents": {
+        "total": 127530,
+        "bike": 11601,
+        "car": 37427,
+        "transit": 32355,
+        "walk": 28966,
+        "motorbike": 2659,
+        "other": 14523
+      },
+      "internal": {
+        "total": 112422,
+        "bike": 11446,
+        "car": 27594,
+        "transit": 27961,
+        "walk": 28957,
+        "motorbike": 2306,
+        "other": 14158
+      },
+      "inboundBike": 863,
+      "inboundTotal": 70921
+    },
+    "padova": {
+      "residents": {
+        "total": 104859,
+        "bike": 16697,
+        "car": 52956,
+        "transit": 14840,
+        "walk": 12599,
+        "motorbike": 7544,
+        "other": 223
+      },
+      "internal": {
+        "total": 79516,
+        "bike": 15960,
+        "car": 33784,
+        "transit": 10755,
+        "walk": 12557,
+        "motorbike": 6294,
+        "other": 165
+      },
+      "inboundBike": 2155,
+      "inboundTotal": 103175
+    },
+    "rovigo": {
+      "residents": {
+        "total": 26274,
+        "bike": 4334,
+        "car": 16262,
+        "transit": 2921,
+        "walk": 2100,
+        "motorbike": 558,
+        "other": 100
+      },
+      "internal": {
+        "total": 20276,
+        "bike": 4264,
+        "car": 11983,
+        "transit": 1357,
+        "walk": 2094,
+        "motorbike": 501,
+        "other": 76
+      },
+      "inboundBike": 108,
+      "inboundTotal": 13988
+    },
+    "pordenone": {
+      "residents": {
+        "total": 25601,
+        "bike": 3663,
+        "car": 15881,
+        "transit": 2017,
+        "walk": 3595,
+        "motorbike": 404,
+        "other": 42
+      },
+      "internal": {
+        "total": 17047,
+        "bike": 3423,
+        "car": 8781,
+        "transit": 975,
+        "walk": 3582,
+        "motorbike": 270,
+        "other": 16
+      },
+      "inboundBike": 660,
+      "inboundTotal": 25572
+    },
+    "udine": {
+      "residents": {
+        "total": 48912,
+        "bike": 5819,
+        "car": 29840,
+        "transit": 5795,
+        "walk": 6433,
+        "motorbike": 916,
+        "other": 109
+      },
+      "internal": {
+        "total": 35587,
+        "bike": 5589,
+        "car": 18492,
+        "transit": 4273,
+        "walk": 6425,
+        "motorbike": 749,
+        "other": 60
+      },
+      "inboundBike": 429,
+      "inboundTotal": 43481
+    },
+    "gorizia": {
+      "residents": {
+        "total": 16751,
+        "bike": 1207,
+        "car": 10995,
+        "transit": 1401,
+        "walk": 2734,
+        "motorbike": 375,
+        "other": 38
+      },
+      "internal": {
+        "total": 12454,
+        "bike": 1185,
+        "car": 7663,
+        "transit": 516,
+        "walk": 2729,
+        "motorbike": 336,
+        "other": 24
+      },
+      "inboundBike": 42,
+      "inboundTotal": 8773
+    },
+    "trieste": {
+      "residents": {
+        "total": 99717,
+        "bike": 563,
+        "car": 40153,
+        "transit": 25544,
+        "walk": 19380,
+        "motorbike": 13930,
+        "other": 146
+      },
+      "internal": {
+        "total": 91143,
+        "bike": 537,
+        "car": 33766,
+        "transit": 23943,
+        "walk": 19375,
+        "motorbike": 13412,
+        "other": 111
+      },
+      "inboundBike": 52,
+      "inboundTotal": 15658
+    },
+    "piacenza": {
+      "residents": {
+        "total": 51261,
+        "bike": 7225,
+        "car": 28462,
+        "transit": 6306,
+        "walk": 7989,
+        "motorbike": 1152,
+        "other": 127
+      },
+      "internal": {
+        "total": 40137,
+        "bike": 7150,
+        "car": 20409,
+        "transit": 3480,
+        "walk": 7981,
+        "motorbike": 1028,
+        "other": 90
+      },
+      "inboundBike": 237,
+      "inboundTotal": 26435
+    },
+    "parma": {
+      "residents": {
+        "total": 96337,
+        "bike": 14029,
+        "car": 54696,
+        "transit": 12814,
+        "walk": 9836,
+        "motorbike": 4780,
+        "other": 182
+      },
+      "internal": {
+        "total": 81998,
+        "bike": 13939,
+        "car": 42543,
+        "transit": 10946,
+        "walk": 9825,
+        "motorbike": 4595,
+        "other": 150
+      },
+      "inboundBike": 224,
+      "inboundTotal": 45493
+    },
+    "reggio-emilia": {
+      "residents": {
+        "total": 89367,
+        "bike": 8610,
+        "car": 58382,
+        "transit": 10716,
+        "walk": 8539,
+        "motorbike": 2987,
+        "other": 133
+      },
+      "internal": {
+        "total": 72074,
+        "bike": 8536,
+        "car": 44454,
+        "transit": 7793,
+        "walk": 8531,
+        "motorbike": 2678,
+        "other": 81
+      },
+      "inboundBike": 227,
+      "inboundTotal": 33762
+    },
+    "modena": {
+      "residents": {
+        "total": 97519,
+        "bike": 10216,
+        "car": 63228,
+        "transit": 10548,
+        "walk": 10501,
+        "motorbike": 2756,
+        "other": 270
+      },
+      "internal": {
+        "total": 81225,
+        "bike": 10122,
+        "car": 49889,
+        "transit": 8002,
+        "walk": 10497,
+        "motorbike": 2496,
+        "other": 219
+      },
+      "inboundBike": 301,
+      "inboundTotal": 48287
+    },
+    "bologna": {
+      "residents": {
+        "total": 188610,
+        "bike": 10970,
+        "car": 82420,
+        "transit": 44941,
+        "walk": 32992,
+        "motorbike": 16964,
+        "other": 323
+      },
+      "internal": {
+        "total": 153271,
+        "bike": 10678,
+        "car": 56088,
+        "transit": 38073,
+        "walk": 32844,
+        "motorbike": 15343,
+        "other": 246
+      },
+      "inboundBike": 631,
+      "inboundTotal": 95118
+    },
+    "ferrara": {
+      "residents": {
+        "total": 67246,
+        "bike": 13000,
+        "car": 40653,
+        "transit": 6089,
+        "walk": 5363,
+        "motorbike": 1972,
+        "other": 169
+      },
+      "internal": {
+        "total": 54881,
+        "bike": 12953,
+        "car": 30606,
+        "transit": 3966,
+        "walk": 5359,
+        "motorbike": 1873,
+        "other": 123
+      },
+      "inboundBike": 341,
+      "inboundTotal": 24238
+    },
+    "ravenna": {
+      "residents": {
+        "total": 78366,
+        "bike": 10118,
+        "car": 52559,
+        "transit": 6885,
+        "walk": 6194,
+        "motorbike": 2288,
+        "other": 323
+      },
+      "internal": {
+        "total": 68124,
+        "bike": 10033,
+        "car": 44066,
+        "transit": 5397,
+        "walk": 6175,
+        "motorbike": 2186,
+        "other": 267
+      },
+      "inboundBike": 168,
+      "inboundTotal": 12503
+    },
+    "forli": {
+      "residents": {
+        "total": 61939,
+        "bike": 6292,
+        "car": 42251,
+        "transit": 6315,
+        "walk": 5081,
+        "motorbike": 1871,
+        "other": 129
+      },
+      "internal": {
+        "total": 52200,
+        "bike": 6235,
+        "car": 34897,
+        "transit": 4134,
+        "walk": 5060,
+        "motorbike": 1767,
+        "other": 108
+      },
+      "inboundBike": 142,
+      "inboundTotal": 18491
+    },
+    "cesena": {
+      "residents": {
+        "total": 51113,
+        "bike": 4146,
+        "car": 33781,
+        "transit": 5345,
+        "walk": 5186,
+        "motorbike": 2492,
+        "other": 162
+      },
+      "internal": {
+        "total": 41331,
+        "bike": 4032,
+        "car": 25898,
+        "transit": 3830,
+        "walk": 5172,
+        "motorbike": 2271,
+        "other": 129
+      },
+      "inboundBike": 162,
+      "inboundTotal": 19044
+    },
+    "rimini": {
+      "residents": {
+        "total": 70645,
+        "bike": 9300,
+        "car": 40669,
+        "transit": 7003,
+        "walk": 6600,
+        "motorbike": 6918,
+        "other": 155
+      },
+      "internal": {
+        "total": 58287,
+        "bike": 9160,
+        "car": 30800,
+        "transit": 5322,
+        "walk": 6592,
+        "motorbike": 6303,
+        "other": 111
+      },
+      "inboundBike": 181,
+      "inboundTotal": 21923
+    },
+    "massa": {
+      "residents": {
+        "total": 32028,
+        "bike": 993,
+        "car": 22408,
+        "transit": 2598,
+        "walk": 3413,
+        "motorbike": 2482,
+        "other": 134
+      },
+      "internal": {
+        "total": 24377,
+        "bike": 944,
+        "car": 16845,
+        "transit": 1017,
+        "walk": 3413,
+        "motorbike": 2088,
+        "other": 69
+      },
+      "inboundBike": 71,
+      "inboundTotal": 9033
+    },
+    "lucca": {
+      "residents": {
+        "total": 44928,
+        "bike": 4232,
+        "car": 30999,
+        "transit": 4585,
+        "walk": 3044,
+        "motorbike": 1972,
+        "other": 96
+      },
+      "internal": {
+        "total": 32787,
+        "bike": 4081,
+        "car": 21210,
+        "transit": 2785,
+        "walk": 3035,
+        "motorbike": 1608,
+        "other": 69
+      },
+      "inboundBike": 121,
+      "inboundTotal": 16423
+    },
+    "pistoia": {
+      "residents": {
+        "total": 44719,
+        "bike": 1960,
+        "car": 29773,
+        "transit": 5615,
+        "walk": 5761,
+        "motorbike": 1514,
+        "other": 96
+      },
+      "internal": {
+        "total": 33577,
+        "bike": 1921,
+        "car": 21626,
+        "transit": 2882,
+        "walk": 5761,
+        "motorbike": 1329,
+        "other": 58
+      },
+      "inboundBike": 61,
+      "inboundTotal": 14457
+    },
+    "firenze": {
+      "residents": {
+        "total": 181491,
+        "bike": 13617,
+        "car": 65873,
+        "transit": 33063,
+        "walk": 34343,
+        "motorbike": 34335,
+        "other": 260
+      },
+      "internal": {
+        "total": 150840,
+        "bike": 13195,
+        "car": 45718,
+        "transit": 27230,
+        "walk": 34311,
+        "motorbike": 30207,
+        "other": 178
+      },
+      "inboundBike": 538,
+      "inboundTotal": 106774
+    },
+    "prato": {
+      "residents": {
+        "total": 100635,
+        "bike": 2974,
+        "car": 66142,
+        "transit": 12246,
+        "walk": 13542,
+        "motorbike": 5524,
+        "other": 207
+      },
+      "internal": {
+        "total": 74136,
+        "bike": 2785,
+        "car": 47424,
+        "transit": 6259,
+        "walk": 13521,
+        "motorbike": 4028,
+        "other": 119
+      },
+      "inboundBike": 129,
+      "inboundTotal": 24780
+    },
+    "livorno": {
+      "residents": {
+        "total": 76691,
+        "bike": 5723,
+        "car": 36759,
+        "transit": 8574,
+        "walk": 11574,
+        "motorbike": 13911,
+        "other": 151
+      },
+      "internal": {
+        "total": 64424,
+        "bike": 5680,
+        "car": 28663,
+        "transit": 4996,
+        "walk": 11563,
+        "motorbike": 13436,
+        "other": 86
+      },
+      "inboundBike": 31,
+      "inboundTotal": 11050
+    },
+    "pisa": {
+      "residents": {
+        "total": 41804,
+        "bike": 5010,
+        "car": 20842,
+        "transit": 5036,
+        "walk": 6111,
+        "motorbike": 4728,
+        "other": 76
+      },
+      "internal": {
+        "total": 33871,
+        "bike": 4923,
+        "car": 14844,
+        "transit": 3543,
+        "walk": 6106,
+        "motorbike": 4397,
+        "other": 59
+      },
+      "inboundBike": 154,
+      "inboundTotal": 52321
+    },
+    "arezzo": {
+      "residents": {
+        "total": 50278,
+        "bike": 1612,
+        "car": 33400,
+        "transit": 5840,
+        "walk": 7109,
+        "motorbike": 2161,
+        "other": 156
+      },
+      "internal": {
+        "total": 43389,
+        "bike": 1603,
+        "car": 28642,
+        "transit": 3827,
+        "walk": 7103,
+        "motorbike": 2078,
+        "other": 136
+      },
+      "inboundBike": 11,
+      "inboundTotal": 15902
+    },
+    "siena": {
+      "residents": {
+        "total": 27327,
+        "bike": 89,
+        "car": 13992,
+        "transit": 4762,
+        "walk": 5259,
+        "motorbike": 3186,
+        "other": 39
+      },
+      "internal": {
+        "total": 23144,
+        "bike": 88,
+        "car": 10598,
+        "transit": 4112,
+        "walk": 5259,
+        "motorbike": 3058,
+        "other": 29
+      },
+      "inboundBike": 25,
+      "inboundTotal": 22894
+    },
+    "grosseto": {
+      "residents": {
+        "total": 38430,
+        "bike": 2808,
+        "car": 26641,
+        "transit": 2007,
+        "walk": 4513,
+        "motorbike": 2367,
+        "other": 95
+      },
+      "internal": {
+        "total": 34990,
+        "bike": 2798,
+        "car": 24093,
+        "transit": 1191,
+        "walk": 4513,
+        "motorbike": 2307,
+        "other": 87
+      },
+      "inboundBike": 4,
+      "inboundTotal": 6770
+    },
+    "perugia": {
+      "residents": {
+        "total": 85713,
+        "bike": 128,
+        "car": 63213,
+        "transit": 11550,
+        "walk": 8975,
+        "motorbike": 1637,
+        "other": 210
+      },
+      "internal": {
+        "total": 73786,
+        "bike": 122,
+        "car": 52507,
+        "transit": 10461,
+        "walk": 8975,
+        "motorbike": 1563,
+        "other": 157
+      },
+      "inboundBike": 22,
+      "inboundTotal": 31916
+    },
+    "terni": {
+      "residents": {
+        "total": 51498,
+        "bike": 1905,
+        "car": 33963,
+        "transit": 5776,
+        "walk": 7156,
+        "motorbike": 2595,
+        "other": 105
+      },
+      "internal": {
+        "total": 45124,
+        "bike": 1896,
+        "car": 29375,
+        "transit": 4093,
+        "walk": 7156,
+        "motorbike": 2525,
+        "other": 79
+      },
+      "inboundBike": 6,
+      "inboundTotal": 12428
+    },
+    "pesaro": {
+      "residents": {
+        "total": 48470,
+        "bike": 5371,
+        "car": 29044,
+        "transit": 4586,
+        "walk": 4600,
+        "motorbike": 4779,
+        "other": 89
+      },
+      "internal": {
+        "total": 40832,
+        "bike": 5338,
+        "car": 23291,
+        "transit": 2998,
+        "walk": 4596,
+        "motorbike": 4547,
+        "other": 62
+      },
+      "inboundBike": 88,
+      "inboundTotal": 15226
+    },
+    "ancona": {
+      "residents": {
+        "total": 50314,
+        "bike": 107,
+        "car": 31589,
+        "transit": 9447,
+        "walk": 6856,
+        "motorbike": 2256,
+        "other": 60
+      },
+      "internal": {
+        "total": 42981,
+        "bike": 101,
+        "car": 25527,
+        "transit": 8287,
+        "walk": 6847,
+        "motorbike": 2177,
+        "other": 42
+      },
+      "inboundBike": 26,
+      "inboundTotal": 28385
+    },
+    "macerata": {
+      "residents": {
+        "total": 21011,
+        "bike": 66,
+        "car": 14691,
+        "transit": 2240,
+        "walk": 3592,
+        "motorbike": 361,
+        "other": 61
+      },
+      "internal": {
+        "total": 15782,
+        "bike": 62,
+        "car": 9997,
+        "transit": 1765,
+        "walk": 3585,
+        "motorbike": 327,
+        "other": 45
+      },
+      "inboundBike": 17,
+      "inboundTotal": 14910
+    },
+    "fermo": {
+      "residents": {
+        "total": 18058,
+        "bike": 86,
+        "car": 13535,
+        "transit": 2219,
+        "walk": 1938,
+        "motorbike": 247,
+        "other": 32
+      },
+      "internal": {
+        "total": 12402,
+        "bike": 57,
+        "car": 8485,
+        "transit": 1739,
+        "walk": 1908,
+        "motorbike": 193,
+        "other": 21
+      },
+      "inboundBike": 33,
+      "inboundTotal": 9813
+    },
+    "ascoli-piceno": {
+      "residents": {
+        "total": 22599,
+        "bike": 590,
+        "car": 15029,
+        "transit": 2063,
+        "walk": 4032,
+        "motorbike": 862,
+        "other": 22
+      },
+      "internal": {
+        "total": 19162,
+        "bike": 588,
+        "car": 12046,
+        "transit": 1644,
+        "walk": 4030,
+        "motorbike": 837,
+        "other": 17
+      },
+      "inboundBike": 13,
+      "inboundTotal": 13798
+    },
+    "viterbo": {
+      "residents": {
+        "total": 30642,
+        "bike": 84,
+        "car": 22168,
+        "transit": 2489,
+        "walk": 4157,
+        "motorbike": 1702,
+        "other": 42
+      },
+      "internal": {
+        "total": 26663,
+        "bike": 84,
+        "car": 19435,
+        "transit": 1277,
+        "walk": 4154,
+        "motorbike": 1680,
+        "other": 33
+      },
+      "inboundBike": 6,
+      "inboundTotal": 18061
+    },
+    "rieti": {
+      "residents": {
+        "total": 22991,
+        "bike": 272,
+        "car": 16575,
+        "transit": 2720,
+        "walk": 3112,
+        "motorbike": 288,
+        "other": 23
+      },
+      "internal": {
+        "total": 18863,
+        "bike": 266,
+        "car": 13346,
+        "transit": 1842,
+        "walk": 3112,
+        "motorbike": 280,
+        "other": 17
+      },
+      "inboundBike": 8,
+      "inboundTotal": 9390
+    },
+    "roma": {
+      "residents": {
+        "total": 1338916,
+        "bike": 7121,
+        "car": 653745,
+        "transit": 357425,
+        "walk": 195484,
+        "motorbike": 123072,
+        "other": 2069
+      },
+      "internal": {
+        "total": 1283147,
+        "bike": 7070,
+        "car": 610868,
+        "transit": 347178,
+        "walk": 195110,
+        "motorbike": 120987,
+        "other": 1933
+      },
+      "inboundBike": 211,
+      "inboundTotal": 292550
+    },
+    "latina": {
+      "residents": {
+        "total": 60189,
+        "bike": 767,
+        "car": 44102,
+        "transit": 6370,
+        "walk": 7436,
+        "motorbike": 1429,
+        "other": 84
+      },
+      "internal": {
+        "total": 48197,
+        "bike": 760,
+        "car": 35892,
+        "transit": 2700,
+        "walk": 7419,
+        "motorbike": 1361,
+        "other": 64
+      },
+      "inboundBike": 52,
+      "inboundTotal": 22610
+    },
+    "frosinone": {
+      "residents": {
+        "total": 20362,
+        "bike": 42,
+        "car": 15060,
+        "transit": 2720,
+        "walk": 2286,
+        "motorbike": 191,
+        "other": 63
+      },
+      "internal": {
+        "total": 15507,
+        "bike": 39,
+        "car": 11786,
+        "transit": 1188,
+        "walk": 2273,
+        "motorbike": 169,
+        "other": 52
+      },
+      "inboundBike": 8,
+      "inboundTotal": 21119
+    },
+    "l-aquila": {
+      "residents": {
+        "total": 31910,
+        "bike": 38,
+        "car": 26619,
+        "transit": 3867,
+        "walk": 1145,
+        "motorbike": 189,
+        "other": 52
+      },
+      "internal": {
+        "total": 29213,
+        "bike": 37,
+        "car": 24532,
+        "transit": 3273,
+        "walk": 1145,
+        "motorbike": 183,
+        "other": 43
+      },
+      "inboundBike": 4,
+      "inboundTotal": 14329
+    },
+    "teramo": {
+      "residents": {
+        "total": 27699,
+        "bike": 225,
+        "car": 19050,
+        "transit": 4174,
+        "walk": 3402,
+        "motorbike": 806,
+        "other": 41
+      },
+      "internal": {
+        "total": 23170,
+        "bike": 219,
+        "car": 15238,
+        "transit": 3507,
+        "walk": 3399,
+        "motorbike": 779,
+        "other": 27
+      },
+      "inboundBike": 7,
+      "inboundTotal": 12235
+    },
+    "pescara": {
+      "residents": {
+        "total": 52370,
+        "bike": 1896,
+        "car": 33913,
+        "transit": 5052,
+        "walk": 8965,
+        "motorbike": 2455,
+        "other": 90
+      },
+      "internal": {
+        "total": 40190,
+        "bike": 1797,
+        "car": 23698,
+        "transit": 3494,
+        "walk": 8935,
+        "motorbike": 2217,
+        "other": 49
+      },
+      "inboundBike": 202,
+      "inboundTotal": 35013
+    },
+    "chieti": {
+      "residents": {
+        "total": 23762,
+        "bike": 98,
+        "car": 15445,
+        "transit": 3551,
+        "walk": 4245,
+        "motorbike": 379,
+        "other": 44
+      },
+      "internal": {
+        "total": 18714,
+        "bike": 94,
+        "car": 11255,
+        "transit": 2790,
+        "walk": 4215,
+        "motorbike": 323,
+        "other": 37
+      },
+      "inboundBike": 32,
+      "inboundTotal": 20713
+    },
+    "isernia": {
+      "residents": {
+        "total": 10228,
+        "bike": 26,
+        "car": 6838,
+        "transit": 1078,
+        "walk": 2207,
+        "motorbike": 53,
+        "other": 26
+      },
+      "internal": {
+        "total": 8230,
+        "bike": 26,
+        "car": 5244,
+        "transit": 685,
+        "walk": 2203,
+        "motorbike": 51,
+        "other": 22
+      },
+      "inboundBike": 0,
+      "inboundTotal": 6369
+    },
+    "campobasso": {
+      "residents": {
+        "total": 22710,
+        "bike": 19,
+        "car": 15545,
+        "transit": 2177,
+        "walk": 4582,
+        "motorbike": 333,
+        "other": 55
+      },
+      "internal": {
+        "total": 20222,
+        "bike": 19,
+        "car": 13603,
+        "transit": 1640,
+        "walk": 4582,
+        "motorbike": 325,
+        "other": 53
+      },
+      "inboundBike": 3,
+      "inboundTotal": 14612
+    },
+    "caserta": {
+      "residents": {
+        "total": 35679,
+        "bike": 1000,
+        "car": 22595,
+        "transit": 2900,
+        "walk": 8228,
+        "motorbike": 922,
+        "other": 35
+      },
+      "internal": {
+        "total": 24583,
+        "bike": 905,
+        "car": 13926,
+        "transit": 757,
+        "walk": 8167,
+        "motorbike": 800,
+        "other": 29
+      },
+      "inboundBike": 274,
+      "inboundTotal": 30655
+    },
+    "benevento": {
+      "residents": {
+        "total": 27297,
+        "bike": 64,
+        "car": 18942,
+        "transit": 3191,
+        "walk": 4853,
+        "motorbike": 209,
+        "other": 38
+      },
+      "internal": {
+        "total": 23982,
+        "bike": 64,
+        "car": 16388,
+        "transit": 2444,
+        "walk": 4850,
+        "motorbike": 205,
+        "other": 31
+      },
+      "inboundBike": 8,
+      "inboundTotal": 20075
+    },
+    "napoli": {
+      "residents": {
+        "total": 382487,
+        "bike": 991,
+        "car": 120107,
+        "transit": 106525,
+        "walk": 125894,
+        "motorbike": 25872,
+        "other": 3099
+      },
+      "internal": {
+        "total": 342109,
+        "bike": 942,
+        "car": 90444,
+        "transit": 98154,
+        "walk": 125274,
+        "motorbike": 24637,
+        "other": 2657
+      },
+      "inboundBike": 225,
+      "inboundTotal": 196329
+    },
+    "avellino": {
+      "residents": {
+        "total": 25288,
+        "bike": 71,
+        "car": 15049,
+        "transit": 3249,
+        "walk": 6744,
+        "motorbike": 144,
+        "other": 32
+      },
+      "internal": {
+        "total": 18769,
+        "bike": 68,
+        "car": 10609,
+        "transit": 1232,
+        "walk": 6701,
+        "motorbike": 131,
+        "other": 29
+      },
+      "inboundBike": 13,
+      "inboundTotal": 24055
+    },
+    "salerno": {
+      "residents": {
+        "total": 57243,
+        "bike": 454,
+        "car": 27225,
+        "transit": 10273,
+        "walk": 16604,
+        "motorbike": 2438,
+        "other": 249
+      },
+      "internal": {
+        "total": 44732,
+        "bike": 452,
+        "car": 19433,
+        "transit": 5809,
+        "walk": 16537,
+        "motorbike": 2262,
+        "other": 240
+      },
+      "inboundBike": 46,
+      "inboundTotal": 33616
+    },
+    "foggia": {
+      "residents": {
+        "total": 65921,
+        "bike": 1048,
+        "car": 38277,
+        "transit": 7029,
+        "walk": 19252,
+        "motorbike": 244,
+        "other": 70
+      },
+      "internal": {
+        "total": 61528,
+        "bike": 1048,
+        "car": 35222,
+        "transit": 5710,
+        "walk": 19252,
+        "motorbike": 241,
+        "other": 54
+      },
+      "inboundBike": 17,
+      "inboundTotal": 19283
+    },
+    "andria": {
+      "residents": {
+        "total": 44470,
+        "bike": 977,
+        "car": 21585,
+        "transit": 4454,
+        "walk": 17097,
+        "motorbike": 296,
+        "other": 61
+      },
+      "internal": {
+        "total": 37860,
+        "bike": 973,
+        "car": 17437,
+        "transit": 2028,
+        "walk": 17093,
+        "motorbike": 282,
+        "other": 47
+      },
+      "inboundBike": 6,
+      "inboundTotal": 3697
+    },
+    "barletta": {
+      "residents": {
+        "total": 41687,
+        "bike": 1176,
+        "car": 18533,
+        "transit": 4446,
+        "walk": 17061,
+        "motorbike": 396,
+        "other": 75
+      },
+      "internal": {
+        "total": 35907,
+        "bike": 1168,
+        "car": 16231,
+        "transit": 1020,
+        "walk": 17039,
+        "motorbike": 383,
+        "other": 67
+      },
+      "inboundBike": 12,
+      "inboundTotal": 5353
+    },
+    "trani": {
+      "residents": {
+        "total": 24839,
+        "bike": 521,
+        "car": 13350,
+        "transit": 3150,
+        "walk": 7471,
+        "motorbike": 322,
+        "other": 25
+      },
+      "internal": {
+        "total": 19704,
+        "bike": 509,
+        "car": 10491,
+        "transit": 925,
+        "walk": 7454,
+        "motorbike": 306,
+        "other": 19
+      },
+      "inboundBike": 7,
+      "inboundTotal": 3851
+    },
+    "bari": {
+      "residents": {
+        "total": 140657,
+        "bike": 2360,
+        "car": 75261,
+        "transit": 22001,
+        "walk": 34653,
+        "motorbike": 6013,
+        "other": 368
+      },
+      "internal": {
+        "total": 124120,
+        "bike": 2317,
+        "car": 61312,
+        "transit": 19877,
+        "walk": 34545,
+        "motorbike": 5785,
+        "other": 285
+      },
+      "inboundBike": 117,
+      "inboundTotal": 82564
+    },
+    "taranto": {
+      "residents": {
+        "total": 81373,
+        "bike": 671,
+        "car": 47483,
+        "transit": 10405,
+        "walk": 21485,
+        "motorbike": 1185,
+        "other": 144
+      },
+      "internal": {
+        "total": 76047,
+        "bike": 666,
+        "car": 43333,
+        "transit": 9264,
+        "walk": 21485,
+        "motorbike": 1159,
+        "other": 140
+      },
+      "inboundBike": 38,
+      "inboundTotal": 36725
+    },
+    "brindisi": {
+      "residents": {
+        "total": 36585,
+        "bike": 362,
+        "car": 23958,
+        "transit": 2921,
+        "walk": 8189,
+        "motorbike": 1084,
+        "other": 70
+      },
+      "internal": {
+        "total": 33967,
+        "bike": 362,
+        "car": 22030,
+        "transit": 2263,
+        "walk": 8184,
+        "motorbike": 1061,
+        "other": 67
+      },
+      "inboundBike": 25,
+      "inboundTotal": 18369
+    },
+    "lecce": {
+      "residents": {
+        "total": 38250,
+        "bike": 1778,
+        "car": 26125,
+        "transit": 2227,
+        "walk": 5811,
+        "motorbike": 2244,
+        "other": 66
+      },
+      "internal": {
+        "total": 32660,
+        "bike": 1730,
+        "car": 21192,
+        "transit": 1755,
+        "walk": 5799,
+        "motorbike": 2143,
+        "other": 42
+      },
+      "inboundBike": 226,
+      "inboundTotal": 43380
+    },
+    "potenza": {
+      "residents": {
+        "total": 31961,
+        "bike": 30,
+        "car": 24156,
+        "transit": 3483,
+        "walk": 4098,
+        "motorbike": 125,
+        "other": 70
+      },
+      "internal": {
+        "total": 28415,
+        "bike": 30,
+        "car": 21160,
+        "transit": 2950,
+        "walk": 4093,
+        "motorbike": 123,
+        "other": 59
+      },
+      "inboundBike": 1,
+      "inboundTotal": 17698
+    },
+    "matera": {
+      "residents": {
+        "total": 29146,
+        "bike": 80,
+        "car": 21059,
+        "transit": 2642,
+        "walk": 4924,
+        "motorbike": 414,
+        "other": 27
+      },
+      "internal": {
+        "total": 26671,
+        "bike": 80,
+        "car": 19166,
+        "transit": 2066,
+        "walk": 4922,
+        "motorbike": 413,
+        "other": 25
+      },
+      "inboundBike": 3,
+      "inboundTotal": 8518
+    },
+    "cosenza": {
+      "residents": {
+        "total": 28337,
+        "bike": 85,
+        "car": 16839,
+        "transit": 3899,
+        "walk": 7323,
+        "motorbike": 161,
+        "other": 29
+      },
+      "internal": {
+        "total": 20433,
+        "bike": 73,
+        "car": 10839,
+        "transit": 2095,
+        "walk": 7292,
+        "motorbike": 116,
+        "other": 18
+      },
+      "inboundBike": 21,
+      "inboundTotal": 27258
+    },
+    "crotone": {
+      "residents": {
+        "total": 25332,
+        "bike": 106,
+        "car": 16862,
+        "transit": 3199,
+        "walk": 4892,
+        "motorbike": 230,
+        "other": 43
+      },
+      "internal": {
+        "total": 24103,
+        "bike": 106,
+        "car": 16025,
+        "transit": 2827,
+        "walk": 4891,
+        "motorbike": 229,
+        "other": 24
+      },
+      "inboundBike": 2,
+      "inboundTotal": 6600
+    },
+    "catanzaro": {
+      "residents": {
+        "total": 39579,
+        "bike": 25,
+        "car": 26211,
+        "transit": 5091,
+        "walk": 7194,
+        "motorbike": 967,
+        "other": 91
+      },
+      "internal": {
+        "total": 36189,
+        "bike": 21,
+        "car": 23340,
+        "transit": 4612,
+        "walk": 7188,
+        "motorbike": 955,
+        "other": 72
+      },
+      "inboundBike": 5,
+      "inboundTotal": 19515
+    },
+    "vibo-valentia": {
+      "residents": {
+        "total": 13429,
+        "bike": 50,
+        "car": 9628,
+        "transit": 918,
+        "walk": 2778,
+        "motorbike": 46,
+        "other": 9
+      },
+      "internal": {
+        "total": 11810,
+        "bike": 46,
+        "car": 8228,
+        "transit": 709,
+        "walk": 2778,
+        "motorbike": 43,
+        "other": 6
+      },
+      "inboundBike": 11,
+      "inboundTotal": 11221
+    },
+    "reggio-calabria": {
+      "residents": {
+        "total": 79200,
+        "bike": 128,
+        "car": 53189,
+        "transit": 10546,
+        "walk": 10974,
+        "motorbike": 2759,
+        "other": 1604
+      },
+      "internal": {
+        "total": 72568,
+        "bike": 121,
+        "car": 49656,
+        "transit": 8973,
+        "walk": 10972,
+        "motorbike": 2692,
+        "other": 154
+      },
+      "inboundBike": 2,
+      "inboundTotal": 10440
+    },
+    "trapani": {
+      "residents": {
+        "total": 27865,
+        "bike": 517,
+        "car": 19270,
+        "transit": 2358,
+        "walk": 4123,
+        "motorbike": 1393,
+        "other": 203
+      },
+      "internal": {
+        "total": 22876,
+        "bike": 484,
+        "car": 15188,
+        "transit": 1772,
+        "walk": 4109,
+        "motorbike": 1224,
+        "other": 99
+      },
+      "inboundBike": 50,
+      "inboundTotal": 14409
+    },
+    "palermo": {
+      "residents": {
+        "total": 278954,
+        "bike": 3874,
+        "car": 141673,
+        "transit": 33457,
+        "walk": 66088,
+        "motorbike": 33321,
+        "other": 542
+      },
+      "internal": {
+        "total": 268558,
+        "bike": 3860,
+        "car": 133193,
+        "transit": 32088,
+        "walk": 66075,
+        "motorbike": 32937,
+        "other": 406
+      },
+      "inboundBike": 50,
+      "inboundTotal": 59466
+    },
+    "messina": {
+      "residents": {
+        "total": 103373,
+        "bike": 295,
+        "car": 63786,
+        "transit": 12542,
+        "walk": 17448,
+        "motorbike": 8530,
+        "other": 772
+      },
+      "internal": {
+        "total": 98508,
+        "bike": 295,
+        "car": 60776,
+        "transit": 11438,
+        "walk": 17448,
+        "motorbike": 8466,
+        "other": 85
+      },
+      "inboundBike": 9,
+      "inboundTotal": 17758
+    },
+    "agrigento": {
+      "residents": {
+        "total": 24741,
+        "bike": 19,
+        "car": 18609,
+        "transit": 1399,
+        "walk": 3175,
+        "motorbike": 1495,
+        "other": 44
+      },
+      "internal": {
+        "total": 21714,
+        "bike": 19,
+        "car": 15978,
+        "transit": 1048,
+        "walk": 3172,
+        "motorbike": 1466,
+        "other": 33
+      },
+      "inboundBike": 1,
+      "inboundTotal": 12689
+    },
+    "caltanissetta": {
+      "residents": {
+        "total": 25997,
+        "bike": 16,
+        "car": 19696,
+        "transit": 886,
+        "walk": 4540,
+        "motorbike": 833,
+        "other": 26
+      },
+      "internal": {
+        "total": 23875,
+        "bike": 16,
+        "car": 17975,
+        "transit": 505,
+        "walk": 4540,
+        "motorbike": 819,
+        "other": 20
+      },
+      "inboundBike": 0,
+      "inboundTotal": 9281
+    },
+    "enna": {
+      "residents": {
+        "total": 12423,
+        "bike": 10,
+        "car": 7832,
+        "transit": 1254,
+        "walk": 3170,
+        "motorbike": 141,
+        "other": 16
+      },
+      "internal": {
+        "total": 11274,
+        "bike": 10,
+        "car": 6895,
+        "transit": 1042,
+        "walk": 3170,
+        "motorbike": 141,
+        "other": 16
+      },
+      "inboundBike": 0,
+      "inboundTotal": 7068
+    },
+    "catania": {
+      "residents": {
+        "total": 117371,
+        "bike": 404,
+        "car": 68419,
+        "transit": 12064,
+        "walk": 25302,
+        "motorbike": 10995,
+        "other": 187
+      },
+      "internal": {
+        "total": 103953,
+        "bike": 394,
+        "car": 56729,
+        "transit": 11086,
+        "walk": 25297,
+        "motorbike": 10305,
+        "other": 142
+      },
+      "inboundBike": 57,
+      "inboundTotal": 83656
+    },
+    "ragusa": {
+      "residents": {
+        "total": 33695,
+        "bike": 47,
+        "car": 26274,
+        "transit": 1137,
+        "walk": 3971,
+        "motorbike": 2212,
+        "other": 54
+      },
+      "internal": {
+        "total": 31172,
+        "bike": 46,
+        "car": 24099,
+        "transit": 841,
+        "walk": 3971,
+        "motorbike": 2181,
+        "other": 33
+      },
+      "inboundBike": 7,
+      "inboundTotal": 7976
+    },
+    "siracusa": {
+      "residents": {
+        "total": 49961,
+        "bike": 210,
+        "car": 36651,
+        "transit": 2491,
+        "walk": 6633,
+        "motorbike": 3866,
+        "other": 110
+      },
+      "internal": {
+        "total": 43802,
+        "bike": 207,
+        "car": 31383,
+        "transit": 1772,
+        "walk": 6628,
+        "motorbike": 3739,
+        "other": 73
+      },
+      "inboundBike": 11,
+      "inboundTotal": 12446
+    },
+    "sassari": {
+      "residents": {
+        "total": 58510,
+        "bike": 161,
+        "car": 37062,
+        "transit": 6906,
+        "walk": 12462,
+        "motorbike": 1830,
+        "other": 89
+      },
+      "internal": {
+        "total": 53628,
+        "bike": 158,
+        "car": 32720,
+        "transit": 6455,
+        "walk": 12442,
+        "motorbike": 1793,
+        "other": 60
+      },
+      "inboundBike": 6,
+      "inboundTotal": 20053
+    },
+    "nuoro": {
+      "residents": {
+        "total": 16733,
+        "bike": 71,
+        "car": 11218,
+        "transit": 737,
+        "walk": 4511,
+        "motorbike": 153,
+        "other": 43
+      },
+      "internal": {
+        "total": 15481,
+        "bike": 71,
+        "car": 10073,
+        "transit": 635,
+        "walk": 4511,
+        "motorbike": 151,
+        "other": 41
+      },
+      "inboundBike": 0,
+      "inboundTotal": 6480
+    },
+    "oristano": {
+      "residents": {
+        "total": 14102,
+        "bike": 918,
+        "car": 8926,
+        "transit": 819,
+        "walk": 3089,
+        "motorbike": 321,
+        "other": 30
+      },
+      "internal": {
+        "total": 11910,
+        "bike": 897,
+        "car": 7040,
+        "transit": 549,
+        "walk": 3089,
+        "motorbike": 307,
+        "other": 28
+      },
+      "inboundBike": 61,
+      "inboundTotal": 11810
+    },
+    "cagliari": {
+      "residents": {
+        "total": 67317,
+        "bike": 234,
+        "car": 40380,
+        "transit": 10226,
+        "walk": 13924,
+        "motorbike": 2479,
+        "other": 74
+      },
+      "internal": {
+        "total": 55132,
+        "bike": 198,
+        "car": 29975,
+        "transit": 8795,
+        "walk": 13901,
+        "motorbike": 2228,
+        "other": 34
+      },
+      "inboundBike": 140,
+      "inboundTotal": 66443
+    },
+    "carbonia": {
+      "residents": {
+        "total": 11634,
+        "bike": 59,
+        "car": 8677,
+        "transit": 1051,
+        "walk": 1705,
+        "motorbike": 117,
+        "other": 24
+      },
+      "internal": {
+        "total": 8372,
+        "bike": 57,
+        "car": 6159,
+        "transit": 342,
+        "walk": 1704,
+        "motorbike": 106,
+        "other": 4
+      },
+      "inboundBike": 1,
+      "inboundTotal": 3435
+    }
+  }
+}

@@ -1,0 +1,4622 @@
+[
+  {
+    "id": "torino",
+    "name": "Torino",
+    "officialName": "Torino",
+    "istatCode": "001272",
+    "istatCode2011": "001272",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": true,
+    "lat": 45.0678,
+    "lon": 7.6825,
+    "population": {
+      "2015": 884710,
+      "2016": 881643,
+      "2017": 877088,
+      "2018": 868878,
+      "2019": 860793,
+      "2020": 857910,
+      "2021": 858205,
+      "2022": 848748,
+      "2023": 847398,
+      "2024": 851199,
+      "2025": 853196,
+      "2026": 855654
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 853196,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "vercelli",
+    "name": "Vercelli",
+    "officialName": "Vercelli",
+    "istatCode": "002158",
+    "istatCode2011": "002158",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.3252,
+    "lon": 8.4228,
+    "population": {
+      "2015": 46714,
+      "2016": 46644,
+      "2017": 46649,
+      "2018": 46525,
+      "2019": 46372,
+      "2020": 46362,
+      "2021": 45425,
+      "2022": 45176,
+      "2023": 45399,
+      "2024": 45643,
+      "2025": 45951,
+      "2026": 46391
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 45951,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "novara",
+    "name": "Novara",
+    "officialName": "Novara",
+    "istatCode": "003106",
+    "istatCode2011": "003106",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.4464,
+    "lon": 8.6197,
+    "population": {
+      "2015": 103572,
+      "2016": 103477,
+      "2017": 103350,
+      "2018": 103260,
+      "2019": 103278,
+      "2020": 103287,
+      "2021": 102225,
+      "2022": 101367,
+      "2023": 101797,
+      "2024": 102187,
+      "2025": 102231,
+      "2026": 103238
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 102231,
+    "sizeClass": "media"
+  },
+  {
+    "id": "biella",
+    "name": "Biella",
+    "officialName": "Biella",
+    "istatCode": "096004",
+    "istatCode2011": "096004",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.5664,
+    "lon": 8.0543,
+    "population": {
+      "2015": 44830,
+      "2016": 44631,
+      "2017": 44675,
+      "2018": 44489,
+      "2019": 44316,
+      "2020": 44208,
+      "2021": 42943,
+      "2022": 42783,
+      "2023": 42677,
+      "2024": 42850,
+      "2025": 43181,
+      "2026": 43356
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 43181,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "cuneo",
+    "name": "Cuneo",
+    "officialName": "Cuneo",
+    "istatCode": "004078",
+    "istatCode2011": "004078",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.3896,
+    "lon": 7.5479,
+    "population": {
+      "2015": 55946,
+      "2016": 55973,
+      "2017": 56031,
+      "2018": 56261,
+      "2019": 56155,
+      "2020": 56311,
+      "2021": 55822,
+      "2022": 55557,
+      "2023": 55844,
+      "2024": 55914,
+      "2025": 55751,
+      "2026": 55747
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 55751,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "verbania",
+    "name": "Verbania",
+    "officialName": "Verbania",
+    "istatCode": "103072",
+    "istatCode2011": "103072",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.9344,
+    "lon": 8.558,
+    "population": {
+      "2015": 30790,
+      "2016": 30803,
+      "2017": 30700,
+      "2018": 30594,
+      "2019": 30428,
+      "2020": 30293,
+      "2021": 29954,
+      "2022": 29856,
+      "2023": 30015,
+      "2024": 30024,
+      "2025": 29953,
+      "2026": 29825
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 29953,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "asti",
+    "name": "Asti",
+    "officialName": "Asti",
+    "istatCode": "005005",
+    "istatCode2011": "005005",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.9005,
+    "lon": 8.2069,
+    "population": {
+      "2015": 76023,
+      "2016": 75543,
+      "2017": 75665,
+      "2018": 75755,
+      "2019": 75591,
+      "2020": 75051,
+      "2021": 74065,
+      "2022": 73723,
+      "2023": 73691,
+      "2024": 73401,
+      "2025": 73440,
+      "2026": 73604
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 73440,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "alessandria",
+    "name": "Alessandria",
+    "officialName": "Alessandria",
+    "istatCode": "006003",
+    "istatCode2011": "006003",
+    "region": "Piemonte",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.913,
+    "lon": 8.6155,
+    "population": {
+      "2015": 93060,
+      "2016": 93159,
+      "2017": 93110,
+      "2018": 93378,
+      "2019": 93191,
+      "2020": 92876,
+      "2021": 91089,
+      "2022": 90825,
+      "2023": 91323,
+      "2024": 91854,
+      "2025": 92522,
+      "2026": 93409
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 92522,
+    "sizeClass": "media"
+  },
+  {
+    "id": "aosta",
+    "name": "Aosta",
+    "officialName": "Aosta",
+    "istatCode": "007003",
+    "istatCode2011": "007003",
+    "region": "Valle d'Aosta/Vallée d'Aoste",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.7373,
+    "lon": 7.3204,
+    "population": {
+      "2015": 34521,
+      "2016": 34190,
+      "2017": 34300,
+      "2018": 34193,
+      "2019": 34169,
+      "2020": 33916,
+      "2021": 33523,
+      "2022": 33223,
+      "2023": 33154,
+      "2024": 33098,
+      "2025": 33096,
+      "2026": 33127
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 33096,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "imperia",
+    "name": "Imperia",
+    "officialName": "Imperia",
+    "istatCode": "008031",
+    "istatCode2011": "008031",
+    "region": "Liguria",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 43.8862,
+    "lon": 8.0286,
+    "population": {
+      "2015": 42326,
+      "2016": 42027,
+      "2017": 42070,
+      "2018": 42064,
+      "2019": 42023,
+      "2020": 41969,
+      "2021": 41941,
+      "2022": 41960,
+      "2023": 42227,
+      "2024": 42490,
+      "2025": 42580,
+      "2026": 42594
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 42580,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "savona",
+    "name": "Savona",
+    "officialName": "Savona",
+    "istatCode": "009056",
+    "istatCode2011": "009056",
+    "region": "Liguria",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.308,
+    "lon": 8.481,
+    "population": {
+      "2015": 60970,
+      "2016": 60806,
+      "2017": 60507,
+      "2018": 60103,
+      "2019": 59924,
+      "2020": 59439,
+      "2021": 58949,
+      "2022": 58534,
+      "2023": 58403,
+      "2024": 58674,
+      "2025": 58581,
+      "2026": 58421
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 58581,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "genova",
+    "name": "Genova",
+    "officialName": "Genova",
+    "istatCode": "010025",
+    "istatCode2011": "010025",
+    "region": "Liguria",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": true,
+    "lat": 44.4073,
+    "lon": 8.9339,
+    "population": {
+      "2015": 584649,
+      "2016": 579877,
+      "2017": 576915,
+      "2018": 572320,
+      "2019": 569184,
+      "2020": 565752,
+      "2021": 566410,
+      "2022": 561203,
+      "2023": 561191,
+      "2024": 562422,
+      "2025": 564080,
+      "2026": 566247
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 564080,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "la-spezia",
+    "name": "La Spezia",
+    "officialName": "La Spezia",
+    "istatCode": "011015",
+    "istatCode2011": "011015",
+    "region": "Liguria",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.1034,
+    "lon": 9.8217,
+    "population": {
+      "2015": 93482,
+      "2016": 93590,
+      "2017": 93184,
+      "2018": 92821,
+      "2019": 92737,
+      "2020": 92550,
+      "2021": 92441,
+      "2022": 92169,
+      "2023": 92486,
+      "2024": 92696,
+      "2025": 92706,
+      "2026": 92610
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 92706,
+    "sizeClass": "media"
+  },
+  {
+    "id": "varese",
+    "name": "Varese",
+    "officialName": "Varese",
+    "istatCode": "012133",
+    "istatCode2011": "012133",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.8175,
+    "lon": 8.8264,
+    "population": {
+      "2015": 80520,
+      "2016": 80662,
+      "2017": 80701,
+      "2018": 80686,
+      "2019": 80876,
+      "2020": 80724,
+      "2021": 79350,
+      "2022": 78740,
+      "2023": 78807,
+      "2024": 78818,
+      "2025": 78992,
+      "2026": 79100
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 78992,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "como",
+    "name": "Como",
+    "officialName": "Como",
+    "istatCode": "013075",
+    "istatCode2011": "013075",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.8116,
+    "lon": 9.083,
+    "population": {
+      "2015": 85567,
+      "2016": 85959,
+      "2017": 86508,
+      "2018": 86121,
+      "2019": 85979,
+      "2020": 85543,
+      "2021": 84250,
+      "2022": 83361,
+      "2023": 83691,
+      "2024": 83586,
+      "2025": 83135,
+      "2026": 83035
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 83135,
+    "sizeClass": "media"
+  },
+  {
+    "id": "lecco",
+    "name": "Lecco",
+    "officialName": "Lecco",
+    "istatCode": "097042",
+    "istatCode2011": "097042",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.8554,
+    "lon": 9.3896,
+    "population": {
+      "2015": 48011,
+      "2016": 47880,
+      "2017": 48109,
+      "2018": 48119,
+      "2019": 48265,
+      "2020": 48058,
+      "2021": 47454,
+      "2022": 46831,
+      "2023": 47008,
+      "2024": 47125,
+      "2025": 47233,
+      "2026": 47326
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 47233,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "sondrio",
+    "name": "Sondrio",
+    "officialName": "Sondrio",
+    "istatCode": "014061",
+    "istatCode2011": "014061",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 46.1712,
+    "lon": 9.8716,
+    "population": {
+      "2015": 21756,
+      "2016": 21661,
+      "2017": 21538,
+      "2018": 21587,
+      "2019": 21589,
+      "2020": 21477,
+      "2021": 21202,
+      "2022": 21192,
+      "2023": 21130,
+      "2024": 21297,
+      "2025": 21331,
+      "2026": 21495
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 21331,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "milano",
+    "name": "Milano",
+    "officialName": "Milano",
+    "istatCode": "015146",
+    "istatCode2011": "015146",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": true,
+    "lat": 45.4642,
+    "lon": 9.1896,
+    "population": {
+      "2015": 1339812,
+      "2016": 1352193,
+      "2017": 1363683,
+      "2018": 1380995,
+      "2019": 1395980,
+      "2020": 1406242,
+      "2021": 1374582,
+      "2022": 1349930,
+      "2023": 1358420,
+      "2024": 1371499,
+      "2025": 1365698,
+      "2026": 1362863
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 1365698,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "monza",
+    "name": "Monza",
+    "officialName": "Monza",
+    "istatCode": "108033",
+    "istatCode2011": "108033",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.5845,
+    "lon": 9.2749,
+    "population": {
+      "2015": 122393,
+      "2016": 122951,
+      "2017": 123432,
+      "2018": 124432,
+      "2019": 124459,
+      "2020": 124840,
+      "2021": 122522,
+      "2022": 121984,
+      "2023": 122369,
+      "2024": 122883,
+      "2025": 123032,
+      "2026": 123672
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 123032,
+    "sizeClass": "media"
+  },
+  {
+    "id": "bergamo",
+    "name": "Bergamo",
+    "officialName": "Bergamo",
+    "istatCode": "016024",
+    "istatCode2011": "016024",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.6945,
+    "lon": 9.6699,
+    "population": {
+      "2015": 117526,
+      "2016": 117938,
+      "2017": 119019,
+      "2018": 119648,
+      "2019": 120569,
+      "2020": 120783,
+      "2021": 119993,
+      "2022": 119476,
+      "2023": 119809,
+      "2024": 120157,
+      "2025": 120389,
+      "2026": 120629
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 120389,
+    "sizeClass": "media"
+  },
+  {
+    "id": "brescia",
+    "name": "Brescia",
+    "officialName": "Brescia",
+    "istatCode": "017029",
+    "istatCode2011": "017029",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.5398,
+    "lon": 10.22,
+    "population": {
+      "2015": 193118,
+      "2016": 193881,
+      "2017": 194168,
+      "2018": 194255,
+      "2019": 196134,
+      "2020": 196340,
+      "2021": 197304,
+      "2022": 195906,
+      "2023": 197236,
+      "2024": 198259,
+      "2025": 199853,
+      "2026": 201342
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 199853,
+    "sizeClass": "media"
+  },
+  {
+    "id": "pavia",
+    "name": "Pavia",
+    "officialName": "Pavia",
+    "istatCode": "018110",
+    "istatCode2011": "018110",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.186,
+    "lon": 9.1546,
+    "population": {
+      "2015": 70783,
+      "2016": 71106,
+      "2017": 71288,
+      "2018": 71537,
+      "2019": 71943,
+      "2020": 71882,
+      "2021": 71122,
+      "2022": 70380,
+      "2023": 70904,
+      "2024": 71297,
+      "2025": 71610,
+      "2026": 71811
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 71610,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "lodi",
+    "name": "Lodi",
+    "officialName": "Lodi",
+    "istatCode": "098031",
+    "istatCode2011": "098031",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.3138,
+    "lon": 9.5024,
+    "population": {
+      "2015": 44002,
+      "2016": 44077,
+      "2017": 44214,
+      "2018": 44130,
+      "2019": 44687,
+      "2020": 44928,
+      "2021": 44815,
+      "2022": 44716,
+      "2023": 44843,
+      "2024": 45158,
+      "2025": 45357,
+      "2026": 45643
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 45357,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "cremona",
+    "name": "Cremona",
+    "officialName": "Cremona",
+    "istatCode": "019036",
+    "istatCode2011": "019036",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.1335,
+    "lon": 10.0249,
+    "population": {
+      "2015": 70608,
+      "2016": 71050,
+      "2017": 71344,
+      "2018": 71653,
+      "2019": 72274,
+      "2020": 72399,
+      "2021": 71223,
+      "2022": 70841,
+      "2023": 70845,
+      "2024": 70675,
+      "2025": 70922,
+      "2026": 71093
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 70922,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "mantova",
+    "name": "Mantova",
+    "officialName": "Mantova",
+    "istatCode": "020030",
+    "istatCode2011": "020030",
+    "region": "Lombardia",
+    "area": "Nord-ovest",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.1567,
+    "lon": 10.7917,
+    "population": {
+      "2015": 47957,
+      "2016": 47968,
+      "2017": 48565,
+      "2018": 48784,
+      "2019": 48792,
+      "2020": 48835,
+      "2021": 48755,
+      "2022": 48441,
+      "2023": 48824,
+      "2024": 49044,
+      "2025": 49607,
+      "2026": 50215
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 49607,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "bolzano",
+    "name": "Bolzano",
+    "officialName": "Bolzano/Bozen",
+    "istatCode": "021008",
+    "istatCode2011": "021008",
+    "region": "Trentino-Alto Adige/Südtirol",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 46.4985,
+    "lon": 11.3547,
+    "population": {
+      "2015": 105921,
+      "2016": 106201,
+      "2017": 106695,
+      "2018": 107091,
+      "2019": 107595,
+      "2020": 107843,
+      "2021": 107467,
+      "2022": 106601,
+      "2023": 106410,
+      "2024": 106357,
+      "2025": 106568,
+      "2026": 106901
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 106568,
+    "sizeClass": "media"
+  },
+  {
+    "id": "trento",
+    "name": "Trento",
+    "officialName": "Trento",
+    "istatCode": "022205",
+    "istatCode2011": "022205",
+    "region": "Trentino-Alto Adige/Südtirol",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 46.0664,
+    "lon": 11.1258,
+    "population": {
+      "2015": 117404,
+      "2016": 117755,
+      "2017": 118173,
+      "2018": 119004,
+      "2019": 119616,
+      "2020": 120641,
+      "2021": 118879,
+      "2022": 117847,
+      "2023": 118277,
+      "2024": 118504,
+      "2025": 118640,
+      "2026": 119359
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 118640,
+    "sizeClass": "media"
+  },
+  {
+    "id": "verona",
+    "name": "Verona",
+    "officialName": "Verona",
+    "istatCode": "023091",
+    "istatCode2011": "023091",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.4385,
+    "lon": 10.9924,
+    "population": {
+      "2015": 257950,
+      "2016": 257912,
+      "2017": 257702,
+      "2018": 257845,
+      "2019": 258584,
+      "2020": 259087,
+      "2021": 258031,
+      "2022": 255985,
+      "2023": 256049,
+      "2024": 255298,
+      "2025": 255039,
+      "2026": 255139
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 255039,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "vicenza",
+    "name": "Vicenza",
+    "officialName": "Vicenza",
+    "istatCode": "024116",
+    "istatCode2011": "024116",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.5488,
+    "lon": 11.5479,
+    "population": {
+      "2015": 112543,
+      "2016": 112096,
+      "2017": 111385,
+      "2018": 110756,
+      "2019": 109837,
+      "2020": 109855,
+      "2021": 111113,
+      "2022": 110293,
+      "2023": 110283,
+      "2024": 110299,
+      "2025": 110468,
+      "2026": 110741
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 110468,
+    "sizeClass": "media"
+  },
+  {
+    "id": "belluno",
+    "name": "Belluno",
+    "officialName": "Belluno",
+    "istatCode": "025006",
+    "istatCode2011": "025006",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 46.1375,
+    "lon": 12.2182,
+    "population": {
+      "2015": 35538,
+      "2016": 35586,
+      "2017": 35658,
+      "2018": 35510,
+      "2019": 35678,
+      "2020": 35675,
+      "2021": 35522,
+      "2022": 35395,
+      "2023": 35549,
+      "2024": 35546,
+      "2025": 35543,
+      "2026": 35499
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 35543,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "treviso",
+    "name": "Treviso",
+    "officialName": "Treviso",
+    "istatCode": "026086",
+    "istatCode2011": "026086",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.6659,
+    "lon": 12.2455,
+    "population": {
+      "2015": 83648,
+      "2016": 83706,
+      "2017": 84022,
+      "2018": 85136,
+      "2019": 85236,
+      "2020": 85456,
+      "2021": 84837,
+      "2022": 84452,
+      "2023": 84897,
+      "2024": 85322,
+      "2025": 85652,
+      "2026": 86113
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 85652,
+    "sizeClass": "media"
+  },
+  {
+    "id": "venezia",
+    "name": "Venezia",
+    "officialName": "Venezia",
+    "istatCode": "027042",
+    "istatCode2011": "027042",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": true,
+    "lat": 45.4372,
+    "lon": 12.3346,
+    "population": {
+      "2015": 262970,
+      "2016": 262102,
+      "2017": 261138,
+      "2018": 260585,
+      "2019": 259961,
+      "2020": 258685,
+      "2021": 256083,
+      "2022": 251944,
+      "2023": 250913,
+      "2024": 250290,
+      "2025": 249490,
+      "2026": 249385
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 249490,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "padova",
+    "name": "Padova",
+    "officialName": "Padova",
+    "istatCode": "028060",
+    "istatCode2011": "028060",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.4077,
+    "lon": 11.8734,
+    "population": {
+      "2015": 209959,
+      "2016": 209269,
+      "2017": 208573,
+      "2018": 209425,
+      "2019": 209995,
+      "2020": 210077,
+      "2021": 209730,
+      "2022": 206651,
+      "2023": 207112,
+      "2024": 207502,
+      "2025": 207412,
+      "2026": 208202
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 207412,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "rovigo",
+    "name": "Rovigo",
+    "officialName": "Rovigo",
+    "istatCode": "029041",
+    "istatCode2011": "029041",
+    "region": "Veneto",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.0698,
+    "lon": 11.7888,
+    "population": {
+      "2015": 51349,
+      "2016": 51016,
+      "2017": 50740,
+      "2018": 50286,
+      "2019": 50193,
+      "2020": 49985,
+      "2021": 50535,
+      "2022": 50190,
+      "2023": 50089,
+      "2024": 50090,
+      "2025": 49922,
+      "2026": 49994
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 49922,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "pordenone",
+    "name": "Pordenone",
+    "officialName": "Pordenone",
+    "istatCode": "093033",
+    "istatCode2011": "093033",
+    "region": "Friuli-Venezia Giulia",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.9563,
+    "lon": 12.6597,
+    "population": {
+      "2015": 51258,
+      "2016": 50950,
+      "2017": 50869,
+      "2018": 51143,
+      "2019": 51557,
+      "2020": 51733,
+      "2021": 51403,
+      "2022": 51617,
+      "2023": 51842,
+      "2024": 52147,
+      "2025": 52314,
+      "2026": 52744
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 52314,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "udine",
+    "name": "Udine",
+    "officialName": "Udine",
+    "istatCode": "030129",
+    "istatCode2011": "030129",
+    "region": "Friuli-Venezia Giulia",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 46.0635,
+    "lon": 13.2358,
+    "population": {
+      "2015": 99676,
+      "2016": 99644,
+      "2017": 100005,
+      "2018": 100354,
+      "2019": 100467,
+      "2020": 100170,
+      "2021": 98156,
+      "2022": 97736,
+      "2023": 98040,
+      "2024": 98304,
+      "2025": 98279,
+      "2026": 98501
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 98279,
+    "sizeClass": "media"
+  },
+  {
+    "id": "gorizia",
+    "name": "Gorizia",
+    "officialName": "Gorizia",
+    "istatCode": "031007",
+    "istatCode2011": "031007",
+    "region": "Friuli-Venezia Giulia",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.9441,
+    "lon": 13.6252,
+    "population": {
+      "2015": 34747,
+      "2016": 34471,
+      "2017": 34325,
+      "2018": 33967,
+      "2019": 33915,
+      "2020": 33569,
+      "2021": 34087,
+      "2022": 33615,
+      "2023": 33584,
+      "2024": 33608,
+      "2025": 33620,
+      "2026": 33679
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 33620,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "trieste",
+    "name": "Trieste",
+    "officialName": "Trieste",
+    "istatCode": "032006",
+    "istatCode2011": "032006",
+    "region": "Friuli-Venezia Giulia",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.6496,
+    "lon": 13.7773,
+    "population": {
+      "2015": 202244,
+      "2016": 201554,
+      "2017": 201636,
+      "2018": 202150,
+      "2019": 202351,
+      "2020": 201613,
+      "2021": 200609,
+      "2022": 199015,
+      "2023": 199032,
+      "2024": 198843,
+      "2025": 198388,
+      "2026": 198622
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 198388,
+    "sizeClass": "media"
+  },
+  {
+    "id": "piacenza",
+    "name": "Piacenza",
+    "officialName": "Piacenza",
+    "istatCode": "033032",
+    "istatCode2011": "033032",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 45.0535,
+    "lon": 9.6947,
+    "population": {
+      "2015": 102101,
+      "2016": 102178,
+      "2017": 102502,
+      "2018": 103215,
+      "2019": 103904,
+      "2020": 104260,
+      "2021": 102731,
+      "2022": 102364,
+      "2023": 102728,
+      "2024": 102887,
+      "2025": 103406,
+      "2026": 103737
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 103406,
+    "sizeClass": "media"
+  },
+  {
+    "id": "parma",
+    "name": "Parma",
+    "officialName": "Parma",
+    "istatCode": "034027",
+    "istatCode2011": "034027",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.8015,
+    "lon": 10.328,
+    "population": {
+      "2015": 189696,
+      "2016": 192940,
+      "2017": 195267,
+      "2018": 197301,
+      "2019": 198606,
+      "2020": 200455,
+      "2021": 195998,
+      "2022": 195436,
+      "2023": 197018,
+      "2024": 198121,
+      "2025": 198693,
+      "2026": 199450
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 198693,
+    "sizeClass": "media"
+  },
+  {
+    "id": "reggio-emilia",
+    "name": "Reggio Emilia",
+    "officialName": "Reggio nell'Emilia",
+    "istatCode": "035033",
+    "istatCode2011": "035033",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.6978,
+    "lon": 10.6305,
+    "population": {
+      "2015": 168710,
+      "2016": 169363,
+      "2017": 169875,
+      "2018": 170151,
+      "2019": 170887,
+      "2020": 171084,
+      "2021": 170601,
+      "2022": 169908,
+      "2023": 170451,
+      "2024": 171207,
+      "2025": 172284,
+      "2026": 172921
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 172284,
+    "sizeClass": "media"
+  },
+  {
+    "id": "modena",
+    "name": "Modena",
+    "officialName": "Modena",
+    "istatCode": "036023",
+    "istatCode2011": "036023",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.6459,
+    "lon": 10.9256,
+    "population": {
+      "2015": 184863,
+      "2016": 185399,
+      "2017": 186051,
+      "2018": 186850,
+      "2019": 189016,
+      "2020": 189013,
+      "2021": 186414,
+      "2022": 184971,
+      "2023": 184836,
+      "2024": 184597,
+      "2025": 184074,
+      "2026": 184361
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 184074,
+    "sizeClass": "media"
+  },
+  {
+    "id": "bologna",
+    "name": "Bologna",
+    "officialName": "Bologna",
+    "istatCode": "037006",
+    "istatCode2011": "037006",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": true,
+    "lat": 44.4938,
+    "lon": 11.3426,
+    "population": {
+      "2015": 385190,
+      "2016": 387025,
+      "2017": 389819,
+      "2018": 390956,
+      "2019": 393248,
+      "2020": 395416,
+      "2021": 391686,
+      "2022": 387842,
+      "2023": 389200,
+      "2024": 390098,
+      "2025": 390151,
+      "2026": 391473
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 390151,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "ferrara",
+    "name": "Ferrara",
+    "officialName": "Ferrara",
+    "istatCode": "038008",
+    "istatCode2011": "038008",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.8373,
+    "lon": 11.6186,
+    "population": {
+      "2015": 133747,
+      "2016": 133365,
+      "2017": 132378,
+      "2018": 132889,
+      "2019": 132931,
+      "2020": 132899,
+      "2021": 131669,
+      "2022": 129872,
+      "2023": 129724,
+      "2024": 129391,
+      "2025": 129081,
+      "2026": 129048
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 129081,
+    "sizeClass": "media"
+  },
+  {
+    "id": "ravenna",
+    "name": "Ravenna",
+    "officialName": "Ravenna",
+    "istatCode": "039014",
+    "istatCode2011": "039014",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.4161,
+    "lon": 12.2018,
+    "population": {
+      "2015": 158581,
+      "2016": 159088,
+      "2017": 159288,
+      "2018": 159678,
+      "2019": 158923,
+      "2020": 158247,
+      "2021": 156463,
+      "2022": 155836,
+      "2023": 156050,
+      "2024": 156304,
+      "2025": 156340,
+      "2026": 156475
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 156340,
+    "sizeClass": "media"
+  },
+  {
+    "id": "forli",
+    "name": "Forlì",
+    "officialName": "Forlì",
+    "istatCode": "040012",
+    "istatCode2011": "040012",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.2227,
+    "lon": 12.0413,
+    "population": {
+      "2015": 117871,
+      "2016": 117752,
+      "2017": 117874,
+      "2018": 117876,
+      "2019": 118360,
+      "2020": 118292,
+      "2021": 117407,
+      "2022": 116558,
+      "2023": 116726,
+      "2024": 117050,
+      "2025": 117535,
+      "2026": 118053
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 117535,
+    "sizeClass": "media"
+  },
+  {
+    "id": "cesena",
+    "name": "Cesena",
+    "officialName": "Cesena",
+    "istatCode": "040007",
+    "istatCode2011": "040007",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.1364,
+    "lon": 12.2422,
+    "population": {
+      "2015": 96684,
+      "2016": 96482,
+      "2017": 96344,
+      "2018": 96736,
+      "2019": 97421,
+      "2020": 97465,
+      "2021": 96520,
+      "2022": 96168,
+      "2023": 96003,
+      "2024": 96066,
+      "2025": 95730,
+      "2026": 95620
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 95730,
+    "sizeClass": "media"
+  },
+  {
+    "id": "rimini",
+    "name": "Rimini",
+    "officialName": "Rimini",
+    "istatCode": "099014",
+    "istatCode2011": "099014",
+    "region": "Emilia-Romagna",
+    "area": "Nord-est",
+    "macroArea": "Nord",
+    "metropolitanCapital": false,
+    "lat": 44.0594,
+    "lon": 12.5684,
+    "population": {
+      "2015": 146021,
+      "2016": 146178,
+      "2017": 147393,
+      "2018": 147870,
+      "2019": 148981,
+      "2020": 149335,
+      "2021": 150240,
+      "2022": 149169,
+      "2023": 149681,
+      "2024": 150046,
+      "2025": 150333,
+      "2026": 150774
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 150333,
+    "sizeClass": "media"
+  },
+  {
+    "id": "massa",
+    "name": "Massa",
+    "officialName": "Massa",
+    "istatCode": "045010",
+    "istatCode2011": "045010",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 44.0359,
+    "lon": 10.1396,
+    "population": {
+      "2015": 69363,
+      "2016": 68875,
+      "2017": 68493,
+      "2018": 68243,
+      "2019": 67995,
+      "2020": 67579,
+      "2021": 66977,
+      "2022": 66498,
+      "2023": 66288,
+      "2024": 65992,
+      "2025": 65814,
+      "2026": 65547
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 65814,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "lucca",
+    "name": "Lucca",
+    "officialName": "Lucca",
+    "istatCode": "046017",
+    "istatCode2011": "046017",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.8428,
+    "lon": 10.5029,
+    "population": {
+      "2015": 88496,
+      "2016": 88259,
+      "2017": 87738,
+      "2018": 88742,
+      "2019": 88466,
+      "2020": 88734,
+      "2021": 89378,
+      "2022": 89078,
+      "2023": 89156,
+      "2024": 89234,
+      "2025": 89002,
+      "2026": 88464
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 89002,
+    "sizeClass": "media"
+  },
+  {
+    "id": "pistoia",
+    "name": "Pistoia",
+    "officialName": "Pistoia",
+    "istatCode": "047014",
+    "istatCode2011": "047014",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.9336,
+    "lon": 10.9174,
+    "population": {
+      "2015": 90090,
+      "2016": 89991,
+      "2017": 90039,
+      "2018": 90513,
+      "2019": 90833,
+      "2020": 90908,
+      "2021": 89729,
+      "2022": 89493,
+      "2023": 89524,
+      "2024": 89054,
+      "2025": 88889,
+      "2026": 89094
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 88889,
+    "sizeClass": "media"
+  },
+  {
+    "id": "firenze",
+    "name": "Firenze",
+    "officialName": "Firenze",
+    "istatCode": "048017",
+    "istatCode2011": "048017",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": true,
+    "lat": 43.7698,
+    "lon": 11.2556,
+    "population": {
+      "2015": 376841,
+      "2016": 377395,
+      "2017": 377277,
+      "2018": 373991,
+      "2019": 369885,
+      "2020": 366927,
+      "2021": 368419,
+      "2022": 361619,
+      "2023": 362742,
+      "2024": 362613,
+      "2025": 361705,
+      "2026": 361625
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 361705,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "prato",
+    "name": "Prato",
+    "officialName": "Prato",
+    "istatCode": "100005",
+    "istatCode2011": "100005",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.8806,
+    "lon": 11.0969,
+    "population": {
+      "2015": 190994,
+      "2016": 191844,
+      "2017": 192974,
+      "2018": 192934,
+      "2019": 193723,
+      "2020": 194223,
+      "2021": 201410,
+      "2022": 195213,
+      "2023": 196317,
+      "2024": 197088,
+      "2025": 197057,
+      "2026": 198327
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 197057,
+    "sizeClass": "media"
+  },
+  {
+    "id": "livorno",
+    "name": "Livorno",
+    "officialName": "Livorno",
+    "istatCode": "049009",
+    "istatCode2011": "049009",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.5507,
+    "lon": 10.3091,
+    "population": {
+      "2015": 159509,
+      "2016": 159151,
+      "2017": 158745,
+      "2018": 158062,
+      "2019": 157457,
+      "2020": 157017,
+      "2021": 155370,
+      "2022": 154483,
+      "2023": 153859,
+      "2024": 153418,
+      "2025": 153154,
+      "2026": 152451
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 153154,
+    "sizeClass": "media"
+  },
+  {
+    "id": "pisa",
+    "name": "Pisa",
+    "officialName": "Pisa",
+    "istatCode": "050026",
+    "istatCode2011": "050026",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.7159,
+    "lon": 10.4019,
+    "population": {
+      "2015": 89215,
+      "2016": 89022,
+      "2017": 90875,
+      "2018": 90949,
+      "2019": 90096,
+      "2020": 90036,
+      "2021": 89969,
+      "2022": 89002,
+      "2023": 89059,
+      "2024": 89117,
+      "2025": 89422,
+      "2026": 90146
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 89422,
+    "sizeClass": "media"
+  },
+  {
+    "id": "arezzo",
+    "name": "Arezzo",
+    "officialName": "Arezzo",
+    "istatCode": "051002",
+    "istatCode2011": "051002",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.4629,
+    "lon": 11.8782,
+    "population": {
+      "2015": 99330,
+      "2016": 99262,
+      "2017": 98996,
+      "2018": 98807,
+      "2019": 98483,
+      "2020": 98259,
+      "2021": 97373,
+      "2022": 96717,
+      "2023": 96535,
+      "2024": 96330,
+      "2025": 96479,
+      "2026": 96506
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 96479,
+    "sizeClass": "media"
+  },
+  {
+    "id": "siena",
+    "name": "Siena",
+    "officialName": "Siena",
+    "istatCode": "052032",
+    "istatCode2011": "052032",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.3186,
+    "lon": 11.3317,
+    "population": {
+      "2015": 53988,
+      "2016": 54002,
+      "2017": 53915,
+      "2018": 54158,
+      "2019": 54339,
+      "2020": 54308,
+      "2021": 54123,
+      "2022": 53062,
+      "2023": 52974,
+      "2024": 52833,
+      "2025": 52990,
+      "2026": 53180
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 52990,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "grosseto",
+    "name": "Grosseto",
+    "officialName": "Grosseto",
+    "istatCode": "053011",
+    "istatCode2011": "053011",
+    "region": "Toscana",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 42.7597,
+    "lon": 11.1137,
+    "population": {
+      "2015": 81758,
+      "2016": 81747,
+      "2017": 81721,
+      "2018": 81630,
+      "2019": 81893,
+      "2020": 81912,
+      "2021": 81643,
+      "2022": 81503,
+      "2023": 81608,
+      "2024": 81482,
+      "2025": 81264,
+      "2026": 81275
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 81264,
+    "sizeClass": "media"
+  },
+  {
+    "id": "perugia",
+    "name": "Perugia",
+    "officialName": "Perugia",
+    "istatCode": "054039",
+    "istatCode2011": "054039",
+    "region": "Umbria",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.112,
+    "lon": 12.389,
+    "population": {
+      "2015": 164227,
+      "2016": 164633,
+      "2017": 165106,
+      "2018": 164371,
+      "2019": 164768,
+      "2020": 164880,
+      "2021": 164721,
+      "2022": 162362,
+      "2023": 162367,
+      "2024": 162099,
+      "2025": 162050,
+      "2026": 162384
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 162050,
+    "sizeClass": "media"
+  },
+  {
+    "id": "terni",
+    "name": "Terni",
+    "officialName": "Terni",
+    "istatCode": "055032",
+    "istatCode2011": "055032",
+    "region": "Umbria",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 42.5641,
+    "lon": 12.6405,
+    "population": {
+      "2015": 111383,
+      "2016": 111028,
+      "2017": 110949,
+      "2018": 110777,
+      "2019": 110554,
+      "2020": 110003,
+      "2021": 107982,
+      "2022": 107165,
+      "2023": 106793,
+      "2024": 106436,
+      "2025": 106310,
+      "2026": 106272
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 106310,
+    "sizeClass": "media"
+  },
+  {
+    "id": "pesaro",
+    "name": "Pesaro",
+    "officialName": "Pesaro",
+    "istatCode": "041044",
+    "istatCode2011": "041044",
+    "region": "Marche",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.9098,
+    "lon": 12.9131,
+    "population": {
+      "2015": 94189,
+      "2016": 94239,
+      "2017": 94548,
+      "2018": 94795,
+      "2019": 94896,
+      "2020": 95152,
+      "2021": 95950,
+      "2022": 95670,
+      "2023": 95620,
+      "2024": 95392,
+      "2025": 95266,
+      "2026": 95270
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 95266,
+    "sizeClass": "media"
+  },
+  {
+    "id": "ancona",
+    "name": "Ancona",
+    "officialName": "Ancona",
+    "istatCode": "042002",
+    "istatCode2011": "042002",
+    "region": "Marche",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.617,
+    "lon": 13.5171,
+    "population": {
+      "2015": 100458,
+      "2016": 99747,
+      "2017": 99373,
+      "2018": 99412,
+      "2019": 99307,
+      "2020": 99077,
+      "2021": 99273,
+      "2022": 98402,
+      "2023": 98950,
+      "2024": 99377,
+      "2025": 99533,
+      "2026": 100151
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 99533,
+    "sizeClass": "media"
+  },
+  {
+    "id": "macerata",
+    "name": "Macerata",
+    "officialName": "Macerata",
+    "istatCode": "043023",
+    "istatCode2011": "043023",
+    "region": "Marche",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.3007,
+    "lon": 13.4536,
+    "population": {
+      "2015": 42699,
+      "2016": 42435,
+      "2017": 42149,
+      "2018": 41635,
+      "2019": 41340,
+      "2020": 41047,
+      "2021": 41079,
+      "2022": 40503,
+      "2023": 40537,
+      "2024": 40538,
+      "2025": 40585,
+      "2026": 40689
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 40585,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "fermo",
+    "name": "Fermo",
+    "officialName": "Fermo",
+    "istatCode": "109006",
+    "istatCode2011": "109006",
+    "region": "Marche",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 43.1616,
+    "lon": 13.7182,
+    "population": {
+      "2015": 37494,
+      "2016": 37425,
+      "2017": 37200,
+      "2018": 37101,
+      "2019": 37034,
+      "2020": 36812,
+      "2021": 36168,
+      "2022": 35923,
+      "2023": 35913,
+      "2024": 35842,
+      "2025": 35727,
+      "2026": 35853
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 35727,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "ascoli-piceno",
+    "name": "Ascoli Piceno",
+    "officialName": "Ascoli Piceno",
+    "istatCode": "044007",
+    "istatCode2011": "044007",
+    "region": "Marche",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 42.8546,
+    "lon": 13.5755,
+    "population": {
+      "2015": 49551,
+      "2016": 49158,
+      "2017": 48960,
+      "2018": 48608,
+      "2019": 48041,
+      "2020": 47404,
+      "2021": 46554,
+      "2022": 46085,
+      "2023": 45664,
+      "2024": 45448,
+      "2025": 45277,
+      "2026": 45193
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 45277,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "viterbo",
+    "name": "Viterbo",
+    "officialName": "Viterbo",
+    "istatCode": "056059",
+    "istatCode2011": "056059",
+    "region": "Lazio",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 42.4168,
+    "lon": 12.1051,
+    "population": {
+      "2015": 65244,
+      "2016": 65250,
+      "2017": 65596,
+      "2018": 66015,
+      "2019": 65985,
+      "2020": 65911,
+      "2021": 66113,
+      "2022": 65931,
+      "2023": 66178,
+      "2024": 66188,
+      "2025": 66393,
+      "2026": 66767
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 66393,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "rieti",
+    "name": "Rieti",
+    "officialName": "Rieti",
+    "istatCode": "057059",
+    "istatCode2011": "057059",
+    "region": "Lazio",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 42.4025,
+    "lon": 12.8605,
+    "population": {
+      "2015": 47308,
+      "2016": 47295,
+      "2017": 47260,
+      "2018": 47241,
+      "2019": 46951,
+      "2020": 46604,
+      "2021": 45907,
+      "2022": 45557,
+      "2023": 45422,
+      "2024": 45286,
+      "2025": 45083,
+      "2026": 44866
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 45083,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "roma",
+    "name": "Roma",
+    "officialName": "Roma",
+    "istatCode": "058091",
+    "istatCode2011": "058091",
+    "region": "Lazio",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": true,
+    "lat": 41.8933,
+    "lon": 12.4829,
+    "population": {
+      "2015": 2776835,
+      "2016": 2794353,
+      "2017": 2810118,
+      "2018": 2815541,
+      "2019": 2820219,
+      "2020": 2808293,
+      "2021": 2770226,
+      "2022": 2749031,
+      "2023": 2755309,
+      "2024": 2751747,
+      "2025": 2747290,
+      "2026": 2745062
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 2747290,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "latina",
+    "name": "Latina",
+    "officialName": "Latina",
+    "istatCode": "059011",
+    "istatCode2011": "059011",
+    "region": "Lazio",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 41.4673,
+    "lon": 12.9038,
+    "population": {
+      "2015": 123150,
+      "2016": 124252,
+      "2017": 124985,
+      "2018": 126020,
+      "2019": 126952,
+      "2020": 127037,
+      "2021": 127560,
+      "2022": 127861,
+      "2023": 127719,
+      "2024": 127859,
+      "2025": 127796,
+      "2026": 127450
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 127796,
+    "sizeClass": "media"
+  },
+  {
+    "id": "frosinone",
+    "name": "Frosinone",
+    "officialName": "Frosinone",
+    "istatCode": "060038",
+    "istatCode2011": "060038",
+    "region": "Lazio",
+    "area": "Centro",
+    "macroArea": "Centro",
+    "metropolitanCapital": false,
+    "lat": 41.6407,
+    "lon": 13.3509,
+    "population": {
+      "2015": 46106,
+      "2016": 45816,
+      "2017": 45474,
+      "2018": 45262,
+      "2019": 45073,
+      "2020": 44831,
+      "2021": 44491,
+      "2022": 43830,
+      "2023": 43585,
+      "2024": 43305,
+      "2025": 43015,
+      "2026": 42836
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 43015,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "l-aquila",
+    "name": "L’Aquila",
+    "officialName": "L'Aquila",
+    "istatCode": "066049",
+    "istatCode2011": "066049",
+    "region": "Abruzzo",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 42.3489,
+    "lon": 13.398,
+    "population": {
+      "2015": 70371,
+      "2016": 69954,
+      "2017": 69837,
+      "2018": 69778,
+      "2019": 69925,
+      "2020": 70019,
+      "2021": 69349,
+      "2022": 69210,
+      "2023": 69659,
+      "2024": 69717,
+      "2025": 70425,
+      "2026": 70803
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 70425,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "teramo",
+    "name": "Teramo",
+    "officialName": "Teramo",
+    "istatCode": "067041",
+    "istatCode2011": "067041",
+    "region": "Abruzzo",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 42.6613,
+    "lon": 13.6984,
+    "population": {
+      "2015": 55043,
+      "2016": 54939,
+      "2017": 54870,
+      "2018": 54451,
+      "2019": 54443,
+      "2020": 53998,
+      "2021": 52476,
+      "2022": 51849,
+      "2023": 51650,
+      "2024": 51630,
+      "2025": 51600,
+      "2026": 51400
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 51600,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "pescara",
+    "name": "Pescara",
+    "officialName": "Pescara",
+    "istatCode": "068028",
+    "istatCode2011": "068028",
+    "region": "Abruzzo",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 42.4696,
+    "lon": 14.2059,
+    "population": {
+      "2015": 121600,
+      "2016": 121393,
+      "2017": 121123,
+      "2018": 120075,
+      "2019": 120463,
+      "2020": 119862,
+      "2021": 118766,
+      "2022": 118992,
+      "2023": 118829,
+      "2024": 118461,
+      "2025": 118313,
+      "2026": 118487
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 118313,
+    "sizeClass": "media"
+  },
+  {
+    "id": "chieti",
+    "name": "Chieti",
+    "officialName": "Chieti",
+    "istatCode": "069022",
+    "istatCode2011": "069022",
+    "region": "Abruzzo",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 42.3447,
+    "lon": 14.166,
+    "population": {
+      "2015": 51988,
+      "2016": 51623,
+      "2017": 51129,
+      "2018": 50603,
+      "2019": 50482,
+      "2020": 50287,
+      "2021": 49139,
+      "2022": 48666,
+      "2023": 48614,
+      "2024": 48532,
+      "2025": 48403,
+      "2026": 48368
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 48403,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "isernia",
+    "name": "Isernia",
+    "officialName": "Isernia",
+    "istatCode": "094023",
+    "istatCode2011": "094023",
+    "region": "Molise",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.6002,
+    "lon": 14.2383,
+    "population": {
+      "2015": 21784,
+      "2016": 21615,
+      "2017": 21515,
+      "2018": 21331,
+      "2019": 21400,
+      "2020": 21267,
+      "2021": 20971,
+      "2022": 20748,
+      "2023": 20685,
+      "2024": 20684,
+      "2025": 20529,
+      "2026": 20491
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 20529,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "campobasso",
+    "name": "Campobasso",
+    "officialName": "Campobasso",
+    "istatCode": "070006",
+    "istatCode2011": "070006",
+    "region": "Molise",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.5598,
+    "lon": 14.6603,
+    "population": {
+      "2015": 48715,
+      "2016": 48768,
+      "2017": 48710,
+      "2018": 48746,
+      "2019": 48675,
+      "2020": 48337,
+      "2021": 47535,
+      "2022": 47587,
+      "2023": 47313,
+      "2024": 47418,
+      "2025": 47547,
+      "2026": 47399
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 47547,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "caserta",
+    "name": "Caserta",
+    "officialName": "Caserta",
+    "istatCode": "061022",
+    "istatCode2011": "061022",
+    "region": "Campania",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.0721,
+    "lon": 14.3313,
+    "population": {
+      "2015": 76040,
+      "2016": 75524,
+      "2017": 75330,
+      "2018": 74804,
+      "2019": 74757,
+      "2020": 73984,
+      "2021": 72813,
+      "2022": 73037,
+      "2023": 73001,
+      "2024": 72699,
+      "2025": 72793,
+      "2026": 72757
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 72793,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "benevento",
+    "name": "Benevento",
+    "officialName": "Benevento",
+    "istatCode": "062008",
+    "istatCode2011": "062008",
+    "region": "Campania",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.1296,
+    "lon": 14.7825,
+    "population": {
+      "2015": 60184,
+      "2016": 59724,
+      "2017": 59517,
+      "2018": 59302,
+      "2019": 58745,
+      "2020": 58338,
+      "2021": 57500,
+      "2022": 56916,
+      "2023": 56336,
+      "2024": 56048,
+      "2025": 55712,
+      "2026": 55330
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 55712,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "napoli",
+    "name": "Napoli",
+    "officialName": "Napoli",
+    "istatCode": "063049",
+    "istatCode2011": "063049",
+    "region": "Campania",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 40.8359,
+    "lon": 14.2488,
+    "population": {
+      "2015": 963521,
+      "2016": 961011,
+      "2017": 959433,
+      "2018": 957571,
+      "2019": 954318,
+      "2020": 948850,
+      "2021": 922094,
+      "2022": 921142,
+      "2023": 917510,
+      "2024": 913704,
+      "2025": 909013,
+      "2026": 905050
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 909013,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "avellino",
+    "name": "Avellino",
+    "officialName": "Avellino",
+    "istatCode": "064008",
+    "istatCode2011": "064008",
+    "region": "Campania",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.9142,
+    "lon": 14.7889,
+    "population": {
+      "2015": 54996,
+      "2016": 54645,
+      "2017": 54357,
+      "2018": 54111,
+      "2019": 53762,
+      "2020": 53346,
+      "2021": 52819,
+      "2022": 52498,
+      "2023": 52250,
+      "2024": 52121,
+      "2025": 51975,
+      "2026": 51819
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 51975,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "salerno",
+    "name": "Salerno",
+    "officialName": "Salerno",
+    "istatCode": "065116",
+    "istatCode2011": "065116",
+    "region": "Campania",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.6804,
+    "lon": 14.7595,
+    "population": {
+      "2015": 134732,
+      "2016": 134338,
+      "2017": 133941,
+      "2018": 133019,
+      "2019": 132364,
+      "2020": 131556,
+      "2021": 129206,
+      "2022": 128136,
+      "2023": 127485,
+      "2024": 126715,
+      "2025": 126000,
+      "2026": 125323
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 126000,
+    "sizeClass": "media"
+  },
+  {
+    "id": "foggia",
+    "name": "Foggia",
+    "officialName": "Foggia",
+    "istatCode": "071024",
+    "istatCode2011": "071024",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.462,
+    "lon": 15.5433,
+    "population": {
+      "2015": 151523,
+      "2016": 150981,
+      "2017": 150960,
+      "2018": 150816,
+      "2019": 150652,
+      "2020": 149673,
+      "2021": 147467,
+      "2022": 146803,
+      "2023": 146017,
+      "2024": 145652,
+      "2025": 145198,
+      "2026": 145078
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 145198,
+    "sizeClass": "media"
+  },
+  {
+    "id": "andria",
+    "name": "Andria",
+    "officialName": "Andria",
+    "istatCode": "110001",
+    "istatCode2011": "110001",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.2276,
+    "lon": 16.2955,
+    "population": {
+      "2015": 100236,
+      "2016": 99987,
+      "2017": 99713,
+      "2018": 99110,
+      "2019": 98712,
+      "2020": 98414,
+      "2021": 97489,
+      "2022": 97588,
+      "2023": 97346,
+      "2024": 96941,
+      "2025": 96750,
+      "2026": 96520
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 96750,
+    "sizeClass": "media"
+  },
+  {
+    "id": "barletta",
+    "name": "Barletta",
+    "officialName": "Barletta",
+    "istatCode": "110002",
+    "istatCode2011": "110002",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.3215,
+    "lon": 16.2869,
+    "population": {
+      "2015": 94538,
+      "2016": 94219,
+      "2017": 93930,
+      "2018": 93523,
+      "2019": 93435,
+      "2020": 93275,
+      "2021": 92787,
+      "2022": 92798,
+      "2023": 92627,
+      "2024": 92365,
+      "2025": 92191,
+      "2026": 92067
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 92191,
+    "sizeClass": "media"
+  },
+  {
+    "id": "trani",
+    "name": "Trani",
+    "officialName": "Trani",
+    "istatCode": "110009",
+    "istatCode2011": "110009",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 41.2782,
+    "lon": 16.4186,
+    "population": {
+      "2015": 56144,
+      "2016": 56093,
+      "2017": 55921,
+      "2018": 55836,
+      "2019": 55610,
+      "2020": 55405,
+      "2021": 54848,
+      "2022": 55035,
+      "2023": 55063,
+      "2024": 54948,
+      "2025": 54803,
+      "2026": 54731
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 54803,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "bari",
+    "name": "Bari",
+    "officialName": "Bari",
+    "istatCode": "072006",
+    "istatCode2011": "072006",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 41.1258,
+    "lon": 16.862,
+    "population": {
+      "2015": 318031,
+      "2016": 318234,
+      "2017": 316893,
+      "2018": 316758,
+      "2019": 316491,
+      "2020": 315284,
+      "2021": 317205,
+      "2022": 315948,
+      "2023": 316736,
+      "2024": 316226,
+      "2025": 315831,
+      "2026": 316248
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 315831,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "taranto",
+    "name": "Taranto",
+    "officialName": "Taranto",
+    "istatCode": "073027",
+    "istatCode2011": "073027",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.4712,
+    "lon": 17.2432,
+    "population": {
+      "2015": 197486,
+      "2016": 196713,
+      "2017": 195386,
+      "2018": 194227,
+      "2019": 192775,
+      "2020": 191050,
+      "2021": 190717,
+      "2022": 189461,
+      "2023": 188310,
+      "2024": 187025,
+      "2025": 186011,
+      "2026": 185112
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 186011,
+    "sizeClass": "media"
+  },
+  {
+    "id": "brindisi",
+    "name": "Brindisi",
+    "officialName": "Brindisi",
+    "istatCode": "074001",
+    "istatCode2011": "074001",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.6375,
+    "lon": 17.9455,
+    "population": {
+      "2015": 88270,
+      "2016": 87719,
+      "2017": 87014,
+      "2018": 86028,
+      "2019": 85397,
+      "2020": 84465,
+      "2021": 83690,
+      "2022": 83317,
+      "2023": 82883,
+      "2024": 82298,
+      "2025": 81723,
+      "2026": 81181
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 81723,
+    "sizeClass": "media"
+  },
+  {
+    "id": "lecce",
+    "name": "Lecce",
+    "officialName": "Lecce",
+    "istatCode": "075035",
+    "istatCode2011": "075035",
+    "region": "Puglia",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.357,
+    "lon": 18.1718,
+    "population": {
+      "2015": 94897,
+      "2016": 94996,
+      "2017": 94522,
+      "2018": 94351,
+      "2019": 93484,
+      "2020": 93865,
+      "2021": 95037,
+      "2022": 94783,
+      "2023": 94596,
+      "2024": 94250,
+      "2025": 94187,
+      "2026": 94387
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 94187,
+    "sizeClass": "media"
+  },
+  {
+    "id": "potenza",
+    "name": "Potenza",
+    "officialName": "Potenza",
+    "istatCode": "076063",
+    "istatCode2011": "076063",
+    "region": "Basilicata",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.6384,
+    "lon": 15.8022,
+    "population": {
+      "2015": 66751,
+      "2016": 66614,
+      "2017": 66784,
+      "2018": 66979,
+      "2019": 66734,
+      "2020": 66393,
+      "2021": 65420,
+      "2022": 64850,
+      "2023": 64470,
+      "2024": 64070,
+      "2025": 63864,
+      "2026": 63403
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 63864,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "matera",
+    "name": "Matera",
+    "officialName": "Matera",
+    "istatCode": "077014",
+    "istatCode2011": "077014",
+    "region": "Basilicata",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.667,
+    "lon": 16.6063,
+    "population": {
+      "2015": 60434,
+      "2016": 60372,
+      "2017": 60346,
+      "2018": 60427,
+      "2019": 60540,
+      "2020": 60530,
+      "2021": 59794,
+      "2022": 59748,
+      "2023": 59745,
+      "2024": 59652,
+      "2025": 59628,
+      "2026": 59368
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 59628,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "cosenza",
+    "name": "Cosenza",
+    "officialName": "Cosenza",
+    "istatCode": "078045",
+    "istatCode2011": "078045",
+    "region": "Calabria",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 39.31,
+    "lon": 16.2502,
+    "population": {
+      "2015": 67353,
+      "2016": 67047,
+      "2017": 66877,
+      "2018": 66333,
+      "2019": 66102,
+      "2020": 65623,
+      "2021": 64070,
+      "2022": 64073,
+      "2023": 63909,
+      "2024": 63701,
+      "2025": 63240,
+      "2026": 63449
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 63240,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "crotone",
+    "name": "Crotone",
+    "officialName": "Crotone",
+    "istatCode": "101010",
+    "istatCode2011": "101010",
+    "region": "Calabria",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 39.0806,
+    "lon": 17.1272,
+    "population": {
+      "2015": 59552,
+      "2016": 60435,
+      "2017": 61811,
+      "2018": 62305,
+      "2019": 62966,
+      "2020": 61005,
+      "2021": 60123,
+      "2022": 59359,
+      "2023": 58864,
+      "2024": 58478,
+      "2025": 58372,
+      "2026": 58136
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 58372,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "catanzaro",
+    "name": "Catanzaro",
+    "officialName": "Catanzaro",
+    "istatCode": "079023",
+    "istatCode2011": "079023",
+    "region": "Calabria",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 38.9076,
+    "lon": 16.596,
+    "population": {
+      "2015": 89372,
+      "2016": 89216,
+      "2017": 88978,
+      "2018": 88615,
+      "2019": 88085,
+      "2020": 87397,
+      "2021": 86183,
+      "2022": 85609,
+      "2023": 84849,
+      "2024": 84109,
+      "2025": 83313,
+      "2026": 82708
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 83313,
+    "sizeClass": "media"
+  },
+  {
+    "id": "vibo-valentia",
+    "name": "Vibo Valentia",
+    "officialName": "Vibo Valentia",
+    "istatCode": "102047",
+    "istatCode2011": "102047",
+    "region": "Calabria",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 38.6749,
+    "lon": 16.0985,
+    "population": {
+      "2015": 32703,
+      "2016": 32673,
+      "2017": 32341,
+      "2018": 32156,
+      "2019": 31806,
+      "2020": 31451,
+      "2021": 31753,
+      "2022": 31480,
+      "2023": 31177,
+      "2024": 31038,
+      "2025": 30906,
+      "2026": 30753
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 30906,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "reggio-calabria",
+    "name": "Reggio Calabria",
+    "officialName": "Reggio di Calabria",
+    "istatCode": "080063",
+    "istatCode2011": "080063",
+    "region": "Calabria",
+    "area": "Sud",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 38.1035,
+    "lon": 15.6398,
+    "population": {
+      "2015": 180614,
+      "2016": 179466,
+      "2017": 178827,
+      "2018": 177524,
+      "2019": 176299,
+      "2020": 174885,
+      "2021": 173026,
+      "2022": 172479,
+      "2023": 171181,
+      "2024": 169679,
+      "2025": 168779,
+      "2026": 167925
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 168779,
+    "sizeClass": "media"
+  },
+  {
+    "id": "trapani",
+    "name": "Trapani",
+    "officialName": "Trapani",
+    "istatCode": "081021",
+    "istatCode2011": "081021",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 38.0174,
+    "lon": 12.516,
+    "population": {
+      "2015": 68739,
+      "2016": 68081,
+      "2017": 67657,
+      "2018": 66888,
+      "2019": 66289,
+      "2020": 65841,
+      "2021": 65378,
+      "2022": 56293,
+      "2023": 55816,
+      "2024": 55229,
+      "2025": 54949,
+      "2026": 54636
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 54949,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "palermo",
+    "name": "Palermo",
+    "officialName": "Palermo",
+    "istatCode": "082053",
+    "istatCode2011": "082053",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 38.1112,
+    "lon": 13.3524,
+    "population": {
+      "2015": 661091,
+      "2016": 659196,
+      "2017": 658575,
+      "2018": 655533,
+      "2019": 652720,
+      "2020": 647422,
+      "2021": 637885,
+      "2022": 635439,
+      "2023": 632499,
+      "2024": 630427,
+      "2025": 628693,
+      "2026": 626273
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 628693,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "messina",
+    "name": "Messina",
+    "officialName": "Messina",
+    "istatCode": "083048",
+    "istatCode2011": "083048",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 38.1938,
+    "lon": 15.5542,
+    "population": {
+      "2015": 238193,
+      "2016": 235948,
+      "2017": 234138,
+      "2018": 231306,
+      "2019": 229280,
+      "2020": 227424,
+      "2021": 222329,
+      "2022": 221246,
+      "2023": 219387,
+      "2024": 217959,
+      "2025": 217033,
+      "2026": 216458
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 217033,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "agrigento",
+    "name": "Agrigento",
+    "officialName": "Agrigento",
+    "istatCode": "084001",
+    "istatCode2011": "084001",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 37.3123,
+    "lon": 13.5747,
+    "population": {
+      "2015": 59583,
+      "2016": 59455,
+      "2017": 59195,
+      "2018": 58726,
+      "2019": 58174,
+      "2020": 57592,
+      "2021": 55872,
+      "2022": 55849,
+      "2023": 55636,
+      "2024": 55367,
+      "2025": 55252,
+      "2026": 55118
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 55252,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "caltanissetta",
+    "name": "Caltanissetta",
+    "officialName": "Caltanissetta",
+    "istatCode": "085004",
+    "istatCode2011": "085004",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 37.4903,
+    "lon": 14.0633,
+    "population": {
+      "2015": 62103,
+      "2016": 62249,
+      "2017": 62132,
+      "2018": 61760,
+      "2019": 61252,
+      "2020": 60294,
+      "2021": 59864,
+      "2022": 59245,
+      "2023": 58861,
+      "2024": 58343,
+      "2025": 58182,
+      "2026": 57922
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 58182,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "enna",
+    "name": "Enna",
+    "officialName": "Enna",
+    "istatCode": "086009",
+    "istatCode2011": "086009",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 37.5668,
+    "lon": 14.2807,
+    "population": {
+      "2015": 27876,
+      "2016": 27688,
+      "2017": 27309,
+      "2018": 26963,
+      "2019": 26726,
+      "2020": 26368,
+      "2021": 26037,
+      "2022": 25815,
+      "2023": 25533,
+      "2024": 25332,
+      "2025": 25102,
+      "2026": 24884
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 25102,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "catania",
+    "name": "Catania",
+    "officialName": "Catania",
+    "istatCode": "087015",
+    "istatCode2011": "087015",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 37.5024,
+    "lon": 15.0874,
+    "population": {
+      "2015": 298765,
+      "2016": 298726,
+      "2017": 298452,
+      "2018": 297325,
+      "2019": 297752,
+      "2020": 296266,
+      "2021": 300356,
+      "2022": 301104,
+      "2023": 299730,
+      "2024": 298680,
+      "2025": 298054,
+      "2026": 296984
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 298054,
+    "sizeClass": "grande"
+  },
+  {
+    "id": "ragusa",
+    "name": "Ragusa",
+    "officialName": "Ragusa",
+    "istatCode": "088009",
+    "istatCode2011": "088009",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 36.9257,
+    "lon": 14.7308,
+    "population": {
+      "2015": 72276,
+      "2016": 72201,
+      "2017": 72061,
+      "2018": 71883,
+      "2019": 71374,
+      "2020": 71438,
+      "2021": 72579,
+      "2022": 72779,
+      "2023": 73476,
+      "2024": 73736,
+      "2025": 73878,
+      "2026": 74122
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 73878,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "siracusa",
+    "name": "Siracusa",
+    "officialName": "Siracusa",
+    "istatCode": "089017",
+    "istatCode2011": "089017",
+    "region": "Sicilia",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 37.0646,
+    "lon": 15.2907,
+    "population": {
+      "2015": 122120,
+      "2016": 121691,
+      "2017": 121186,
+      "2018": 120454,
+      "2019": 119710,
+      "2020": 119056,
+      "2021": 117053,
+      "2022": 117055,
+      "2023": 116635,
+      "2024": 116247,
+      "2025": 115776,
+      "2026": 115515
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 115776,
+    "sizeClass": "media"
+  },
+  {
+    "id": "sassari",
+    "name": "Sassari",
+    "officialName": "Sassari",
+    "istatCode": "090064",
+    "istatCode2011": "090064",
+    "region": "Sardegna",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.7235,
+    "lon": 8.5613,
+    "population": {
+      "2015": 126633,
+      "2016": 126529,
+      "2017": 126520,
+      "2018": 125815,
+      "2019": 125998,
+      "2020": 125273,
+      "2021": 122506,
+      "2022": 122159,
+      "2023": 121409,
+      "2024": 121085,
+      "2025": 120510,
+      "2026": 120231
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 120510,
+    "sizeClass": "media"
+  },
+  {
+    "id": "nuoro",
+    "name": "Nuoro",
+    "officialName": "Nuoro",
+    "istatCode": "091051",
+    "istatCode2011": "091051",
+    "region": "Sardegna",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 40.3211,
+    "lon": 9.3297,
+    "population": {
+      "2015": 36358,
+      "2016": 36175,
+      "2017": 36039,
+      "2018": 35762,
+      "2019": 35398,
+      "2020": 34996,
+      "2021": 34660,
+      "2022": 34183,
+      "2023": 33923,
+      "2024": 33622,
+      "2025": 33054,
+      "2026": 32718
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 33054,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "oristano",
+    "name": "Oristano",
+    "officialName": "Oristano",
+    "istatCode": "095038",
+    "istatCode2011": "095038",
+    "region": "Sardegna",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 39.9059,
+    "lon": 8.5916,
+    "population": {
+      "2015": 31154,
+      "2016": 31041,
+      "2017": 30987,
+      "2018": 30907,
+      "2019": 30935,
+      "2020": 30708,
+      "2021": 30723,
+      "2022": 30653,
+      "2023": 30447,
+      "2024": 30287,
+      "2025": 30067,
+      "2026": 29888
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 30067,
+    "sizeClass": "piccola"
+  },
+  {
+    "id": "cagliari",
+    "name": "Cagliari",
+    "officialName": "Cagliari",
+    "istatCode": "092009",
+    "istatCode2011": "092009",
+    "region": "Sardegna",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": true,
+    "lat": 39.2172,
+    "lon": 9.1133,
+    "population": {
+      "2015": 151959,
+      "2016": 151865,
+      "2017": 151352,
+      "2018": 151171,
+      "2019": 151504,
+      "2020": 151005,
+      "2021": 149572,
+      "2022": 149092,
+      "2023": 148296,
+      "2024": 147411,
+      "2025": 146692,
+      "2026": 145981
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 146692,
+    "sizeClass": "media"
+  },
+  {
+    "id": "carbonia",
+    "name": "Carbonia",
+    "officialName": "Carbonia",
+    "istatCode": "111009",
+    "istatCode2011": "107003",
+    "region": "Sardegna",
+    "area": "Isole",
+    "macroArea": "Mezzogiorno",
+    "metropolitanCapital": false,
+    "lat": 39.1653,
+    "lon": 8.5278,
+    "population": {
+      "2015": 28456,
+      "2016": 28132,
+      "2017": 27869,
+      "2018": 27504,
+      "2019": 27158,
+      "2020": 26813,
+      "2021": 26672,
+      "2022": 26565,
+      "2023": 26309,
+      "2024": 25971,
+      "2025": 25623,
+      "2026": 25353
+    },
+    "populationMetadata": {
+      "reconstructedYears": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "estimatedYears": [
+        2026
+      ],
+      "dateConvention": "1 January of the named year"
+    },
+    "populationYear": 2025,
+    "populationLatest": 25623,
+    "sizeClass": "piccola"
+  }
+]

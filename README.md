@@ -1,42 +1,78 @@
 # Ciclismo Sicuro
 
-Dashboard locale per esplorare proxy urbani rilevanti per la ciclabilita nei capoluoghi italiani. L'indice default non misura direttamente la sicurezza di chi pedala: combina dotazione ciclabile equivalente, incidentalita stradale generale, motorizzazione e TPL. I pesi sono editoriali e regolabili, non coefficienti validati statisticamente.
+Una dashboard di analisi esplorativa su **110 capoluoghi**: incidenti dei ciclisti ISTAT 2015–2024, infrastruttura comunale 2019–2024, pendolarismo 2011 e parco auto ACI 2025. Ricerca, mappa, confronto tra città, grafici, pesi regolabili e download JSON/CSV.
 
-## Cosa include
+Il progetto confronta **casi registrati e indicatori urbani**. Il pendolarismo 2011 è un proxy storico: senza dati recenti sui viaggi e sui chilometri percorsi, il rapporto osservati/attesi non misura il rischio individuale attuale. La classifica è editoriale, non una certificazione di sicurezza.
 
-- Dashboard React/TypeScript con indice esplorativo, ricerca, filtri, tabella ordinabile e grafici.
-- Scheda citta con score, rank, punti forti, debolezze, metriche, fonti e incertezza.
-- Metodologia con formula, periodi osservati, pesi regolabili, normalizzazione robusta 0-100, missing-data policy e audit di copertura in UI.
-- Data explorer con download ranking CSV/JSON e dati normalizzati (senza raw indicators pubblici).
-- Pipeline rerunnable per scaricare e trasformare tabelle Lab24/Legambiente 2024.
-- Layer `nationalContext` in `ranking.json` con fatti nazionali su sicurezza stradale, mercato bici/e-bike, rete ciclabile capoluoghi, trend modale e furti (non usati nel ranking).
-- Asset logo PNG trasparente generato con la skill `imagegen`.
+[Fonti e metodologia](SOURCES.md) · [Rapporto della revisione](AUDIT.md)
 
 ## Avvio
 
+Serve Node.js 22 o successivo.
+
 ```bash
-npm install
-npm run data
+npm ci
 npm run dev
 ```
 
-Apri il sito all'URL stampato da Vite, normalmente:
+Il dataset verificato è già incluso in `public/data/`; non occorre scaricare centinaia di MB per vedere il sito. Apri l'indirizzo stampato da Vite, normalmente `http://127.0.0.1:5173/`.
 
-```text
-http://127.0.0.1:5173/
-```
-
-## Deploy sotto subpath
-
-Per GitHub Pages o altri host con prefisso (es. `/Ciclismosicuro/`), imposta la base Vite prima del build:
+## Riprodurre l'analisi
 
 ```bash
-VITE_BASE_PATH=/Ciclismosicuro/ npm run build
+npm run data:download
+npm run data:extract
+npm run data:build
+npm run data:validate
 ```
 
-L'app usa `import.meta.env.BASE_URL` per fetch JSON, logo e link di download, quindi funziona anche fuori dalla root del dominio.
+Oppure `npm run data` per eseguire tutti i passaggi ufficiali. Gli archivi originali vengono conservati in `data/raw/`, esclusa da Git; i download esistenti sono riutilizzati. Il download registra URL, dimensione e SHA-256 delle 23 fonti in `data/source-manifest.json`. `npm run data:provenance -- --check` verifica gli archivi presenti rispetto al manifest, senza modificarlo. `npm run data:download -- --force` aggiorna le fonti e il manifest, quindi può cambiare il risultato se il produttore revisiona i dati.
 
-## Validazione
+La raccolta OpenStreetMap è facoltativa e non entra nell'indice:
+
+```bash
+npm run data:osm
+npm run data:build
+```
+
+Le query sono limitate nel tempo, salvano una cache per comune e registrano risultati mancanti e copertura. La raccolta può essere ripresa, anche per un sottoinsieme (`npm run data:osm -- --cities=015146 --max-seconds=120`). `--cached-only` pubblica le cache senza rete. Lo snapshot incluso copre 8 città su 110; le altre restano mancanti. `npm run data:all` include anche questo passaggio; il resto della pipeline funziona quando Overpass non è disponibile.
+
+### Organizzazione
+
+- `scripts/pipeline/config.mjs`: URL, finestre temporali e configurazione.
+- `scripts/pipeline/extract-*.mjs`: estrazione da ZIP, tabelle XLSX e file censuari.
+- `scripts/pipeline/methodology.mjs`: definizioni, pesi interni e normalizzazione.
+- `scripts/pipeline/lib/stats.mjs`: regressione, empirical Bayes, intervalli Gamma, correlazioni e campionamento.
+- `scripts/pipeline/build-index.mjs`: modello, indice, copertura e sensibilità.
+- `data/intermediate/`: estratti aggregati per riprodurre il calcolo senza riscaricare gli archivi.
+- `data/source-manifest.json`: impronte SHA-256 degli archivi ufficiali usati nell'estrazione.
+- `public/data/ranking.json`: dataset schema 2, indicatori, punteggi, serie, fonti e limiti.
+- `public/data/ranking.csv`: pesi standard, indicatori grezzi e normalizzati, copertura e scenari.
+- `src/lib/`: validazione del payload, scoring e stato condivisibile nell'URL.
+- `src/components/` e `src/charts/`: dashboard e grafici; mappa stradale caricata su richiesta.
+
+Gli output della precedente pipeline Lab24/schema 1 sono stati sostituiti. Non esiste più `normalized-indicators.json`: i punteggi normalizzati si trovano nel JSON completo e nel CSV.
+
+## Indice e limiti
+
+Pesi standard dei pilastri:
+
+| Pilastro | Peso | Indicatori con peso positivo |
+| --- | ---: | --- |
+| Incidentalità ciclistica osservata | 40 | Morti+feriti 2022–2024 (60%); morti 2015–2024 (40%), entrambi osservati/attesi |
+| Infrastruttura | 25 | Km di piste per abitante (70%); crescita 2019–2024 (30%) |
+| Pressione del traffico | 20 | Auto per abitante (40%); morti+feriti stradali (40%); presenza Zone 30 (20%) |
+| Uso storico e sharing | 15 | Pendolari in bici 2011 (70%); bike sharing 2024 (30%) |
+| Trasporto pubblico | 0 | Domanda e offerta, attivabili dai cursori |
+| Aria | 0 | PM10 e NO2, attivabili dai cursori |
+
+La normalizzazione dei rapporti è `100 / (1 + r²)`; gli altri valori usano percentili 5–95, con trasformazioni logaritmiche dichiarate. I dati mancanti restano `null`, sono esclusi dalle medie e la copertura dei pesi viene mostrata. Se tutti i pilastri selezionati mancano, la città resta senza punteggio e posizione.
+
+La scheda distingue tre cose: intervallo al 90% del rapporto condizionato al modello; sensibilità della posizione a 2.000 combinazioni di pesi; scenari con il solo proxy di una città dimezzato/raddoppiato. Questi ultimi due non sono intervalli di confidenza.
+
+Restano limiti rilevanti: esposizione datata, feriti non denunciati, composizione demografica, incidenti extraurbani compresi nei confini comunali e qualità della rete non misurata. Correlazioni tra città non dimostrano effetti causali. I periodi delle diverse fonti non sono simultanei.
+
+## Verifiche e deploy
 
 ```bash
 npm run data:validate
@@ -46,51 +82,14 @@ npm test
 npm run build
 ```
 
-## Pipeline dati
+Per GitHub Pages:
 
-La pipeline principale e `scripts/build-data.mjs`.
+```bash
+VITE_BASE_PATH=/Ciclismosicuro/ npm run build
+```
 
-Output principali:
+L'app usa `import.meta.env.BASE_URL` per dati, logo e download. Il workflow GitHub Actions verifica e pubblica i push su `main`.
 
-- `public/data/ranking.json`
-- `public/data/ranking.csv`
-- `public/data/normalized-indicators.json`
-- `data/processed/ranking.json`
-- `data/processed/ranking.csv`
-- `data/processed/raw-indicators.json`
-- `data/raw/*.html`
+## Attribuzione
 
-I dati Lab24/Legambiente sono scaricati dalle pagine tabellari 2024 e riguardano soprattutto il 2023; l'incidentalita stradale e del 2022. La pipeline verifica l'ID dell'indicatore remoto e tratta le righe `ndSN=1` come mancanti, anche quando il sito inserisce un placeholder numerico pari a zero. In caso di errore di rete puo riusare gli snapshot locali gia validati.
-
-I segnali manuali, come FIAB, Copenhagenize o quote modali storiche, sono in `data/manual/city-enrichment.json`: restano nel dataset per contesto e pesi opzionali, ma non entrano nell'indice default perche hanno copertura molto bassa e non sono comparabili su tutti i capoluoghi.
-
-## Indice default
-
-Le metriche sono normalizzate 0-100 limitando gli estremi tramite percentili, per evitare che pochi outlier comprimano tutte le altre citta. I due indicatori TPL sono normalizzati separatamente per citta piccole, medie e grandi. Per metriche dove valori bassi sono migliori la scala viene invertita.
-
-Pesi default (solo categorie con copertura ampia sui 106 capoluoghi):
-
-- Infrastruttura: 30
-- Sicurezza stradale (proxy): 30
-- Connessioni: 30
-- Comfort: 0 (contestuale: copertura insufficiente)
-- Confidenza dati: 0 (mostrata separatamente, non deve migliorare il punteggio)
-- Uso bici: 0 (contestuale, attivabile manualmente)
-- Policy: 0 (contestuale, attivabile manualmente)
-
-Se una categoria con peso non nullo non ha dati per una citta, la categoria riceve un valore prudente pari a 20 invece di essere esclusa dal denominatore. Questo penalizza lacune di copertura senza inventare dati.
-
-La somma dei pesi default e 90: contano i rapporti tra i pesi. Infrastruttura usa nel default solo le piste equivalenti; aree pedonali e ZTL restano contestuali per copertura o comparabilita insufficiente.
-
-Il payload `coverageAudit` in `ranking.json` espone copertura per metrica/categoria, segnali sparsi e quali categorie entrano nell'indice default. `methodologyCaveats` espone invece i limiti che impediscono di interpretarlo come misura diretta della sicurezza ciclistica.
-
-Il payload `nationalContext` espone invece contesto nazionale (incidenti, mercato bici/e-bike, rete ciclabile capoluoghi, trend modale provvisorio, stime furti FIAB) con fonti, periodi, affidabilita e caveat. Non modifica pesi o score cittadini.
-
-## Limiti dichiarati
-
-- I valori tabellari Lab24/Legambiente sono pubblicati online ma non sono trattati come dataset raw aperti o ridistribuibili: la pipeline li estrae per ricerca locale e documenta le fonti. L'UI non offre download dei raw indicators per ridurre il rischio di ripubblicazione; ranking e normalizzazioni restano scaricabili con attribuzione.
-- FIAB, Copenhagenize e quote modali storiche coprono solo una minoranza di citta; sono segnali contestuali, non pilastri del ranking default.
-- Il contesto nazionale (`nationalContext`) include stime FIAB sui furti e dati provvisori Audimob H1 2025: utili informativamente, non comparabili con il ranking cittadino.
-- Mancano incidenti specifici dei ciclisti rapportati all'esposizione, continuita e protezione reale della rete, velocita del traffico, qualita delle intersezioni, percezione di sicurezza e quota modale recente.
-- Protected lanes, bike parking, bike/e-bike sharing, PNRR/local investment, meteo e pendenze non sono nell'indice default perche richiedono un audit comparabile per tutti i capoluoghi.
-- L'indice e uno strumento esplorativo: non e una classifica delle citta piu sicure, una certificazione o una stima del rischio individuale.
+ISTAT: CC BY 4.0, secondo i termini delle pubblicazioni. ACI: [CC BY 4.0](https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/), con attribuzione della fonte. OpenStreetMap: © OpenStreetMap contributors, ODbL 1.0; la presenza di derivati OSM non viene trasformata in una licenza CC BY generale del dataset. Il logo PNG trasparente esistente è stato generato con la skill `imagegen`.

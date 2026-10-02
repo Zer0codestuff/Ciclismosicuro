@@ -1,123 +1,72 @@
-# Sources And Methodology Notes
+# Fonti e metodologia
 
-Access date for generated data: see `public/data/ranking.json`.
+Revisione: 2 ottobre 2026. `generatedAt` indica quando è stato eseguito il calcolo, non l'anno dei fenomeni osservati. Ogni indicatore espone il proprio periodo e le fonti.
 
-## Primary Tabular Source
+## Fonti ufficiali
 
-The core comparable city metrics come from Il Sole 24 Ore Lab24 / Legambiente / Ambiente Italia, Ecosistema Urbano 2024 tables:
+| Fonte | Dati usati | Periodo |
+| --- | --- | --- |
+| [ISTAT microdati incidenti](https://www.istat.it/microdati/rilevazione-degli-incidenti-stradali-con-lesioni-a-persone-3/) | Incidenti con lesioni, comune, veicoli, conducenti e passeggeri | 2015–2024 |
+| [ISTAT matrici di pendolarismo](https://www.istat.it/non-categorizzato/matrici-del-pendolarismo/) | Residenti che si spostano per lavoro/studio e mezzo usato | Censimento 2011 |
+| [ISTAT demografia](https://demo.istat.it/) | Popolazione comunale al 1° gennaio, POSAS e ricostruzione storica | 2015–2026; 2026 stimato |
+| [ISTAT Ambiente urbano 2024](https://www.istat.it/comunicato-stampa/ambiente-urbano-anno-2024/) | Piste, sharing, Zone 30, TPL e qualità dell'aria | 2019–2024 |
+| [ACI Autoritratto](https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/autoritratto/) | Autovetture iscritte al PRA per comune | 31 dicembre 2025 |
+| [OpenStreetMap](https://www.openstreetmap.org/copyright) | Statistiche Overpass e mappa stradale su richiesta | Snapshot ottobre 2026; solo contesto |
 
-- Piste ciclabili: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/piste-ciclabili
-- Isole pedonali: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/isole-pedonali
-- Vittime della strada: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/vittime-della-strada
-- Tasso di motorizzazione: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/tasso-di-motorizzazione
-- Passeggeri trasporto pubblico: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/passeggeri-trasporto-pubblico
-- Offerta trasporto pubblico: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/offerta-trasporto-pubblico
-- ZTL: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/ztl
-- Biossido di azoto: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/biossido-di-azoto
-- PM10: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/pm-10
-- PM2.5: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/pm-2-5
-- Ozono: https://lab24.ilsole24ore.com/ecosistema-urbano/tabelle/2024/ozono
+Gli URL dei singoli archivi si trovano in `scripts/pipeline/config.mjs`; la descrizione riutilizzata dalla UI è in `sources.mjs`. `data/source-manifest.json` conserva dimensioni e SHA-256 dei 23 archivi ufficiali effettivamente usati. Il gruppo di 110 comuni è quello delle tavole Ambiente urbano 2024, non una ridefinizione delle province correnti.
 
-Transform: the pipeline extracts the published city value from `datiTabella.righe[].punti`, but first checks both the remote indicator ID and `ndSN`. Rows marked unavailable remain `null` even when Lab24 exposes a placeholder `punti="0"`. Values are scaled 0-100 with percentile caps; lower-is-better metrics are inverted. TPL is normalized separately by city-size class, following the source methodology.
+La pagina ISTAT dei microdati, aggiornata l'11 marzo 2026, elenca anni fino al 2024. Un comunicato più recente sugli incidenti non rende automaticamente disponibile il corrispondente file comunale ad uso pubblico. Non sono incorporati conteggi 2025 non verificabili con questa pipeline.
 
-Observed periods are not the access date: most metrics refer to 2023, while road victims refer to ISTAT 2022. Every metric definition exposes its own `period`.
+## Controlli sull'estrazione degli incidenti
 
-Publication note: these pages are publicly reachable, but the project does not claim the underlying tables are open data or freely redistributable raw datasets. The HTML snapshots in `data/raw/` are local research artifacts with source attribution, not a substitute for the publisher's terms of use. The public UI omits a raw-indicators download; use ranking/normalized exports and source links instead.
+Dal 2014 i file pubblici rappresentano una collezione completa, mentre gli anni precedenti potevano richiedere pesi campionari. La serie utilizzata inizia nel 2015.
 
-## Official Context Sources
+- Bici: tipo veicolo 14; e-bike: 23, introdotto da maggio 2020. Monopattini 22 separati dalla bici.
+- Conducente: esito 2 = ferito, 3/4 = morto; passeggero: 1 = morto, 2 = ferito. I contatori aggiuntivi di passeggeri anonimi sono conteggiati senza attribuire età.
+- I codici e le bande d'età vengono letti dalle classificazioni incluse nei file. Le quote per età escludono l'età sconosciuta.
+- La codifica dell'ora cambia tra file annuali; viene normalizzata per anno, preservando i valori mancanti. Le quote orarie si riferiscono ai soli casi con ora nota.
+- In un incidente con più veicoli non si sceglie arbitrariamente il primo avversario: il grafico ha una categoria separata. La quota di incidenti con auto conta qualsiasi auto presente.
+- I tassi sono attribuiti al luogo dell'incidente: possono includere non residenti e strade extraurbane. Il file descrive al massimo tre veicoli, un limite strutturale che non spiega automaticamente qualsiasi scarto dai comunicati.
 
-- ISTAT, Ambiente urbano - Anno 2023: https://www.istat.it/comunicato-stampa/ambiente-urbano-anno-2023/
-- ISTAT, Questionario 2024 - Mobilita: https://www.istat.it/fascicoloSidi/1720/Questionario%202024%20-%20Mobilit%C3%A0.pdf
-- ISTAT / ACI, Incidenti stradali in Italia - Anno 2024: https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-2024/
-- ACI / ISTAT, Incidenti stradali 2024 nelle 107 province: https://aci.gov.it/comunicati-stampa/aci-istat-gli-incidenti-stradali-2024-nelle-107-province-italiane/
-- ISFORT, XXII Rapporto Audimob (sintesi Regione Puglia): https://protezionecivile.regione.puglia.it/web/ufficio-statistico/-/isfort.-xxii-rapporto-sulla-mobilita-degli-italiani
-- FIAB, Indagine sui furti di biciclette: https://fiabitalia.it/indagine-furti-bici/
+Il controllo 2024 coincide con i [totali ufficiali ISTAT](https://www.istat.it/comunicato-stampa/incidenti-stradali-in-italia-2024/): 173.364 incidenti, 3.030 morti, 233.853 feriti, 185 ciclisti morti. Il test conserva anche riferimenti per feriti ciclisti, e-bike e monopattini.
 
-These sources define the public-data context and relevant variables such as TPL, bike sharing, cycle lanes, ZTL and Zone 30. The current pipeline uses Lab24/Legambiente tables where city values are already published in a comparable format.
+## Denominatori e dati mancanti
 
-## National Context Layer (Not Scored)
+Per ogni anno gli anni-persona sono la media tra popolazione al 1° gennaio e al 1° gennaio successivo. Il calcolo richiede entrambi i valori: niente estrapolazione silenziosa. Gli anni 2015–2018 provengono dalla ricostruzione demografica ISTAT; gli anni successivi da POSAS.
 
-`public/data/ranking.json` includes a `nationalContext` object separate from city ranking scores. It groups national-level cards on:
+I km di piste 2024 sono rapportati alla popolazione media 2024. La crescita confronta esattamente 2019 con 2024, senza sostituire il primo anno con un anno diverso per un comune. Il parco ACI al 31/12/2025 usa la popolazione stimata al 1/1/2026; la scheda città mostra il dato finale al 1/1/2025. I valori superiori a 95 auto/100 residenti sono esclusi con una soglia editoriale per possibili distorsioni di immatricolazione, non perché ne sia dimostrata la causa per ogni comune.
 
-- road safety (ISTAT/ACI 2024 injury crashes, cyclist/e-bike incidents and deaths)
-- cycling and e-bike market (ISTAT 2024 sales and e-bike share trends)
-- capoluogo cycle-lane network stock (ISTAT Ambiente urbano 2023)
-- modal trend (ISFORT/Audimob H1 2025 interim summary)
-- bicycle thefts (FIAB survey estimate)
+Assenza di un fenomeno, valore mancante e dato stimato sono distinti dalle note delle tavole. In JSON valori mancanti = `null`, anche dopo normalizzazione; in CSV = celle vuote. Un punteggio zero significa dato presente in fondo alla scala. Le medie rinormalizzano i pesi disponibili e pubblicano copertura per pilastro/default; ciò riduce la confrontabilità delle città incomplete. Con tutti i pilastri selezionati mancanti non si assegna una posizione.
 
-Each card and timeline point carries `sourceId`, `label`, `value`, `unit`, `period`, `reliability`, `interpretation`, and `caveat`. `nationalContext.notUsedInRanking` is always true: these facts inform the dashboard but do not change default weights or city scores.
+## Modello osservati/attesi
 
-Limitations:
+Si stimano separatamente morti+feriti 2022–2024 e morti 2015–2024:
 
-- Audimob H1 2025 is interim/contextual, not a complete annual modal series.
-- FIAB theft figures are survey estimates; Italy lacks an official national theft registry comparable across cities.
-- National crash and market statistics do not substitute for city-level Lab24 proxies in the ranking.
-- Social cost and some communicated thresholds are published as rounded or approximate values.
+```text
+E[casi] = anni-persona × exp(intercetta) × quotaPendolariBici2011^esponente
+```
 
-## Policy And Usage Signals (Sparse, Contextual)
+La regressione di Poisson usa offset degli anni-persona ed errori standard sandwich HC1 a livello comunale. La sovradispersione resta una diagnostica. Gli intervalli dell'esponente usano un'approssimazione normale e assumono indipendenza tra comuni; non comprendono confondimento o dipendenza geografica.
 
-- FIAB ComuniCiclabili: https://www.comuniciclabili.it/
-- FIAB 2024 overview: https://www.comuniciclabili.it/2024/
-- Pesaro 5 bike-smile, Comune di Pesaro: https://www.comune.pesaro.pu.it/novita-in-comune/dettaglio/news/il-risultato-annunciato-durante-la-cerimonia-dei-comuniciclabili-fiab-promossa-dalla-federazione-ita/
-- Parma FIAB 4 bike-smile, Comune di Parma: https://www.comune.parma.it/it/novita/notizie/parma-riconfermata-citta-a-misura-di-bicicletta
-- Pordenone 4 bike-smile, Il Friuli/FIAB: https://www.ilfriuli.it/cronaca/municipalita-regionali-comuniciclabili-2024-fiab/
-- Bologna, Copenhagenize Index 2025: https://copenhagenizeindex.eu/index.php/project/bologna/
-- Historical cycling modal shares, Legambiente / Rete Mobilita Nuova via Il Sole 24 Ore: https://st.ilsole24ore.com/art/notizie/2015-04-29/bolzano-pesaro-ferrara-e-treviso-capitali-bici--085335.shtml?uuid=ABbu1fXD
+Il rapporto osservati/attesi è ricondotto verso 1 con prior Gamma empirical-Bayes, stimato dai residui. Gli intervalli credibili al 90% sono condizionati a esposizione, modello e prior stimati: non includono incertezza dei parametri né sottorilevazione. Il proxy 2011 copre solo pendolari residenti, mentre i casi riguardano tutti i ciclisti nel territorio comunale. Il rapporto resta un confronto descrittivo, non una probabilità per persona, viaggio o chilometro.
 
-Transform: these sources are used only for explicit city matches in `data/manual/city-enrichment.json`. Missing values are not imputed.
+L'associazione trasversale tra quota bici e casi non misura l'effetto di aumentare i ciclisti. Vedi anche [Aldred et al., Contextualising Safety in Numbers, Injury Prevention](https://injuryprevention.bmj.com/content/25/3/236). La relazione tra incidentalità generale e ciclistica comprende una componente meccanica: i ciclisti sono inclusi nel totale.
 
-Coverage reality:
+## Punteggi e sensibilità
 
-- FIAB bike-smile covers 16 of 106 capoluoghi in the current enrichment file.
-- Historical modal-share values cover only a handful of cities and are dated (2015-era reporting).
-- Copenhagenize policy score is available only for Bologna.
+- Rapporti: `100/(1+r²)`, con 50 a r=1.
+- Altri indicatori: scala 0–100 tra percentili 5 e 95, inversione per direzione e trasformazioni log/log1p dichiarate nelle definizioni.
+- Pilastri e composito: medie pesate, con pesi editoriali espliciti in `README.md` e `methodology.mjs`.
+- Precisione pubblicata: indicatori normalizzati e pilastri a sei decimali; il ranking usa gli stessi valori del frontend. Spareggio per nome, locale italiana.
+- `rankRange`: quantili 5–95 delle posizioni in 2.000 estrazioni Dirichlet sui quattro pilastri standard, concentrazione 20 e seed fisso. Non comprende errori dei dati né i pilastri contestuali.
+- `exposureScenarios`/`exposureRankRange`: dimezzamento/raddoppio del proxy di un solo comune, casi e modello fissi, altri punteggi invariati. Non sono intervalli probabilistici. Una variazione uniforme del proxy con rifit sarebbe assorbita dall'intercetta.
 
-Because of that sparsity, usage and policy have default weight 0. They remain visible in city detail, `coverageAudit`, and optional UI weighting, but they do not drive the default ranking.
+## OpenStreetMap
 
-## Coverage Audit
+I due indicatori OSM hanno peso zero, anche dopo nuove raccolte. La mappa urbana è un aiuto esplorativo indipendente dall'indice. Lo snapshot incluso comprende Torino, Vercelli, Novara, Biella, Verbania, Aosta, Imperia e Milano (8/110); gli altri comuni restano `null`. Le query Overpass non riuscite vengono registrate, senza sostituire l'assenza con zero.
 
-`public/data/ranking.json` includes a `coverageAudit` object with:
+Le query selezionano un solo confine amministrativo `admin_level=8` con `ref:ISTAT`. I risultati conservano timestamp, versione/hash della query, copertura ed errori. Timeout e raccolta riprendibile consentono di usare un dataset ufficiale anche con Overpass indisponibile.
 
-- per-category coverage and default-weight inclusion
-- per-metric coverage, manual/sparse flags, and registered source ids
-- a list of sparse signals excluded from the default score
-- notes on how missing evidence is handled when optional weights are enabled
+Lunghezze: geometrie intere selezionate nell'area, non ritaglio esatto al confine. `cycleway=separate` non viene contato come traccia aggiuntiva; percorsi misti `bicycle=designated` non sono certificati protetti. I tag laterali misurano il centrolinea stradale, non due corsie distinte. Gli insiemi di strade lente/limiti conosciuti sono unioni, evitando doppi conteggi. Il rapporto di lunghezze ciclabili/stradali non è la percentuale di strade protette.
 
-Validation enforces that every category with non-zero default weight has high coverage across the city set and that processed/public outputs stay in sync. The dashboard surfaces this audit between Metodo and Dati so users can see why usage/policy stay contextual.
-
-## Export null semantics
-
-In `ranking.json`, when `rawMetrics[metricId]` is `null` (no source value for that city), `normalizedMetrics[metricId]` is also `null` — not `0`. A normalized value of `0` means the metric was measured and scored at the bottom of the 0–100 scale (for example FIAB bike-smile `1` on the 1–5 scale). In `ranking.csv`, missing metrics are exported as empty cells.
-
-`ranking.csv` is generated by `scripts/csv-export.mjs` (`buildRankingCsvRows`) from `metricDefinitions`: each metric id maps to a `{id}Normalized` column (for example `pedestrianAreasNormalized`, `externalPolicyScoreNormalized`). Base columns are rank, city, score, dataConfidence, and the six category scores. If you depend on a fixed column order in spreadsheets, re-export after pipeline updates — `scripts/export-contract.test.mjs` guards header parity with JSON.
-
-## What The Default Index Actually Measures
-
-The default index is exploratory, not a cycling-safety outcome model. It uses five high-coverage proxies: equivalent cycle-network quantity, all-user road casualties, motorization, public-transport passengers, and public-transport supply. Equivalent cycle network has the largest editorial weight. Data confidence is shown but has default weight 0.
-
-The following must not be inferred from the index:
-
-- probability of a cyclist being injured per trip or kilometre
-- protected-lane continuity or intersection quality
-- perceived safety or traffic-speed exposure
-- current cycling modal share
-- a causal effect of any included metric on cycling safety
-
-The weights have not been fitted or externally validated against cycling outcomes. Rank changes under alternative plausible weights are therefore expected and are a feature to explore, not statistical uncertainty bounds.
-
-## Gaps Not Scored By Default
-
-- Protected lanes: OSM/Overpass and local open-data portals can support this, but require a city-boundary audit and tag-quality checks before ranking all 106 capoluoghi.
-- Bike parking and velostazioni: local open data is uneven; OSM tagging coverage is useful but not uniformly audited.
-- Bike/e-bike sharing: ISTAT questionnaire includes the topic, but city-level comparable output is not in the current ingest.
-- Perceived safety: no consistent national city-level series was found during this build.
-- PNRR/local investment, PUMS, Biciplan: documents exist city by city, but the pipeline needs a separate document registry before scoring.
-- Terrain/slope and weather: omitted until the method uses consistent city-boundary sampling instead of centroid-only proxies.
-
-These gaps are exposed in the UI and `public/data/ranking.json` so users can see what is not claimed.
-
-## Legal And Use Caveats
-
-- The dashboard is a local research tool, not an official mobility ranking, safety certification, or legal advice.
-- Reuse of publisher tables, FIAB scores, or Copenhagenize material should respect each source's terms, attribution requirements, and update cadence.
-- Do not present sparse manual enrichments as if they were nationally comparable official statistics.
+Attribuzione: ISTAT CC BY 4.0; ACI [CC BY 4.0](https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/); © OpenStreetMap contributors, ODbL 1.0. I termini restano applicabili alle rispettive componenti; non si dichiara una licenza CC BY unica per tutti i derivati.

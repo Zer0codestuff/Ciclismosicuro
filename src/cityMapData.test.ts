@@ -50,6 +50,11 @@ describe("escapeOverpassString", () => {
 });
 
 describe("buildCityMapOverpassQuery", () => {
+  it("selects the exact ISTAT boundary when its code is available", () => {
+    const query = buildCityMapOverpassQuery("Milano", "015146");
+    expect(query).toContain('["ref:ISTAT"="015146"]');
+    expect(query).not.toContain('["name"="Milano"]');
+  });
   it("includes admin boundary lookup and bike-relevant layers", () => {
     const query = buildCityMapOverpassQuery("Milano");
     expect(query).toContain('relation["boundary"="administrative"]["admin_level"="8"]["name"="Milano"]');
@@ -127,6 +132,18 @@ describe("CITY_MAP_LAYER_META", () => {
 });
 
 describe("parseCityMapOverpassResponse", () => {
+  it("keeps open relation segments and pedestrian ways as lines", () => {
+    const geometry = [{ lat: 45.4, lon: 9.1 }, { lat: 45.5, lon: 9.2 }];
+    const parsed = parseCityMapOverpassResponse("Milano", { elements: [
+      { type: "relation", id: 1, tags: { boundary: "administrative", admin_level: "8" }, members: [{ type: "way", ref: 2, role: "outer", geometry }] },
+      { type: "way", id: 3, tags: { highway: "pedestrian" }, geometry },
+      { type: "way", id: 4, tags: { highway: "pedestrian" }, geometry: [...geometry, { lat: 45.3, lon: 9.3 }, geometry[0]] }
+    ] });
+    expect(parsed.layers.boundary.features[0].geometryType).toBe("line");
+    expect(parsed.layers.pedestrian.features.map(feature => feature.geometryType)).toEqual(["line", "polygon"]);
+    expect(parsed.bounds).toEqual({ south: 45.4, north: 45.5, west: 9.1, east: 9.2 });
+  });
+
   it("groups elements into layers and computes bounds from boundary", () => {
     const response: OverpassResponse = {
       elements: [
@@ -297,6 +314,33 @@ describe("parseCityMapOverpassResponse", () => {
 });
 
 describe("fetchCityMapData endpoint failover", () => {
+  const boundaryResponse: OverpassResponse = { elements: [{ type: "relation", id: 1,
+    tags: { boundary: "administrative", admin_level: "8", name: "Milano" },
+    geometry: [{ lat: 45.4, lon: 9.1 }, { lat: 45.5, lon: 9.2 }] }] };
+
+  it("does not reuse a name-only or different-code boundary response", async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true, json: async () => boundaryResponse });
+    vi.stubGlobal("fetch", fetchMock);
+    await fetchCityMapData("Milano");
+    await fetchCityMapData("Milano", { istatCode: "015146" });
+    await fetchCityMapData(" Milano ", { istatCode: "015146" });
+    await fetchCityMapData("Milano", { istatCode: "015147" });
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+    expect(decodeURIComponent(fetchMock.mock.calls[1][0])).toContain('["ref:ISTAT"="015146"]');
+    clearCityMapCache(" Milano ");
+    await fetchCityMapData("Milano", { istatCode: "015146" });
+    expect(fetchMock).toHaveBeenCalledTimes(4);
+  });
+
+  it("makes no request for a signal that was already aborted", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+    const controller = new AbortController();
+    controller.abort();
+    await expect(fetchCityMapData("Milano", { signal: controller.signal })).rejects.toThrow(/annullata/);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   it("uses the next endpoint after a network failure without injecting remote scripts", async () => {
     const response: OverpassResponse = {
       elements: [

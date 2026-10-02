@@ -1,0 +1,1106 @@
+{
+  "source": "ACI, Autoritratto 2025 – Parco veicolare per comune al 31/12/2025",
+  "implausibleThreshold": 95,
+  "cities": {
+    "torino": {
+      "cars": 701110,
+      "motorbikes": 81176,
+      "population": 855654,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 81.93849383045016,
+      "reliable": true
+    },
+    "vercelli": {
+      "cars": 31481,
+      "motorbikes": 4642,
+      "population": 46391,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.86014528680133,
+      "reliable": true
+    },
+    "novara": {
+      "cars": 65335,
+      "motorbikes": 10457,
+      "population": 103238,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.285805614211824,
+      "reliable": true
+    },
+    "biella": {
+      "cars": 32343,
+      "motorbikes": 5206,
+      "population": 43356,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.5986714641572,
+      "reliable": true
+    },
+    "cuneo": {
+      "cars": 43612,
+      "motorbikes": 7080,
+      "population": 55747,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 78.23201248497676,
+      "reliable": true
+    },
+    "verbania": {
+      "cars": 20634,
+      "motorbikes": 5314,
+      "population": 29825,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.18357082984073,
+      "reliable": true
+    },
+    "asti": {
+      "cars": 52014,
+      "motorbikes": 9630,
+      "population": 73604,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.66735503505245,
+      "reliable": true
+    },
+    "alessandria": {
+      "cars": 62115,
+      "motorbikes": 10553,
+      "population": 93409,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 66.49787493710456,
+      "reliable": true
+    },
+    "aosta": {
+      "cars": 126501,
+      "motorbikes": 4358,
+      "population": 33127,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 381.86675521477946,
+      "reliable": false
+    },
+    "imperia": {
+      "cars": 26937,
+      "motorbikes": 13677,
+      "population": 42594,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.24130159177349,
+      "reliable": true
+    },
+    "savona": {
+      "cars": 34170,
+      "motorbikes": 17600,
+      "population": 58421,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 58.48924188219989,
+      "reliable": true
+    },
+    "genova": {
+      "cars": 264765,
+      "motorbikes": 158231,
+      "population": 566247,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 46.7578636178205,
+      "reliable": true
+    },
+    "la-spezia": {
+      "cars": 49349,
+      "motorbikes": 20593,
+      "population": 92610,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 53.28690206241227,
+      "reliable": true
+    },
+    "varese": {
+      "cars": 53524,
+      "motorbikes": 10243,
+      "population": 79100,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.66624525916562,
+      "reliable": true
+    },
+    "como": {
+      "cars": 53289,
+      "motorbikes": 13436,
+      "population": 83035,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.17655205636179,
+      "reliable": true
+    },
+    "lecco": {
+      "cars": 29463,
+      "motorbikes": 7259,
+      "population": 47326,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 62.25541985378016,
+      "reliable": true
+    },
+    "sondrio": {
+      "cars": 13189,
+      "motorbikes": 2883,
+      "population": 21495,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 61.35845545475692,
+      "reliable": true
+    },
+    "milano": {
+      "cars": 706764,
+      "motorbikes": 200004,
+      "population": 1362863,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 51.85877083756768,
+      "reliable": true
+    },
+    "monza": {
+      "cars": 82809,
+      "motorbikes": 16882,
+      "population": 123672,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 66.95856782456822,
+      "reliable": true
+    },
+    "bergamo": {
+      "cars": 75916,
+      "motorbikes": 20933,
+      "population": 120629,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 62.93345712888277,
+      "reliable": true
+    },
+    "brescia": {
+      "cars": 125927,
+      "motorbikes": 20035,
+      "population": 201342,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 62.54383089469658,
+      "reliable": true
+    },
+    "pavia": {
+      "cars": 42864,
+      "motorbikes": 8958,
+      "population": 71811,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 59.69001963487488,
+      "reliable": true
+    },
+    "lodi": {
+      "cars": 27323,
+      "motorbikes": 4422,
+      "population": 45643,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 59.86241044628968,
+      "reliable": true
+    },
+    "cremona": {
+      "cars": 46052,
+      "motorbikes": 8291,
+      "population": 71093,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.77712292349457,
+      "reliable": true
+    },
+    "mantova": {
+      "cars": 32821,
+      "motorbikes": 7027,
+      "population": 50215,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 65.36094792392711,
+      "reliable": true
+    },
+    "bolzano": {
+      "cars": 136516,
+      "motorbikes": 16416,
+      "population": 106901,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 127.70320202804464,
+      "reliable": false
+    },
+    "trento": {
+      "cars": 543952,
+      "motorbikes": 17092,
+      "population": 119359,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 455.7276786836351,
+      "reliable": false
+    },
+    "verona": {
+      "cars": 168103,
+      "motorbikes": 40537,
+      "population": 255139,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 65.88683031602382,
+      "reliable": true
+    },
+    "vicenza": {
+      "cars": 72640,
+      "motorbikes": 11402,
+      "population": 110741,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 65.59449526372346,
+      "reliable": true
+    },
+    "belluno": {
+      "cars": 24891,
+      "motorbikes": 3544,
+      "population": 35499,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.11746809769289,
+      "reliable": true
+    },
+    "treviso": {
+      "cars": 54436,
+      "motorbikes": 8648,
+      "population": 86113,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.2146133568683,
+      "reliable": true
+    },
+    "venezia": {
+      "cars": 111640,
+      "motorbikes": 18181,
+      "population": 249385,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 44.766124666680035,
+      "reliable": true
+    },
+    "padova": {
+      "cars": 129324,
+      "motorbikes": 28353,
+      "population": 208202,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 62.114677092439074,
+      "reliable": true
+    },
+    "rovigo": {
+      "cars": 35734,
+      "motorbikes": 5295,
+      "population": 49994,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.47657718926271,
+      "reliable": true
+    },
+    "pordenone": {
+      "cars": 37532,
+      "motorbikes": 4771,
+      "population": 52744,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.15880479296224,
+      "reliable": true
+    },
+    "udine": {
+      "cars": 68283,
+      "motorbikes": 9805,
+      "population": 98501,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.3221388615344,
+      "reliable": true
+    },
+    "gorizia": {
+      "cars": 23342,
+      "motorbikes": 4394,
+      "population": 33679,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.30728347041183,
+      "reliable": true
+    },
+    "trieste": {
+      "cars": 111141,
+      "motorbikes": 47943,
+      "population": 198622,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 55.956037095588606,
+      "reliable": true
+    },
+    "piacenza": {
+      "cars": 66560,
+      "motorbikes": 12081,
+      "population": 103737,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.16225647551018,
+      "reliable": true
+    },
+    "parma": {
+      "cars": 126772,
+      "motorbikes": 26833,
+      "population": 199450,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.56079217849086,
+      "reliable": true
+    },
+    "reggio-emilia": {
+      "cars": 176868,
+      "motorbikes": 20166,
+      "population": 172921,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 102.28254520850561,
+      "reliable": false
+    },
+    "modena": {
+      "cars": 126942,
+      "motorbikes": 19156,
+      "population": 184361,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 68.85512662656419,
+      "reliable": true
+    },
+    "bologna": {
+      "cars": 210648,
+      "motorbikes": 62146,
+      "population": 391473,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 53.809074955360906,
+      "reliable": true
+    },
+    "ferrara": {
+      "cars": 86544,
+      "motorbikes": 14541,
+      "population": 129048,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.06341826297192,
+      "reliable": true
+    },
+    "ravenna": {
+      "cars": 115830,
+      "motorbikes": 25094,
+      "population": 156475,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.02460456942003,
+      "reliable": true
+    },
+    "forli": {
+      "cars": 79011,
+      "motorbikes": 14448,
+      "population": 118053,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 66.92841350918656,
+      "reliable": true
+    },
+    "cesena": {
+      "cars": 66347,
+      "motorbikes": 17033,
+      "population": 95620,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.38611169211461,
+      "reliable": true
+    },
+    "rimini": {
+      "cars": 97337,
+      "motorbikes": 37029,
+      "population": 150774,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.55821295448817,
+      "reliable": true
+    },
+    "massa": {
+      "cars": 45681,
+      "motorbikes": 14170,
+      "population": 65547,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.69197674950799,
+      "reliable": true
+    },
+    "lucca": {
+      "cars": 63572,
+      "motorbikes": 12737,
+      "population": 88464,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.86200036172906,
+      "reliable": true
+    },
+    "pistoia": {
+      "cars": 63104,
+      "motorbikes": 10750,
+      "population": 89094,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.82856309066828,
+      "reliable": true
+    },
+    "firenze": {
+      "cars": 200087,
+      "motorbikes": 79751,
+      "population": 361625,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 55.329968890425164,
+      "reliable": true
+    },
+    "prato": {
+      "cars": 122336,
+      "motorbikes": 19924,
+      "population": 198327,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 61.68398654746958,
+      "reliable": true
+    },
+    "livorno": {
+      "cars": 90081,
+      "motorbikes": 47525,
+      "population": 152451,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 59.08849400791074,
+      "reliable": true
+    },
+    "pisa": {
+      "cars": 56338,
+      "motorbikes": 17251,
+      "population": 90146,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 62.49639473742595,
+      "reliable": true
+    },
+    "arezzo": {
+      "cars": 69105,
+      "motorbikes": 16053,
+      "population": 96506,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.60694671833876,
+      "reliable": true
+    },
+    "siena": {
+      "cars": 36750,
+      "motorbikes": 13135,
+      "population": 53180,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.10492666415946,
+      "reliable": true
+    },
+    "grosseto": {
+      "cars": 56986,
+      "motorbikes": 13538,
+      "population": 81275,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.1150415256844,
+      "reliable": true
+    },
+    "perugia": {
+      "cars": 127035,
+      "motorbikes": 20419,
+      "population": 162384,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 78.23122967780077,
+      "reliable": true
+    },
+    "terni": {
+      "cars": 75089,
+      "motorbikes": 14884,
+      "population": 106272,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.65736976814213,
+      "reliable": true
+    },
+    "pesaro": {
+      "cars": 64179,
+      "motorbikes": 26335,
+      "population": 95270,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.36538259683006,
+      "reliable": true
+    },
+    "ancona": {
+      "cars": 63159,
+      "motorbikes": 17477,
+      "population": 100151,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.06377370171041,
+      "reliable": true
+    },
+    "macerata": {
+      "cars": 29025,
+      "motorbikes": 4948,
+      "population": 40689,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.33377571333776,
+      "reliable": true
+    },
+    "fermo": {
+      "cars": 27258,
+      "motorbikes": 5486,
+      "population": 35853,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 76.02711070203331,
+      "reliable": true
+    },
+    "ascoli-piceno": {
+      "cars": 34053,
+      "motorbikes": 6915,
+      "population": 45193,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 75.3501648485385,
+      "reliable": true
+    },
+    "viterbo": {
+      "cars": 52056,
+      "motorbikes": 10009,
+      "population": 66767,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 77.96666017643446,
+      "reliable": true
+    },
+    "rieti": {
+      "cars": 34614,
+      "motorbikes": 5421,
+      "population": 44866,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 77.14973476574689,
+      "reliable": true
+    },
+    "roma": {
+      "cars": 1925243,
+      "motorbikes": 401228,
+      "population": 2745062,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.13477291223295,
+      "reliable": true
+    },
+    "latina": {
+      "cars": 92790,
+      "motorbikes": 15400,
+      "population": 127450,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 72.80502157708906,
+      "reliable": true
+    },
+    "frosinone": {
+      "cars": 36110,
+      "motorbikes": 4745,
+      "population": 42836,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 84.29825380521056,
+      "reliable": true
+    },
+    "l-aquila": {
+      "cars": 56926,
+      "motorbikes": 7585,
+      "population": 70803,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 80.40054799937856,
+      "reliable": true
+    },
+    "teramo": {
+      "cars": 39797,
+      "motorbikes": 7512,
+      "population": 51400,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 77.42607003891051,
+      "reliable": true
+    },
+    "pescara": {
+      "cars": 75814,
+      "motorbikes": 20089,
+      "population": 118487,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.98507853182206,
+      "reliable": true
+    },
+    "chieti": {
+      "cars": 34002,
+      "motorbikes": 6486,
+      "population": 48368,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 70.29854449222627,
+      "reliable": true
+    },
+    "isernia": {
+      "cars": 16473,
+      "motorbikes": 2425,
+      "population": 20491,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 80.39139134254063,
+      "reliable": true
+    },
+    "campobasso": {
+      "cars": 36054,
+      "motorbikes": 5471,
+      "population": 47399,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 76.0648958838794,
+      "reliable": true
+    },
+    "caserta": {
+      "cars": 47647,
+      "motorbikes": 9977,
+      "population": 72757,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 65.48785683851726,
+      "reliable": true
+    },
+    "benevento": {
+      "cars": 39513,
+      "motorbikes": 5573,
+      "population": 55330,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.41333815290078,
+      "reliable": true
+    },
+    "napoli": {
+      "cars": 554311,
+      "motorbikes": 160118,
+      "population": 905050,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 61.246450472349586,
+      "reliable": true
+    },
+    "avellino": {
+      "cars": 34732,
+      "motorbikes": 5793,
+      "population": 51819,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.02560836758718,
+      "reliable": true
+    },
+    "salerno": {
+      "cars": 81086,
+      "motorbikes": 24388,
+      "population": 125323,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.70161103708018,
+      "reliable": true
+    },
+    "foggia": {
+      "cars": 94244,
+      "motorbikes": 9848,
+      "population": 145078,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.96091757537324,
+      "reliable": true
+    },
+    "andria": {
+      "cars": 61293,
+      "motorbikes": 7571,
+      "population": 96520,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.502900953170325,
+      "reliable": true
+    },
+    "barletta": {
+      "cars": 54543,
+      "motorbikes": 9180,
+      "population": 92067,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 59.24272540649744,
+      "reliable": true
+    },
+    "trani": {
+      "cars": 35412,
+      "motorbikes": 6166,
+      "population": 54731,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 64.70190568416436,
+      "reliable": true
+    },
+    "bari": {
+      "cars": 186839,
+      "motorbikes": 40630,
+      "population": 316248,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 59.07989931952139,
+      "reliable": true
+    },
+    "taranto": {
+      "cars": 113460,
+      "motorbikes": 18651,
+      "population": 185112,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 61.29262284454816,
+      "reliable": true
+    },
+    "brindisi": {
+      "cars": 54698,
+      "motorbikes": 8865,
+      "population": 81181,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.37783471501953,
+      "reliable": true
+    },
+    "lecce": {
+      "cars": 70001,
+      "motorbikes": 14418,
+      "population": 94387,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.16381493214108,
+      "reliable": true
+    },
+    "potenza": {
+      "cars": 51918,
+      "motorbikes": 6214,
+      "population": 63403,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 81.88571518697853,
+      "reliable": true
+    },
+    "matera": {
+      "cars": 40206,
+      "motorbikes": 7243,
+      "population": 59368,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.72335264789112,
+      "reliable": true
+    },
+    "cosenza": {
+      "cars": 47849,
+      "motorbikes": 5191,
+      "population": 63449,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 75.41332408706205,
+      "reliable": true
+    },
+    "crotone": {
+      "cars": 39023,
+      "motorbikes": 4906,
+      "population": 58136,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.12364111737995,
+      "reliable": true
+    },
+    "catanzaro": {
+      "cars": 62249,
+      "motorbikes": 10700,
+      "population": 82708,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 75.26357788847513,
+      "reliable": true
+    },
+    "vibo-valentia": {
+      "cars": 25182,
+      "motorbikes": 3394,
+      "population": 30753,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 81.88469417617793,
+      "reliable": true
+    },
+    "reggio-calabria": {
+      "cars": 119981,
+      "motorbikes": 23125,
+      "population": 167925,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.44915885067739,
+      "reliable": true
+    },
+    "trapani": {
+      "cars": 40596,
+      "motorbikes": 8145,
+      "population": 54636,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.30265758840325,
+      "reliable": true
+    },
+    "palermo": {
+      "cars": 397863,
+      "motorbikes": 135570,
+      "population": 626273,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 63.52868477485059,
+      "reliable": true
+    },
+    "messina": {
+      "cars": 146509,
+      "motorbikes": 44640,
+      "population": 216458,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 67.6847240573229,
+      "reliable": true
+    },
+    "agrigento": {
+      "cars": 44014,
+      "motorbikes": 12583,
+      "population": 55118,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 79.8541311368337,
+      "reliable": true
+    },
+    "caltanissetta": {
+      "cars": 42888,
+      "motorbikes": 6869,
+      "population": 57922,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.04440454404198,
+      "reliable": true
+    },
+    "enna": {
+      "cars": 18674,
+      "motorbikes": 3251,
+      "population": 24884,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 75.04420511171837,
+      "reliable": true
+    },
+    "catania": {
+      "cars": 240460,
+      "motorbikes": 72507,
+      "population": 296984,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 80.96732483904857,
+      "reliable": true
+    },
+    "ragusa": {
+      "cars": 55311,
+      "motorbikes": 12649,
+      "population": 74122,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.62156984431073,
+      "reliable": true
+    },
+    "siracusa": {
+      "cars": 85201,
+      "motorbikes": 26613,
+      "population": 115515,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 73.75752066831147,
+      "reliable": true
+    },
+    "sassari": {
+      "cars": 86034,
+      "motorbikes": 15384,
+      "population": 120231,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 71.55725228934301,
+      "reliable": true
+    },
+    "nuoro": {
+      "cars": 26327,
+      "motorbikes": 2841,
+      "population": 32718,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 80.46640992725716,
+      "reliable": true
+    },
+    "oristano": {
+      "cars": 22424,
+      "motorbikes": 3085,
+      "population": 29888,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 75.02676659528908,
+      "reliable": true
+    },
+    "cagliari": {
+      "cars": 102129,
+      "motorbikes": 17604,
+      "population": 145981,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 69.96047430830039,
+      "reliable": true
+    },
+    "carbonia": {
+      "cars": 18823,
+      "motorbikes": 2016,
+      "population": 25353,
+      "populationYear": 2026,
+      "populationEstimated": true,
+      "fleetDate": "2025-12-31",
+      "carsPer100": 74.24367924900406,
+      "reliable": true
+    }
+  }
+}
