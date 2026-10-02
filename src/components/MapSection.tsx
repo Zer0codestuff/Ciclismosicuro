@@ -1,5 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import { formatNumber } from "../lib/format";
+import { withBase } from "../lib/assets";
 import { riskColor, SCORE_CLASS_LABELS, SCORE_RAMP } from "../lib/scoring";
 import type { RankedCity } from "../types";
 import type { MapMode } from "./ItalyMap";
@@ -73,13 +74,20 @@ export function MapSection({
 
   return (
     <section className="section map-section" id="mappa" aria-labelledby="map-title">
-      <div className="section-heading">
-        <p className="eyebrow">La mappa</p>
-        <h2 id="map-title">Le differenze tra città, sulla mappa</h2>
-        <p className="section-lead">
-          Ogni cerchio è un capoluogo; la dimensione cresce con la popolazione. Clicca per aprire la scheda.
-          {customWeights ? " L'indice riflette i pesi personalizzati che hai scelto." : null}
-        </p>
+      <div className="illustrated-section-heading">
+        <div className="section-heading">
+          <p className="eyebrow">La mappa</p>
+          <h2 id="map-title">Le differenze tra città, sulla mappa</h2>
+          <p className="section-lead">
+            Ogni cerchio è un capoluogo; la dimensione cresce con la popolazione. Clicca per aprire la scheda.
+            {customWeights ? " L'indice riflette i pesi personalizzati che hai scelto." : null}
+          </p>
+        </div>
+        <picture className="map-heading-illustration">
+          <source srcSet={withBase("assets/cycling-map-detail.webp")} type="image/webp" />
+          <img src={withBase("assets/cycling-map-detail.png")}
+            alt="" width={1448} height={1086} loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div className="map-layout">
         <div className="map-frame">

@@ -1,6 +1,7 @@
 import { ArrowRight, Search } from "lucide-react";
 import { useId, useState, type FormEvent } from "react";
 import { formatChange, formatNumber, formatPercent } from "../lib/format";
+import { withBase } from "../lib/assets";
 import { cityMatchesQuery, searchKey } from "../lib/urlState";
 import type { RankedCity, RankingPayload } from "../types";
 
@@ -88,44 +89,51 @@ export function Hero({
           <a href="#analisi">Leggi cosa emerge dai dati</a>
         </div>
       </div>
-      <dl className="hero-stats" aria-label="Numeri chiave in Italia">
-        <div className="stat-tile">
-          <dt>Ciclisti morti nel {findings.lastYear}</dt>
-          <dd>
-            <strong>{formatNumber(findings.cyclistKilledLastYear)}</strong>
-            <span>
-              {formatChange(findings.cyclistKilledPreAverage, findings.cyclistKilledLastYear)} rispetto alla media
-              2015–2019
-            </span>
-          </dd>
-        </div>
-        <div className="stat-tile">
-          <dt>Ciclisti feriti nel {findings.lastYear}</dt>
-          <dd>
-            <strong>{formatNumber(findings.cyclistInjuredLastYear)}</strong>
-            <span>
-              {formatChange(findings.cyclistInjuredPreAverage, findings.cyclistInjuredLastYear)} rispetto alla media
-              2015–2019
-            </span>
-          </dd>
-        </div>
-        <div className="stat-tile">
-          <dt>Vittime in bici coinvolte con un'auto</dt>
-          <dd>
-            <strong>{formatPercent(findings.profile.carShare)}</strong>
-            <span>
-              e il {formatPercent(findings.profile.intersectionShare)} agli incroci ({findings.profile.period})
-            </span>
-          </dd>
-        </div>
-        <div className="stat-tile">
-          <dt>65 anni e oltre tra i ciclisti morti di età nota</dt>
-          <dd>
-            <strong>{formatPercent(findings.profile.over64ShareOfDeaths)}</strong>
-            <span>sono il {formatPercent(findings.profile.over64ShareOfCasualties)} dei morti e feriti di età nota ({findings.profile.period})</span>
-          </dd>
-        </div>
-      </dl>
+      <div className="hero-visual">
+        <picture>
+          <source srcSet={withBase("assets/cycling-city-hero.webp")} type="image/webp" />
+          <img className="hero-illustration" src={withBase("assets/cycling-city-hero.png")} alt=""
+            width={1536} height={1024} decoding="async" fetchPriority="high" />
+        </picture>
+        <dl className="hero-stats" aria-label="Numeri chiave in Italia">
+          <div className="stat-tile">
+            <dt>Ciclisti morti nel {findings.lastYear}</dt>
+            <dd>
+              <strong>{formatNumber(findings.cyclistKilledLastYear)}</strong>
+              <span>
+                {formatChange(findings.cyclistKilledPreAverage, findings.cyclistKilledLastYear)} rispetto alla media
+                2015–2019
+              </span>
+            </dd>
+          </div>
+          <div className="stat-tile">
+            <dt>Ciclisti feriti nel {findings.lastYear}</dt>
+            <dd>
+              <strong>{formatNumber(findings.cyclistInjuredLastYear)}</strong>
+              <span>
+                {formatChange(findings.cyclistInjuredPreAverage, findings.cyclistInjuredLastYear)} rispetto alla media
+                2015–2019
+              </span>
+            </dd>
+          </div>
+          <div className="stat-tile">
+            <dt>Vittime in bici coinvolte con un'auto</dt>
+            <dd>
+              <strong>{formatPercent(findings.profile.carShare)}</strong>
+              <span>
+                e il {formatPercent(findings.profile.intersectionShare)} agli incroci ({findings.profile.period})
+              </span>
+            </dd>
+          </div>
+          <div className="stat-tile">
+            <dt>65 anni e oltre tra i ciclisti morti di età nota</dt>
+            <dd>
+              <strong>{formatPercent(findings.profile.over64ShareOfDeaths)}</strong>
+              <span>sono il {formatPercent(findings.profile.over64ShareOfCasualties)} dei morti e feriti di età nota ({findings.profile.period})</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
     </section>
   );
 }

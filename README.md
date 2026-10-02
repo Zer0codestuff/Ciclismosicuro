@@ -92,4 +92,4 @@ L'app usa `import.meta.env.BASE_URL` per dati, logo e download. Il workflow GitH
 
 ## Attribuzione
 
-ISTAT: CC BY 4.0, secondo i termini delle pubblicazioni. ACI: [CC BY 4.0](https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/), con attribuzione della fonte. OpenStreetMap: © OpenStreetMap contributors, ODbL 1.0; la presenza di derivati OSM non viene trasformata in una licenza CC BY generale del dataset. Il logo PNG trasparente esistente è stato generato con la skill `imagegen`.
+ISTAT: CC BY 4.0, secondo i termini delle pubblicazioni. ACI: [CC BY 4.0](https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/), con attribuzione della fonte. OpenStreetMap: © OpenStreetMap contributors, ODbL 1.0; la presenza di derivati OSM non viene trasformata in una licenza CC BY generale del dataset. Il logo e le illustrazioni PNG trasparenti sono stati generati con la skill `imagegen`. [Asset e prompt delle illustrazioni](public/assets/ILLUSTRATIONS.md); la dashboard carica le versioni WebP leggere, con fallback PNG.
